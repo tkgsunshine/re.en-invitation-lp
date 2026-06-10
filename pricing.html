@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プランとご利用料金 - Re.en (リエン)</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  
+  <link rel="stylesheet" href="index.css?v=1.17">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Header -->
+  <header id="header" class="header js-header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <h1 class="logo__text">Re<span class="logo__dot-gold">.</span>en</h1>
+      </a>
+      
+      <nav class="header__nav" aria-label="Main Navigation">
+        <ul class="nav__list">
+          <li><a href="index.html#steps" class="nav__link">ご利用の流れ</a></li>
+          <li><a href="pricing.html" class="nav__link nav__link--active">ご利用料金</a></li>
+          <li><a href="index.html#faq" class="nav__link">よくある質問</a></li>
+          <li><a href="#" class="nav__link">コラム</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header__cta">
+        <a href="/login" class="btn btn--border">ログイン</a>
+        <a href="/register" class="btn btn--primary">無料登録</a>
+      </div>
+      
+      <button class="header__toggle js-mobile-toggle" aria-label="Toggle Navigation" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+        <span class="header__toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="header__mobile-menu js-mobile-menu" aria-hidden="true" aria-label="Mobile Navigation">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html#steps" class="mobile-nav__link">ご利用の流れ</a></li>
+      <li><a href="pricing.html" class="mobile-nav__link">ご利用料金</a></li>
+      <li><a href="index.html#faq" class="mobile-nav__link">よくある質問</a></li>
+      <li><a href="#" class="mobile-nav__link">コラム</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="/register" class="btn btn--primary">さっそく始める</a>
+      <a href="/login" class="btn btn--border">ログインはこちら</a>
+    </div>
+  </nav>
+
+  <div class="pricing-page">
+    <div class="pricing-page__container container">
+      <h1 class="pricing-page__title">料金プラン</h1>
+      <p class="pricing-page__subtitle">
+        Re.en（リエン）は、既婚者同士の真面目なつながりを応援する完全審査制既婚者コミュニティサービスです。<br>
+        女性会員様は基本無料でご利用いただけます。男性会員様はマッチングまでは無料でご利用いただけます。
+      </p>
+
+      <!-- Member Type Tabs -->
+      <div class="pricing-tabs">
+        <button class="pricing-tab-btn pricing-tab-btn--active" data-tab="man-pricing">男性会員料金</button>
+        <button class="pricing-tab-btn" data-tab="woman-pricing">女性会員料金</button>
+      </div>
+
+      <!-- Male Pricing Section -->
+      <div id="man-pricing" class="pricing-content pricing-content--active">
+        <h2 class="pricing-section-title">男性会員プラン</h2>
+        <!-- Standard & Premium Plan Grid -->
+        <div class="pricing-grid pricing-grid--two-cols">
+          <!-- Standard Plan -->
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">一番人気</span>
+            <h3 class="pricing-card__name">スタンダード</h3>
+            <p class="pricing-card__subtitle">Standard Plan</p>
+            <p class="pricing-card__desc">マッチング後、メッセージのやり取りが無制限になる基本プランです。</p>
+            
+            <ul class="pricing-features-list">
+              <li class="pricing-features-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                メッセージ送信：無制限 (本人確認後)
+              </li>
+              <li class="pricing-features-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                いいね付与数：15いいね/日 (最大保持150)
+              </li>
+              <li class="pricing-features-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                ポイント付与数：200Pt/月 (最大保持3000)
+              </li>
+              <li class="pricing-features-item" style="color: var(--color-primary);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                別途新規申込割引あり
+              </li>
+            </ul>
+
+            <div class="pricing-rates">
+              <!-- 12 months -->
+              <div class="pricing-rate-row pricing-rate-row--main">
+                <span class="pricing-rate__term pricing-rate__term--main">12ヶ月プラン</span>
+                <span class="pricing-rate__price pricing-rate__price--main">¥3,800<span class="pricing-rate__price-period">/月</span></span>
+              </div>
+              <span class="pricing-rate__all">一括払：¥45,600 (360日間有効)</span>
+              
+              <!-- 6 months -->
+              <div class="pricing-rate-row" style="margin-top: 12px;">
+                <span class="pricing-rate__term">6ヶ月プラン</span>
+                <span class="pricing-rate__price">¥5,800<span class="pricing-rate__price-period">/月</span></span>
+              </div>
+              <span class="pricing-rate__all">一括払：¥34,800 (180日間有効)</span>
+
+              <!-- 3 months -->
+              <div class="pricing-rate-row" style="margin-top: 8px;">
+                <span class="pricing-rate__term">3ヶ月プラン</span>
+                <span class="pricing-rate__price">¥7,800<span class="pricing-rate__price-period">/月</span></span>
+              </div>
+              <span class="pricing-rate__all">一括払：¥23,400 (90日間有効)</span>
+
+              <!-- 1 month -->
+              <div class="pricing-rate-row" style="margin-top: 8px; border-bottom: none;">
+                <span class="pricing-rate__term">1ヶ月プラン</span>
+                <span class="pricing-rate__price">¥9,800<span class="pricing-rate__price-period">/月</span></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="pricing-card">
+            <h3 class="pricing-card__name">プレミアム</h3>
+            <p class="pricing-card__subtitle">Premium Plan</p>
+            <p class="pricing-card__desc">優先表示やメッセージ・画像削除、既読表示などを備えた最上位プランです。</p>
+            
+            <ul class="pricing-features-list">
+              <li class="pricing-features-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                メッセージ送信無制限＋上位表示機能
+              </li>
+              <li class="pricing-features-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                いいね付与数：30いいね/日 (最大保持300)
+              </li>
+              <li class="pricing-features-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                ポイント付与数：300Pt/月 (最大保持3000)
+              </li>
+              <li class="pricing-features-item" style="color: var(--color-primary);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                別途新規申込割引あり
+              </li>
+            </ul>
+
+            <div class="pricing-rates">
+              <!-- 12 months -->
+              <div class="pricing-rate-row pricing-rate-row--main">
+                <span class="pricing-rate__term pricing-rate__term--main">12ヶ月プラン</span>
+                <span class="pricing-rate__price pricing-rate__price--main">¥5,800<span class="pricing-rate__price-period">/月</span></span>
+              </div>
+              <span class="pricing-rate__all">一括払：¥69,600 (360日間有効)</span>
+              
+              <!-- 6 months -->
+              <div class="pricing-rate-row" style="margin-top: 12px;">
+                <span class="pricing-rate__term">6ヶ月プラン</span>
+                <span class="pricing-rate__price">¥7,800<span class="pricing-rate__price-period">/月</span></span>
+              </div>
+              <span class="pricing-rate__all">一括払：¥46,800 (180日間有効)</span>
+
+              <!-- 3 months -->
+              <div class="pricing-rate-row" style="margin-top: 8px;">
+                <span class="pricing-rate__term">3ヶ月プラン</span>
+                <span class="pricing-rate__price">¥9,800<span class="pricing-rate__price-period">/月</span></span>
+              </div>
+              <span class="pricing-rate__all">一括払：¥29,400 (90日間有効)</span>
+
+              <!-- 1 month -->
+              <div class="pricing-rate-row" style="margin-top: 8px; border-bottom: none;">
+                <span class="pricing-rate__term">1ヶ月プラン</span>
+                <span class="pricing-rate__price">¥11,800<span class="pricing-rate__price-period">/月</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Free Plan (Wide & Short Layout) -->
+        <div class="pricing-card pricing-card--wide">
+          <div class="pricing-card__info">
+            <h3 class="pricing-card__name">無料プラン</h3>
+            <p class="pricing-card__subtitle">Free Plan</p>
+            <p class="pricing-card__desc">登録後、お相手探しやマッチングまでは無料でご利用いただけます。</p>
+          </div>
+          
+          <ul class="pricing-features-list">
+            <li class="pricing-features-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              いいね付与数：10いいね/日 (最大保持10)
+            </li>
+            <li class="pricing-features-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              ポイント付与数：30Pt/月 (最大保持30)
+            </li>
+          </ul>
+
+          <div class="pricing-rates">
+            <div class="pricing-rate-row pricing-rate-row--main">
+              <span class="pricing-rate__term pricing-rate__term--main">月額料金</span>
+              <span class="pricing-rate__price pricing-rate__price--main">¥0</span>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Comparison Table -->
+        <div class="comparison-table-section">
+          <h3 class="comparison-table-title">男性会員のステータス・機能一覧表</h3>
+          <div class="pricing-table-container">
+            <table class="pricing-table comparison-table">
+              <thead>
+                <tr>
+                  <th>機能・ステータス</th>
+                  <th>本人未確認　無料会員</th>
+                  <th>本人確認済　無料会員</th>
+                  <th>スタンダード会員</th>
+                  <th>プレミアム会員</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="feature-name">さがすの表示人数</td>
+                  <td>40人</td>
+                  <td>40人</td>
+                  <td class="checked">全件</td>
+                  <td class="checked">全件</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">いいね付与</td>
+                  <td>10いいね/日</td>
+                  <td>10いいね/日</td>
+                  <td class="checked">15いいね/日</td>
+                  <td class="checked">30いいね/日</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">いいね最大保持数</td>
+                  <td>最大保持10いいね</td>
+                  <td>最大保持10いいね</td>
+                  <td>最大保持150いいね</td>
+                  <td class="checked">最大保持300いいね</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">ポイント付与</td>
+                  <td>30Pt/月</td>
+                  <td>30Pt/月</td>
+                  <td class="checked">200Pt/月</td>
+                  <td class="checked">300Pt/月</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">ポイント最大保持数</td>
+                  <td>最大保持30Pt</td>
+                  <td>最大保持30Pt</td>
+                  <td class="checked">最大保持3000Pt</td>
+                  <td class="checked">最大保持3000Pt</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">シークレットモード</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">受信メッセージ閲覧（1通目）</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">受信メッセージ閲覧（2通目以降）</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">メッセージ送信</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">相手の電話番号登録→非表示機能</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">相手のログイン状況閲覧</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">送信メッセージ・画像の削除</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">メッセージの既読・未読確認</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">検索上位表示</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Point Plans & Comparison Table -->
+        <h2 class="pricing-section-title" style="margin-top: 60px; margin-bottom: 16px;">ポイント</h2>
+        <p class="pricing-page__subtitle" style="margin-bottom: 32px;">
+          ポイントを購入することで、AIによる相談機能やイラスト生成、追加のいいね！送信など、さまざまな便利機能をご利用いただけます。
+        </p>
+        <div class="points-section" style="margin-top: 0;">
+          <!-- Point Purchase -->
+          <div class="pricing-table-container">
+            <h3 class="pricing-notes__title" style="margin: 20px 20px 10px; text-align: left;">ポイント購入</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>プラン名</th>
+                  <th>料金</th>
+                  <th>ポイント付与数</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="plan-name">1000ポイントプラン</td>
+                  <td class="price">¥5,800</td>
+                  <td>1000Pt</td>
+                </tr>
+                <tr>
+                  <td class="plan-name">400ポイントプラン</td>
+                  <td class="price">¥2,800</td>
+                  <td>400Pt</td>
+                </tr>
+                <tr>
+                  <td class="plan-name">100ポイントプラン</td>
+                  <td class="price">¥900</td>
+                  <td>100Pt</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Point Consumption -->
+          <div class="pricing-table-container">
+            <h3 class="pricing-notes__title" style="margin: 20px 20px 10px; text-align: left;">ポイント消費</h3>
+            <table class="pricing-table">
+              <thead>
+                <tr>
+                  <th>利用内容</th>
+                  <th>ポイント消費数</th>
+                  <th>備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="plan-name">AI相談</td>
+                  <td class="price">10Pt</td>
+                  <td>1プロンプトあたり10Pt消費</td>
+                </tr>
+                <tr>
+                  <td class="plan-name">AIイラスト</td>
+                  <td class="price">10Pt</td>
+                  <td>1生成あたり10Pt消費</td>
+                </tr>
+                <tr>
+                  <td class="plan-name">いいね</td>
+                  <td class="price">10Pt</td>
+                  <td>いいね!がなくなったら1いいね!あたり10Pt消費</td>
+                </tr>
+                <tr>
+                  <td class="plan-name">メッセージ付きいいね</td>
+                  <td class="price">30Pt</td>
+                  <td>1送信あたり30Pt消費</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Female Pricing Section -->
+      <div id="woman-pricing" class="pricing-content">
+        <h2 class="pricing-section-title">女性会員プラン</h2>
+        <div class="pricing-grid" style="grid-template-columns: 1fr; max-width: 500px; margin: 0 auto;">
+          
+          <!-- Free Plan -->
+          <div class="pricing-card pricing-card--featured">
+            <span class="pricing-card__badge">基本無料</span>
+            <h3 class="pricing-card__name">無料プラン</h3>
+            <p class="pricing-card__subtitle">Free Plan</p>
+            <p class="pricing-card__desc">女性は基本無料でメッセージ送信を含むすべての機能をご利用いただけます（本人確認完了後）。</p>
+            
+            <ul class="pricing-features-list">
+              <li class="pricing-features-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                メッセージ送信・受信閲覧：無料
+              </li>
+              <li class="pricing-features-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                ポイント付与数：30Pt/月 (最大保持3000 ※本人確認完了後)
+              </li>
+            </ul>
+
+            <div class="pricing-rates">
+              <div class="pricing-rate-row pricing-rate-row--main" style="border-bottom: none;">
+                <span class="pricing-rate__term pricing-rate__term--main">月額料金</span>
+                <span class="pricing-rate__price pricing-rate__price--main">¥0</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="comparison-table-section">
+          <h3 class="comparison-table-title">女性会員のステータス・機能一覧表</h3>
+          <div class="pricing-table-container">
+            <table class="pricing-table comparison-table">
+              <thead>
+                <tr>
+                  <th>機能・ステータス</th>
+                  <th>本人未確認　無料会員</th>
+                  <th>本人確認済　無料会員</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="feature-name">さがすの表示人数</td>
+                  <td>40人</td>
+                  <td class="checked">全件</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">ポイント付与</td>
+                  <td>30Pt/月</td>
+                  <td>30Pt/月</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">ポイント最大保持数</td>
+                  <td>最大保持30Pt</td>
+                  <td class="checked">最大保持3000Pt</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">シークレットモード</td>
+                  <td class="checked">○</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">受信メッセージ閲覧（1通目）</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">受信メッセージ閲覧（2通目以降）</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">メッセージ送信</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">お相手の電話番号登録→非表示機能</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">お相手のログイン状況閲覧</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">送信メッセージ・画像の削除</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+                <tr>
+                  <td class="feature-name">メッセージの既読・未読確認</td>
+                  <td class="unchecked">×</td>
+                  <td class="checked">○</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notes Section -->
+      <div class="pricing-notes">
+        <h3 class="pricing-notes__title">注意事項</h3>
+        <ul class="pricing-notes__list">
+          <li class="pricing-notes__item">各種プラン（スタンダード、プレミアム）は登録後のマイページからいつでもお申し込みいただけます。</li>
+          <li class="pricing-notes__item">プランの有効期間は、1ヶ月（30日）、3ヶ月（90日）、6ヶ月（180日）、12ヶ月（360日）となります（加入日当日を含む）。</li>
+          <li class="pricing-notes__item">3・6・12ヶ月プランのお支払いは一括のみとなります。</li>
+          <li class="pricing-notes__item">プラン購入完了後のお客様都合によるキャンセル・返金は承っておりませんので、あらかじめご了承ください。</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__logo">Re<span class="logo__dot-gold">.</span>en</div>
+      
+      <nav class="footer__nav" aria-label="Footer Links">
+        <a href="term.html" class="footer__link">利用規約</a>
+        <a href="privacy.html" class="footer__link">プライバシーポリシー</a>
+        <a href="tokushoho.html" class="footer__link">特定商取引法に基づく表記</a>
+        <a href="company.html" class="footer__link">運営会社情報</a>
+        <a href="index.html#faq" class="footer__link">ヘルプ・お問い合わせ</a>
+      </nav>
+      
+      <div class="footer__cert">
+        <p class="footer__cert-number">インターネット異性紹介事業 届出・認可済 登録番号：丸の内25-067208</p>
+      </div>
+      
+      <p class="footer__copyright">© 2026 Re.en, Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+  <!-- JavaScript Controller -->
+  <script src="app.js?v=1.8"></script>
+  
+  <!-- Tabs script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabBtns = document.querySelectorAll('.pricing-tab-btn');
+      const tabContents = document.querySelectorAll('.pricing-content');
+      
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const tabTarget = btn.dataset.tab;
+          
+          tabBtns.forEach(b => b.classList.remove('pricing-tab-btn--active'));
+          tabContents.forEach(c => c.classList.remove('pricing-content--active'));
+          
+          btn.classList.add('pricing-tab-btn--active');
+          document.getElementById(tabTarget).classList.add('pricing-content--active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

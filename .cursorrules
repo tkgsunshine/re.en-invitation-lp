@@ -1,0 +1,20 @@
+# AI Agent Development Rules
+
+You are an AI coding assistant working on this project (`married-matching-lp`).
+You must strictly follow the rules below during development and communication.
+
+## 🚨 Critical Communication & Interaction Rules
+1. **少しでもわからないときは、必ずユーザーに確認してから進めること。**
+   - ユーザーの意図が少しでも曖昧な場合、勝手に解釈や推測をして進めてはいけません。
+   - 分からない点や複数の実装方針が考えられる場合は、事前に質問し、合意を得てから作業に着手してください。
+2. **曖昧なまま進行しないこと。**
+   - 要件が具体的に言語化されていない、あるいは視覚的な見え方についての認識が曖昧な状態でコード変更や画像置換を行わないでください。
+
+## Project-Specific Guidelines (Lien LP)
+- **テーマ**: 東カレ風の高級感あるダークなデザイン（ゴールド、チャコール、ブラック）。
+- **ヒーロー画像**:
+  - 画像は [images/hero_lifestyle.png](file:///Users/user/.gemini/antigravity/scratch/married-matching-lp/images/hero_lifestyle.png) に配置されています。
+  - 女性の顔（目、おでこ、髪）と男性のプロフィールが完璧に映る横長クロップ画像が設定されています。
+  - CSSでは `background-size: cover` および `background-position: center top` で固定し、画像上部に黒い余白（黒帯）が出ないように保つ必要があります。
+- **レイアウトの対称性**:
+  - ゴールドのバッジ要素（クラス名 `.hero__badge--luxury-claim` など）と下段のタグバッジ（`.hero__tag-badge`）の横幅が完全に揃うようにCSSで制御してください（現在 280px で対称性を保っています）。
