@@ -2722,10 +2722,16 @@ button {
   padding-left: 12px;
 }
 
+.comparison-table {
+  min-width: auto;
+}
+
 .comparison-table td.feature-name {
   color: var(--color-text-white);
   text-align: left;
   font-weight: 500;
+  white-space: normal;
+  min-width: 100px;
 }
 
 .comparison-table td.checked {
@@ -2737,6 +2743,21 @@ button {
 .comparison-table td.unchecked {
   color: rgba(255, 255, 255, 0.15);
   font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 6px;
+    font-size: 0.78rem;
+  }
+  .comparison-table td.feature-name {
+    font-size: 0.78rem;
+    min-width: 76px;
+  }
+  .comparison-table td.checked {
+    font-size: 0.9rem;
+  }
 }
 
 /* Subsection styling for Points */
