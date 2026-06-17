@@ -3256,6 +3256,7 @@ button {
   font-weight: 700;
   padding: 4px 10px;
   border-radius: 2px;
+  z-index: 2;
 }
 
 .column-card__content {
