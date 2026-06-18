@@ -526,4 +526,235 @@ document.addEventListener('DOMContentLoaded', () => {
       progressBar.style.width = scrollPercent + '%';
     }
   });
+
+  // ==========================================
+  // 8. Column Pagination, Category Filter, and Search Controller
+  // ==========================================
+  const columnGrid = document.querySelector('.column-main .column-grid');
+  const paginationContainer = document.querySelector('.pagination');
+
+  if (columnGrid && paginationContainer) {
+    const cards = Array.from(columnGrid.querySelectorAll('.column-card'));
+    const categoryLinks = document.querySelectorAll('.category-nav__link');
+    const sidebarCategoryLinks = document.querySelectorAll('.sidebar-list__item a');
+    const searchInput = document.querySelector('.sidebar-search__input');
+    const searchBtn = document.querySelector('.sidebar-search__btn');
+
+    const getCategoryFromHash = () => {
+      const hash = decodeURIComponent(window.location.hash.slice(1));
+      const validCategories = ['全て', '出会いのコツ', 'プライバシー対策', 'セカンドパートナー'];
+      return (hash && validCategories.includes(hash)) ? hash : '全て';
+    };
+
+    let currentCategory = getCategoryFromHash();
+    let searchQuery = '';
+    let currentPage = 1;
+    const itemsPerPage = 10;
+
+    // Filter, Paginate, and Render
+    const updateColumnList = () => {
+      // 1. Filter cards based on Category and Search Query
+      const filteredCards = cards.filter(card => {
+        // Category check
+        const badge = card.querySelector('.column-card__badge');
+        const badgeText = badge ? badge.textContent.trim() : '';
+        const matchesCategory = (currentCategory === '全て' || badgeText === currentCategory);
+
+        // Search check
+        let matchesSearch = true;
+        if (searchQuery) {
+          const title = card.querySelector('.column-card__title').textContent.toLowerCase();
+          const excerpt = card.querySelector('.column-card__excerpt').textContent.toLowerCase();
+          matchesSearch = title.includes(searchQuery) || excerpt.includes(searchQuery);
+        }
+
+        return matchesCategory && matchesSearch;
+      });
+
+      // 2. Hide all cards first
+      cards.forEach(card => {
+        card.style.display = 'none';
+      });
+
+      // 3. Paginate the filtered cards
+      const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
+      if (currentPage > totalPages) currentPage = Math.max(1, totalPages);
+
+      const startIndex = (currentPage - 1) * itemsPerPage;
+      const endIndex = Math.min(startIndex + itemsPerPage, filteredCards.length);
+
+      for (let i = startIndex; i < endIndex; i++) {
+        const card = filteredCards[i];
+        card.style.display = 'flex';
+        // Ensure the card is visible (if it was hidden by scroll reveal observer)
+        card.classList.add('reveal--visible');
+      }
+
+      // 4. Render Pagination Controls
+      renderPagination(totalPages);
+    };
+
+    // Render Pagination Buttons
+    const renderPagination = (totalPages) => {
+      paginationContainer.innerHTML = '';
+      if (totalPages <= 1) {
+        paginationContainer.style.display = 'none';
+        return;
+      }
+      paginationContainer.style.display = 'flex';
+
+      // Page numbers
+      for (let i = 1; i <= totalPages; i++) {
+        const pageLink = document.createElement('a');
+        pageLink.href = '#';
+        pageLink.className = `pagination__item${i === currentPage ? ' pagination__item--active' : ''}`;
+        pageLink.textContent = i;
+        pageLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          currentPage = i;
+          updateColumnList();
+          scrollToTop();
+        });
+        paginationContainer.appendChild(pageLink);
+      }
+
+      // Next button
+      if (currentPage < totalPages) {
+        const nextLink = document.createElement('a');
+        nextLink.href = '#';
+        nextLink.className = 'pagination__item';
+        nextLink.innerHTML = `
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        `;
+        nextLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          currentPage++;
+          updateColumnList();
+          scrollToTop();
+        });
+        paginationContainer.appendChild(nextLink);
+      }
+    };
+
+    // Scroll to the top of column section
+    const scrollToTop = () => {
+      const targetSection = document.querySelector('.column-container');
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 90,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    // Sync Category Navigation Active Classes
+    const syncCategoryActiveState = () => {
+      // Top tabs
+      categoryLinks.forEach(link => {
+        const linkText = link.textContent.trim();
+        if (linkText === currentCategory) {
+          link.classList.add('category-nav__link--active');
+        } else {
+          link.classList.remove('category-nav__link--active');
+        }
+      });
+
+      // Sidebar items
+      sidebarCategoryLinks.forEach(link => {
+        // Strip out counts or text modifications (e.g. "全てコラム 20" -> "全て")
+        const rawText = link.childNodes[0].textContent.trim();
+        const normalizedText = rawText.replace('コラム', '');
+        
+        // Find parent list item
+        const parentLi = link.closest('.sidebar-list__item');
+        if (parentLi) {
+          if (normalizedText === currentCategory) {
+            parentLi.classList.add('sidebar-list__item--active');
+            link.style.color = 'var(--color-primary)';
+          } else {
+            parentLi.classList.remove('sidebar-list__item--active');
+            link.style.color = '';
+          }
+        }
+      });
+    };
+
+    // Category click handler
+    const selectCategory = (categoryName) => {
+      currentCategory = categoryName;
+      currentPage = 1;
+
+      // Update hash in URL bar without page reload
+      if (categoryName === '全て') {
+        history.pushState(null, null, window.location.pathname + window.location.search);
+      } else {
+        history.pushState(null, null, '#' + categoryName);
+      }
+
+      syncCategoryActiveState();
+      updateColumnList();
+    };
+
+    // Hook up Category Nav links
+    categoryLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const categoryName = link.textContent.trim();
+        selectCategory(categoryName);
+      });
+    });
+
+    // Hook up Sidebar Category links
+    sidebarCategoryLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const rawText = link.childNodes[0].textContent.trim();
+        const categoryName = rawText.replace('コラム', '');
+        selectCategory(categoryName);
+      });
+    });
+
+    // Hook up Search Input
+    if (searchBtn && searchInput) {
+      const executeSearch = () => {
+        searchQuery = searchInput.value.trim().toLowerCase();
+        currentPage = 1;
+        updateColumnList();
+      };
+
+      searchBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        executeSearch();
+      });
+
+      searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          executeSearch();
+        }
+      });
+
+      // Live search on keyup/input
+      searchInput.addEventListener('input', () => {
+        searchQuery = searchInput.value.trim().toLowerCase();
+        currentPage = 1;
+        updateColumnList();
+      });
+    }
+
+    // Listen to hash changes (for browser back/forward buttons and cross-page navigation)
+    window.addEventListener('hashchange', () => {
+      const newCategory = getCategoryFromHash();
+      if (newCategory !== currentCategory) {
+        currentCategory = newCategory;
+        currentPage = 1;
+        syncCategoryActiveState();
+        updateColumnList();
+      }
+    });
+
+    // Initialize display
+    syncCategoryActiveState();
+    updateColumnList();
+  }
 });
