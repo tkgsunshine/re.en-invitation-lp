@@ -2054,7 +2054,7 @@ button {
     min-height: auto;
     height: auto;
     padding: 100px 0 40px;
-    background: linear-gradient(rgba(11, 11, 12, 0.75), rgba(11, 11, 12, 0.88)), url('images/hero_lifestyle.webp') no-repeat center top;
+    background: linear-gradient(rgba(11, 11, 12, 0.75), rgba(11, 11, 12, 0.88)), url('images/hero_lifestyle_mobile.webp') no-repeat center center;
     background-size: cover;
   }
   
