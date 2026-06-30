@@ -257,10 +257,6 @@ button {
   height: 76px;
 }
 
-.header__btn {
-  margin-right: -10px;
-}
-
 .logo {
   text-decoration: none;
   font-family: var(--font-accent);
@@ -2037,6 +2033,11 @@ button {
 
   .header__nav {
     display: none;
+  }
+  
+  .header__cta {
+    margin-left: auto;
+    margin-right: 16px;
   }
   
   .menu-toggle {
