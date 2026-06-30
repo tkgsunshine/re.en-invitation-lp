@@ -638,7 +638,7 @@ button {
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__left .luxury-claim__text-row:last-child {
     font-size: 0.85rem;
-    margin-top: 0;
+    margin-top: -3px;
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__right {
     margin-left: 16px;
@@ -683,7 +683,7 @@ button {
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__left .luxury-claim__text-row:last-child {
     font-size: 0.8rem;
-    margin-top: 0;
+    margin-top: -3px;
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__right {
     margin-left: 0;
