@@ -708,6 +708,9 @@ button {
   .hero {
     background-position: center 215px;
   }
+  .cta-sec__title {
+    font-size: 1.35rem;
+  }
 }
 
 .hero__claim-note {
@@ -2056,6 +2059,10 @@ button {
   
   .section__label {
     font-size: 2rem;
+  }
+  
+  .cta-sec__title {
+    font-size: 1.6rem;
   }
   
   .hero {
