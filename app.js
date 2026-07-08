@@ -542,7 +542,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const getCategoryFromHash = () => {
       const hash = decodeURIComponent(window.location.hash.slice(1));
-      const validCategories = ['全て', '出会いのコツ', 'プライバシー対策', 'セカンドパートナー'];
+      const validCategories = ['全て', '出会いのコツ', 'プライバシー対策', 'セカンドパートナー', '悩み'];
       return (hash && validCategories.includes(hash)) ? hash : '全て';
     };
 
