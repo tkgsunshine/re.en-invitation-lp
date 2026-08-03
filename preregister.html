@@ -229,53 +229,58 @@
     <!-- App Interface Showcase Section -->
     <!-- App Interface Showcase Section -->
         <section id="showcase" class="section showcase">
-          <div class="container showcase__container">
-            <!-- Mockup Slider on Left -->
-            <div class="showcase__mockup-wrapper reveal">
-              <div class="showcase__images">
-                <img src="images/iphone_mockup.jpg" alt="Re.enのさがす画面" class="showcase__img js-mockup-img showcase__img--active" data-index="0" loading="lazy">
-                <img src="images/iphone_match_mockup.jpg" alt="Re.enのマッチング画面" class="showcase__img js-mockup-img" data-index="1" loading="lazy">
-                <img src="images/iphone_chat_mockup.jpg" alt="Re.enのメッセージ画面" class="showcase__img js-mockup-img" data-index="2" loading="lazy">
-              </div>
-              <div class="showcase__dots">
-                <button class="showcase__dot showcase__dot--active js-mockup-dot" data-index="0" aria-label="さがす画面"></button>
-                <button class="showcase__dot js-mockup-dot" data-index="1" aria-label="マッチング画面"></button>
-                <button class="showcase__dot js-mockup-dot" data-index="2" aria-label="メッセージ画面"></button>
-              </div>
-            </div>
-            
-            <!-- Info on Right -->
-            <div class="showcase__info reveal">
+          <div class="container">
+            <!-- Centered Header -->
+            <div class="showcase__header reveal">
               <span class="section__label">Members</span>
-              <h3 class="section__title" style="text-align: left; left: 0; transform: none; margin-bottom: 20px;"><span class="u-inline-block">ステータスと品格を兼ね備えた、</span><span class="u-inline-block">魅力的なハイクラス会員層</span></h3>
-              
-              <p class="showcase__desc" style="font-size: 1rem; line-height: 1.7; margin-bottom: 24px; color: var(--color-text-muted);">
+              <h3 class="section__title" style="margin-bottom: 20px;"><span class="u-inline-block">ステータスと品格を兼ね備えた、</span><span class="u-inline-block">魅力的なハイクラス会員層</span></h3>
+              <p class="showcase__desc" style="font-size: 1.05rem; line-height: 1.8; color: var(--color-text-muted);">
                 Re.enでは厳正な入会審査と証明機能により、社会的ステータスや経済的ゆとりを持つ紳士淑女が集う、質の高いコミュニティを維持しています。洗練されたデザインの画面の向こうには、日常の役割から解放され、対等に響きあえる上質な出会いが広がっています。
               </p>
+            </div>
+    
+            <!-- Split Grid below header -->
+            <div class="showcase__grid">
+              <!-- Mockup Slider on Left -->
+              <div class="showcase__mockup-wrapper reveal">
+                <div class="showcase__images">
+                  <img src="images/iphone_mockup.jpg" alt="Re.enのさがす画面" class="showcase__img js-mockup-img showcase__img--active" data-index="0" loading="lazy">
+                  <img src="images/iphone_match_mockup.jpg" alt="Re.enのマッチング画面" class="showcase__img js-mockup-img" data-index="1" loading="lazy">
+                  <img src="images/iphone_chat_mockup.jpg" alt="Re.enのメッセージ画面" class="showcase__img js-mockup-img" data-index="2" loading="lazy">
+                </div>
+                <div class="showcase__dots">
+                  <button class="showcase__dot showcase__dot--active js-mockup-dot" data-index="0" aria-label="さがす画面"></button>
+                  <button class="showcase__dot js-mockup-dot" data-index="1" aria-label="マッチング画面"></button>
+                  <button class="showcase__dot js-mockup-dot" data-index="2" aria-label="メッセージ画面"></button>
+                </div>
+              </div>
               
-              <ul class="showcase__list">
-                <li class="showcase__item js-showcase-item showcase__item--active" data-index="0">
-                  <span class="showcase__item-num">1</span>
-                  <div class="showcase__item-content">
-                    <h4 class="showcase__item-title">「さがす」と「おすすめ」の切り替え</h4>
-                    <p class="showcase__item-desc">上部のタブで、条件から絞り込んで探す機能と、おすすめのお相手を切り替えて直感的に閲覧できます。</p>
-                  </div>
-                </li>
-                <li class="showcase__item js-showcase-item" data-index="1">
-                  <span class="showcase__item-num">2</span>
-                  <div class="showcase__item-content">
-                    <h4 class="showcase__item-title">運命を繋ぐ「マッチング」成立</h4>
-                    <p class="showcase__item-desc">お互いに「いいね」が成立すると、美しい花吹雪の演出とともにマッチングをお知らせします。</p>
-                  </div>
-                </li>
-                <li class="showcase__item js-showcase-item" data-index="2">
-                  <span class="showcase__item-num">3</span>
-                  <div class="showcase__item-content">
-                    <h4 class="showcase__item-title">プライバシー配慮の「メッセージ」</h4>
-                    <p class="showcase__item-desc">マッチング成立後は、プライバシーが守られた空間で安心しておしゃべりや予定調整を楽しめます。</p>
-                  </div>
-                </li>
-              </ul>
+              <!-- Info on Right (①〜③ List) -->
+              <div class="showcase__info reveal">
+                <ul class="showcase__list">
+                  <li class="showcase__item js-showcase-item showcase__item--active" data-index="0">
+                    <span class="showcase__item-num">1</span>
+                    <div class="showcase__item-content">
+                      <h4 class="showcase__item-title">「さがす」と「おすすめ」の切り替え</h4>
+                      <p class="showcase__item-desc">上部のタブで、条件から絞り込んで探す機能と、おすすめのお相手を切り替えて直感的に閲覧できます。</p>
+                    </div>
+                  </li>
+                  <li class="showcase__item js-showcase-item" data-index="1">
+                    <span class="showcase__item-num">2</span>
+                    <div class="showcase__item-content">
+                      <h4 class="showcase__item-title">運命を繋ぐ「マッチング」成立</h4>
+                      <p class="showcase__item-desc">お互いに「いいね」が成立すると、美しい花吹雪の演出とともにマッチングをお知らせします。</p>
+                    </div>
+                  </li>
+                  <li class="showcase__item js-showcase-item" data-index="2">
+                    <span class="showcase__item-num">3</span>
+                    <div class="showcase__item-content">
+                      <h4 class="showcase__item-title">プライバシー配慮の「メッセージ」</h4>
+                      <p class="showcase__item-desc">マッチング成立後は、プライバシーが守られた空間で安心しておしゃべりや予定調整を楽しめます。</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
