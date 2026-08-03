@@ -758,62 +758,9 @@ document.addEventListener('DOMContentLoaded', () => {
     updateColumnList();
   }
 
+
+
   // ==========================================
-  // 9. Showcase App Screen Switcher
-  // ==========================================
-  const mockupImages = document.querySelectorAll('.js-mockup-img');
-  const mockupDots = document.querySelectorAll('.js-mockup-dot');
-  const showcaseItems = document.querySelectorAll('.js-showcase-item');
-
-  if (mockupImages.length > 0) {
-    const switchMockup = (index) => {
-      // Update images
-      mockupImages.forEach((img, idx) => {
-        if (idx === index) {
-          img.classList.add('showcase__img--active');
-        } else {
-          img.classList.remove('showcase__img--active');
-        }
-      });
-
-      // Update dots
-      mockupDots.forEach((dot, idx) => {
-        if (idx === index) {
-          dot.classList.add('showcase__dot--active');
-        } else {
-          dot.classList.remove('showcase__dot--active');
-        }
-      });
-
-      // Update feature items
-      showcaseItems.forEach((item, idx) => {
-        if (idx === index) {
-          item.classList.add('showcase__item--active');
-        } else {
-          item.classList.remove('showcase__item--active');
-        }
-      });
-    };
-
-    // Attach click events to dots
-    mockupDots.forEach(dot => {
-      dot.addEventListener('click', () => {
-        const index = parseInt(dot.dataset.index, 10);
-        switchMockup(index);
-      });
-    });
-
-    // Attach click events to feature list items
-    showcaseItems.forEach(item => {
-      item.addEventListener('click', () => {
-        const index = parseInt(item.dataset.index, 10);
-        switchMockup(index);
-      });
-    });
-  }
-});
-
-// ==========================================
   // 9. Showcase App Screen Switcher (Scroll-driven & Click)
   // ==========================================
   const mockupImages = document.querySelectorAll('.js-mockup-img');
