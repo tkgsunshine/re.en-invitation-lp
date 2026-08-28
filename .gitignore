@@ -2,3 +2,4 @@
 *.zip
 .tempmediaStorage/
 check_html.py
+.vercel
