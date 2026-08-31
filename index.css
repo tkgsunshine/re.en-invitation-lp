@@ -438,6 +438,11 @@ button {
   width: 28px;
   height: 18px;
   z-index: 101;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
 }
 
 .menu-toggle span {
