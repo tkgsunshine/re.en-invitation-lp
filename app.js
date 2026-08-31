@@ -566,7 +566,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.warn('SSGform submission warning:', err);
       }
 
-      // Save submission data to localStorage backup
+      // Save submission data to localStorage backup & API log
       try {
         const entry = {
           gender: selectedGender,
@@ -578,8 +578,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const existing = JSON.parse(localStorage.getItem('reen_preregistrations') || '[]');
         existing.push(entry);
         localStorage.setItem('reen_preregistrations', JSON.stringify(existing));
-      } catch (err) {
-        console.error('Failed to save preregistration:', err);
+
+        // Dual-logging endpoint
+        fetch('/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(entry)
+        }).catch(() => {});
+      } catch (e) {
+        console.error('Failed to save preregistration:', e);
       }
 
       if (submitBtn) {
