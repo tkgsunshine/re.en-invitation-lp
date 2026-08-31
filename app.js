@@ -378,12 +378,20 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
 
               <!-- Email -->
-              <div class="form-group" style="margin-bottom: 22px;">
+              <div class="form-group" style="margin-bottom: 18px;">
                 <label class="form-group__label" style="margin-bottom: 8px;">
                   通知用メールアドレス <span class="form-group__required" style="border-radius: 2px;">必須</span>
                 </label>
                 <input type="email" id="prereg-email" class="form-group__input" placeholder="example@domain.com" required style="font-size: 0.95rem; padding: 12px 14px; border-radius: 6px;">
                 <div id="prereg-email-error" class="form-group__error" style="font-size: 0.78rem; color: #E25C5C; margin-top: 6px; display: none;">有効なメールアドレスを入力してください。</div>
+              </div>
+
+              <!-- Feedback / Requests (Optional) -->
+              <div class="form-group" style="margin-bottom: 22px;">
+                <label class="form-group__label" style="margin-bottom: 8px;">
+                  Re.enへのご要望・ご期待 <span class="form-group__optional" style="font-size: 0.72rem; padding: 2px 6px; background: rgba(255,255,255,0.08); color: var(--color-text-muted); border-radius: 2px; margin-left: 6px;">任意</span>
+                </label>
+                <textarea id="prereg-feedback" class="form-group__input" rows="3" placeholder="サービスへのご要望や期待すること、ご意見などがあればご自由にご記入ください" style="font-size: 0.88rem; padding: 10px 12px; border-radius: 6px; resize: vertical; min-height: 68px; background: var(--color-bg-alt); color: var(--color-text-white); font-family: inherit;"></textarea>
               </div>
 
               <button type="submit" id="btn-submit-prereg" class="btn btn--primary btn--large btn--pulse" style="width: 100%; font-weight: 700; font-size: 0.98rem; padding: 14px; border-radius: 6px; justify-content: center;">
@@ -503,6 +511,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const ageVal = document.getElementById('prereg-age') ? document.getElementById('prereg-age').value : '';
       const incomeVal = document.getElementById('prereg-income') ? document.getElementById('prereg-income').value : '';
+      const feedbackVal = document.getElementById('prereg-feedback') ? document.getElementById('prereg-feedback').value.trim() : '';
 
       if (!ageVal) {
         if (emailError) {
@@ -548,7 +557,8 @@ document.addEventListener('DOMContentLoaded', () => {
           '性別': selectedGender,
           '年代': ageVal,
           '年収': incomeVal,
-          'メールアドレス': emailVal
+          'メールアドレス': emailVal,
+          'ご要望・ご期待': feedbackVal
         };
 
         for (const [key, val] of Object.entries(fields)) {
@@ -573,6 +583,7 @@ document.addEventListener('DOMContentLoaded', () => {
           age: ageVal,
           income: incomeVal,
           email: emailVal,
+          feedback: feedbackVal,
           timestamp: new Date().toISOString()
         };
         const existing = JSON.parse(localStorage.getItem('reen_preregistrations') || '[]');

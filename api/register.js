@@ -24,7 +24,8 @@ export default async function handler(req, res) {
       gender: data.gender || data['性別'] || '',
       age: data.age || data['年代'] || '',
       income: data.income || data['年収'] || '',
-      email: data.email || data['メールアドレス'] || ''
+      email: data.email || data['メールアドレス'] || '',
+      feedback: data.feedback || data['ご要望・ご期待'] || ''
     };
 
     console.log('[RE.EN VERCEL SERVER DATA RECORD]', JSON.stringify(logEntry));
