@@ -24,7 +24,9 @@ def main():
     
     # 5. Deploy to Vercel production
     print("\\n--- Deploying to Vercel Production ---")
-    subprocess.run(["npx", "vercel", "deploy", "--prod"], cwd=WORKSPACE_DIR, check=True)
+    my_env = os.environ.copy()
+    my_env["HOME"] = "/Users/user"
+    subprocess.run(["npx", "vercel", "deploy", "--prod"], cwd=WORKSPACE_DIR, env=my_env, check=True)
     
     print("\\nMarried Matching LP Column Pipeline complete!")
 
