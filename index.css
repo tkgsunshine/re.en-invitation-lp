@@ -794,11 +794,7 @@ button {
 .hero__headline-glow,
 .hero__headline-glow .char {
   color: #E6D7B9;
-  background: none;
-  -webkit-background-clip: initial;
   -webkit-text-fill-color: #E6D7B9;
-  animation: none;
-  filter: none;
 }
 
 .hero__description {
