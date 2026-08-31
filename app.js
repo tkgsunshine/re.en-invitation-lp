@@ -337,11 +337,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   性別 <span class="form-group__required" style="border-radius: 2px;">必須</span>
                 </label>
                 <div class="form-group__select-grid" style="grid-template-columns: 1fr 1fr; gap: 10px;">
-                  <div class="form-group__select-card js-select-gender form-group__select-card--selected" data-value="女性" style="text-align: center; cursor: pointer; padding: 12px; font-weight: 500; font-size: 0.9rem; border-radius: 6px;">
-                    女性
-                  </div>
-                  <div class="form-group__select-card js-select-gender" data-value="男性" style="text-align: center; cursor: pointer; padding: 12px; font-weight: 500; font-size: 0.9rem; border-radius: 6px;">
+                  <div class="form-group__select-card js-select-gender form-group__select-card--selected" data-value="男性" style="text-align: center; cursor: pointer; padding: 12px; font-weight: 500; font-size: 0.9rem; border-radius: 6px;">
                     男性
+                  </div>
+                  <div class="form-group__select-card js-select-gender" data-value="女性" style="text-align: center; cursor: pointer; padding: 12px; font-weight: 500; font-size: 0.9rem; border-radius: 6px;">
+                    女性
                   </div>
                 </div>
               </div>
@@ -434,7 +434,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const emailError = document.getElementById('prereg-email-error');
   const genderCards = document.querySelectorAll('.js-select-gender');
 
-  let selectedGender = '女性';
+  let selectedGender = '男性';
 
   genderCards.forEach(card => {
     card.addEventListener('click', () => {
