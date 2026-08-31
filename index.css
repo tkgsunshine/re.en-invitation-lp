@@ -665,10 +665,6 @@ button {
 }
 
 @media (max-width: 540px) {
-  .hero__badge-container {
-    margin-top: -10px;
-    margin-bottom: 12px;
-  }
   .hero__badge--luxury-claim.is-preregister {
     flex-direction: column;
     align-items: center;
@@ -2072,7 +2068,7 @@ button {
   .hero {
     min-height: auto;
     height: auto;
-    padding: 50px 0 40px;
+    padding: 100px 0 40px;
     background: linear-gradient(to bottom, rgba(11, 11, 12, 0.4) 0%, rgba(11, 11, 12, 0.95) 75%, rgba(11, 11, 12, 1) 100%), url('images/hero_lifestyle_mobile.webp') no-repeat center 185px;
     background-size: 100% auto;
     background-color: var(--color-bg-base);
