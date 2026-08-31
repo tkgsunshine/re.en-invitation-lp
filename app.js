@@ -461,8 +461,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const closeRegisterModal = () => {
     if (!registerModal) return;
+    const isThankyouActive = modalStepThankyou && modalStepThankyou.style.display !== 'none';
     registerModal.classList.remove('modal--open');
     document.body.style.overflow = '';
+
+    // Scroll to top of page when closing from Thank You screen
+    if (isThankyouActive) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   };
 
   // Attach modal trigger interceptor to all CTA buttons
