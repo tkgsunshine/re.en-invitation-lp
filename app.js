@@ -361,10 +361,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="form-group" style="margin-bottom: 0;">
                   <label class="form-group__label" style="margin-bottom: 8px;">年収 <span class="form-group__required" style="border-radius: 2px;">必須</span></label>
                   <select id="prereg-income" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem;">
-                    <option value="500万円〜800万円">500〜800万円</option>
-                    <option value="800万円〜1,000万円" selected>800〜1,000万円</option>
-                    <option value="1,000万円〜1,500万円">1,000〜1,500万円</option>
-                    <option value="1,500万円以上">1,500万円以上</option>
+                    <option value="〜500万円未満">〜500万円未満</option>
+                    <option value="500万円〜800万円">500万円〜800万円</option>
+                    <option value="800万円〜1,000万円" selected>800万円〜1,000万円</option>
+                    <option value="1,000万円〜1,500万円">1,000万円〜1,500万円</option>
+                    <option value="1,500万円〜2,000万円">1,500万円〜2,000万円</option>
+                    <option value="2,000万円〜3,000万円">2,000万円〜3,000万円</option>
+                    <option value="3,000万円〜5,000万円">3,000万円〜5,000万円</option>
+                    <option value="5,000万円〜1億円">5,000万円〜1億円</option>
+                    <option value="1億円以上">1億円以上</option>
                   </select>
                 </div>
               </div>
