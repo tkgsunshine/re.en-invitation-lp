@@ -384,7 +384,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
 
               <button type="submit" id="btn-submit-prereg" class="btn btn--primary btn--large btn--pulse" style="width: 100%; font-weight: 700; font-size: 0.98rem; padding: 14px; border-radius: 6px; justify-content: center;">
-                優先インビテーション通知を予約する
+                優先インビテーションに申し込む
               </button>
               
               <p style="font-size: 0.72rem; color: var(--color-text-muted); margin-top: 14px; text-align: center; line-height: 1.55;">
