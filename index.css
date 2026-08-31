@@ -672,7 +672,7 @@ button {
 @media (max-width: 540px) {
   .hero__badge-container {
     margin-top: -56px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
   .hero__badge--luxury-claim.is-preregister {
     flex-direction: column;
@@ -708,7 +708,8 @@ button {
   }
   .hero__tags-container.is-preregister {
     gap: 6px;
-    margin-bottom: 10px;
+    margin-top: -4px;
+    margin-bottom: 12px;
   }
   .hero__tags-container.is-preregister .hero__tag-badge {
     font-size: 0.7rem;
