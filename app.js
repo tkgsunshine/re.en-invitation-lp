@@ -351,10 +351,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="form-group" style="margin-bottom: 0;">
                   <label class="form-group__label" style="margin-bottom: 8px;">年代 <span class="form-group__required" style="border-radius: 2px;">必須</span></label>
                   <select id="prereg-age" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem;">
+                    <option value="" selected disabled>選択してください</option>
                     <option value="10代">10代</option>
                     <option value="20代">20代</option>
                     <option value="30代">30代</option>
-                    <option value="40代" selected>40代</option>
+                    <option value="40代">40代</option>
                     <option value="50代以上">50代以上</option>
                   </select>
                 </div>
@@ -362,9 +363,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="form-group" style="margin-bottom: 0;">
                   <label class="form-group__label" style="margin-bottom: 8px;">年収 <span class="form-group__required" style="border-radius: 2px;">必須</span></label>
                   <select id="prereg-income" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem;">
+                    <option value="" selected disabled>選択してください</option>
                     <option value="〜500万円未満">〜500万円未満</option>
                     <option value="500万円〜800万円">500万円〜800万円</option>
-                    <option value="800万円〜1,000万円" selected>800万円〜1,000万円</option>
+                    <option value="800万円〜1,000万円">800万円〜1,000万円</option>
                     <option value="1,000万円〜1,500万円">1,000万円〜1,500万円</option>
                     <option value="1,500万円〜2,000万円">1,500万円〜2,000万円</option>
                     <option value="2,000万円〜3,000万円">2,000万円〜3,000万円</option>
@@ -495,8 +497,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (emailError) emailError.style.display = 'none';
 
-      const ageVal = document.getElementById('prereg-age') ? document.getElementById('prereg-age').value : '40代';
-      const incomeVal = document.getElementById('prereg-income') ? document.getElementById('prereg-income').value : '800万円〜1,000万円';
+      const ageVal = document.getElementById('prereg-age') ? document.getElementById('prereg-age').value : '';
+      const incomeVal = document.getElementById('prereg-income') ? document.getElementById('prereg-income').value : '';
+
+      if (!ageVal) {
+        if (emailError) {
+          emailError.textContent = '年代を選択してください。';
+          emailError.style.display = 'block';
+        }
+        return;
+      }
+
+      if (!incomeVal) {
+        if (emailError) {
+          emailError.textContent = '年収を選択してください。';
+          emailError.style.display = 'block';
+        }
+        return;
+      }
 
       // Save submission data to localStorage
       try {
