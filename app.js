@@ -387,11 +387,19 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
 
               <!-- Feedback / Requests (Optional) -->
-              <div class="form-group" style="margin-bottom: 22px;">
+              <div class="form-group" style="margin-bottom: 18px;">
                 <label class="form-group__label" style="margin-bottom: 8px;">
                   Re.enへのご要望・ご期待 <span class="form-group__optional" style="font-size: 0.72rem; padding: 2px 6px; background: rgba(255,255,255,0.08); color: var(--color-text-muted); border-radius: 2px; margin-left: 6px;">任意</span>
                 </label>
-                <textarea id="prereg-feedback" class="form-group__input" rows="3" placeholder="サービスへのご要望や期待すること、ご意見などがあればご自由にご記入ください" style="font-size: 0.88rem; padding: 10px 12px; border-radius: 6px; resize: vertical; min-height: 68px; background: var(--color-bg-alt); color: var(--color-text-white); font-family: inherit;"></textarea>
+                <textarea id="prereg-feedback" class="form-group__input" rows="3" placeholder="サービスへのご要望や期待すること、ご意見などがあればご自由にご記入ください" style="font-size: 0.88rem; padding: 10px 12px; border-radius: 6px; resize: vertical; min-height: 64px; background: var(--color-bg-alt); color: var(--color-text-white); font-family: inherit;"></textarea>
+              </div>
+
+              <!-- Terms & Privacy Policy Checkbox -->
+              <div class="form-group" style="margin-bottom: 20px; text-align: center;">
+                <label style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.82rem; color: var(--color-text-body); cursor: pointer; user-select: none;">
+                  <input type="checkbox" id="prereg-terms-agree" checked style="width: 16px; height: 16px; accent-color: var(--color-primary); cursor: pointer;">
+                  <span><a href="privacy.html" target="_blank" style="color: var(--color-primary); text-decoration: underline;">プライバシーポリシー</a>および<a href="term.html" target="_blank" style="color: var(--color-primary); text-decoration: underline;">利用規約</a>に同意する</span>
+                </label>
               </div>
 
               <button type="submit" id="btn-submit-prereg" class="btn btn--primary btn--large btn--pulse" style="width: 100%; font-weight: 700; font-size: 0.98rem; padding: 14px; border-radius: 6px; justify-content: center;">
@@ -524,6 +532,15 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!incomeVal) {
         if (emailError) {
           emailError.textContent = '年収を選択してください。';
+          emailError.style.display = 'block';
+        }
+        return;
+      }
+
+      const termsCheckbox = document.getElementById('prereg-terms-agree');
+      if (termsCheckbox && !termsCheckbox.checked) {
+        if (emailError) {
+          emailError.textContent = '利用規約およびプライバシーポリシーへの同意が必要です。';
           emailError.style.display = 'block';
         }
         return;
