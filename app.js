@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="modal__header" style="margin-bottom: 24px;">
               <div style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 4px; letter-spacing: 0.15em; font-weight: 700;">Re.en</div>
               <h3 class="modal__title" style="font-size: 1.35rem; font-weight: 700; margin-bottom: 6px;">創設メンバー 事前エントリー</h3>
-              <p class="modal__subtitle" style="font-size: 0.82rem; color: var(--color-text-muted);">2026年秋グランドオープン予定（優先招待・事前受付中）</p>
+              <p class="modal__subtitle" style="font-size: 0.82rem; color: var(--color-text-muted);">2026年冬グランドオープン予定（優先招待・事前受付中）</p>
             </div>
 
             <form id="js-preregister-form" onsubmit="return false;">
