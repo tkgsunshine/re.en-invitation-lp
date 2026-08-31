@@ -480,7 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Handle Preregistration Submit
   if (preregForm) {
-    preregForm.addEventListener('submit', (e) => {
+    preregForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       if (!emailInput) return;
 
@@ -494,8 +494,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return;
       }
-
-      if (emailError) emailError.style.display = 'none';
 
       const ageVal = document.getElementById('prereg-age') ? document.getElementById('prereg-age').value : '';
       const incomeVal = document.getElementById('prereg-income') ? document.getElementById('prereg-income').value : '';
@@ -516,7 +514,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Save submission data to localStorage
+      if (emailError) emailError.style.display = 'none';
+
+      const submitBtn = document.getElementById('btn-submit-prereg');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = '送信中...';
+      }
+
+      // Send form data to SSGform
+      const formData = new FormData();
+      formData.append('性別', selectedGender);
+      formData.append('年代', ageVal);
+      formData.append('年収', incomeVal);
+      formData.append('メールアドレス', emailVal);
+
+      try {
+        await fetch('https://ssgform.com/s/6gD1n6o2YNxF', {
+          method: 'POST',
+          body: formData,
+          mode: 'no-cors'
+        });
+      } catch (err) {
+        console.warn('SSGform fetch warning:', err);
+      }
+
+      // Save submission data to localStorage backup
       try {
         const entry = {
           gender: selectedGender,
@@ -530,6 +553,11 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('reen_preregistrations', JSON.stringify(existing));
       } catch (err) {
         console.error('Failed to save preregistration:', err);
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = '優先インビテーションに申し込む';
       }
 
       // Switch to Thank You screen
