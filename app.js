@@ -530,7 +530,7 @@ document.addEventListener('DOMContentLoaded', () => {
       formData.append('メールアドレス', emailVal);
 
       try {
-        await fetch('https://ssgform.com/s/6gD1n6o2YNxF', {
+        await fetch('https://ssgform.com/s/aZL3mBK0p4BM', {
           method: 'POST',
           body: formData,
           mode: 'no-cors'
