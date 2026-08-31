@@ -59,8 +59,10 @@ def main():
     if len(breadcrumb_title) > 20:
         breadcrumb_title = breadcrumb_title[:20] + "..."
 
-    # Use Photo Stock Image for Banner
+    # Use Photo Stock Image for Banner with safety fallback
     banner_img = target_post.get("banner_img", "images/column_second_partner.webp")
+    if not os.path.exists(os.path.join(WORKSPACE_DIR, banner_img)):
+        banner_img = "images/column_second_partner.webp"
 
     # 1. Update <title>
     new_html = re.sub(r'<title>.*?</title>', f'<title>{target_post["title"]}</title>', new_html)
