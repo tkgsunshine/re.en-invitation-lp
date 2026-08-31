@@ -791,10 +791,16 @@ button {
   }
 }
 
-.hero__headline-glow,
-.hero__headline-glow .char {
+.hero__headline-glow {
   color: #E6D7B9;
-  -webkit-text-fill-color: #E6D7B9;
+}
+
+.hero__headline-glow .char {
+  background: linear-gradient(to right, #FFFFFF 0%, #E6D7B9 60%, #BFA978 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
 }
 
 .hero__description {
