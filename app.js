@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 リリース日が確定いたしましたら、ご登録いただいたメールアドレス宛に<strong style="color: var(--color-primary); font-weight: 700;">「リリース日決定のご通知」</strong>をお送りいたします。
               </p>
               <p style="margin-bottom: 0;">
-                あわせて、創設メンバー限定特典である<strong style="color: var(--color-primary); font-weight: 700;">「有料サブスクリプション【2ヶ月間】完全無料提供」の事前審査結果</strong>につきましても、リリース日決定通知と共にお送りさせていただきます。<br><br>
+                あわせて、男性会員様には創設メンバー限定特典である<strong style="color: var(--color-primary); font-weight: 700;">「有料サブスクリプション【2ヶ月間】完全無料提供」の事前審査結果</strong>につきましても、リリース日決定通知と共にお送りさせていただきます。<br><br>
                 今しばらく楽しみにお待ちくださいませ。
               </p>
             </div>
