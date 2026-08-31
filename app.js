@@ -522,21 +522,42 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = '送信中...';
       }
 
-      // Send form data to SSGform
-      const formData = new FormData();
-      formData.append('性別', selectedGender);
-      formData.append('年代', ageVal);
-      formData.append('年収', incomeVal);
-      formData.append('メールアドレス', emailVal);
-
+      // Send form data to SSGform via native HTML form submission (hidden iframe)
       try {
-        await fetch('https://ssgform.com/s/aZL3mBK0p4BM', {
-          method: 'POST',
-          body: formData,
-          mode: 'no-cors'
-        });
+        let iframe = document.getElementById('ssgform-target-iframe');
+        if (!iframe) {
+          iframe = document.createElement('iframe');
+          iframe.name = 'ssgform-target-iframe';
+          iframe.id = 'ssgform-target-iframe';
+          iframe.style.display = 'none';
+          document.body.appendChild(iframe);
+        }
+
+        const hiddenForm = document.createElement('form');
+        hiddenForm.action = 'https://ssgform.com/s/aZL3mBK0p4BM';
+        hiddenForm.method = 'POST';
+        hiddenForm.target = 'ssgform-target-iframe';
+
+        const fields = {
+          '性別': selectedGender,
+          '年代': ageVal,
+          '年収': incomeVal,
+          'メールアドレス': emailVal
+        };
+
+        for (const [key, val] of Object.entries(fields)) {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = key;
+          input.value = val;
+          hiddenForm.appendChild(input);
+        }
+
+        document.body.appendChild(hiddenForm);
+        hiddenForm.submit();
+        setTimeout(() => { hiddenForm.remove(); }, 3000);
       } catch (err) {
-        console.warn('SSGform fetch warning:', err);
+        console.warn('SSGform submission warning:', err);
       }
 
       // Save submission data to localStorage backup
