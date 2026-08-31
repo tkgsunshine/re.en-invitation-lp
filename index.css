@@ -671,36 +671,40 @@ button {
 
 @media (max-width: 540px) {
   .hero__badge--luxury-claim.is-preregister {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
     padding: 8px 12px;
-    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__left {
-    align-items: center;
-    text-align: center;
-    gap: 2px;
-    margin-bottom: 6px;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1px;
+    margin-bottom: 0;
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__left .luxury-claim__text-row:first-child {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+    letter-spacing: -0.02em;
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__left .luxury-claim__text-row:last-child {
-    font-size: 0.8rem;
-    margin-top: 0;
+    font-size: 0.78rem;
+    letter-spacing: -0.02em;
+    margin-top: 1px;
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__right {
-    margin-left: 0;
-    border-left: none;
-    border-top: 1px solid rgba(46, 46, 48, 0.15);
-    padding-left: 0;
-    padding-top: 6px;
-    width: 100%;
+    margin-left: 8px;
+    border-left: 1px solid rgba(46, 46, 48, 0.25);
+    border-top: none;
+    padding-left: 8px;
+    padding-top: 0;
+    width: auto;
     justify-content: center;
   }
   .hero__badge--luxury-claim.is-preregister .luxury-claim__number {
-    font-size: 0.95rem;
+    font-size: 0.72rem;
+    line-height: 1.25;
   }
   .hero__tags-container.is-preregister {
     gap: 6px;
