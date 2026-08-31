@@ -791,25 +791,14 @@ button {
   }
 }
 
-@keyframes goldShimmer {
-  0% {
-    background-position: 250% 0;
-  }
-  100% {
-    background-position: -250% 0;
-  }
-}
-
 .hero__headline-glow,
 .hero__headline-glow .char {
-  background: linear-gradient(110deg, #D4AF37 0%, #E6D7B9 20%, #FFFDF0 45%, #FFFFFF 50%, #FFFDF0 55%, #E6D7B9 80%, #D4AF37 100%);
-  background-size: 250% 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: goldShimmer 4.5s linear infinite;
-  display: inline-block;
-  filter: none !important;
+  color: #E6D7B9;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: #E6D7B9;
+  animation: none;
+  filter: none;
 }
 
 .hero__description {
