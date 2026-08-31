@@ -665,6 +665,10 @@ button {
 }
 
 @media (max-width: 540px) {
+  .hero__badge-container {
+    margin-top: -32px;
+    margin-bottom: 8px;
+  }
   .hero__badge--luxury-claim.is-preregister {
     flex-direction: column;
     align-items: center;
@@ -699,15 +703,15 @@ button {
   }
   .hero__tags-container.is-preregister {
     gap: 6px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   .hero__tags-container.is-preregister .hero__tag-badge {
     font-size: 0.7rem;
     padding: 4px 8px;
   }
   .hero {
-    padding: 64px 0 24px;
-    background-position: center 180px;
+    padding: 72px 0 24px;
+    background-position: center 215px;
   }
   .cta-sec__title {
     font-size: 1.35rem;
@@ -2084,8 +2088,8 @@ button {
   .hero {
     min-height: auto;
     height: auto;
-    padding: 66px 0 30px;
-    background: linear-gradient(to bottom, rgba(11, 11, 12, 0.4) 0%, rgba(11, 11, 12, 0.95) 75%, rgba(11, 11, 12, 1) 100%), url('images/hero_lifestyle_mobile.webp') no-repeat center 185px;
+    padding: 72px 0 30px;
+    background: linear-gradient(to bottom, rgba(11, 11, 12, 0.4) 0%, rgba(11, 11, 12, 0.95) 75%, rgba(11, 11, 12, 1) 100%), url('images/hero_lifestyle_mobile.webp') no-repeat center 215px;
     background-size: 100% auto;
     background-color: var(--color-bg-base);
   }
