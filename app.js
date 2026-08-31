@@ -310,207 +310,207 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 6. Registration Multi-Step Modal
+  // 6. Pre-Registration Modal & Event Interceptor
   // ==========================================
-  const openModalBtns = document.querySelectorAll('.js-open-register');
-  const closeModalBtns = document.querySelectorAll('.js-close-modal');
+  
+  // Dynamically inject modal HTML if not already present
+  if (!document.getElementById('register-modal')) {
+    const modalHTML = `
+    <div id="register-modal" class="modal" aria-hidden="true">
+      <div class="modal__backdrop"></div>
+      <div class="modal__container glass-card" style="border-radius: 12px; border: 1px solid var(--color-border); background: rgba(18, 18, 20, 0.97); backdrop-filter: blur(16px);">
+        <button class="modal__close js-close-modal" aria-label="モーダルを閉じる" style="border-radius: 50%; font-size: 1.2rem;">&times;</button>
+        <div class="modal__body" style="padding: 36px 28px;">
+          
+          <!-- Step 1: Entry Form -->
+          <div id="modal-step-form" class="modal__step-panel modal__step-panel--active">
+            <div class="modal__header" style="margin-bottom: 24px;">
+              <div style="font-family: var(--font-serif); font-size: 1.1rem; color: var(--color-primary); margin-bottom: 4px; letter-spacing: 0.15em; font-weight: 700;">Re.en</div>
+              <h3 class="modal__title" style="font-size: 1.35rem; font-weight: 700; margin-bottom: 6px;">創設メンバー 事前エントリー</h3>
+              <p class="modal__subtitle" style="font-size: 0.82rem; color: var(--color-text-muted);">2026年秋グランドオープン予定（優先招待・事前受付中）</p>
+            </div>
+
+            <form id="js-preregister-form" onsubmit="return false;">
+              <!-- Gender -->
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label class="form-group__label" style="margin-bottom: 8px;">
+                  性別 <span class="form-group__required" style="border-radius: 2px;">必須</span>
+                </label>
+                <div class="form-group__select-grid" style="grid-template-columns: 1fr 1fr; gap: 10px;">
+                  <div class="form-group__select-card js-select-gender form-group__select-card--selected" data-value="女性" style="text-align: center; cursor: pointer; padding: 12px; font-weight: 500; font-size: 0.9rem; border-radius: 6px;">
+                    女性
+                  </div>
+                  <div class="form-group__select-card js-select-gender" data-value="男性" style="text-align: center; cursor: pointer; padding: 12px; font-weight: 500; font-size: 0.9rem; border-radius: 6px;">
+                    男性
+                  </div>
+                </div>
+              </div>
+
+              <!-- Age & Income -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px;">
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label class="form-group__label" style="margin-bottom: 8px;">年代 <span class="form-group__required" style="border-radius: 2px;">必須</span></label>
+                  <select id="prereg-age" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem;">
+                    <option value="30代">30代</option>
+                    <option value="40代" selected>40代</option>
+                    <option value="50代以上">50代以上</option>
+                    <option value="20代">20代</option>
+                  </select>
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label class="form-group__label" style="margin-bottom: 8px;">年収 <span class="form-group__required" style="border-radius: 2px;">必須</span></label>
+                  <select id="prereg-income" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem;">
+                    <option value="500万円〜800万円">500〜800万円</option>
+                    <option value="800万円〜1,000万円" selected>800〜1,000万円</option>
+                    <option value="1,000万円〜1,500万円">1,000〜1,500万円</option>
+                    <option value="1,500万円以上">1,500万円以上</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group" style="margin-bottom: 22px;">
+                <label class="form-group__label" style="margin-bottom: 8px;">
+                  通知用メールアドレス <span class="form-group__required" style="border-radius: 2px;">必須</span>
+                </label>
+                <input type="email" id="prereg-email" class="form-group__input" placeholder="example@domain.com" required style="font-size: 0.95rem; padding: 12px 14px; border-radius: 6px;">
+                <div id="prereg-email-error" class="form-group__error" style="font-size: 0.78rem; color: #E25C5C; margin-top: 6px; display: none;">有効なメールアドレスを入力してください。</div>
+              </div>
+
+              <button type="submit" id="btn-submit-prereg" class="btn btn--primary btn--large btn--pulse" style="width: 100%; font-weight: 700; font-size: 0.98rem; padding: 14px; border-radius: 6px; justify-content: center;">
+                優先インビテーション通知を予約する
+              </button>
+              
+              <p style="font-size: 0.72rem; color: var(--color-text-muted); margin-top: 14px; text-align: center; line-height: 1.55;">
+                ※ご登録いただいた情報は、リリース日決定のご案内および事前審査結果のご連絡以外の目的には使用いたしません。
+              </p>
+            </form>
+          </div>
+
+          <!-- Step 2: Thank You Page -->
+          <div id="modal-step-thankyou" class="modal__step-panel" style="display: none;">
+            <div class="modal__header" style="margin-bottom: 20px;">
+              <div style="width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 50%; border: 2px solid var(--color-primary); display: flex; align-items: center; justify-content: center; background: rgba(191,169,120,0.12);">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <h3 class="modal__title" style="font-size: 1.25rem; font-weight: 700; color: var(--color-text-white);">事前エントリーが完了いたしました</h3>
+            </div>
+
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--color-border-light); border-radius: 8px; padding: 22px 18px; font-size: 0.86rem; line-height: 1.8; color: var(--color-text-body); margin-bottom: 22px; text-align: left;">
+              <p style="margin-bottom: 14px;">ご登録いただき誠にありがとうございます。</p>
+              <p style="margin-bottom: 14px;">
+                リリース日が確定いたしましたら、ご登録いただいたメールアドレス宛に<strong style="color: var(--color-primary); font-weight: 700;">「リリース日決定のご通知」</strong>をお送りいたします。
+              </p>
+              <p style="margin-bottom: 0;">
+                あわせて、創設メンバー限定特典である<strong style="color: var(--color-primary); font-weight: 700;">「有料サブスクリプション【2ヶ月間】完全無料提供」の事前審査結果</strong>につきましても、リリース日決定通知と共にお送りさせていただきます。<br><br>
+                今しばらく楽しみにお待ちくださいませ。
+              </p>
+            </div>
+
+            <button type="button" class="btn btn--primary js-close-modal" style="width: 100%; text-align: center; justify-content: center; padding: 12px; border-radius: 6px; font-weight: 700;">
+              閉じる
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>`;
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+  }
+
   const registerModal = document.getElementById('register-modal');
   const modalBackdrop = registerModal ? registerModal.querySelector('.modal__backdrop') : null;
+  const modalStepForm = document.getElementById('modal-step-form');
+  const modalStepThankyou = document.getElementById('modal-step-thankyou');
+  const preregForm = document.getElementById('js-preregister-form');
+  const emailInput = document.getElementById('prereg-email');
+  const emailError = document.getElementById('prereg-email-error');
+  const genderCards = document.querySelectorAll('.js-select-gender');
 
-  const stepPanels = document.querySelectorAll('.modal__step-panel');
-  const progressSteps = document.querySelectorAll('.modal__progress-step');
-  
-  // Navigation Buttons
-  const nextStep1Btn = document.getElementById('btn-next-step1');
-  const nextStep2Btn = document.getElementById('btn-next-step2');
-  const prevStep2Btn = document.getElementById('btn-prev-step2');
-  const prevStep3Btn = document.getElementById('btn-prev-step3');
-  const submitBtn = document.getElementById('btn-submit-register');
+  let selectedGender = '女性';
 
-  // Input Fields & Errors
-  const genderCards = document.querySelectorAll('.js-gender-card');
-  const birthDateInput = document.getElementById('reg-birthdate');
-  const nicknameInput = document.getElementById('reg-nickname');
-  const passwordInput = document.getElementById('reg-password');
-  const purposeCards = document.querySelectorAll('.js-purpose-card');
+  genderCards.forEach(card => {
+    card.addEventListener('click', () => {
+      genderCards.forEach(c => c.classList.remove('form-group__select-card--selected'));
+      card.classList.add('form-group__select-card--selected');
+      selectedGender = card.dataset.value;
+    });
+  });
 
-  const errorBirthdate = document.getElementById('err-birthdate');
-  const errorNickname = document.getElementById('err-nickname');
-  const errorPassword = document.getElementById('err-password');
-
-  // Registration Form State
-  let currentStep = 0; // 0: Step 1, 1: Step 2, 2: Step 3
-  let regFormState = {
-    gender: 'female', // default selected
-    birthdate: '',
-    nickname: '',
-    password: '',
-    purpose: 'friend' // default selected
-  };
-
-  // Open/Close Modal functions
   const openRegisterModal = (e) => {
     if (e) e.preventDefault();
     if (!registerModal) return;
+    
+    // Reset view to form
+    if (modalStepForm) modalStepForm.style.display = 'block';
+    if (modalStepThankyou) modalStepThankyou.style.display = 'none';
+    if (emailError) emailError.style.display = 'none';
+    
     registerModal.classList.add('modal--open');
-    document.body.style.overflow = 'hidden'; // Lock background scroll
-    goToStep(0); // Reset to first step
+    document.body.style.overflow = 'hidden';
   };
 
   const closeRegisterModal = () => {
     if (!registerModal) return;
     registerModal.classList.remove('modal--open');
-    document.body.style.overflow = ''; // Unlock scroll
+    document.body.style.overflow = '';
   };
 
-  // Event listeners for modal toggle
-  openModalBtns.forEach(btn => btn.addEventListener('click', openRegisterModal));
-  closeModalBtns.forEach(btn => btn.addEventListener('click', closeRegisterModal));
+  // Attach modal trigger interceptor to all CTA buttons
+  document.querySelectorAll('a[href="/register"], a[href="/login"], a[href="#register"], .js-open-register').forEach(btn => {
+    btn.addEventListener('click', openRegisterModal);
+  });
+
+  // Attach to close buttons
+  document.querySelectorAll('.js-close-modal').forEach(btn => {
+    btn.addEventListener('click', closeRegisterModal);
+  });
   if (modalBackdrop) {
     modalBackdrop.addEventListener('click', closeRegisterModal);
   }
 
-  // Go to step function
-  const goToStep = (stepIndex) => {
-    currentStep = stepIndex;
-    
-    // Update active panels
-    stepPanels.forEach((panel, idx) => {
-      if (idx === stepIndex) {
-        panel.classList.add('modal__step-panel--active');
-      } else {
-        panel.classList.remove('modal__step-panel--active');
-      }
-    });
+  // Handle Preregistration Submit
+  if (preregForm) {
+    preregForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!emailInput) return;
 
-    // Update progress steps
-    progressSteps.forEach((progress, idx) => {
-      if (idx <= stepIndex) {
-        progress.classList.add('modal__progress-step--active');
-      } else {
-        progress.classList.remove('modal__progress-step--active');
-      }
-    });
-  };
+      const emailVal = emailInput.value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  // Gender Card Selector
-  genderCards.forEach(card => {
-    card.addEventListener('click', () => {
-      genderCards.forEach(c => c.classList.remove('form-group__select-card--selected'));
-      card.classList.add('form-group__select-card--selected');
-      regFormState.gender = card.dataset.gender;
-    });
-  });
-
-  // Purpose Card Selector
-  purposeCards.forEach(card => {
-    card.addEventListener('click', () => {
-      purposeCards.forEach(c => c.classList.remove('form-group__select-card--selected'));
-      card.classList.add('form-group__select-card--selected');
-      regFormState.purpose = card.dataset.purpose;
-    });
-  });
-
-  // Step 1 validation & Next
-  if (nextStep1Btn) {
-    nextStep1Btn.addEventListener('click', () => {
-      if (!birthDateInput) return;
-      const birthdateVal = birthDateInput.value;
-      if (!birthdateVal) {
-        if (errorBirthdate) {
-          errorBirthdate.textContent = '生年月日を入力してください。';
-          errorBirthdate.style.display = 'block';
+      if (!emailVal || !emailRegex.test(emailVal)) {
+        if (emailError) {
+          emailError.textContent = '有効なメールアドレスを入力してください。';
+          emailError.style.display = 'block';
         }
         return;
       }
 
-      // Calculate age (must be >= 18)
-      const birthdate = new Date(birthdateVal);
-      const today = new Date();
-      let age = today.getFullYear() - birthdate.getFullYear();
-      const m = today.getMonth() - birthdate.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < birthdate.getDate())) {
-        age--;
+      if (emailError) emailError.style.display = 'none';
+
+      const ageVal = document.getElementById('prereg-age') ? document.getElementById('prereg-age').value : '40代';
+      const incomeVal = document.getElementById('prereg-income') ? document.getElementById('prereg-income').value : '800万円〜1,000万円';
+
+      // Save submission data to localStorage
+      try {
+        const entry = {
+          gender: selectedGender,
+          age: ageVal,
+          income: incomeVal,
+          email: emailVal,
+          timestamp: new Date().toISOString()
+        };
+        const existing = JSON.parse(localStorage.getItem('reen_preregistrations') || '[]');
+        existing.push(entry);
+        localStorage.setItem('reen_preregistrations', JSON.stringify(existing));
+      } catch (err) {
+        console.error('Failed to save preregistration:', err);
       }
 
-      if (age < 18) {
-        if (errorBirthdate) {
-          errorBirthdate.textContent = '18歳未満の方はご利用いただけません。';
-          errorBirthdate.style.display = 'block';
-        }
-        return;
-      }
-
-      if (errorBirthdate) errorBirthdate.style.display = 'none';
-      regFormState.birthdate = birthdateVal;
-      goToStep(1);
-    });
-  }
-
-  // Step 2 validation & Next
-  if (nextStep2Btn) {
-    nextStep2Btn.addEventListener('click', () => {
-      if (!nicknameInput || !passwordInput) return;
-      let isValid = true;
-      const nicknameVal = nicknameInput.value.trim();
-      const passwordVal = passwordInput.value;
-
-      if (!nicknameVal) {
-        if (errorNickname) {
-          errorNickname.textContent = 'ニックネームを入力してください。';
-          errorNickname.style.display = 'block';
-        }
-        isValid = false;
-      } else {
-        if (errorNickname) errorNickname.style.display = 'none';
-      }
-
-      if (passwordVal.length < 8) {
-        if (errorPassword) {
-          errorPassword.textContent = 'パスワードは8文字以上で入力してください。';
-          errorPassword.style.display = 'block';
-        }
-        isValid = false;
-      } else {
-        if (errorPassword) errorPassword.style.display = 'none';
-      }
-
-      if (!isValid) return;
-
-      regFormState.nickname = nicknameVal;
-      regFormState.password = passwordVal;
-      goToStep(2);
-    });
-  }
-
-  // Back Buttons
-  if (prevStep2Btn) {
-    prevStep2Btn.addEventListener('click', () => goToStep(0));
-  }
-  if (prevStep3Btn) {
-    prevStep3Btn.addEventListener('click', () => goToStep(1));
-  }
-
-  // Submit / Finish
-  if (submitBtn) {
-    submitBtn.addEventListener('click', () => {
-      // Show success dialog
-      alert(`登録が完了しました！\n\nニックネーム: ${regFormState.nickname}\n目的: ${regFormState.purpose}\n\nRe.en（リエン）で素晴らしい出会いをお楽しみください。`);
-      
-      // Clear form inputs
-      if (birthDateInput) birthDateInput.value = '';
-      if (nicknameInput) nicknameInput.value = '';
-      if (passwordInput) passwordInput.value = '';
-      genderCards.forEach((c, idx) => {
-        if (idx === 0) c.classList.add('form-group__select-card--selected');
-        else c.classList.remove('form-group__select-card--selected');
-      });
-      purposeCards.forEach((c, idx) => {
-        if (idx === 0) c.classList.add('form-group__select-card--selected');
-        else c.classList.remove('form-group__select-card--selected');
-      });
-
-      closeRegisterModal();
+      // Switch to Thank You screen
+      if (modalStepForm) modalStepForm.style.display = 'none';
+      if (modalStepThankyou) modalStepThankyou.style.display = 'block';
     });
   }
 
