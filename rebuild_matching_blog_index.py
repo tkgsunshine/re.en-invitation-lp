@@ -1,8 +1,10 @@
 import os
 import re
+import json
 import datetime
 
 WORKSPACE_DIR = "/Users/user/.gemini/antigravity/scratch/married-matching-lp"
+CALENDAR_PATH = os.path.join(WORKSPACE_DIR, "editorial_calendar_matching.json")
 SITEMAP_PATH = os.path.join(WORKSPACE_DIR, "sitemap.xml")
 
 def get_num(name):
@@ -12,7 +14,15 @@ def get_num(name):
     return int(num_part) if num_part else 0
 
 def main():
-    print("Running rebuild_matching_blog_index.py...")
+    print("Running rebuild_matching_blog_index.py (Photo Thumbnail Mode)...")
+
+    # Load calendar if available for image lookup fallback
+    calendar_map = {}
+    if os.path.exists(CALENDAR_PATH):
+        with open(CALENDAR_PATH, "r", encoding="utf-8") as f:
+            cal_data = json.load(f)
+            for item in cal_data:
+                calendar_map[item["filename"]] = item
 
     all_details = [f for f in os.listdir(WORKSPACE_DIR) if f.startswith("column-detail") and f.endswith(".html")]
     
@@ -42,28 +52,13 @@ def main():
             excerpt = excerpt_match.group(1).strip() if excerpt_match else ""
             readtime = readtime_match.group(1).strip() if readtime_match else "2分"
             
-            # Detect SVG visual cover first, otherwise default to WebP image
-            svg_match = re.search(r'(?s)<svg viewBox="0 0 1000 428"[^>]*>.*?</svg>', content)
-            
-            visual_html = ""
+            # Photo image extraction
             img_path = "images/column_second_partner.webp"
-            alt_text = ""
-            
-            if svg_match:
-                # Add responsive styles to SVG
-                svg_content = svg_match.group(0)
-                # Inject width="100%" height="100%" and style if not present
-                if 'width="100%"' not in svg_content:
-                    svg_content = svg_content.replace('<svg viewBox=', '<svg width="100%" height="100%" style="width: 100%; height: 100%; object-fit: cover; border: none; display: block;" viewBox=')
-                visual_html = svg_content
-            else:
-                img_match = re.search(r'(?s)<div class="rec-article__thumb"[^>]*>\s*<img src="([^"]+)" alt="([^"]+)"', content)
-                if img_match:
-                    img_path = img_match.group(1).strip()
-                    alt_text = img_match.group(2).strip()
-                    visual_html = f'<img src="{img_path}" alt="{alt_text}" class="column-card__img" loading="lazy">'
-                else:
-                    visual_html = f'<img src="{img_path}" alt="{alt_text}" class="column-card__img" loading="lazy">'
+            img_match = re.search(r'<div class="rec-article__thumb"[^>]*>\s*<img src="([^"]+)"', content)
+            if img_match:
+                img_path = img_match.group(1).strip()
+            elif f in calendar_map and "banner_img" in calendar_map[f]:
+                img_path = calendar_map[f]["banner_img"]
             
             if cat in cat_counts:
                 cat_counts[cat] += 1
@@ -75,7 +70,7 @@ def main():
                 "date": date,
                 "title": title,
                 "excerpt": excerpt,
-                "visual_html": visual_html,
+                "img_path": img_path,
                 "readtime": readtime
             })
 
@@ -108,7 +103,6 @@ def main():
 
     # Rebuild the Card Grid in column.html
     print("Rebuilding column.html card list and sidebar widget...")
-    # Sort detail_meta_list chronologically descending by vol
     detail_meta_list.sort(key=lambda x: x["vol"], reverse=True)
 
     cards_html_list = []
@@ -118,7 +112,7 @@ def main():
               <a href="{meta['filename']}" class="column-card reveal">
                 <div class="column-card__thumb">
                   <span class="column-card__badge">{meta['category']}</span>
-                  {meta['visual_html']}
+                  <img src="{meta['img_path']}" alt="{meta['title']}" class="column-card__img" loading="lazy">
                 </div>
                 <div class="column-card__content">
                   <div class="column-card__meta">
@@ -151,7 +145,7 @@ def main():
 
     with open(column_html_path, "w", encoding="utf-8") as file:
         file.write(column_content)
-    print("Successfully updated column.html card grid and sidebar counts.")
+    print("Successfully updated column.html card grid with photo thumbnails and sidebar counts.")
 
     # Rebuild sitemap.xml
     print("Rebuilding sitemap.xml...")
@@ -164,14 +158,12 @@ def main():
         root = tree.getroot()
         ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
         
-        # Collect loc URLs that currently exist in sitemap.xml
         existing_locs = set()
         for url_elem in root.findall('sm:url', ns):
             loc_elem = url_elem.find('sm:loc', ns)
             if loc_elem is not None:
                 existing_locs.add(loc_elem.text)
 
-        # For any column html file, check if it's in the sitemap. If not, add it
         today_date = datetime.date.today().strftime('%Y-%m-%d')
         updated = False
         

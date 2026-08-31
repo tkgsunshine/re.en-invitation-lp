@@ -22,7 +22,13 @@ def main():
     print("\\n--- Running: apply_matching_seo_optimizations.py ---")
     subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "apply_matching_seo_optimizations.py")], check=True)
     
-    # 5. Deploy to Vercel production
+    # 5. Git Commit & Push to GitHub
+    print("\\n--- Committing & Pushing to GitHub ---")
+    subprocess.run(["git", "add", "-A"], cwd=WORKSPACE_DIR)
+    subprocess.run(["git", "commit", "-m", "Auto-update columns and indexes via pipeline"], cwd=WORKSPACE_DIR)
+    subprocess.run(["git", "push", "origin", "main"], cwd=WORKSPACE_DIR)
+
+    # 6. Deploy to Vercel production
     print("\\n--- Deploying to Vercel Production ---")
     my_env = os.environ.copy()
     my_env["HOME"] = "/Users/user"
