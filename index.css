@@ -789,16 +789,36 @@ button {
   }
 }
 
-.hero__headline-glow {
-  color: #E6D7B9;
+@keyframes goldShimmer {
+  0% {
+    background-position: 250% 0;
+  }
+  100% {
+    background-position: -250% 0;
+  }
 }
 
+@keyframes goldGlowPulse {
+  0% {
+    filter: drop-shadow(0 0 8px rgba(230, 215, 185, 0.4)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8));
+  }
+  50% {
+    filter: drop-shadow(0 0 22px rgba(255, 238, 180, 0.95)) drop-shadow(0 0 38px rgba(212, 175, 55, 0.7));
+  }
+  100% {
+    filter: drop-shadow(0 0 8px rgba(230, 215, 185, 0.4)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.8));
+  }
+}
+
+.hero__headline-glow,
 .hero__headline-glow .char {
-  background: linear-gradient(to right, #FFFFFF 0%, #E6D7B9 60%, #BFA978 100%);
+  background: linear-gradient(110deg, #C5A046 0%, #E6D7B9 20%, #FFFDF0 45%, #FFFFFF 50%, #FFFDF0 55%, #E6D7B9 80%, #C5A046 100%);
+  background-size: 250% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: none;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+  background-clip: text;
+  animation: goldShimmer 4.5s linear infinite, goldGlowPulse 2.8s ease-in-out infinite alternate;
+  display: inline-block;
 }
 
 .hero__description {
