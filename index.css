@@ -538,15 +538,16 @@ button {
   margin-left: 1px;
 }
 
-/* Wide variant for pre-registration hero badge (1.5x scaled for desktop prominence) */
 .hero__badge--luxury-claim.is-preregister {
-  width: auto;
-  display: inline-flex;
-  justify-content: center;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  max-width: 95%;
   box-sizing: border-box;
-  padding: 14px 32px;
+  padding: 14px 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__badge--luxury-claim.is-preregister .luxury-claim__left {
@@ -572,7 +573,7 @@ button {
 }
 
 .hero__badge--luxury-claim.is-preregister .luxury-claim__right {
-  margin-left: 28px;
+  margin-left: 20px;
   border-left: 1.5px solid rgba(46, 46, 48, 0.25);
   padding-left: 28px;
   display: flex;
@@ -581,7 +582,7 @@ button {
 }
 
 .hero__badge--luxury-claim.is-preregister .luxury-claim__number {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   color: #9C5462;
   font-weight: 900;
   white-space: nowrap;
@@ -597,7 +598,8 @@ button {
 }
 
 .hero__tags-container.is-preregister {
-  max-width: 780px;
+  width: 100%;
+  max-width: 750px;
   margin-left: auto;
   margin-right: auto;
   gap: 16px;
