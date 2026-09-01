@@ -672,7 +672,7 @@ button {
 @media (max-width: 540px) {
   .hero__badge-container {
     margin-top: 6px;
-    margin-bottom: 74px;
+    margin-bottom: 8px;
   }
   .hero__badge--luxury-claim.is-preregister {
     flex-direction: column;
@@ -717,7 +717,7 @@ button {
   }
   .hero {
     padding: 72px 0 24px;
-    background-position: center 210px;
+    background-position: center 330px;
   }
   .cta-sec__title {
     font-size: 1.35rem;
