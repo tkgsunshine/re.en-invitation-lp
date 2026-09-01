@@ -4,6 +4,14 @@
     {
       "source": "/",
       "destination": "/preregister.html"
+    },
+    {
+      "source": "/register",
+      "destination": "/preregister.html"
+    },
+    {
+      "source": "/login",
+      "destination": "/preregister.html"
     }
   ]
 }
