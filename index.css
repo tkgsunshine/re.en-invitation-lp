@@ -469,6 +469,18 @@ button {
   padding: 220px 0 120px;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 320px;
+  background: linear-gradient(to bottom, #0B0B0C 0%, #0B0B0C 110px, rgba(11, 11, 12, 0.85) 170px, rgba(11, 11, 12, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .hero__inner {
   display: flex;
   justify-content: center;
@@ -715,9 +727,13 @@ button {
     font-size: 0.7rem;
     padding: 4px 8px;
   }
+  .hero::before {
+    height: 300px;
+    background: linear-gradient(to bottom, #0B0B0C 0%, #0B0B0C 90px, rgba(11, 11, 12, 0.95) 150px, rgba(11, 11, 12, 0) 100%);
+  }
   .hero {
     padding: 72px 0 24px;
-    background-image: linear-gradient(to bottom, #0B0B0C 0%, #0B0B0C 110px, rgba(11, 11, 12, 0.25) 175px, rgba(11, 11, 12, 0.85) 100%), url('images/hero_lifestyle_mobile.webp');
+    background-image: url('images/hero_lifestyle_mobile.webp');
     background-position: center 120px;
   }
   .cta-sec__title {
