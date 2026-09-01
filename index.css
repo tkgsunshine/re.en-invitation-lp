@@ -672,7 +672,7 @@ button {
 @media (max-width: 540px) {
   .hero__badge-container {
     margin-top: 6px;
-    margin-bottom: 8px;
+    margin-bottom: 74px;
   }
   .hero__badge--luxury-claim.is-preregister {
     flex-direction: column;
@@ -709,7 +709,7 @@ button {
   .hero__tags-container.is-preregister {
     gap: 6px;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   .hero__tags-container.is-preregister .hero__tag-badge {
     font-size: 0.7rem;
@@ -717,7 +717,7 @@ button {
   }
   .hero {
     padding: 72px 0 24px;
-    background-position: center 300px;
+    background-position: center 210px;
   }
   .cta-sec__title {
     font-size: 1.35rem;
