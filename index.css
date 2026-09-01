@@ -717,7 +717,8 @@ button {
   }
   .hero {
     padding: 72px 0 24px;
-    background-position: center 142px;
+    background-image: linear-gradient(to bottom, #0B0B0C 0%, #0B0B0C 110px, rgba(11, 11, 12, 0.25) 175px, rgba(11, 11, 12, 0.85) 100%), url('images/hero_lifestyle_mobile.webp');
+    background-position: center 120px;
   }
   .cta-sec__title {
     font-size: 1.35rem;
