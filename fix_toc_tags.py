@@ -8,54 +8,55 @@ def fix_toc_in_file(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
 
-    # Remove existing TOC and heading IDs first
+    # Remove existing TOC and heading IDs
     content = re.sub(r'(?s)\s*<!-- Article Table of Contents \(TOC\) -->.*?</div>\s*', '\n', content)
     content = re.sub(r'<h([23]) id="heading-[^"]+">(.*?)</h\1>', r'<h\1>\2</h\1>', content)
 
-    # Extract headings and build clean HTML structure
     body_match = re.search(r'(?s)<div class="article-body">(.*?)<!-- Related Articles -->', content)
     if not body_match:
         return False
 
     body_content = body_match.group(1)
 
+    # Find all h2 and h3 in order using single regex match
+    pattern = r'<h([23])>(.*?)</h\1>'
+    
     sec_h2_idx = 0
     sec_h3_idx = 0
-    toc_structure = [] # list of dicts: {'h2': ..., 'h2_id': ..., 'sub': [{'h3': ..., 'h3_id': ...}]}
+    toc_tree = []
 
-    def replace_h2(m):
+    def replace_heading(m):
         nonlocal sec_h2_idx, sec_h3_idx
-        sec_h2_idx += 1
-        sec_h3_idx = 0
-        title = m.group(1)
-        anchor_id = f"heading-{sec_h2_idx}"
-        toc_structure.append({"h2": title, "h2_id": anchor_id, "sub": []})
-        return f'<h2 id="{anchor_id}">{title}</h2>'
+        level = int(m.group(1))
+        title = m.group(2)
 
-    def replace_h3(m):
-        nonlocal sec_h2_idx, sec_h3_idx
-        sec_h3_idx += 1
-        title = m.group(1)
-        anchor_id = f"heading-{sec_h2_idx}-{sec_h3_idx}"
-        if toc_structure:
-            toc_structure[-1]["sub"].append({"h3": title, "h3_id": anchor_id})
-        return f'<h3 id="{anchor_id}">{title}</h3>'
+        if level == 2:
+            sec_h2_idx += 1
+            sec_h3_idx = 0
+            anchor_id = f"heading-{sec_h2_idx}"
+            toc_tree.append({"h2": title, "h2_id": anchor_id, "sub": []})
+            return f'<h2 id="{anchor_id}">{title}</h2>'
+        else:
+            sec_h3_idx += 1
+            anchor_id = f"heading-{sec_h2_idx}-{sec_h3_idx}"
+            if toc_tree:
+                toc_tree[-1]["sub"].append({"h3": title, "h3_id": anchor_id})
+            return f'<h3 id="{anchor_id}">{title}</h3>'
 
-    new_body_content = re.sub(r'<h2>(.*?)</h2>', replace_h2, body_content)
-    new_body_content = re.sub(r'<h3>(.*?)</h3>', replace_h3, new_body_content)
+    new_body_content = re.sub(pattern, replace_heading, body_content)
 
-    # Construct 100% valid HTML TOC
+    # Build TOC HTML
     toc_lis = []
-    for h2_item in toc_structure:
+    for h2_node in toc_tree:
         sub_lis = []
-        for h3_item in h2_item["sub"]:
-            sub_lis.append(f'<li class="article-toc__item article-toc__item--h3"><a href="#{h3_item["h3_id"]}">{h3_item["h3"]}</a></li>')
+        for h3_node in h2_node["sub"]:
+            sub_lis.append(f'  <li class="article-toc__item article-toc__item--h3"><a href="#{h3_node["h3_id"]}">{h3_node["h3"]}</a></li>')
         
         if sub_lis:
-            sub_html = f'<ul class="article-toc__sublist">\n' + "\n".join(sub_lis) + '\n</ul>'
-            toc_lis.append(f'<li class="article-toc__item article-toc__item--h2"><a href="#{h2_item["h2_id"]}">{h2_item["h2"]}</a>\n{sub_html}\n</li>')
+            sub_html = '  <ul class="article-toc__sublist">\n' + "\n".join(sub_lis) + '\n  </ul>'
+            toc_lis.append(f'<li class="article-toc__item article-toc__item--h2"><a href="#{h2_node["h2_id"]}">{h2_node["h2"]}</a>\n{sub_html}\n</li>')
         else:
-            toc_lis.append(f'<li class="article-toc__item article-toc__item--h2"><a href="#{h2_item["h2_id"]}">{h2_item["h2"]}</a></li>')
+            toc_lis.append(f'<li class="article-toc__item article-toc__item--h2"><a href="#{h2_node["h2_id"]}">{h2_node["h2"]}</a></li>')
 
     toc_ol_inner = "\n".join(toc_lis)
 
@@ -90,11 +91,11 @@ def fix_toc_in_file(filepath):
     return True
 
 def main():
-    print("Fixing TOC HTML tags across all column detail files...")
+    print("Regenerating clean sequential TOC across all column detail files...")
     files = glob.glob(os.path.join(WORKSPACE_DIR, "column-detail*.html"))
     for f in files:
         fix_toc_in_file(f)
-    print("Successfully fixed TOC HTML structure for all column files!")
+    print("Successfully regenerated clean sequential TOC for all column files!")
 
 if __name__ == "__main__":
     main()
