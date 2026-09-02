@@ -4028,3 +4028,84 @@ button {
     padding: 16px;
   }
 }
+
+/* ==========================================================================
+   Article Table of Contents (TOC) Component
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+.article-toc {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border-light);
+  border-left: 3px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin: 32px 0 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.article-toc__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(191, 169, 120, 0.15);
+}
+
+.article-toc__header svg {
+  color: var(--color-primary);
+}
+
+.article-toc__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.article-toc__item--h2 {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.article-toc__item--h2 > a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.article-toc__item--h2 > a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.article-toc__sublist {
+  list-style: none;
+  padding-left: 20px;
+  margin: 8px 0 12px;
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.article-toc__item--h3 {
+  font-size: 0.88rem;
+  font-weight: 400;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.article-toc__item--h3 > a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.article-toc__item--h3 > a:hover {
+  color: var(--color-primary);
+}
