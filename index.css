@@ -732,12 +732,17 @@ button {
   .hero {
     padding: 72px 0 24px;
     background-image: url('images/hero_lifestyle_mobile.webp');
-    background-position: center 118px;
+    background-position: center 80px;
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
   .hero__headline {
-    margin-top: 420px !important;
+    margin-top: 170px !important;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95), 0 0 24px rgba(0, 0, 0, 0.9);
+  }
+  .hero__subheadline,
+  .hero__description {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
   }
   .cta-sec__title {
     font-size: 1.35rem;
