@@ -86,13 +86,13 @@
       <form id="preregister-form" onsubmit="handleFormSubmit(event)" style="display: flex; flex-direction: column; gap: 20px; text-align: left; background: rgba(20, 20, 25, 0.8); padding: 32px 24px; border: 1px solid var(--color-border-light); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
         <div>
           <label for="reg-email" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">メールアドレス <span style="color: var(--color-primary);">*</span></label>
-          <input type="email" id="reg-email" required placeholder="example@domain.com" style="width: 100%; padding: 14px 16px; background: rgba(255,255,255,0.05); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 1rem; outline: none; box-sizing: border-box;">
+          <input type="email" id="reg-email" required placeholder="example@domain.com" style="width: 100%; padding: 12px 14px; background: rgba(255,255,255,0.05); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 0.92rem; outline: none; box-sizing: border-box;">
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
           <div>
             <label for="reg-gender" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">性別 <span style="color: var(--color-primary);">*</span></label>
-            <select id="reg-gender" required style="width: 100%; padding: 14px 16px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 1rem; outline: none; box-sizing: border-box;">
+            <select id="reg-gender" required style="width: 100%; padding: 12px 8px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 0.82rem; outline: none; box-sizing: border-box;">
               <option value="">選択してください</option>
               <option value="男性">男性</option>
               <option value="女性">女性</option>
@@ -100,7 +100,7 @@
           </div>
           <div>
             <label for="reg-age" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">年代 <span style="color: var(--color-primary);">*</span></label>
-            <select id="reg-age" required style="width: 100%; padding: 14px 16px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 1rem; outline: none; box-sizing: border-box;">
+            <select id="reg-age" required style="width: 100%; padding: 12px 8px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 0.82rem; outline: none; box-sizing: border-box;">
               <option value="">選択してください</option>
               <option value="20代">20代</option>
               <option value="30代">30代</option>
@@ -113,7 +113,7 @@
 
         <div>
           <label for="reg-income" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">年収 <span style="color: var(--color-primary);">*</span></label>
-          <select id="reg-income" required style="width: 100%; padding: 14px 16px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 1rem; outline: none; box-sizing: border-box;">
+          <select id="reg-income" required style="width: 100%; padding: 12px 10px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 0.88rem; outline: none; box-sizing: border-box;">
             <option value="">選択してください</option>
             <option value="〜500万円未満">〜500万円未満</option>
             <option value="500万円〜800万円">500万円〜800万円</option>
@@ -128,14 +128,14 @@
         </div>
 
         <!-- Privacy Policy Agreement Checkbox -->
-        <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 4px;">
-          <input type="checkbox" id="reg-privacy" required style="width: 18px; height: 18px; accent-color: var(--color-primary); cursor: pointer;">
-          <label for="reg-privacy" style="font-size: 0.88rem; color: var(--color-text-white); cursor: pointer;">
+        <div style="display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 4px;">
+          <input type="checkbox" id="reg-privacy" required style="width: 16px; height: 16px; accent-color: var(--color-primary); cursor: pointer; flex-shrink: 0;">
+          <label for="reg-privacy" style="font-size: clamp(0.72rem, 3.2vw, 0.82rem); color: var(--color-text-white); cursor: pointer; white-space: nowrap;">
             <a href="privacy.html" target="_blank" style="color: var(--color-primary); text-decoration: underline;">プライバシーポリシー</a>に同意の上、審査に進む <span style="color: var(--color-primary);">*</span>
           </label>
         </div>
 
-        <button type="submit" class="btn btn--primary btn--large" style="width: 100%; margin-top: 4px; font-weight: 700; font-size: 1.05rem; padding: 16px; cursor: pointer;">
+        <button type="submit" class="btn btn--primary btn--large" style="width: 100%; margin-top: 4px; font-weight: 700; font-size: clamp(0.78rem, 3.6vw, 0.95rem); padding: 14px 6px; cursor: pointer; white-space: nowrap;">
           優先審査インビテーションを申請する（無料）
         </button>
         <p style="font-size: clamp(0.7rem, 3.1vw, 0.78rem); color: var(--text-muted); text-align: center; margin-top: 8px; line-height: 1.6;">
