@@ -3,3 +3,4 @@
 .tempmediaStorage/
 check_html.py
 .vercel
+.env*

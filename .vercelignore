@@ -1,0 +1,11 @@
+.DS_Store
+*.zip
+*.py
+*.json
+*.csv
+.git
+.github
+.agents
+REGULATIONS.md
+Re_en_source.zip
+.tempmediaStorage/
