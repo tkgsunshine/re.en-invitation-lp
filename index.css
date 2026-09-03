@@ -739,10 +739,10 @@ button {
   .hero::before {
     content: '';
     position: absolute;
-    top: 145px;
+    top: 180px;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 380px;
     background: linear-gradient(180deg, rgba(11, 11, 12, 0.05) 0%, rgba(11, 11, 12, 0.55) 50%, rgba(11, 11, 12, 1) 100%), url('images/hero_lifestyle_mobile.webp') no-repeat center top;
     background-size: 100% auto;
     z-index: 1;
