@@ -406,8 +406,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 優先インビテーションに申し込む
               </button>
               
-              <p style="font-size: 0.72rem; color: var(--color-text-muted); margin-top: 14px; text-align: center; line-height: 1.55;">
-                ※ご登録いただいた情報は、リリース日決定のご案内および事前審査結果のご連絡以外の目的には使用いたしません。
+              <p style="font-size: 0.76rem; color: var(--color-text-muted); margin-top: 14px; text-align: center; line-height: 1.6;">
+                ※リリース日が決定次第、審査結果およびリリース日のご案内をご登録いただいたEメールアドレス宛にお送りいたします。
               </p>
             </form>
           </div>
