@@ -352,11 +352,11 @@ document.addEventListener('DOMContentLoaded', () => {
                   <label class="form-group__label" style="margin-bottom: 8px;">年代 <span class="form-group__required" style="border-radius: 2px;">必須</span></label>
                   <select id="prereg-age" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem;">
                     <option value="" selected disabled>選択してください</option>
-                    <option value="10代">10代</option>
                     <option value="20代">20代</option>
                     <option value="30代">30代</option>
                     <option value="40代">40代</option>
-                    <option value="50代以上">50代以上</option>
+                    <option value="50代">50代</option>
+                    <option value="60代以上">60代以上</option>
                   </select>
                 </div>
                 
