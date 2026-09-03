@@ -62,7 +62,7 @@ def main():
               <div class="in-body-cta" style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--color-border-light); border-radius: 8px; padding: 28px 24px; margin: 40px 0; text-align: center;">
                 <h3 style="font-size: 1.2rem; color: var(--color-primary); margin-bottom: 12px; font-weight: 700;">Re.en 創設メンバー事前インビテーション受付中</h3>
                 <p style="font-size: 0.95rem; margin-bottom: 20px; color: var(--text-muted); line-height: 1.6;">Re.en（リエン）は、完全審査制の上質な既婚者限定コミュニティです。<br>現在、創設メンバー限定特典（有料プレミアムプラン2ヶ月間完全無料提供）の事前審査エントリーを受付中です。</p>
-                <a href="/register" class="btn btn--primary" style="display: inline-block; padding: 12px 32px; font-weight: 700; text-decoration: none;">優先インビテーションに申し込む</a>
+                <a href="preregister.html#entry-form" class="btn btn--primary" style="display: inline-block; padding: 12px 32px; font-weight: 700; text-decoration: none;">優先インビテーションに申し込む</a>
             </div>"""
 
                 # Estimate read time (roughly 500 characters per minute)

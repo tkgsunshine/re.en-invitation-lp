@@ -136,7 +136,7 @@
           
           <div class="hero__cta-group">
             <div class="hero__cta-animate-wrapper">
-              <a href="preregister.html" class="btn btn--primary btn--large btn--pulse">事前登録して審査に進む</a>
+              <a href="#entry-form" class="btn btn--primary btn--large btn--pulse">事前登録フォームへ進む</a>
               <p class="hero__cta-subtext" style="color: var(--color-primary); font-weight: 500; font-size: 0.85rem; text-shadow: none;">
                 ※先着枠に達し次第、事前登録特典の無償提供は予告なく終了いたします。
               </p>
@@ -145,6 +145,91 @@
         </div>
       </div>
     </section>
+
+    <!-- Dedicated Pre-Registration Entry Form Section -->
+    <section id="entry-form" class="section" style="background: rgba(20, 20, 25, 0.95); border-top: 1px solid var(--color-border-light); border-bottom: 1px solid var(--color-border-light); padding: 64px 0;">
+      <div class="container" style="max-width: 600px; text-align: center;">
+        <span class="section__label" style="color: var(--color-primary); font-weight: 700; letter-spacing: 2px;">PRE-REGISTRATION</span>
+        <h2 class="section__title" style="font-size: 1.8rem; margin-bottom: 12px; color: var(--color-text-white);">創設メンバー 優先エントリーフォーム</h2>
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 36px;">
+          先着1,000名様限定「有料サブスク2ヶ月完全無料特典」が適用される優先受付です。<br>公式LINEよりワンタップで即時登録、または下記フォームよりご登録いただけます。
+        </p>
+
+        <!-- LINE Fast Entry Card -->
+        <div style="background: rgba(6, 199, 85, 0.08); border: 1px solid rgba(6, 199, 85, 0.3); border-radius: 12px; padding: 28px 24px; margin-bottom: 36px; text-align: center;">
+          <h3 style="font-size: 1.15rem; color: #06C755; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#06C755"><path d="M24 10.304c0-4.577-4.46-8.304-9.948-8.304-5.487 0-9.952 3.727-9.952 8.304 0 4.1 3.535 7.534 8.318 8.188.324.07.765.215.877.493.1.252.065.648.032.904l-.142.853c-.043.256-.2.998.874.544 1.073-.454 5.797-3.414 7.91-5.845 1.4-1.547 2.031-3.13 2.031-5.137z"/></svg>
+            公式LINEで1秒 事前エントリー（推奨）
+          </h3>
+          <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 18px; line-height: 1.6;">フォーム入力不要！LINE友達追加で優先エントリー＆特典確保が即座に完了します。</p>
+          <a href="javascript:void(0)" onclick="handleLineRegister()" class="btn" style="background: #06C755; color: #fff; font-weight: 700; width: 100%; max-width: 420px; padding: 15px 24px; border-radius: 8px; text-decoration: none; display: inline-block; font-size: 1.05rem; box-shadow: 0 4px 15px rgba(6, 199, 85, 0.3);">公式LINEで今すぐ特典枠を確保する</a>
+        </div>
+
+        <div style="display: flex; align-items: center; margin: 36px 0;">
+          <div style="flex: 1; height: 1px; background: var(--color-border-light);"></div>
+          <span style="padding: 0 16px; font-size: 0.85rem; color: var(--text-muted);">または メールアドレスでエントリー</span>
+          <div style="flex: 1; height: 1px; background: var(--color-border-light);"></div>
+        </div>
+
+        <!-- Email Entry Form -->
+        <form id="preregister-form" onsubmit="handleFormSubmit(event)" style="display: flex; flex-direction: column; gap: 20px; text-align: left;">
+          <div>
+            <label for="reg-email" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">メールアドレス <span style="color: var(--color-primary);">*</span></label>
+            <input type="email" id="reg-email" required placeholder="example@domain.com" style="width: 100%; padding: 14px 16px; background: rgba(255,255,255,0.05); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 1rem; outline: none;">
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div>
+              <label for="reg-gender" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">性別 <span style="color: var(--color-primary);">*</span></label>
+              <select id="reg-gender" required style="width: 100%; padding: 14px 16px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 1rem; outline: none;">
+                <option value="">選択してください</option>
+                <option value="male">男性</option>
+                <option value="female">女性</option>
+              </select>
+            </div>
+            <div>
+              <label for="reg-age" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">年代 <span style="color: var(--color-primary);">*</span></label>
+              <select id="reg-age" required style="width: 100%; padding: 14px 16px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 1rem; outline: none;">
+                <option value="">選択してください</option>
+                <option value="30s">30代</option>
+                <option value="40s">40代</option>
+                <option value="50s">50代</option>
+                <option value="60s+">60代以上</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--large" style="width: 100%; margin-top: 12px; font-weight: 700; font-size: 1.1rem; padding: 16px;">
+            優先事前エントリーを送信する（無料）
+          </button>
+          <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 8px;">
+            ご登録情報は事前案内および特典付与のみに使用し、厳重に保護いたします。
+          </p>
+        </form>
+
+        <!-- Success Modal Message (Hidden initially) -->
+        <div id="registration-success-msg" style="display: none; background: rgba(191, 169, 120, 0.1); border: 1px solid var(--color-primary); border-radius: 12px; padding: 32px; margin-top: 24px; text-align: center;">
+          <div style="width: 52px; height: 52px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 style="font-size: 1.4rem; color: var(--color-primary); margin-bottom: 12px; font-weight: 700;">事前エントリーが完了いたしました！</h3>
+          <p style="font-size: 0.95rem; color: var(--color-text-white); line-height: 1.70;">
+            先着1,000名様限定「有料サブスク2ヶ月間無料特典」の確保を受け付けいたしました。<br>本リリース直前に、ご登録いただいた宛先へ優先審査インビテーションをお送りいたします。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      document.getElementById('preregister-form').style.display = 'none';
+      document.getElementById('registration-success-msg').style.display = 'block';
+    }
+    function handleLineRegister() {
+      alert('公式LINE事前登録アカウントへ接続します。\n※先着1,000名様の「有料サブスク2ヶ月無料特典」枠が自動で確保されます。');
+    }
+    </script>
 
     <!-- Steps Section -->
     <section id="steps" class="section section--alt">

@@ -2,10 +2,6 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/preregister.html"
-    },
-    {
       "source": "/register",
       "destination": "/preregister.html"
     },
