@@ -350,8 +350,8 @@ document.addEventListener('DOMContentLoaded', () => {
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px;">
                 <div class="form-group" style="margin-bottom: 0;">
                   <label class="form-group__label" style="margin-bottom: 8px;">年代 <span class="form-group__required" style="border-radius: 2px;">必須</span></label>
-                  <select id="prereg-age" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem;">
-                    <option value="" selected disabled>選択してください</option>
+                  <select id="prereg-age" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 20px 12px 8px; border-radius: 6px; font-size: 0.82rem;">
+                    <option value="" selected disabled>選択して下さい</option>
                     <option value="20代">20代</option>
                     <option value="30代">30代</option>
                     <option value="40代">40代</option>
@@ -362,8 +362,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 <div class="form-group" style="margin-bottom: 0;">
                   <label class="form-group__label" style="margin-bottom: 8px;">年収 <span class="form-group__required" style="border-radius: 2px;">必須</span></label>
-                  <select id="prereg-income" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 14px; border-radius: 6px; font-size: 0.88rem;">
-                    <option value="" selected disabled>選択してください</option>
+                  <select id="prereg-income" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 20px 12px 8px; border-radius: 6px; font-size: 0.82rem;">
+                    <option value="" selected disabled>選択して下さい</option>
                     <option value="〜500万円未満">〜500万円未満</option>
                     <option value="500万円〜800万円">500万円〜800万円</option>
                     <option value="800万円〜1,000万円">800万円〜1,000万円</option>
