@@ -196,8 +196,80 @@
   </footer>
 
   <script>
-  function handleFormSubmit(e) {
+  async function handleFormSubmit(e) {
     e.preventDefault();
+
+    const emailVal = document.getElementById('reg-email') ? document.getElementById('reg-email').value.trim() : '';
+    const genderVal = document.getElementById('reg-gender') ? document.getElementById('reg-gender').value : '';
+    const ageVal = document.getElementById('reg-age') ? document.getElementById('reg-age').value : '';
+    const incomeVal = document.getElementById('reg-income') ? document.getElementById('reg-income').value : '';
+
+    const submitBtn = e.target.querySelector('button[type="submit"]');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = '送信中...';
+    }
+
+    // 1. SSGformへのリアルタイム送信 (運営へのメール通知トリガー)
+    try {
+      let iframe = document.getElementById('ssgform-target-iframe');
+      if (!iframe) {
+        iframe = document.createElement('iframe');
+        iframe.name = 'ssgform-target-iframe';
+        iframe.id = 'ssgform-target-iframe';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+      }
+
+      const hiddenForm = document.createElement('form');
+      hiddenForm.action = 'https://ssgform.com/s/aZL3mBK0p4BM';
+      hiddenForm.method = 'POST';
+      hiddenForm.target = 'ssgform-target-iframe';
+
+      const fields = {
+        '性別': genderVal,
+        '年代': ageVal,
+        '年収': incomeVal,
+        'メールアドレス': emailVal
+      };
+
+      for (const [key, val] of Object.entries(fields)) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = val;
+        hiddenForm.appendChild(input);
+      }
+
+      document.body.appendChild(hiddenForm);
+      hiddenForm.submit();
+      setTimeout(() => { hiddenForm.remove(); }, 3000);
+    } catch (err) {
+      console.warn('SSGform submission warning:', err);
+    }
+
+    // 2. Vercel Server & LocalStorage データ記録
+    try {
+      const entry = {
+        gender: genderVal,
+        age: ageVal,
+        income: incomeVal,
+        email: emailVal,
+        timestamp: new Date().toISOString()
+      };
+      const existing = JSON.parse(localStorage.getItem('reen_preregistrations') || '[]');
+      existing.push(entry);
+      localStorage.setItem('reen_preregistrations', JSON.stringify(existing));
+
+      fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(entry)
+      }).catch(() => {});
+    } catch (err) {
+      console.error('Failed to save preregistration:', err);
+    }
+
     document.getElementById('preregister-form').style.display = 'none';
     document.getElementById('registration-success-msg').style.display = 'block';
   }
