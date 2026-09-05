@@ -2,7 +2,7 @@ import os
 import re
 import glob
 
-WORKSPACE_DIR = "/Users/user/.gemini/antigravity/scratch/married-matching-lp"
+WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def add_toc_to_html_file(filepath):
     with open(filepath, "r", encoding="utf-8") as f:

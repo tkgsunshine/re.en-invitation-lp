@@ -3,7 +3,7 @@ import re
 import json
 import datetime
 
-WORKSPACE_DIR = "/Users/user/.gemini/antigravity/scratch/married-matching-lp"
+WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 CALENDAR_PATH = os.path.join(WORKSPACE_DIR, "editorial_calendar_matching.json")
 SITEMAP_PATH = os.path.join(WORKSPACE_DIR, "sitemap.xml")
 

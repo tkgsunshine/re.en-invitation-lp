@@ -3,7 +3,7 @@ import re
 import glob
 import json
 
-WORKSPACE_DIR = "/Users/user/.gemini/antigravity/scratch/married-matching-lp"
+WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def fix_page_meta_and_schema(filepath):
     filename = os.path.basename(filepath)

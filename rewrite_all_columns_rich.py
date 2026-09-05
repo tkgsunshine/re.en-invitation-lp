@@ -3,7 +3,7 @@ import re
 import glob
 import json
 
-WORKSPACE_DIR = "/Users/user/.gemini/antigravity/scratch/married-matching-lp"
+WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 CALENDAR_PATH = os.path.join(WORKSPACE_DIR, "editorial_calendar_matching.json")
 
 def clean_html(text):
