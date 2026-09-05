@@ -1,9 +1,9 @@
-name: Daily Column Automation Pipeline
+name: Daily Column Automation Pipeline (Re:en)
 
 on:
   schedule:
-    # 毎朝 10:00 JST (UTC 01:00) に自動実行
-    - cron: '0 1,9 * * *'
+    # Runs twice daily at 10:00 AM JST (01:00 UTC) and 7:00 PM (19:00) JST (10:00 UTC)
+    - cron: '0 1,10 * * *'
   workflow_dispatch:
 
 permissions:
@@ -36,5 +36,5 @@ jobs:
       - name: Push changes to repository
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto-publish daily column with full regulation compliance [skip ci]"
+          commit_message: "Auto-publish scheduled column with full regulation compliance [skip ci]"
           branch: main
