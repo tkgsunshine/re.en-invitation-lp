@@ -30,16 +30,17 @@ def main():
     print("\n--- Step 6: Applying complete SEO optimizations (OGP, Twitter Cards, JSON-LD) ---")
     subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "apply_complete_seo_fix.py")], check=True)
     
-    # 7. Git Commit & Push to GitHub
+    # 7. Git Commit & Push to GitHub (with pull --rebase)
     print("\n--- Step 7: Committing & Pushing to GitHub ---")
     try:
         subprocess.run(["git", "add", "-A"], cwd=WORKSPACE_DIR, check=True)
         res = subprocess.run(["git", "status", "--porcelain"], cwd=WORKSPACE_DIR, capture_output=True, text=True)
         if res.stdout.strip():
             subprocess.run(["git", "commit", "-m", "Auto-publish daily column with full regulation compliance"], cwd=WORKSPACE_DIR, check=True)
-            subprocess.run(["git", "push", "origin", "main"], cwd=WORKSPACE_DIR, check=True)
-        else:
-            print("Working tree clean, nothing to commit.")
+        
+        # Always pull --rebase before push to ensure clean remote sync
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=WORKSPACE_DIR, check=True)
+        subprocess.run(["git", "push", "origin", "main"], cwd=WORKSPACE_DIR, check=True)
     except Exception as e:
         print(f"Git commit/push notice: {e}")
 
