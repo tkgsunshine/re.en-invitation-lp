@@ -1,10 +1,53 @@
 import os
+import sys
+import time
 import subprocess
+import argparse
 
 WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+def check_double_publish_guard(max_interval_seconds=14400):
+    """
+    Double-post Guard:
+    Syncs with origin/main and checks if a column auto-publish commit occurred
+    within max_interval_seconds (4 hours). Returns True if already published recently.
+    """
+    try:
+        # Pre-flight pull to see if remote has a commit pushed in a previous retry trigger
+        subprocess.run(["git", "pull", "--rebase", "origin", "main"], cwd=WORKSPACE_DIR, capture_output=True, text=True)
+
+        res = subprocess.run(["git", "log", "-n", "10", "--format=%ct %s"], cwd=WORKSPACE_DIR, capture_output=True, text=True, check=True)
+        lines = res.stdout.strip().split("\n")
+        now = int(time.time())
+        for line in lines:
+            if not line.strip():
+                continue
+            parts = line.strip().split(" ", 1)
+            commit_time = int(parts[0])
+            msg = parts[1] if len(parts) > 1 else ""
+
+            if "Auto-publish" in msg or "daily column" in msg or "Vol." in msg:
+                elapsed = now - commit_time
+                if elapsed < max_interval_seconds:
+                    elapsed_min = elapsed // 60
+                    print(f"[Guard Triggered] Today's column for this slot was already published {elapsed_min} minutes ago (commit: '{msg}'). Skipping pipeline execution to prevent duplicate posting.")
+                    return True
+    except Exception as e:
+        print(f"[Guard Notice] Double-post check warning: {e}")
+    return False
+
 def main():
+    parser = argparse.ArgumentParser(description="Married Matching LP Column Automation Pipeline")
+    parser.add_argument("--force", action="store_true", help="Bypass the double-publish guard")
+    args = parser.parse_args()
+
     print("Starting Married Matching LP Column Automation Pipeline...")
+    
+    # Pre-flight Double-post Guard check (unless --force is passed)
+    if not args.force:
+        if check_double_publish_guard(max_interval_seconds=14400):
+            print("[Guard Active] Pipeline finished cleanly with 0 changes.")
+            sys.exit(0)
     
     # 1. Run generate_next_matching_blog_post.py
     print("\n--- Step 1: Generating next scheduled blog post template ---")

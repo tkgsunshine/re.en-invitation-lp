@@ -2,8 +2,14 @@ name: Daily Column Automation Pipeline (Re:en)
 
 on:
   schedule:
-    # Runs twice daily at 10:00 AM JST (01:00 UTC) and 7:00 PM (19:00) JST (10:00 UTC)
-    - cron: '0 1,10 * * *'
+    # Morning Slot (JST 8:05, 8:15, 8:30 = UTC 23:05, 23:15, 23:30)
+    - cron: '5 23 * * *'
+    - cron: '15 23 * * *'
+    - cron: '30 23 * * *'
+    # Evening Slot (JST 17:05, 17:15, 17:30 = UTC 08:05, 08:15, 08:30)
+    - cron: '5 8 * * *'
+    - cron: '15 8 * * *'
+    - cron: '30 8 * * *'
   workflow_dispatch:
 
 permissions:
