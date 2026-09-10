@@ -49,10 +49,11 @@ def main():
     with open(TEMPLATE_PATH, "r", encoding="utf-8") as f:
         new_html = f.read()
 
-    # Dates
-    today = datetime.date.today()
-    period_date = today.strftime('%Y.%m.%d')
-    iso_date = today.strftime('%Y-%m-%d')
+    # Dates (JST)
+    jst = datetime.timezone(datetime.timedelta(hours=9))
+    now_jst = datetime.datetime.now(jst)
+    period_date = now_jst.strftime('%Y.%m.%d')
+    iso_date = now_jst.strftime('%Y-%m-%d')
 
     clean_url_name = target_post["filename"].replace('.html', '')
     canonical_url = f"https://re-en.jp/{clean_url_name}"
