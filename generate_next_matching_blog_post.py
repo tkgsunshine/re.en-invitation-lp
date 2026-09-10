@@ -54,6 +54,9 @@ def main():
     period_date = today.strftime('%Y.%m.%d')
     iso_date = today.strftime('%Y-%m-%d')
 
+    clean_url_name = target_post["filename"].replace('.html', '')
+    canonical_url = f"https://re-en.jp/{clean_url_name}"
+
     # Truncated title for breadcrumbs (20 chars max + '...')
     breadcrumb_title = target_post["headline"]
     if len(breadcrumb_title) > 20:
@@ -71,8 +74,8 @@ def main():
     new_html = re.sub(r'<meta name="description" content="[^"]*">', f'<meta name="description" content="{target_post["description"]}">', new_html)
     new_html = re.sub(r'<meta property="og:title" content="[^"]*">', f'<meta property="og:title" content="{target_post["title"]}">', new_html)
     new_html = re.sub(r'<meta property="og:description" content="[^"]*">', f'<meta property="og:description" content="{target_post["description"]}">', new_html)
-    new_html = re.sub(r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="https://re-en.jp/{target_post["filename"]}">', new_html)
-    new_html = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="https://re-en.jp/{target_post["filename"]}">', new_html)
+    new_html = re.sub(r'<meta property="og:url" content="[^"]*">', f'<meta property="og:url" content="{canonical_url}">', new_html)
+    new_html = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{canonical_url}">', new_html)
 
     # 3. Update JSON-LD BlogPosting
     blogposting_pattern = r'(?s)<script type="application/ld\+json">\s*\{\s*"@context": "https://schema.org",\s*"@type": "BlogPosting".*?</script>'
@@ -92,7 +95,7 @@ def main():
         },
         "publisher": {
             "@type": "Organization",
-            "name": "Re.en",
+            "name": "Re.en（リエン）",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://re-en.jp/images/favicon.png"
@@ -119,13 +122,13 @@ def main():
                 "@type": "ListItem",
                 "position": 2,
                 "name": "コラム一覧",
-                "item": "https://re-en.jp/column.html"
+                "item": "https://re-en.jp/column"
             },
             {
                 "@type": "ListItem",
                 "position": 3,
                 "name": breadcrumb_title,
-                "item": f"https://re-en.jp/{target_post['filename']}"
+                "item": canonical_url
             }
         ]
     }
@@ -137,7 +140,7 @@ def main():
     breadcrumbs_block_html = f"""<ul class="breadcrumbs">
             <li class="breadcrumbs__item"><a href="index.html">ホーム</a></li>
             <li class="breadcrumbs__separator">/</li>
-            <li class="breadcrumbs__item"><a href="column.html">コラム一覧</a></li>
+            <li class="breadcrumbs__item"><a href="column">コラム一覧</a></li>
             <li class="breadcrumbs__separator">/</li>
             <li class="breadcrumbs__item" aria-current="page" style="color: var(--color-primary);">{breadcrumb_title}</li>
           </ul>"""
@@ -150,7 +153,7 @@ def main():
 
     # 7. Update Hero visual Image (Photographic Thumbnail)
     hero_thumb_pattern = r'(?s)<div class="rec-article__thumb"[^>]*>.*?</div>'
-    hero_thumb_html = f"""<div class="rec-article__thumb" style="width: 100%; height: 350px; overflow: hidden; border-radius: 4px; margin-bottom: 32px;"><img src="{banner_img}" alt="{target_post['headline']}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85; margin: 0; border: none;" loading="lazy"></div>"""
+    hero_thumb_html = f"""<div class="rec-article__thumb" style="width: 100%; height: 350px; overflow: hidden; border-radius: 4px; margin-bottom: 32px;"><img src="{banner_img}" alt="{target_post['headline']}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85; margin: 0; border: none;" loading="lazy" width="800" height="350"></div>"""
     new_html = re.sub(hero_thumb_pattern, hero_thumb_html, new_html)
 
     # Save the generated details file

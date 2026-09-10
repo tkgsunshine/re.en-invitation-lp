@@ -14,7 +14,7 @@ def get_num(name):
     return int(num_part) if num_part else 0
 
 def main():
-    print("Running rebuild_matching_blog_index.py (Photo Thumbnail Mode)...")
+    print("Running rebuild_matching_blog_index.py (Clean URL & Photo Mode)...")
 
     # Load calendar if available for image lookup fallback
     calendar_map = {}
@@ -50,7 +50,7 @@ def main():
             date = date_match.group(1).strip() if date_match else "2026.06.01"
             title = title_match.group(1).strip() if title_match else "コラム記事"
             excerpt = excerpt_match.group(1).strip() if excerpt_match else ""
-            readtime = readtime_match.group(1).strip() if readtime_match else "2分"
+            readtime = readtime_match.group(1).strip() if readtime_match else "7分"
             
             # Photo image extraction
             img_path = "images/column_second_partner.webp"
@@ -65,6 +65,7 @@ def main():
             
             detail_meta_list.append({
                 "filename": f,
+                "clean_url": f.replace('.html', ''),
                 "vol": get_num(f),
                 "category": cat,
                 "date": date,
@@ -81,11 +82,11 @@ def main():
     category_widget_html = f"""<div class="sidebar-widget">
               <h4 class="sidebar-widget__title">カテゴリー</h4>
               <ul class="sidebar-list">
-                <li class="sidebar-list__item"><a href="column.html#全て">全てコラム <span class="sidebar-list__count">{total_count}</span></a></li>
-                <li class="sidebar-list__item"><a href="column.html#出会いのコツ">出会いのコツ <span class="sidebar-list__count">{cat_counts['出会いのコツ']}</span></a></li>
-                <li class="sidebar-list__item"><a href="column.html#プライバシー対策">プライバシー対策 <span class="sidebar-list__count">{cat_counts['プライバシー対策']}</span></a></li>
-                <li class="sidebar-list__item"><a href="column.html#セカンドパートナー">セカンドパートナー <span class="sidebar-list__count">{cat_counts['セカンドパートナー']}</span></a></li>
-                <li class="sidebar-list__item"><a href="column.html#お悩み">お悩み <span class="sidebar-list__count">{cat_counts['お悩み']}</span></a></li>
+                <li class="sidebar-list__item"><a href="column#全て">全てコラム <span class="sidebar-list__count">{total_count}</span></a></li>
+                <li class="sidebar-list__item"><a href="column#出会いのコツ">出会いのコツ <span class="sidebar-list__count">{cat_counts['出会いのコツ']}</span></a></li>
+                <li class="sidebar-list__item"><a href="column#プライバシー対策">プライバシー対策 <span class="sidebar-list__count">{cat_counts['プライバシー対策']}</span></a></li>
+                <li class="sidebar-list__item"><a href="column#セカンドパートナー">セカンドパートナー <span class="sidebar-list__count">{cat_counts['セカンドパートナー']}</span></a></li>
+                <li class="sidebar-list__item"><a href="column#お悩み">お悩み <span class="sidebar-list__count">{cat_counts['お悩み']}</span></a></li>
               </ul>
             </div>"""
 
@@ -108,11 +109,10 @@ def main():
     cards_html_list = []
     for meta in detail_meta_list:
         card_html = f"""              <!-- Card {meta['vol']} -->
-              <!-- Card {meta['vol']} -->
-              <a href="{meta['filename']}" class="column-card reveal">
+              <a href="{meta['clean_url']}" class="column-card reveal">
                 <div class="column-card__thumb">
                   <span class="column-card__badge">{meta['category']}</span>
-                  <img src="{meta['img_path']}" alt="{meta['title']}" class="column-card__img" loading="lazy">
+                  <img src="{meta['img_path']}" alt="{meta['title']}" class="column-card__img" loading="lazy" width="400" height="250">
                 </div>
                 <div class="column-card__content">
                   <div class="column-card__meta">
@@ -147,60 +147,42 @@ def main():
         file.write(column_content)
     print("Successfully updated column.html card grid with photo thumbnails and sidebar counts.")
 
-    # Rebuild sitemap.xml
-    print("Rebuilding sitemap.xml...")
-    if os.path.exists(SITEMAP_PATH):
-        import xml.etree.ElementTree as ET
-        import xml.dom.minidom
-        
-        ET.register_namespace('', "http://www.sitemaps.org/schemas/sitemap/0.9")
-        tree = ET.parse(SITEMAP_PATH)
-        root = tree.getroot()
-        ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
-        
-        existing_locs = set()
-        for url_elem in root.findall('sm:url', ns):
-            loc_elem = url_elem.find('sm:loc', ns)
-            if loc_elem is not None:
-                existing_locs.add(loc_elem.text)
+    # Rebuild sitemap.xml with Clean URLs (no .html)
+    print("Rebuilding sitemap.xml with clean URLs...")
+    today_date = datetime.date.today().strftime('%Y-%m-%d')
 
-        today_date = datetime.date.today().strftime('%Y-%m-%d')
-        updated = False
-        
-        for meta in detail_meta_list:
-            file_loc = f"https://re-en.jp/{meta['filename']}"
-            if file_loc not in existing_locs:
-                url_elem = ET.Element('url')
-                
-                loc_elem = ET.SubElement(url_elem, 'loc')
-                loc_elem.text = file_loc
-                
-                lastmod_elem = ET.SubElement(url_elem, 'lastmod')
-                lastmod_elem.text = today_date
-                
-                changefreq_elem = ET.SubElement(url_elem, 'changefreq')
-                changefreq_elem.text = "monthly"
-                
-                priority_elem = ET.SubElement(url_elem, 'priority')
-                priority_elem.text = "0.7"
-                
-                root.append(url_elem)
-                updated = True
-                
-        if updated:
-            xml_str = ET.tostring(root, encoding='utf-8')
-            parsed = xml.dom.minidom.parseString(xml_str)
-            pretty_xml = parsed.toprettyxml(indent="  ")
-            clean_xml = "\n".join([line for line in pretty_xml.split("\n") if line.strip()])
-            
-            if not clean_xml.startswith('<?xml'):
-                clean_xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + clean_xml
-                
-            with open(SITEMAP_PATH, "w", encoding="utf-8") as f:
-                f.write(clean_xml)
-            print("Successfully updated sitemap.xml with missing column URLs.")
-        else:
-            print("Sitemap is already up-to-date.")
+    sitemap_entries = [
+        ("https://re-en.jp/", "1.0", "daily"),
+        ("https://re-en.jp/column", "0.9", "daily"),
+        ("https://re-en.jp/preregister", "0.9", "weekly"),
+        ("https://re-en.jp/pricing", "0.8", "monthly"),
+        ("https://re-en.jp/privacy", "0.5", "monthly"),
+        ("https://re-en.jp/term", "0.5", "monthly"),
+        ("https://re-en.jp/tokushoho", "0.5", "monthly"),
+        ("https://re-en.jp/company", "0.5", "monthly")
+    ]
+
+    for meta in detail_meta_list:
+        file_loc = f"https://re-en.jp/{meta['clean_url']}"
+        sitemap_entries.append((file_loc, "0.7", "monthly"))
+
+    url_nodes = []
+    for loc, priority, changefreq in sitemap_entries:
+        url_nodes.append(f"""  <url>
+    <loc>{loc}</loc>
+    <lastmod>{today_date}</lastmod>
+    <changefreq>{changefreq}</changefreq>
+    <priority>{priority}</priority>
+  </url>""")
+
+    sitemap_xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(url_nodes)}
+</urlset>"""
+
+    with open(SITEMAP_PATH, "w", encoding="utf-8") as f:
+        f.write(sitemap_xml)
+    print("Successfully updated sitemap.xml with clean URLs.")
 
 if __name__ == "__main__":
     main()

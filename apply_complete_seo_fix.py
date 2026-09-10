@@ -14,16 +14,17 @@ def fix_page_meta_and_schema(filepath):
     vol_match = re.search(r'column-detail-(\d+)\.html', filename)
     vol_num = int(vol_match.group(1)) if vol_match else None
 
+    # Canonical & Clean URL (no .html extension for cleanUrls compatibility)
+    clean_name = filename.replace('.html', '') if filename != 'index.html' else ''
+    canonical_url = f"https://re-en.jp/{clean_name}"
+
     # Check title
     title_match = re.search(r'<title>(.*?)</title>', content)
-    title = title_match.group(1) if title_match else "Re.en（リエン）| 完全審査制・既婚者限定マッチング"
+    title = title_match.group(1) if title_match else "Re.en（リエン）| 完全審査制・既婚者限定サードプレイス"
 
     # Check description
     desc_match = re.search(r'<meta name="description" content="(.*?)">', content)
     description = desc_match.group(1) if desc_match else "既婚者のための完全審査制上質コミュニティRe.en（リエン）。"
-
-    # Page URL
-    page_url = f"https://re-en.jp/{filename if filename != 'index.html' else ''}"
 
     # Determine og:image
     if vol_num:
@@ -34,15 +35,30 @@ def fix_page_meta_and_schema(filepath):
     safe_title = title.replace('"', '')
     safe_desc = description.replace('"', '')
 
+    # Update or inject canonical link tag
+    canonical_tag = f'<link rel="canonical" href="{canonical_url}">'
+    if '<link rel="canonical"' in content:
+        content = re.sub(r'<link rel="canonical" href="[^"]*">', canonical_tag, content)
+    else:
+        content = re.sub(r'(</title>)', r'\1\n  ' + canonical_tag, content, count=1)
+
+    # Preconnect hints for Google Fonts
+    preconnect_html = """  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>"""
+
+    if 'fonts.googleapis.com' in content and 'rel="preconnect"' not in content:
+        content = re.sub(r'(<head.*?>)', r'\1\n' + preconnect_html, content, count=1)
+
     # OGP block
     ogp_html = f"""
   <!-- OGP & Social Meta Tags -->
   <meta property="og:title" content="{safe_title}">
   <meta property="og:description" content="{safe_desc}">
   <meta property="og:type" content="{'article' if vol_num else 'website'}">
-  <meta property="og:url" content="{page_url}">
+  <meta property="og:url" content="{canonical_url}">
   <meta property="og:image" content="{og_image}">
   <meta property="og:site_name" content="Re.en（リエン）">
+  <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{safe_title}">
   <meta name="twitter:description" content="{safe_desc}">
@@ -63,9 +79,9 @@ def fix_page_meta_and_schema(filepath):
     "headline": "{safe_title}",
     "description": "{safe_desc}",
     "image": "{og_image}",
-    "url": "{page_url}",
-    "datePublished": "2026-09-01",
-    "dateModified": "2026-09-02",
+    "url": "{canonical_url}",
+    "datePublished": "2026-09-01T09:00:00+09:00",
+    "dateModified": "2026-09-09T09:00:00+09:00",
     "author": {{
       "@type": "Organization",
       "name": "Re.en 編集部",
@@ -81,7 +97,7 @@ def fix_page_meta_and_schema(filepath):
     }},
     "mainEntityOfPage": {{
       "@type": "WebPage",
-      "@id": "{page_url}"
+      "@id": "{canonical_url}"
     }}
   }}
   </script>
@@ -100,13 +116,13 @@ def fix_page_meta_and_schema(filepath):
         "@type": "ListItem",
         "position": 2,
         "name": "コラム一覧",
-        "item": "https://re-en.jp/column.html"
+        "item": "https://re-en.jp/column"
       }},
       {{
         "@type": "ListItem",
         "position": 3,
         "name": "{safe_title}",
-        "item": "{page_url}"
+        "item": "{canonical_url}"
       }}
     ]
   }}
