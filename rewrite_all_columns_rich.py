@@ -12,10 +12,13 @@ def clean_html(text):
     return text.strip()
 
 def clean_h2_title(t):
+    if not t:
+        return ""
     t = re.sub(r'<[^>]+>', '', t)
-    t = re.sub(r'^\d+\.\s*', '', t)
-    t = re.sub(r'[:：].*$', '', t)
-    return t.strip()
+    parts = re.split(r'[:：]', t)
+    first_part = parts[0].strip() if parts else ""
+    first_part = re.sub(r'^\d+\.\s*', '', first_part)
+    return first_part.strip()
 
 def generate_eeat_badge():
     return """
@@ -27,7 +30,7 @@ def generate_eeat_badge():
 
 def generate_deep_section_1(h2_title, description):
     clean_title = clean_h2_title(h2_title)
-    if not clean_title:
+    if not clean_title or len(clean_title) < 2:
         clean_title = "基本の考え方と大人の心構え"
 
     return f"""
@@ -49,7 +52,7 @@ def generate_deep_section_1(h2_title, description):
 
 def generate_deep_section_2(h2_title, description):
     clean_title = clean_h2_title(h2_title)
-    if not clean_title:
+    if not clean_title or len(clean_title) < 2:
         clean_title = "具体的実践ステップとマナー"
 
     return f"""
@@ -71,7 +74,7 @@ def generate_deep_section_2(h2_title, description):
 
 def generate_deep_section_3(h2_title, description):
     clean_title = clean_h2_title(h2_title)
-    if not clean_title:
+    if not clean_title or len(clean_title) < 2:
         clean_title = "注意点と長続きの秘訣"
 
     return f"""
