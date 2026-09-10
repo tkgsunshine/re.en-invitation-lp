@@ -3801,34 +3801,41 @@ button {
 
 .article-body h2 {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 700;
-  color: var(--color-text-white);
+  color: #D4AF37;
   margin: 48px 0 24px;
-  padding-left: 16px;
-  border-left: 3px solid var(--color-primary);
-  line-height: 1.4;
+  padding: 12px 20px;
+  border-left: 4px solid #D4AF37;
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.09) 0%, rgba(212, 175, 55, 0) 100%);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .article-body h3 {
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
+  font-family: var(--font-sans);
+  font-size: 1.18rem;
   font-weight: 700;
-  color: var(--color-text-white);
-  margin: 36px 0 16px;
-  line-height: 1.4;
+  color: #E8D399;
+  margin: 36px 0 18px;
+  line-height: 1.5;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(212, 175, 55, 0.25);
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .article-body h3::before {
   content: '';
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  background-color: var(--color-primary);
+  width: 8px;
+  height: 8px;
+  background-color: #D4AF37;
   border-radius: 50%;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+  flex-shrink: 0;
 }
 
 .article-body ul, 

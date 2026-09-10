@@ -11,6 +11,12 @@ def clean_html(text):
     text = " ".join(text.split())
     return text.strip()
 
+def clean_h2_title(t):
+    t = re.sub(r'<[^>]+>', '', t)
+    t = re.sub(r'^\d+\.\s*', '', t)
+    t = re.sub(r'[:：].*$', '', t)
+    return t.strip()
+
 def generate_eeat_badge():
     return """
               <div class="eeat-badge" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 20px; padding: 8px 18px; margin-bottom: 24px; font-size: 0.88rem; color: #D4AF37; font-weight: 600;">
@@ -20,9 +26,13 @@ def generate_eeat_badge():
 """
 
 def generate_deep_section_1(h2_title, description):
+    clean_title = clean_h2_title(h2_title)
+    if not clean_title:
+        clean_title = "基本の考え方と大人の心構え"
+
     return f"""
-              <h2>1. {h2_title}：背景と現代における位置付け</h2>
-              <p>既婚者同士のパートナーシップや日常における上質な繋がりにおいて、{h2_title}について理解を深めることは極めて大切な意味を持ちます。日常の多忙な仕事や家庭での責任に追われる現代社会において、「自分自身の本当の気持ち」や「異性として一人の魅力ある人間と見られたい欲求」を抱くことは決して特別なことではなく、30代から50代の自立した男女にとってごく自然な心理的現象です。</p>
+              <h2>1. {clean_title}</h2>
+              <p>既婚者同士のパートナーシップや日常における上質な繋がりにおいて、{clean_title}について理解を深めることは極めて大切な意味を持ちます。日常の多忙な仕事や家庭での責任に追われる現代社会において、「自分自身の本当の気持ち」や「異性として一人の魅力ある人間と見られたい欲求」を抱くことは決して特別なことではなく、30代から50代の自立した男女にとってごく自然な心理的現象です。</p>
               
               <h3>1-1. 既婚者が抱く「サードプレイス（第3の居場所）」への潜在的ニーズ</h3>
               <p>結婚生活が数年から十数年と経過するにつれ、夫婦関係はときめきを伴う恋愛対象から「生活共同体」や「子育てのチームパートナー」へと確実に変化していきます。これは家族としての深い信頼関係が構築された証である一方、個人の心の中に「一人の魅力的な大人として誰かに寄り添いたい」「仕事や家庭の肩書を一旦横に置いた等身大の自分で話したい」という想いが蓄積される要因にもなります。</p>
@@ -38,9 +48,13 @@ def generate_deep_section_1(h2_title, description):
 """
 
 def generate_deep_section_2(h2_title, description):
+    clean_title = clean_h2_title(h2_title)
+    if not clean_title:
+        clean_title = "具体的実践ステップとマナー"
+
     return f"""
-              <h2>2. {h2_title}：成功に導く具体的実践ステップとスマートなマナー</h2>
-              <p>実際に素晴らしいお相手と関係性を育む際、あるいは日々のやり取りにおいて最も意識すべきポイントは、「自分の価値観を押し付けず、相手の視点・スケジュール・プライバシーを徹底的に思いやる姿勢」にあります。{h2_title}を意識したスマートな振る舞いを実践することで、無用な誤解やトラブルを防ぎ、心地よく長続きするパートナーシップを維持できます。</p>
+              <h2>2. {clean_title}</h2>
+              <p>実際に素晴らしいお相手と関係性を育む際、あるいは日々のやり取りにおいて最も意識すべきポイントは、「自分の価値観を押し付けず、相手の視点・スケジュール・プライバシーを徹底的に思いやる姿勢」にあります。{clean_title}を意識したスマートな振る舞いを実践することで、無用な誤解やトラブルを防ぎ、心地よく長続きするパートナーシップを維持できます。</p>
               
               <h3>2-1. 失敗しないコミュニケーションの手順と連絡時間帯の配慮</h3>
               <p>第一に最も重要なルールは、やり取りを開始する段階で「連絡可能な時間帯や頻度」に関する明確なすり合わせを行っておくことです。お互いの職業、生活リズム、家庭内での過ごし方はそれぞれ異なります。「平日の日中帯を中心に連絡を取る」「週末や夜間家族と過ごす時間はメッセージを控える」といった細やかな配慮が、お相手に対する最高の誠意となります。</p>
@@ -56,9 +70,13 @@ def generate_deep_section_2(h2_title, description):
 """
 
 def generate_deep_section_3(h2_title, description):
+    clean_title = clean_h2_title(h2_title)
+    if not clean_title:
+        clean_title = "注意点と長続きの秘訣"
+
     return f"""
-              <h2>3. {h2_title}：避けるべきリスクとプライバシー・セキュリティ徹底ガイド</h2>
-              <p>充実したパートナーシップを長期にわたり育むためには、ポジティブな魅力だけでなく、潜在的なリスクや注意すべきNG行動についても正しく認識しておくことが必要不可欠です。{h2_title}を踏まえた節度ある行動を徹底することが、大切な自分自身とお相手、そしてそれぞれの家庭を守ることにつながります。</p>
+              <h2>3. {clean_title}</h2>
+              <p>充実したパートナーシップを長期にわたり育むためには、ポジティブな魅力だけでなく、潜在的なリスクや注意すべきNG行動についても正しく認識しておくことが必要不可欠です。{clean_title}を踏まえた節度ある行動を徹底することが、大切な自分自身とお相手、そしてそれぞれの家庭を守ることにつながります。</p>
               
               <h3>3-1. デジタルフットプリント（身バレ）を防ぐ3つの必須防衛策</h3>
               <p>スマートフォンのセキュリティやSNSのデジタルフットプリント対策は、既婚者同士の交流における最優先事項です。以下の3つのチェックポイントを必ず徹底してください。</p>
@@ -111,14 +129,13 @@ def rewrite_single_html_file(filepath):
 
     # Extract existing h2 titles or generate fallback ones
     h2_matches = re.findall(r'<h2>(.*?)</h2>', content)
-    h2_1 = h2_matches[0] if len(h2_matches) > 0 else "基本の考え方と大人の心構え"
-    h2_2 = h2_matches[1] if len(h2_matches) > 1 else "具体的実践ステップとマナー"
-    h2_3 = h2_matches[2] if len(h2_matches) > 2 else "注意点と長続きの秘訣"
+    raw_h2_1 = h2_matches[0] if len(h2_matches) > 0 else "基本の考え方と大人の心構え"
+    raw_h2_2 = h2_matches[1] if len(h2_matches) > 1 else "具体的実践ステップとマナー"
+    raw_h2_3 = h2_matches[2] if len(h2_matches) > 2 else "注意点と長続きの秘訣"
 
-    # Clean h2 titles from numbers if any
-    h2_1 = re.sub(r'^\d+\.\s*', '', h2_1)
-    h2_2 = re.sub(r'^\d+\.\s*', '', h2_2)
-    h2_3 = re.sub(r'^\d+\.\s*', '', h2_3)
+    h2_1 = clean_h2_title(raw_h2_1) or "基本の考え方と大人の心構え"
+    h2_2 = clean_h2_title(raw_h2_2) or "具体的実践ステップとマナー"
+    h2_3 = clean_h2_title(raw_h2_3) or "注意点と長続きの秘訣"
 
     # Extract meta description & category
     desc_match = re.search(r'<meta name="description" content="(.*?)">', content)
@@ -133,7 +150,7 @@ def rewrite_single_html_file(filepath):
     eeat_badge_html = generate_eeat_badge()
 
     lead_paragraph = f"""
-              <p class="article-lead" style="font-size: 1.08rem; line-height: 1.9; color: var(--text-color); margin-bottom: 32px; border-bottom: 1px solid var(--color-border-light); padding-bottom: 24px;">
+              <p class="article-lead" style="font-size: 1.08rem; line-height: 1.9; color: var(--text-color); margin-bottom: 32px; border-left: 3px solid var(--color-primary); background: rgba(212, 175, 55, 0.03); padding: 18px 22px; border-radius: 0 8px 8px 0;">
                 {description} 本記事では、社会的ステータスと洗練された品格を兼ね備えた既婚の男女に向けて、失敗しない心構えや最新のセキュリティ対策、お互いに心地よい関係を長続きさせるための具体的なアプローチ方法を専門的視点から徹底的に解説します。
               </p>
 """
@@ -223,7 +240,7 @@ def rewrite_single_html_file(filepath):
     return char_count
 
 def main():
-    print("Rewriting ALL column-detail HTML files to 3,500+ pure text characters with E-E-A-T & FAQ Schema...")
+    print("Rewriting ALL column-detail HTML files with cleaned titles & gold typography...")
     files = glob.glob(os.path.join(WORKSPACE_DIR, "column-detail*.html"))
     
     total_chars = 0
