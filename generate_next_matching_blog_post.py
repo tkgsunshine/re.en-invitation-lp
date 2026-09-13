@@ -162,6 +162,11 @@ def main():
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(new_html)
 
+    # Sync published_date back to calendar database
+    target_post["published_date"] = period_date
+    with open(CALENDAR_PATH, "w", encoding="utf-8") as f:
+        json.dump(calendar, f, ensure_ascii=False, indent=2)
+
     print(f"Successfully generated next blog post with photo thumbnail: {target_post['filename']}")
 
 if __name__ == "__main__":
