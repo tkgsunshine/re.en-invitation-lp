@@ -1,13 +1,25 @@
 {
   "cleanUrls": true,
-  "rewrites": [
+  "redirects": [
     {
       "source": "/register",
-      "destination": "/preregister.html"
+      "destination": "/preregister",
+      "permanent": false
     },
     {
       "source": "/login",
-      "destination": "/preregister.html"
+      "destination": "/preregister",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/register",
+      "destination": "/preregister"
+    },
+    {
+      "source": "/login",
+      "destination": "/preregister"
     }
   ],
   "headers": [
