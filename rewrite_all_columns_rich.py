@@ -179,11 +179,12 @@ def rewrite_single_html_file(filepath):
               <div class="in-body-cta" style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--color-border-light); border-radius: 12px; padding: 36px 28px; margin: 48px 0; text-align: center;">
                 <h3 style="font-size: 1.3rem; color: var(--color-primary); margin-bottom: 14px; font-weight: 700;">Re.en 創設メンバー事前インビテーション受付中</h3>
                 <p style="font-size: 0.96rem; margin-bottom: 24px; color: var(--text-muted); line-height: 1.8;">Re.en（リエン）は、社会的ステータスと品格を備えた大人のための完全審査制サードプレイスコミュニティです。<br>現在、創設メンバー限定特典（有料サブスクリプション2ヶ月間完全無料提供）の優先エントリーを受け付けております。</p>
-                <a href="preregister.html#entry-form" class="btn btn--primary" style="display: inline-block; padding: 14px 40px; font-weight: 700; text-decoration: none; border-radius: 6px;">優先インビテーションに申し込む</a>
+                <a href="preregister#entry-form" class="btn btn--primary" style="display: inline-block; padding: 14px 40px; font-weight: 700; text-decoration: none; border-radius: 6px;">優先インビテーションに申し込む</a>
               </div>
 """
 
-    full_body_html = eeat_badge_html + lead_paragraph + sec1_html + sec2_html + sec3_html + sec4_html + highlight_html + cta_box_html
+    # Section 1 + Section 2 + [Mid-Article CTA] + Section 3 + Section 4 (FAQ) + Highlight + [End-Article CTA]
+    full_body_html = eeat_badge_html + lead_paragraph + sec1_html + sec2_html + cta_box_html + sec3_html + sec4_html + highlight_html + cta_box_html
 
     pure_text = clean_html(full_body_html)
     char_count = len(pure_text)
@@ -195,8 +196,8 @@ def rewrite_single_html_file(filepath):
         content
     )
 
-    body_pattern = r'(?s)(<div class="article-body">).*?(?=\s*<!-- Related Articles -->)'
-    content = re.sub(body_pattern, rf'\g<1>\n{full_body_html}\n            </div>', content)
+    body_pattern = r'(?s)<div class="article-body">.*?<!-- Related Articles -->'
+    content = re.sub(body_pattern, lambda m: f'<div class="article-body">\n{full_body_html}\n            </div>\n\n            <!-- Related Articles -->', content)
 
     # Inject FAQPage JSON-LD schema into <head>
     faq_schema = {
