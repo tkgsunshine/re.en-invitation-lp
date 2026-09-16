@@ -92,11 +92,8 @@ def main():
 
     recommended_widget_html = """<div class="sidebar-widget">
               <h4 class="sidebar-widget__title">おすすめの記事</h4>
-              <div class="sidebar-list" style="gap: 20px;">
+              <div class="sidebar-list">
                 <a href="column-detail" class="rec-article">
-                  <div class="rec-article__thumb">
-                    <img src="images/column_second_partner.webp" alt="セカンドパートナーとは？既婚者ならではの新しい関係の形" class="rec-article__img" loading="lazy" width="70" height="70">
-                  </div>
                   <div class="rec-article__content">
                     <h5 class="rec-article__title">セカンドパートナーとは？既婚者ならではの新しい関係の形</h5>
                     <span class="rec-article__date">2026.06.15</span>
@@ -104,9 +101,6 @@ def main():
                 </a>
 
                 <a href="column-detail-2" class="rec-article">
-                  <div class="rec-article__thumb">
-                    <img src="images/column_privacy.webp" alt="既婚者マッチングで絶対に身内にバレないための対策5選" class="rec-article__img" loading="lazy" width="70" height="70">
-                  </div>
                   <div class="rec-article__content">
                     <h5 class="rec-article__title">既婚者マッチングで絶対に身内にバレないための対策5選</h5>
                     <span class="rec-article__date">2026.06.12</span>
@@ -114,12 +108,16 @@ def main():
                 </a>
 
                 <a href="column-detail-3" class="rec-article">
-                  <div class="rec-article__thumb">
-                    <img src="images/column_profile.webp" alt="セカンドパートナー探しで失敗しないプロフィールの書き方" class="rec-article__img" loading="lazy" width="70" height="70">
-                  </div>
                   <div class="rec-article__content">
                     <h5 class="rec-article__title">セカンドパートナー探しで失敗しないプロフィールの書き方</h5>
                     <span class="rec-article__date">2026.06.10</span>
+                  </div>
+                </a>
+
+                <a href="column-detail-4" class="rec-article">
+                  <div class="rec-article__content">
+                    <h5 class="rec-article__title">既婚男性が求める「癒やし」と「心のつながり」の心理</h5>
+                    <span class="rec-article__date">2026.06.08</span>
                   </div>
                 </a>
               </div>
