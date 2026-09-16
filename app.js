@@ -25,15 +25,23 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. Header Scrolled State
   // ==========================================
   const header = document.querySelector('.js-header');
+  let headerTicking = false;
   const handleScroll = () => {
-    if (!header) return;
-    if (window.scrollY > 50) {
-      header.classList.add('header--scrolled');
-    } else {
-      header.classList.remove('header--scrolled');
+    if (!headerTicking) {
+      window.requestAnimationFrame(() => {
+        if (header) {
+          if (window.scrollY > 50) {
+            header.classList.add('header--scrolled');
+          } else {
+            header.classList.remove('header--scrolled');
+          }
+        }
+        headerTicking = false;
+      });
+      headerTicking = true;
     }
   };
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll(); // Initial check
 
   // ==========================================
@@ -632,14 +640,30 @@ document.addEventListener('DOMContentLoaded', () => {
   // 7. Scroll Progress Bar
   // ==========================================
   const progressBar = document.getElementById('scroll-progress');
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-    if (progressBar) {
-      progressBar.style.width = scrollPercent + '%';
-    }
-  });
+  if (progressBar) {
+    let scrollTicking = false;
+    let cachedMaxScroll = 0;
+
+    const updateMaxScroll = () => {
+      cachedMaxScroll = (document.documentElement.scrollHeight || document.body.scrollHeight) - window.innerHeight;
+    };
+
+    updateMaxScroll();
+    window.addEventListener('resize', updateMaxScroll, { passive: true });
+    window.addEventListener('load', updateMaxScroll, { passive: true });
+
+    window.addEventListener('scroll', () => {
+      if (!scrollTicking) {
+        window.requestAnimationFrame(() => {
+          const scrollTop = window.scrollY;
+          const scrollPercent = cachedMaxScroll > 0 ? (scrollTop / cachedMaxScroll) * 100 : 0;
+          progressBar.style.width = scrollPercent + '%';
+          scrollTicking = false;
+        });
+        scrollTicking = true;
+      }
+    }, { passive: true });
+  }
 
   // ==========================================
   // 8. Column Pagination, Category Filter, and Search Controller

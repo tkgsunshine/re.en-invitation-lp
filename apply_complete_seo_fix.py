@@ -42,12 +42,19 @@ def fix_page_meta_and_schema(filepath):
     else:
         content = re.sub(r'(</title>)', r'\1\n  ' + canonical_tag, content, count=1)
 
-    # Preconnect hints for Google Fonts
-    preconnect_html = """  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>"""
+    # Preconnect hints and Google Fonts optimization
+    fonts_block = """  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet"></noscript>"""
 
-    if 'fonts.googleapis.com' in content and 'rel="preconnect"' not in content:
-        content = re.sub(r'(<head.*?>)', r'\1\n' + preconnect_html, content, count=1)
+    # Replace old fonts links if present
+    content = re.sub(
+        r'(?:<link rel="preconnect" href="https://fonts\.googleapis\.com">.*?\n)?(?:<link rel="preconnect" href="https://fonts\.gstatic\.com"[^>]*>.*?\n)?<link href="https://fonts\.googleapis\.com/css2\?[^"]+" rel="stylesheet"[^>]*>(?:\s*<noscript><link href="https://fonts\.googleapis\.com/css2\?[^"]+" rel="stylesheet"></noscript>)?',
+        fonts_block,
+        content,
+        flags=re.DOTALL
+    )
 
     # OGP block
     ogp_html = f"""
