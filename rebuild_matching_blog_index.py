@@ -90,14 +90,54 @@ def main():
               </ul>
             </div>"""
 
-    print("Updating sidebar category widget in all details files...")
+    recommended_widget_html = """<div class="sidebar-widget">
+              <h4 class="sidebar-widget__title">おすすめの記事</h4>
+              <div class="sidebar-list" style="gap: 20px;">
+                <a href="column-detail" class="rec-article">
+                  <div class="rec-article__thumb">
+                    <img src="images/column_second_partner.webp" alt="セカンドパートナーとは？既婚者ならではの新しい関係の形" class="rec-article__img" loading="lazy" width="70" height="70">
+                  </div>
+                  <div class="rec-article__content">
+                    <h5 class="rec-article__title">セカンドパートナーとは？既婚者ならではの新しい関係の形</h5>
+                    <span class="rec-article__date">2026.06.15</span>
+                  </div>
+                </a>
+
+                <a href="column-detail-2" class="rec-article">
+                  <div class="rec-article__thumb">
+                    <img src="images/column_privacy.webp" alt="既婚者マッチングで絶対に身内にバレないための対策5選" class="rec-article__img" loading="lazy" width="70" height="70">
+                  </div>
+                  <div class="rec-article__content">
+                    <h5 class="rec-article__title">既婚者マッチングで絶対に身内にバレないための対策5選</h5>
+                    <span class="rec-article__date">2026.06.12</span>
+                  </div>
+                </a>
+
+                <a href="column-detail-3" class="rec-article">
+                  <div class="rec-article__thumb">
+                    <img src="images/column_profile.webp" alt="セカンドパートナー探しで失敗しないプロフィールの書き方" class="rec-article__img" loading="lazy" width="70" height="70">
+                  </div>
+                  <div class="rec-article__content">
+                    <h5 class="rec-article__title">セカンドパートナー探しで失敗しないプロフィールの書き方</h5>
+                    <span class="rec-article__date">2026.06.10</span>
+                  </div>
+                </a>
+              </div>
+            </div>"""
+
+    print("Updating sidebar widgets and header thumbs in all details files...")
     category_widget_pattern = r'(?s)<div class="sidebar-widget">\s*<h4 class="sidebar-widget__title">カテゴリー</h4>.*?</ul>\s*</div>'
+    recommended_widget_pattern = r'(?s)<div class="sidebar-widget">\s*<h4 class="sidebar-widget__title">おすすめの記事</h4>.*?</div>\s*</div>'
+    header_thumb_pattern = r'(?s)(<header class="article-header">.*?<h1 class="article-header__title">[^<]+</h1>\s*)<div class="rec-article__thumb"'
+
     for f in all_details:
         path = os.path.join(WORKSPACE_DIR, f)
         with open(path, "r", encoding="utf-8") as file:
             content = file.read()
         
         content = re.sub(category_widget_pattern, category_widget_html, content)
+        content = re.sub(recommended_widget_pattern, recommended_widget_html, content)
+        content = re.sub(header_thumb_pattern, r'\g<1><div class="article-hero-thumb"', content)
         
         with open(path, "w", encoding="utf-8") as file:
             file.write(content)
@@ -140,8 +180,9 @@ def main():
     grid_pattern = r'(?s)(<div class="column-grid">).*?(</div>\s*<!-- Pagination -->)'
     column_content = re.sub(grid_pattern, rf'\g<1>\n{cards_grid_content}\n            \g<2>', column_content)
 
-    # Replace sidebar categories
+    # Replace sidebar categories and recommended articles
     column_content = re.sub(category_widget_pattern, category_widget_html, column_content)
+    column_content = re.sub(recommended_widget_pattern, recommended_widget_html, column_content)
 
     with open(column_html_path, "w", encoding="utf-8") as file:
         file.write(column_content)

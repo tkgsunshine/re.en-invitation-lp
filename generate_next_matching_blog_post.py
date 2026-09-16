@@ -152,9 +152,9 @@ def main():
     new_html = re.sub(r'<span class="article-header__date">[^<]+</span>', f'<span class="article-header__date">{period_date}</span>', new_html)
     new_html = re.sub(r'<h1 class="article-header__title">[^<]+</h1>', f'<h1 class="article-header__title">{target_post["headline"]}</h1>', new_html)
 
-    # 7. Update Hero visual Image (Photographic Thumbnail)
-    hero_thumb_pattern = r'(?s)<div class="rec-article__thumb"[^>]*>.*?</div>'
-    hero_thumb_html = f"""<div class="rec-article__thumb" style="width: 100%; height: 350px; overflow: hidden; border-radius: 4px; margin-bottom: 32px;"><img src="{banner_img}" alt="{target_post['headline']}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85; margin: 0; border: none;" loading="lazy" width="800" height="350"></div>"""
+    # 7. Update Hero visual Image in header only (Photographic Thumbnail)
+    hero_thumb_pattern = r'(?s)(<header class="article-header">.*?<h1 class="article-header__title">[^<]+</h1>\s*)<div class="(?:rec-article__thumb|article-hero-thumb)"[^>]*>.*?</div>'
+    hero_thumb_html = rf'\g<1><div class="article-hero-thumb" style="width: 100%; height: 350px; overflow: hidden; border-radius: 4px; margin-bottom: 32px;"><img src="{banner_img}" alt="{target_post["headline"]}" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85; margin: 0; border: none;" loading="lazy" width="800" height="350"></div>'
     new_html = re.sub(hero_thumb_pattern, hero_thumb_html, new_html)
 
     # Save the generated details file
