@@ -1,0 +1,33 @@
+name: Auto Publish SEO Columns (10:00 & 18:00 JST)
+
+on:
+  schedule:
+    # 10:00 JST = 01:00 UTC, 18:00 JST = 09:00 UTC
+    - cron: '0 1,9 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run Column Pipeline
+        run: |
+          python3 run_matching_column_pipeline.py
