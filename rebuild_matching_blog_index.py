@@ -52,13 +52,29 @@ def main():
             excerpt = excerpt_match.group(1).strip() if excerpt_match else ""
             readtime = readtime_match.group(1).strip() if readtime_match else "7分"
             
-            # Photo image extraction
-            img_path = "images/column_second_partner.webp"
+            # Category fallback images
+            category_fallbacks = {
+                "出会いのコツ": "images/column_chat.webp",
+                "プライバシー対策": "images/column_security.webp",
+                "セカンドパートナー": "images/column_second_partner.webp",
+                "お悩み": "images/column_distance.webp"
+            }
+
+            # Photo image extraction with existence validation
+            img_path = None
             img_match = re.search(r'<div class="rec-article__thumb"[^>]*>\s*<img src="([^"]+)"', content)
             if img_match:
-                img_path = img_match.group(1).strip()
-            elif f in calendar_map and "banner_img" in calendar_map[f]:
-                img_path = calendar_map[f]["banner_img"]
+                candidate = img_match.group(1).strip()
+                if os.path.exists(os.path.join(WORKSPACE_DIR, candidate)):
+                    img_path = candidate
+
+            if not img_path and f in calendar_map and "banner_img" in calendar_map[f]:
+                candidate = calendar_map[f]["banner_img"]
+                if os.path.exists(os.path.join(WORKSPACE_DIR, candidate)):
+                    img_path = candidate
+
+            if not img_path or not os.path.exists(os.path.join(WORKSPACE_DIR, img_path)):
+                img_path = category_fallbacks.get(cat, "images/column_second_partner.webp")
             
             if cat in cat_counts:
                 cat_counts[cat] += 1
