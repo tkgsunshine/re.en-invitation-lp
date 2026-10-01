@@ -5,3 +5,5 @@ check_html.py
 .vercel
 dist/
 .env*
+gsc-credentials.json
+__pycache__/

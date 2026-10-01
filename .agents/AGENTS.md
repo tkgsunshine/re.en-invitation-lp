@@ -129,3 +129,12 @@
 ---
 
 以上のレギュレーションをプロジェクトの絶対原則として遵守し、継続的な運用・機能拡張を行います。
+
+---
+
+## 7. コラム補充・AI社員の運用（Claude Codeへ引き継ぎ済み）
+
+1. コラムの公開は GitHub Actions が実行する。公開待ちの記事は `editorial_calendar_matching.json` に追記して補充する（Claude Code が担当。詳細は `docs/AI_EMPLOYEE_SETUP.md`）。**`.github/workflows/` の公開用workflowはAGを含め変更しない**
+2. 手書きの記事には `"authored": true` を付ける。付けない場合、`rewrite_all_columns_rich.py` により定型文へ上書きされる
+3. 根拠のない権威づけ（専門家監修など）は新規記事に書かない。配偶者や家族を欺く方法の指南は書かない
+
