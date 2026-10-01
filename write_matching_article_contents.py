@@ -103,6 +103,20 @@ def main():
                 body_replacement_pattern = r'(?s)(<div class="article-body">).*?(?=\s*<!-- Related Articles -->)'
                 content = re.sub(body_replacement_pattern, rf'\g<1>{body_html}\n            </div>', content)
 
+                if authored:
+                    # Keep title / description / H1 / OGP in sync with the calendar entry
+                    # (needed when an existing page is replaced by a hand-written article).
+                    t, d, h = post["title"], post["description"], post["headline"]
+                    content = re.sub(r'<title>.*?</title>', lambda m: f"<title>{t}</title>", content, count=1, flags=re.S)
+                    content = re.sub(r'<meta name="description" content="[^"]*">', lambda m: f'<meta name="description" content="{d}">', content, count=1)
+                    for prop, val in (("og:title", t), ("og:description", d)):
+                        content = re.sub(rf'<meta property="{prop}" content="[^"]*">', lambda m, prop=prop, val=val: f'<meta property="{prop}" content="{val}">', content, count=1)
+                    for name, val in (("twitter:title", t), ("twitter:description", d)):
+                        content = re.sub(rf'<meta name="{name}" content="[^"]*">', lambda m, name=name, val=val: f'<meta name="{name}" content="{val}">', content, count=1)
+                    content = re.sub(r'<h1 class="article-header__title">[^<]*</h1>', lambda m: f'<h1 class="article-header__title">{h}</h1>', content, count=1)
+                    content = re.sub(r'("@type": "BlogPosting".*?"headline": )"[^"]*"', lambda m: f'{m.group(1)}{json.dumps(h, ensure_ascii=False)}', content, count=1, flags=re.S)
+                    content = re.sub(r'("@type": "BlogPosting".*?"description": )"[^"]*"', lambda m: f'{m.group(1)}{json.dumps(d, ensure_ascii=False)}', content, count=1, flags=re.S)
+
                 if authored and post.get("faqs"):
                     faq_schema = {
                         "@context": "https://schema.org",
