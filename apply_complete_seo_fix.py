@@ -48,6 +48,10 @@ def fix_page_meta_and_schema(filepath):
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet"></noscript>"""
 
+    # Drop every existing fonts preconnect hint first. The pattern below only matched an un-indented pair, so each
+    # run appended another indented pair (43 copies per page accumulated).
+    content = re.sub(r'[ \t]*<link rel="preconnect" href="https://fonts\.(?:googleapis|gstatic)\.com"[^>]*>[ \t]*\n', '', content)
+
     # Replace old fonts links if present
     content = re.sub(
         r'(?:<link rel="preconnect" href="https://fonts\.googleapis\.com">.*?\n)?(?:<link rel="preconnect" href="https://fonts\.gstatic\.com"[^>]*>.*?\n)?<link href="https://fonts\.googleapis\.com/css2\?[^"]+" rel="stylesheet"[^>]*>(?:\s*<noscript><link href="https://fonts\.googleapis\.com/css2\?[^"]+" rel="stylesheet"></noscript>)?',
