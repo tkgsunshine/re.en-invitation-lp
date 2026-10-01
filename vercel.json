@@ -250,6 +250,17 @@
       "source": "/login",
       "destination": "/preregister",
       "permanent": false
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.re-en.jp"
+        }
+      ],
+      "destination": "https://re-en.jp/:path",
+      "permanent": true
     }
   ],
   "rewrites": [

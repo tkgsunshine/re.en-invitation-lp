@@ -26,11 +26,14 @@ def fix_page_meta_and_schema(filepath):
     desc_match = re.search(r'<meta name="description" content="(.*?)">', content)
     description = desc_match.group(1) if desc_match else "既婚者のための完全審査制上質コミュニティRe.en（リエン）。"
 
-    # Determine og:image
+    # Determine og:image. Use the page's real hero image; the old "images/column_<vol>.webp" naming
+    # only exists for 6 files, so 80+ pages pointed at a missing image (broken social previews).
+    og_image = "https://re-en.jp/images/hero_lifestyle.webp"
     if vol_num:
-        og_image = f"https://re-en.jp/images/column_{vol_num}.webp"
-    else:
-        og_image = "https://re-en.jp/images/hero_lifestyle.webp"
+        hero = re.search(r'<div class="article-hero-thumb"[^>]*>\s*<img src="([^"]+)"', content)
+        cand = hero.group(1) if hero else f"images/column_{vol_num}.webp"
+        if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), cand)):
+            og_image = f"https://re-en.jp/{cand}"
 
     safe_title = title.replace('"', '')
     safe_desc = description.replace('"', '')
@@ -76,6 +79,9 @@ def fix_page_meta_and_schema(filepath):
   <meta name="twitter:image" content="{og_image}">"""
 
     # Inject OGP if missing
+    content = re.sub(r'(<meta property="og:image" content=")[^"]*(")', lambda m: m.group(1) + og_image + m.group(2), content)
+    content = re.sub(r'(<meta name="twitter:image" content=")[^"]*(")', lambda m: m.group(1) + og_image + m.group(2), content)
+
     if 'property="og:image"' not in content and "property='og:image'" not in content:
         content = re.sub(r'(</title>)', r'\1' + ogp_html, content, count=1)
 
