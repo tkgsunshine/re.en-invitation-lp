@@ -22,12 +22,8 @@ def clean_h2_title(t):
     return first_part.strip()
 
 def generate_eeat_badge():
-    return """
-              <div class="eeat-badge" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.3); border-radius: 20px; padding: 8px 18px; margin-bottom: 24px; font-size: 0.88rem; color: #D4AF37; font-weight: 600;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 11 12 14 22 4"/></svg>
-                <span>Re.en 専門編集部 ＆ 心理カウンセラー 共同監修コンテンツ</span>
-              </div>
-"""
+    # The "心理カウンセラー共同監修" badge was removed: no supporting facts for the claim.
+    return ""
 
 def generate_deep_section_1(h2_title, description):
     clean_title = clean_h2_title(h2_title)

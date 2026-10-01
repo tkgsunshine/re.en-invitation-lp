@@ -2,6 +2,246 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/column-detail-83",
+      "destination": "/column-detail-73",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-83.html",
+      "destination": "/column-detail-73",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-93",
+      "destination": "/column-detail-73",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-93.html",
+      "destination": "/column-detail-73",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-84",
+      "destination": "/column-detail-74",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-84.html",
+      "destination": "/column-detail-74",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-94",
+      "destination": "/column-detail-74",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-94.html",
+      "destination": "/column-detail-74",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-81",
+      "destination": "/column-detail-71",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-81.html",
+      "destination": "/column-detail-71",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-91",
+      "destination": "/column-detail-71",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-91.html",
+      "destination": "/column-detail-71",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-101",
+      "destination": "/column-detail-71",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-101.html",
+      "destination": "/column-detail-71",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-82",
+      "destination": "/column-detail-72",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-82.html",
+      "destination": "/column-detail-72",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-92",
+      "destination": "/column-detail-72",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-92.html",
+      "destination": "/column-detail-72",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-80",
+      "destination": "/column-detail-70",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-80.html",
+      "destination": "/column-detail-70",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-90",
+      "destination": "/column-detail-70",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-90.html",
+      "destination": "/column-detail-70",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-100",
+      "destination": "/column-detail-70",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-100.html",
+      "destination": "/column-detail-70",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-78",
+      "destination": "/column-detail-68",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-78.html",
+      "destination": "/column-detail-68",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-88",
+      "destination": "/column-detail-68",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-88.html",
+      "destination": "/column-detail-68",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-98",
+      "destination": "/column-detail-68",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-98.html",
+      "destination": "/column-detail-68",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-87",
+      "destination": "/column-detail-77",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-87.html",
+      "destination": "/column-detail-77",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-97",
+      "destination": "/column-detail-77",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-97.html",
+      "destination": "/column-detail-77",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-79",
+      "destination": "/column-detail-69",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-79.html",
+      "destination": "/column-detail-69",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-89",
+      "destination": "/column-detail-69",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-89.html",
+      "destination": "/column-detail-69",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-99",
+      "destination": "/column-detail-69",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-99.html",
+      "destination": "/column-detail-69",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-86",
+      "destination": "/column-detail-76",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-86.html",
+      "destination": "/column-detail-76",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-96",
+      "destination": "/column-detail-76",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-96.html",
+      "destination": "/column-detail-76",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-85",
+      "destination": "/column-detail-75",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-85.html",
+      "destination": "/column-detail-75",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-95",
+      "destination": "/column-detail-75",
+      "permanent": true
+    },
+    {
+      "source": "/column-detail-95.html",
+      "destination": "/column-detail-75",
+      "permanent": true
+    },
+    {
       "source": "/register",
       "destination": "/preregister",
       "permanent": false
