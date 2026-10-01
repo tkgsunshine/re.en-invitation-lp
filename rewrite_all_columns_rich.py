@@ -3,6 +3,7 @@ import re
 import glob
 import json
 
+AUTHORED_MARKER = "<!-- authored:cc -->"
 WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 CALENDAR_PATH = os.path.join(WORKSPACE_DIR, "editorial_calendar_matching.json")
 
@@ -129,6 +130,12 @@ def generate_deep_section_4_faq(category_name, headline):
 def rewrite_single_html_file(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
         content = f.read()
+
+    # Articles written by hand (marked by write_matching_article_contents.py) must not be
+    # replaced by the templated filler below. Report their real text length instead.
+    if AUTHORED_MARKER in content:
+        body = re.search(r'(?s)<div class="article-body">(.*?)<!-- Related Articles -->', content)
+        return len(clean_html(body.group(1))) if body else 0
 
     # Extract existing h2 titles or generate fallback ones
     h2_matches = re.findall(r'<h2>(.*?)</h2>', content)

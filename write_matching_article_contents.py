@@ -2,6 +2,7 @@ import os
 import re
 import json
 
+AUTHORED_MARKER = "<!-- authored:cc -->"
 WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 CALENDAR_PATH = os.path.join(WORKSPACE_DIR, "editorial_calendar_matching.json")
 
@@ -36,11 +37,23 @@ def main():
             with open(path, "r", encoding="utf-8") as f:
                 content = f.read()
                 
-            if "in-body-cta" not in content:
+            # Legacy entries: inject once (no CTA yet). Authored entries: inject until the marker is present
+            # (the template page already contains a CTA, so the legacy check alone would skip them).
+            needs_injection = ("in-body-cta" not in content) or (post.get("authored") and AUTHORED_MARKER not in content)
+            if needs_injection:
                 print(f"Injecting copywriting into {post['filename']} (Vol.{post_vol})...")
                 
+                authored = bool(post.get("authored"))
+
                 # Build the rich article body HTML
                 body_html = ""
+                if authored:
+                    # Hand-written article: marker (protects it from rewrite_all_columns_rich.py) + lead paragraph
+                    lead = post.get("lead") or post["description"]
+                    body_html += f'''
+              {AUTHORED_MARKER}
+              <p class="article-lead" style="font-size: 1.08rem; line-height: 1.9; color: var(--text-color); margin-bottom: 32px; border-left: 3px solid var(--color-primary); padding-left: 16px;">{lead}</p>
+'''
                 for sec in post["body_sections"]:
                     body_html += f"\n              <h2>{sec['h2']}</h2>\n              {sec['text']}\n"
 
@@ -56,6 +69,16 @@ def main():
                   {post['highlight_box']['title']}
                 </div>{highlight_items}
               </div>"""
+
+                if authored and post.get("faqs"):
+                    body_html += "\n              <h2>よくある質問（FAQ）</h2>\n              <div class=\"faq-container\" style=\"margin: 28px 0;\">"
+                    for n, qa in enumerate(post["faqs"], start=1):
+                        body_html += f'''
+                <div class="faq-item" style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--color-border-light); border-radius: 8px; padding: 20px; margin-bottom: 16px;">
+                  <h3 style="font-size: 1.05rem; color: var(--color-primary); margin-bottom: 10px; font-weight: 700;">Q{n}. {qa["q"]}</h3>
+                  <p style="font-size: 0.95rem; line-height: 1.8; margin-bottom: 0; color: var(--text-color);">{qa["a"]}</p>
+                </div>'''
+                    body_html += "\n              </div>"
 
                 # Add styled in-body CTA box promoting member registration (Aligning with Re.en aesthetic)
                 body_html += """
@@ -79,6 +102,19 @@ def main():
                 # Replace visible article body using safe landmark-based regex (matching B2B structure or Re.en structure)
                 body_replacement_pattern = r'(?s)(<div class="article-body">).*?(?=\s*<!-- Related Articles -->)'
                 content = re.sub(body_replacement_pattern, rf'\g<1>{body_html}\n            </div>', content)
+
+                if authored and post.get("faqs"):
+                    faq_schema = {
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {"@type": "Question", "name": qa["q"], "acceptedAnswer": {"@type": "Answer", "text": qa["a"]}}
+                            for qa in post["faqs"]
+                        ],
+                    }
+                    faq_ld = '<script type="application/ld+json">\n  ' + json.dumps(faq_schema, ensure_ascii=False, indent=2) + '\n  </script>'
+                    content = re.sub(r'(?s)<script type="application/ld\+json">\s*\{\s*"@context": "https://schema.org",\s*"@type": "FAQPage".*?</script>\s*', '', content)
+                    content = content.replace("</head>", f"  {faq_ld}\n</head>", 1)
 
                 # Save file
                 with open(path, "w", encoding="utf-8") as f:
