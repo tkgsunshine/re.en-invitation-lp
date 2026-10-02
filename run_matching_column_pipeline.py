@@ -38,10 +38,16 @@ def check_double_publish_guard(max_interval_seconds=14400):
 
 def main():
     parser = argparse.ArgumentParser(description="Married Matching LP Column Automation Pipeline")
-    parser.add_argument("--force", action="store_true", help="Bypass the double-publish guard")
+    parser.add_argument("--force", action="store_true", help="Bypass the double-publish guard and pause setting")
     args = parser.parse_args()
 
     print("Starting Married Matching LP Column Automation Pipeline...")
+
+    # Auto-publish Pause Guard (Stops scheduled auto-generation without modifying .github/workflows/)
+    AUTO_PUBLISH_PAUSED = True
+    if AUTO_PUBLISH_PAUSED and not args.force:
+        print("[Auto-Publish Paused] Automatic column generation is currently paused. Skipping pipeline execution.")
+        sys.exit(0)
     
     # Pre-flight Double-post Guard check (unless --force is passed)
     if not args.force:
