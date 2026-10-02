@@ -9,6 +9,10 @@ def fix_toc_in_file(filepath):
         content = f.read()
 
     # Remove existing TOC and heading IDs
+    # The TOC box contains a nested header </div>, so match through the closing </ol></div>;
+    # then drop any orphan <ol> fragments left behind by earlier non-greedy removals.
+    content = re.sub(r'(?s)\s*<!-- Article Table of Contents \(TOC\) -->\s*<div class="article-toc">.*?</ol>\s*</div>\s*', '\n', content)
+    content = re.sub(r'(?s)\s*<ol class="article-toc__list">.*?</ol>\s*</div>\s*', '\n', content)
     content = re.sub(r'(?s)\s*<!-- Article Table of Contents \(TOC\) -->.*?</div>\s*', '\n', content)
     content = re.sub(r'<h([23]) id="heading-[^"]+">(.*?)</h\1>', r'<h\1>\2</h\1>', content)
 
@@ -84,6 +88,9 @@ def fix_toc_in_file(filepath):
         new_body_content = toc_html + new_body_content
 
     content = re.sub(r'(?s)(<div class="article-body">).*?(?=\s*<!-- Related Articles -->)', rf'\g<1>\n{new_body_content}', content)
+
+    # Keep the rewrite idempotent: collapse the blank lines this rewrite would otherwise add on every run.
+    content = re.sub(r'\n(?:[ \t]*\n){2,}', '\n\n', content)
 
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(content)
