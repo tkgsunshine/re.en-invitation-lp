@@ -15,3 +15,5 @@
 - ヒーロー画像・バッジ幅など、レギュレーション記載のデザイン固定値は勝手に変えない。
 - 事実は検証してから報告する。依頼のないファイル削除・無関係な改変をしない。
 - `.cursorrules` 内のMac絶対パス（`/Users/user/.gemini/...`）は旧環境のもの。画像は `images/` を参照する。
+
+- 開発アイデア: ユーザーが新機能・改善のアイデアを話したら、`.claude/agents/dev-employee.md` の「今後の開発アイデアの保存」に従い、日報ダッシュボード（https://claude.ai/artifact/VCP5kV7TA7NDHjZe9d4gNF）の `dev_ideas` に保存する（実装は依頼があるまでしない）。
