@@ -22,3 +22,4 @@
 - **PJ別の開発・運用セッション**: 機能、画面、運用を担当する。
 - **`.github/workflows/` の公開用workflow**: どちらも、ユーザーの依頼がない限り変更しない。
 - どちらも、PRで変更する（mainへ直接pushしない）。
+- 開発アイデア: ユーザーが新機能・改善のアイデアを話したら、`.claude/agents/dev-employee.md` の「ホーム」の節に従い、ホームのダッシュボード（https://claude.ai/artifact/9eu8jRktA8nGCC8HKN7L8A）の `ideas` に保存する（実装は依頼があるまでしない）。
