@@ -202,30 +202,70 @@ def main():
         file.write(column_content)
     print("Successfully updated column.html card grid with photo thumbnails and sidebar counts.")
 
+    # Latest columns on the top page (static links help crawlers find new articles)
+    index_path = os.path.join(WORKSPACE_DIR, "index.html")
+    try:
+        with open(index_path, "r", encoding="utf-8") as file:
+            index_content = file.read()
+        marker = r'(?s)<!-- LATEST-COLUMNS:START -->.*?<!-- LATEST-COLUMNS:END -->'
+        if re.search(marker, index_content):
+            latest = detail_meta_list[:6]
+            latest_cards = "\n".join(
+                f"""          <a href="{m['clean_url']}" class="column-card">
+            <div class="column-card__content">
+              <div class="column-card__meta"><span class="column-card__date">{m['date']}</span></div>
+              <h3 class="column-card__title">{m['title']}</h3>
+            </div>
+          </a>""" for m in latest)
+            latest_html = f"""<!-- LATEST-COLUMNS:START -->
+    <section id="latest-column" class="section section--alt">
+      <div class="container">
+        <span class="section__label">COLUMN</span>
+        <h3 class="section__title">最新のコラム</h3>
+        <div class="column-grid">
+{latest_cards}
+        </div>
+        <p style="text-align: center; margin-top: 24px;"><a href="column" class="btn btn--border">コラム一覧を見る</a></p>
+      </div>
+    </section>
+    <!-- LATEST-COLUMNS:END -->"""
+            index_content = re.sub(marker, lambda _m: latest_html, index_content)
+            with open(index_path, "w", encoding="utf-8") as file:
+                file.write(index_content)
+            print("Updated latest columns block on index.html.")
+    except Exception as e:
+        print(f"[Notice] latest columns block skipped: {e}")
+
     # Rebuild sitemap.xml with Clean URLs (no .html)
     print("Rebuilding sitemap.xml with clean URLs...")
     today_date = datetime.date.today().strftime('%Y-%m-%d')
 
+    def to_iso(d):
+        m = re.match(r"(\d{4})[./-](\d{1,2})[./-](\d{1,2})", d or "")
+        return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d}" if m else today_date
+
+    latest_date = max((to_iso(m["date"]) for m in detail_meta_list), default=today_date)
+    # (loc, priority, changefreq, lastmod) - lastmod only where it is actually known
     sitemap_entries = [
-        ("https://re-en.jp/", "1.0", "daily"),
-        ("https://re-en.jp/column", "0.9", "daily"),
-        ("https://re-en.jp/preregister", "0.9", "weekly"),
-        ("https://re-en.jp/pricing", "0.8", "monthly"),
-        ("https://re-en.jp/privacy", "0.5", "monthly"),
-        ("https://re-en.jp/term", "0.5", "monthly"),
-        ("https://re-en.jp/tokushoho", "0.5", "monthly"),
-        ("https://re-en.jp/company", "0.5", "monthly")
+        ("https://re-en.jp/", "1.0", "daily", latest_date),
+        ("https://re-en.jp/column", "0.9", "daily", latest_date),
+        ("https://re-en.jp/preregister", "0.9", "weekly", None),
+        ("https://re-en.jp/pricing", "0.8", "monthly", None),
+        ("https://re-en.jp/privacy", "0.5", "monthly", None),
+        ("https://re-en.jp/term", "0.5", "monthly", None),
+        ("https://re-en.jp/tokushoho", "0.5", "monthly", None),
+        ("https://re-en.jp/company", "0.5", "monthly", None)
     ]
 
     for meta in detail_meta_list:
         file_loc = f"https://re-en.jp/{meta['clean_url']}"
-        sitemap_entries.append((file_loc, "0.7", "monthly"))
+        sitemap_entries.append((file_loc, "0.7", "monthly", to_iso(meta["date"])))
 
     url_nodes = []
-    for loc, priority, changefreq in sitemap_entries:
+    for loc, priority, changefreq, lastmod in sitemap_entries:
+        lm = f"\n    <lastmod>{lastmod}</lastmod>" if lastmod else ""
         url_nodes.append(f"""  <url>
-    <loc>{loc}</loc>
-    <lastmod>{today_date}</lastmod>
+    <loc>{loc}</loc>{lm}
     <changefreq>{changefreq}</changefreq>
     <priority>{priority}</priority>
   </url>""")
