@@ -139,7 +139,7 @@ def main():
     # 5. Update Visible Breadcrumbs
     breadcrumbs_block_pattern = r'(?s)<ul class="breadcrumbs">.*?</ul>'
     breadcrumbs_block_html = f"""<ul class="breadcrumbs">
-            <li class="breadcrumbs__item"><a href="index.html">ホーム</a></li>
+            <li class="breadcrumbs__item"><a href="/">ホーム</a></li>
             <li class="breadcrumbs__separator">/</li>
             <li class="breadcrumbs__item"><a href="column">コラム一覧</a></li>
             <li class="breadcrumbs__separator">/</li>
