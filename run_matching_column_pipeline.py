@@ -26,7 +26,7 @@ def check_double_publish_guard(max_interval_seconds=14400):
             commit_time = int(parts[0])
             msg = parts[1] if len(parts) > 1 else ""
 
-            if "Auto-publish" in msg or "daily column" in msg or "Vol." in msg:
+            if "Auto-publish" in msg or "daily column" in msg:
                 elapsed = now - commit_time
                 if elapsed < max_interval_seconds:
                     elapsed_min = elapsed // 60
