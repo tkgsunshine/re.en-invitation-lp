@@ -6,9 +6,9 @@
 const crypto = require('crypto');
 
 
-const VIEW_HTML = `<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>事前登録（管理）</title>
+const VIEW_HTML = `<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>事前登録 Re.en（管理）</title>
 <style>body{font:15px/1.7 -apple-system,"Noto Sans JP",sans-serif;margin:0;padding:24px 16px;background:#14161a;color:#e6e8ea}main{max-width:720px;margin:auto}h1{font-size:20px}input{width:100%;box-sizing:border-box;font:inherit;padding:8px;border-radius:6px;border:1px solid #444;background:#1d2025;color:inherit}button{font:inherit;padding:6px 16px;border-radius:6px;border:1px solid #9fb2f0;background:#9fb2f0;color:#14161a;font-weight:700;cursor:pointer;margin:8px 8px 8px 0}h2{font-size:13px;color:#959ca2;margin:20px 0 6px}.r{display:grid;grid-template-columns:minmax(90px,170px) 1fr 40px;gap:8px;align-items:center;font-size:13px}.t{height:8px;background:#2d3238;border-radius:4px;overflow:hidden}.f{display:block;height:100%;background:#9fb2f0}.n{text-align:right;font-family:monospace}</style></head><body><main>
-<h1>事前登録（管理）<span id="tot"></span></h1>
+<h1>事前登録 Re.en（管理）<span id="tot"></span></h1>
 <input id="k" type="password" autocomplete="off" placeholder="合言葉" aria-label="合言葉">
 <button id="go" type="button">読み込む</button><button id="csv" type="button" hidden>CSVをダウンロード</button><span id="st"></span>
 <div id="body"></div></main>
