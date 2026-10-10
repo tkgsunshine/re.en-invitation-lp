@@ -15,7 +15,7 @@
 | ユーザー名（@） | 候補: `@Reen_jp`（推奨）/ `@Reen_official` / `@Reen_club`（`@Reen` は使用済み） |
 | アイコン | `assets/x_icon_400x400.png` |
 | ヘッダー | `assets/x_header_1500x500.png`（「ハイクラスな既婚者限定コミュニティ」「完全審査制｜本人確認・既婚・年収の証明機能」「2026年冬リリース予定｜事前登録受付中」） |
-| Webサイト | `https://re-en.jp/preregister.html?utm_source=x&utm_medium=profile&utm_campaign=bio` |
+| Webサイト | `https://re-en.jp/?utm_source=x` |
 
 ### プロフィール文（候補A推奨）
 **候補A**
@@ -44,7 +44,7 @@ Re.en（リエン）｜ハイクラスな既婚者限定・完全審査制コミ
 
 2026年冬リリース予定。創設メンバー先着1,000名を募集中
 ▼事前登録
-https://re-en.jp/preregister.html?utm_source=x&utm_medium=social&utm_campaign=pin_a
+https://re-en.jp/preregister.html?utm_source=x
 ```
 **B（コピー＋登録の流れ）**
 ```
@@ -56,7 +56,7 @@ Re.en（リエン）事前登録の流れ
 ② 本人確認書類を提出し、運営が審査
 ③ 2026年冬の本リリースで利用開始
 ▼事前登録
-https://re-en.jp/preregister.html?utm_source=x&utm_medium=social&utm_campaign=pin_b
+https://re-en.jp/preregister.html?utm_source=x
 ```
 **C（ブランドコピー2行）**
 ```
@@ -68,7 +68,7 @@ Re.en（リエン）
 2026年冬リリース予定／事前登録受付中
 
 ▼創設メンバー先着1,000名
-https://re-en.jp/preregister.html?utm_source=x&utm_medium=social&utm_campaign=pin_c
+https://re-en.jp/preregister.html?utm_source=x
 ```
 
 ### 設定時の注意
@@ -80,7 +80,7 @@ https://re-en.jp/preregister.html?utm_source=x&utm_medium=social&utm_campaign=pi
 
 ## 2. 最初の投稿5本（ドラフト）
 
-投稿ごとに `utm_campaign` を変えて、どの型が登録に効くか見分ける。文字数は、無料アカウントの上限（全角140字相当）に収まるよう調整済み。
+計測は「Xからの流入か」だけ見る方針のため、UTMは `utm_source=x` のみ（投稿別の計測はしない）。文字数は、無料アカウントの上限（全角140字相当）に収まるよう調整済み。
 
 ### 投稿1：自己紹介（ハイクラス）
 ```
@@ -137,7 +137,7 @@ Re.en 創設メンバー、先着1,000名を募集中。
 
 枠に達し次第、特典は終了します。
 ▼事前登録
-https://re-en.jp/preregister.html?utm_source=x&utm_medium=social&utm_campaign=p05_founding
+https://re-en.jp/preregister.html?utm_source=x
 ```
 
 ---
