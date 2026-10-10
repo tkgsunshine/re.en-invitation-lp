@@ -1,6 +1,5 @@
 // Vercel Serverless Function to receive & store pre-registrations on Vercel Server
 // 履歴は Vercel Blob（private ストア）に1件1ファイルで保存する。Vercel上では BLOB_STORE_ID（OIDC認証）またはBLOB_READ_WRITE_TOKENで認証される。
-const { put } = require('@vercel/blob');
 
 module.exports = async function handler(req, res) {
   // Enable CORS
@@ -36,6 +35,8 @@ module.exports = async function handler(req, res) {
 
     let stored = false;
     try {
+      // 読み込み失敗時も500にせず、ログ出力のみで継続させるため関数内で読み込む
+      const { put } = require('@vercel/blob');
       const key = `registrations/${logEntry.timestamp.replace(/[:.]/g, '-')}.json`;
       await put(key, JSON.stringify(logEntry), {
         access: 'private',
