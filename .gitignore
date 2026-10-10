@@ -7,3 +7,4 @@ dist/
 .env*
 gsc-credentials.json
 __pycache__/
+node_modules/

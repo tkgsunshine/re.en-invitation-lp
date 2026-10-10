@@ -1,4 +1,7 @@
-// Vercel Serverless Function to receive & log pre-registrations on Vercel Server
+// Vercel Serverless Function to receive & store pre-registrations on Vercel Server
+// 履歴は Vercel Blob（private ストア）に1件1ファイルで保存する。Vercel上では BLOB_STORE_ID（OIDC認証）またはBLOB_READ_WRITE_TOKENで認証される。
+const { put } = require('@vercel/blob');
+
 module.exports = async function handler(req, res) {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Credentials', 'true');
@@ -28,13 +31,24 @@ module.exports = async function handler(req, res) {
       feedback: data.feedback || data['ご要望・ご期待'] || ''
     };
 
+    // 常にログにも残す（Blob保存に失敗した場合のフォールバック）
     console.log('[RE.EN VERCEL SERVER DATA RECORD]', JSON.stringify(logEntry));
 
-    return res.status(200).json({ 
-      status: 'ok', 
-      message: 'Preregistration stored on Vercel server successfully',
-      record: logEntry
-    });
+    let stored = false;
+    try {
+      const key = `registrations/${logEntry.timestamp.replace(/[:.]/g, '-')}.json`;
+      await put(key, JSON.stringify(logEntry), {
+        access: 'private',
+        contentType: 'application/json',
+        addRandomSuffix: true
+      });
+      stored = true;
+    } catch (blobError) {
+      console.error('[RE.EN BLOB STORE ERROR]', blobError);
+    }
+
+    // 個人情報を返さない
+    return res.status(200).json({ status: 'ok', stored });
   } catch (error) {
     console.error('[RE.EN VERCEL SERVER ERROR]', error);
     return res.status(500).json({ error: 'Internal Server Error' });
