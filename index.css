@@ -4244,3 +4244,67 @@ html {
 .article-toc__item--h3 > a:hover {
   color: var(--color-primary);
 }
+
+/* ===== Hero badge: 事前登録ヒーロー 統合パネル（PC幅のみ。スマホはレギュレーション固定のため変更しない） ===== */
+@media (min-width: 769px) {
+  .hero__badge-container { margin-bottom: 0; }
+  .hero__badge--luxury-claim.is-preregister {
+    padding: 0;
+    background-color: rgba(11, 11, 12, 0.78);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(191, 169, 120, 0.7);
+    border-bottom: 0;
+    border-radius: 0;
+    box-shadow: none;
+    align-items: stretch;
+  }
+  .hero__badge--luxury-claim.is-preregister .luxury-claim__left {
+    padding: 22px 32px;
+    gap: 6px;
+  }
+  .hero__badge--luxury-claim.is-preregister .luxury-claim__left .luxury-claim__text-row:first-child {
+    font-size: 0.8rem;
+    letter-spacing: 0.28em;
+    font-weight: 500;
+    color: var(--color-primary);
+  }
+  .hero__badge--luxury-claim.is-preregister .luxury-claim__left .luxury-claim__text-row:last-child {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ece6d8;
+    margin-top: 0;
+  }
+  .hero__badge--luxury-claim.is-preregister .luxury-claim__count {
+    font-size: 1.15em;
+    font-weight: 800;
+    color: #E6D7B9;
+    padding-inline: 2px;
+  }
+  .hero__badge--luxury-claim.is-preregister .luxury-claim__right {
+    margin-left: 0;
+    padding: 0 32px;
+    border-left: 0;
+    background: #E6D7B9;
+  }
+  .hero__tags-container.is-preregister {
+    gap: 0;
+    margin-bottom: 42px;
+    border: 1px solid rgba(191, 169, 120, 0.7);
+    border-top: 1px solid rgba(191, 169, 120, 0.35);
+    background: rgba(11, 11, 12, 0.78);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  .hero__tags-container.is-preregister .hero__tag-badge {
+    width: calc(100% / 3);
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    letter-spacing: 0.14em;
+    padding: 12px 6px;
+  }
+  .hero__tags-container.is-preregister .hero__tag-badge + .hero__tag-badge {
+    border-left: 1px solid rgba(191, 169, 120, 0.35);
+  }
+}
