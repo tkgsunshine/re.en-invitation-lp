@@ -1,5 +1,5 @@
 // Vercel Serverless Function to receive & store pre-registrations on Vercel Server
-// 履歴は Vercel Blob（private ストア）に1件1ファイルで保存する。BLOB_READ_WRITE_TOKEN が必要。
+// 履歴は Vercel Blob（private ストア）に1件1ファイルで保存する。Vercel上では BLOB_STORE_ID（OIDC認証）またはBLOB_READ_WRITE_TOKENで認証される。
 const { put } = require('@vercel/blob');
 
 module.exports = async function handler(req, res) {
