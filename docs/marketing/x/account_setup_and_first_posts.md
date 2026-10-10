@@ -130,3 +130,12 @@ https://re-en.jp/preregister.html?utm_source=x&utm_medium=social&utm_campaign=p0
 ## 4. 未確認事項
 - Xの広告・利用規約で、既婚者向けサービスの扱いがどうなっているか（未確認）。投稿前に最新の規約を確認してください。
 - Xの有料プラン（Premium）で再生数が実際に伸びるかは、私は検証していません。
+
+---
+
+## 5. 投稿文の管理（AI社員ホームの「X Re.en」タブ）
+月と蓮と同じ運用。投稿文は、ホーム（https://claude.ai/artifact/9eu8jRktA8nGCC8HKN7L8A）のDBコレクション `reen_x_posts` で管理する（月と蓮の `x_posts` とは別）。
+- 状態: `draft`（確認待ち）→ ユーザーが「承認」→ `ready`（投稿待ち）→ ユーザーが手動で投稿し「投稿した」→ `posted`。「やめる」は `dropped`
+- 項目: `id`, `order`, `theme`, `utm`, `text`, `editedText`（ユーザーが編集した本文）, `status`, `postedAt`
+- AI社員は、新しい投稿案を `status: "draft"` で `set` する。承認前の本文を勝手に直さない
+- 投稿はすべて手動（自動投稿・自動いいね・大量リプライはしない）
