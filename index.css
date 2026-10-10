@@ -68,7 +68,7 @@ body {
 /* Premium Ambient Glowing Orbs */
 body::before, body::after {
   content: "";
-  position: absolute;
+  position: fixed; /* fixed: the glow must not widen the page (iOS Safari shows the page cut off on the right) */
   width: 700px;
   height: 700px;
   border-radius: 50%;
