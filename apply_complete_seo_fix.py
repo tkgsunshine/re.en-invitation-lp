@@ -34,6 +34,26 @@ def fix_page_meta_and_schema(filepath):
         cand = hero.group(1) if hero else f"images/column_{vol_num}.webp"
         if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), cand)):
             og_image = f"https://re-en.jp/{cand}"
+    # X(Twitter)等はwebpのog:imageを表示しないことがあるため、1200x630のJPGを images/og/ に用意して使う
+    _stem = os.path.splitext(os.path.basename(og_image))[0]
+    _og_rel = f"images/og/{_stem}.jpg"
+    _og_abs = os.path.join(os.path.dirname(os.path.abspath(__file__)), _og_rel)
+    if not os.path.exists(_og_abs):
+        try:
+            from PIL import Image
+            _base = os.path.dirname(os.path.abspath(__file__))
+            _src = next((os.path.join(_base, "images", _stem + e) for e in (".png", ".webp") if os.path.exists(os.path.join(_base, "images", _stem + e))), None)
+            if _src:
+                _im = Image.open(_src).convert("RGB")
+                _sc = max(1200 / _im.width, 630 / _im.height)
+                _im = _im.resize((round(_im.width * _sc), round(_im.height * _sc)), Image.LANCZOS)
+                _l, _t = (_im.width - 1200) // 2, (_im.height - 630) // 2
+                os.makedirs(os.path.dirname(_og_abs), exist_ok=True)
+                _im.crop((_l, _t, _l + 1200, _t + 630)).save(_og_abs, quality=85, optimize=True, progressive=True)
+        except Exception:
+            pass
+    if os.path.exists(_og_abs):
+        og_image = f"https://re-en.jp/{_og_rel}"
 
     safe_title = title.replace('"', '')
     safe_desc = description.replace('"', '')
