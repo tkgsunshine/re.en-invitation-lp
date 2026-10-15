@@ -68,6 +68,39 @@ def main():
     if not os.path.exists(os.path.join(WORKSPACE_DIR, banner_img)):
         banner_img = "images/column_second_partner.webp"
 
+    # Avoid reusing a thumbnail that any of the last RECENT_WINDOW published columns already show.
+    # If the queue's image is taken, pick the least-used photo in images/ that is not in the window.
+    RECENT_WINDOW = 12
+    def _hero_of(path):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                m = re.search(r'<div class="article-hero-thumb"[^>]*>\s*<img src="([^"]+)"', fh.read())
+            return m.group(1) if m else None
+        except OSError:
+            return None
+    published = []
+    for fn in os.listdir(WORKSPACE_DIR):
+        m = re.fullmatch(r"column-detail-(\d+)\.html", fn)
+        if m and fn != target_post["filename"]:
+            published.append((int(m.group(1)), _hero_of(os.path.join(WORKSPACE_DIR, fn))))
+    published.sort(reverse=True)
+    recent_imgs = {img for _, img in published[:RECENT_WINDOW] if img}
+    if banner_img in recent_imgs:
+        use_count = {}
+        for _, img in published:
+            if img:
+                use_count[img] = use_count.get(img, 0) + 1
+        # column_manners.webp is identical to column_lounge_etiquette.webp, so treat them as one photo.
+        same_photo = {"images/column_manners.webp": "images/column_lounge_etiquette.webp"}
+        recent_photos = {same_photo.get(i, i) for i in recent_imgs}
+        pool = sorted(f"images/{f}" for f in os.listdir(os.path.join(WORKSPACE_DIR, "images"))
+                      if f.startswith("column_") and f.endswith(".webp"))
+        pool = [p for p in pool if same_photo.get(p, p) not in recent_photos and p != "images/column_manners.webp"]
+        if pool:
+            replacement = min(pool, key=lambda p: (use_count.get(p, 0), p))
+            print(f"Banner {banner_img} was used by a recent column; using {replacement} instead.")
+            banner_img = replacement
+
     # 1. Update <title>
     new_html = re.sub(r'<title>.*?</title>', f'<title>{target_post["title"]}</title>', new_html)
 
@@ -164,6 +197,7 @@ def main():
 
     # Sync published_date back to calendar database
     target_post["published_date"] = period_date
+    target_post["banner_img"] = banner_img  # keep the listing card in sync with the page
     with open(CALENDAR_PATH, "w", encoding="utf-8") as f:
         json.dump(calendar, f, ensure_ascii=False, indent=2)
 
