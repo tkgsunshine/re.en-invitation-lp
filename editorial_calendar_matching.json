@@ -6,7 +6,7 @@
     "description": "長続きの鍵は、家庭優先、連絡と会う頻度の約束、お金と個人情報の線引きの3つです。最初に確認したい約束の作り方、話し方の例文、守れなくなったときの対処を解説します。",
     "keywords": "セカンドパートナー,ルール,約束,長続き,距離感,既婚者",
     "category_name": "セカンドパートナー",
-    "banner_img": "images/column_second_partner.webp",
+    "banner_img": "images/banners/column-detail-53.webp",
     "title_line1": "関係を壊さず心地よく寄り添う",
     "title_line2": "セカンドパートナーの3大ルール",
     "english_title": "THREE RULES FOR SECOND PARTNERS",
@@ -58,7 +58,8 @@
         "a": "無理なら、はっきり断って構いません。「今のペースが私には心地よいです」と伝え、家庭と自分の生活を優先しましょう。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_second_partner.webp"
   },
   {
     "filename": "column-detail-54.html",
@@ -67,7 +68,7 @@
     "description": "個人情報の保護は、サービス側の設計と利用者自身の対策の両方で成り立ちます。ニックネームや写真のぼかし等の仕組みと、パスワード・やり取り・詐欺対策の実践項目を整理します。",
     "keywords": "個人情報 保護,アカウント 守り方,既婚者マッチング,ニックネーム,写真のぼかし,詐欺対策",
     "category_name": "プライバシー対策",
-    "banner_img": "images/female_profile.webp",
+    "banner_img": "images/banners/column-detail-54.webp",
     "title_line1": "絶対に知り合いにバレたくない既婚者へ",
     "title_line2": "アプリ利用時の徹底身バレ対策",
     "english_title": "PRIVACY DEFENSE AND SECURITY",
@@ -119,7 +120,8 @@
         "a": "相手との連絡を止め、やり取りを保存し、パスワードを変更します。そのうえで、警察の相談窓口（#9110）や消費生活センター（188）に相談してください。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/female_profile.webp"
   },
   {
     "filename": "column-detail-56.html",
@@ -128,7 +130,7 @@
     "description": "既婚者同士が会うときのマナーを、事前の約束・当日の振る舞い・お会計・断り方まで具体例つきで解説。家庭を最優先にし、相手の立場も尊重する大人の作法をまとめました。",
     "keywords": "既婚者 マナー,既婚者 デート マナー,大人の関係 エチケット,既婚者 初対面,既婚者 距離感",
     "category_name": "出会いのコツ",
-    "banner_img": "images/column_secret_date.webp",
+    "banner_img": "images/banners/column-detail-56.webp",
     "title_line1": "お互いの家庭を最優先するために",
     "title_line2": "既婚者同士のスマートなデートマナー",
     "english_title": "SMART ETIQUETTE FOR SECRETS",
@@ -180,7 +182,8 @@
         "a": "「今は家庭を優先したいので、連絡の頻度を少し減らしたいです」と、自分の事情として伝えます。相手を責める言い方ではなく、自分の希望として話すと角が立ちません。それでも改善しない場合は、関係を見直す選択もあります。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_secret_date.webp"
   },
   {
     "filename": "column-detail-58.html",
@@ -189,7 +192,7 @@
     "description": "共働き夫婦のすれ違いで疲れたとき、まず夫婦で整えたいことと、家庭外に相談先を持つ際の距離感を解説。家庭を最優先にしながら、心に余白をつくる具体策をまとめました。",
     "keywords": "共働き すれ違い,共働き 夫婦 疲れ,夫婦 会話 減った,家庭外 相談相手,心の余白",
     "category_name": "お悩み",
-    "banner_img": "images/column_relationship.webp",
+    "banner_img": "images/banners/column-detail-58.webp",
     "title_line1": "日々の業務と家庭の両立で擦り切れる心",
     "title_line2": "家庭外に「本音で話せる理解者」を持つ効果",
     "english_title": "DOUBLE INCOME MARRIAGE EXHAUSTION",
@@ -241,7 +244,8 @@
         "a": "休息と睡眠の確保を優先し、つらさが続くときは医師や自治体の相談窓口に相談してください。ここでは診断はできません。早めの相談が安心につながります。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_relationship.webp"
   },
   {
     "filename": "column-detail-61.html",
@@ -250,7 +254,7 @@
     "description": "既婚者同士の初対面で失敗しない店と席の選び方を解説。静かなカフェやラウンジの条件、昼と夜の違い、席の選び方、安全面の注意点まで具体的にまとめました。",
     "keywords": "初デート 店選び,既婚者 初対面 カフェ,個室 ラウンジ 選び方,落ち着いて話せる店,初対面 安全",
     "category_name": "出会いのコツ",
-    "banner_img": "images/column_61.webp",
+    "banner_img": "images/banners/column-detail-61.webp",
     "title_line1": "周囲の目を気にせず本音で語り合う",
     "title_line2": "初デートに最適なカフェ＆ラウンジ選び",
     "english_title": "FIRST DATE LOUNGE SELECTION",
@@ -302,7 +306,8 @@
         "a": "候補を二つ挙げて「どちらがよろしいですか」と聞くと、相手も選びやすくなります。アレルギーや苦手な飲み物がないかも、一言確認すると丁寧です。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_61.webp"
   },
   {
     "filename": "column-detail-62.html",
@@ -311,7 +316,7 @@
     "description": "家庭で「親」「妻・夫」としてばかり見られ、自己肯定感が下がったと感じる人へ。異性として認められたい気持ちの正体と、家庭を大切にしたまま自分を取り戻す具体策を解説します。",
     "keywords": "自己肯定感 低い 既婚,異性として見られたい,仮面夫婦 孤独,自分らしさ 取り戻す,承認欲求 向き合い方",
     "category_name": "お悩み",
-    "banner_img": "images/column_62.webp",
+    "banner_img": "images/banners/column-detail-62.webp",
     "title_line1": "失われた自分らしさを取り戻す",
     "title_line2": "家庭外コミュニティと自己肯定感",
     "english_title": "RESTORING SELF ESTEEM AND IDENTITY",
@@ -363,7 +368,8 @@
         "a": "責める形にせず、「最近こう感じていて、少し話を聞いてほしい」と自分の気持ちとして伝えます。先に感謝を伝えてから、具体的な頼みごとを一つだけ添えると、受け取ってもらいやすくなります。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_62.webp"
   },
   {
     "filename": "column-detail-63.html",
@@ -372,7 +378,7 @@
     "description": "既婚者同士のメッセージは、頻度と返信の早さの目安をあらかじめ共有するのがコツです。時間帯、返信が遅れたときの例文、既読の気にしすぎ対策まで具体的に解説します。",
     "keywords": "既婚者 連絡頻度,既婚者 返信 タイミング,メッセージ 頻度,返信が遅い 不安,連絡ルール",
     "category_name": "セカンドパートナー",
-    "banner_img": "images/column_63.webp",
+    "banner_img": "images/banners/column-detail-63.webp",
     "title_line1": "家庭や仕事に支障を出さない",
     "title_line2": "大人のメッセージ頻度と連絡ルール",
     "english_title": "MESSAGE FREQUENCY GOLDEN RATIO",
@@ -424,7 +430,8 @@
         "a": "相手の生活時間によります。家族と過ごす夜は、通知が負担になりやすいので、最初は昼間や夕方の移動時間に絞るのが安心です。時間帯は事前に確認しておきましょう。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_63.webp"
   },
   {
     "filename": "column-detail-64.html",
@@ -433,7 +440,7 @@
     "description": "アプリの決済方法、カード明細、通知の設定を見直し、自分の支払い情報と利用履歴を適切に管理する方法を解説。不審な請求や偽サイトへの備え、相談先もまとめました。",
     "keywords": "決済 明細 管理,支払い情報 保護,アプリ 通知 設定,個人情報 アカウント 保護,不審な請求 相談",
     "category_name": "プライバシー対策",
-    "banner_img": "images/column_64.webp",
+    "banner_img": "images/banners/column-detail-64.webp",
     "title_line1": "金融明細から痕跡を消し去る",
     "title_line2": "スマートな決済自衛テクニック",
     "english_title": "FINANCIAL PRIVACY PROTECTION",
@@ -485,7 +492,8 @@
         "a": "決済や不正利用に関する通知は、オンのままにしておくことをおすすめします。通知を切るなら、宣伝などの不要なものに限り、ロック画面の表示内容は別途調整すると安心です。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_64.webp"
   },
   {
     "filename": "column-detail-65.html",
@@ -494,7 +502,7 @@
     "description": "40代の既婚女性が、新しい出会いを考えるようになる背景と心境の変化を整理。家庭を大切にしたまま、気持ちを確かめる方法と、安全に始めるための準備を解説します。",
     "keywords": "40代 既婚女性 マッチングアプリ,既婚女性 出会い 心境,40代 ときめき,既婚者 コミュニティ 安全,気持ちの整理",
     "category_name": "出会いのコツ",
-    "banner_img": "images/column_65.webp",
+    "banner_img": "images/banners/column-detail-65.webp",
     "title_line1": "子育てが一段落した40代女性の本音",
     "title_line2": "新しいときめきと自分らしい輝きの追求",
     "english_title": "ROMANCE AND PASSION IN 40S",
@@ -546,7 +554,8 @@
         "a": "本人確認や既婚の認証があるか、ニックネーム利用や写真のぼかしなど個人情報を守る機能があるか、通報・ブロックの仕組みがあるかを確認します。料金や特典は、公式サイトで最新を確認してください。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_65.webp"
   },
   {
     "filename": "column-detail-66.html",
@@ -555,7 +564,7 @@
     "description": "既婚者同士の初回はお茶デートが向いています。誘うタイミング、日程の提案の仕方、断られたときの返し方まで、そのまま使える例文つきで解説します。",
     "keywords": "お茶デート 誘い方,既婚者 初デート,お茶デート 例文,既婚者 カフェ 誘う,初回 デート 日程",
     "category_name": "出会いのコツ",
-    "banner_img": "images/hero_lifestyle.webp",
+    "banner_img": "images/banners/column-detail-66.webp",
     "title_line1": "プレッシャーなく安心して会える",
     "title_line2": "既婚者同士の「お茶デート」成功法則",
     "english_title": "CASUAL DAYTIME COFFEE DATES",
@@ -607,7 +616,8 @@
         "a": "割り勘が無難です。誘った側が出したい場合も、相手が負担に感じない範囲にとどめます。事前に「各自でお願いします」と伝えておくと、安心です。"
       }
     ],
-    "authored": true
+    "authored": true,
+    "source_photo": "images/hero_lifestyle.webp"
   },
   {
     "vol": 67,
@@ -617,7 +627,7 @@
     "title": "セカンドパートナーを求める心理と罪悪感｜自分の気持ちを整理する考え方 | Re.en Column",
     "headline": "セカンドパートナーを求める心理と罪悪感｜自分の気持ちを整理する考え方",
     "description": "セカンドパートナーを求める気持ちの背景と、感じやすい罪悪感との向き合い方を整理。家庭を最優先にしたまま、自分の本音を確かめる方法と距離感の目安を解説します。",
-    "banner_img": "images/column_67.webp",
+    "banner_img": "images/banners/column-detail-67.webp",
     "body_sections": [
       {
         "h2": "1. セカンドパートナーを求める気持ちの背景",
@@ -657,7 +667,8 @@
       }
     ],
     "keywords": "セカンドパートナー 心理,既婚者 罪悪感,セカンドパートナー 求める理由,気持ちの整理,既婚者 孤独",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_67.webp"
   },
   {
     "vol": 73,
@@ -666,7 +677,7 @@
     "title": "既婚女性の日常の孤独感｜自分の時間と居場所を取り戻す5つの習慣 | Re.en Column",
     "headline": "既婚女性の日常の孤独感｜自分の時間と居場所を取り戻す5つの習慣",
     "description": "家事・育児・仕事に追われ、気づけば自分の時間がない既婚女性へ。孤独感が生まれる背景、続けやすい5つの小さな習慣、家庭の外に居場所をつくる方法をやさしく解説します。",
-    "banner_img": "images/column_circle.webp",
+    "banner_img": "images/banners/column-detail-73.webp",
     "authored": true,
     "lead": "家族のために動き続けているのに、ふと「自分のことは誰が見ているのだろう」と感じる。そんな日常の孤独感を抱える既婚女性は少なくありません。この記事では、孤独感が生まれる背景を整理し、今日から始められる5つの小さな習慣と、家庭の外に居場所をつくる方法を、やさしい言葉でお伝えします。",
     "body_sections": [
@@ -711,7 +722,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "既婚女性 孤独,孤独感 主婦,自分の時間,居場所 作り方,30代 40代 女性 悩み"
+    "keywords": "既婚女性 孤独,孤独感 主婦,自分の時間,居場所 作り方,30代 40代 女性 悩み",
+    "source_photo": "images/column_circle.webp"
   },
   {
     "vol": 74,
@@ -721,7 +733,7 @@
     "title": "洗練された大人の女性の印象を作る習慣｜会話・身だしなみ・距離感の整え方 | Re.en Column",
     "headline": "洗練された大人の女性の印象を作る習慣｜会話・身だしなみ・距離感の整え方",
     "description": "洗練された大人の女性という印象は、特別な美しさではなく、会話・身だしなみ・距離感の習慣で作られます。初対面で好印象を与える具体的な方法とNG行動を解説します。",
-    "banner_img": "images/column_65.webp",
+    "banner_img": "images/banners/column-detail-74.webp",
     "body_sections": [
       {
         "h2": "1. 会話で伝わる、落ち着いた大人の印象",
@@ -761,7 +773,8 @@
       }
     ],
     "keywords": "大人の女性 好印象,洗練された女性 特徴,初対面 好印象 女性,大人の会話術,身だしなみ 40代",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_65.webp"
   },
   {
     "vol": 77,
@@ -771,7 +784,7 @@
     "title": "既婚者同士の付き合いが長続きする距離感とは？互いを尊重する目安と言い方 | Re.en Column",
     "headline": "既婚者同士の付き合いが長続きする距離感とは？互いを尊重する目安と言い方",
     "description": "長続きする距離感の答えは「家庭を最優先に、頻度・深さ・時間を控えめに保つこと」。連絡や会う頻度の目安、踏み込まない話題、距離が近づきすぎたときの伝え方を例文つきで解説します。",
-    "banner_img": "images/column_63.webp",
+    "banner_img": "images/banners/column-detail-77.webp",
     "body_sections": [
       {
         "h2": "1. 長続きする距離感の考え方",
@@ -815,7 +828,8 @@
       }
     ],
     "keywords": "既婚者 距離感,セカンドパートナー 長続き,既婚者 連絡頻度,お互いを尊重,大人の付き合い",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_63.webp"
   },
   {
     "vol": 104,
@@ -824,7 +838,7 @@
     "title": "既婚者向けアプリを家庭と両立して使う方法：無理のない利用ペースと時間帯 | Re.en Column",
     "headline": "既婚者向けアプリを家庭と両立して使う方法：無理のない利用ペースと時間帯",
     "description": "家庭と両立するコツは「使う時間を先に決め、通知を整え、1日15分程度から始める」こと。時間帯の目安、通知とロックの設定、のめり込みを防ぐルールを具体例つきで解説します。",
-    "banner_img": "images/column_65.webp",
+    "banner_img": "images/banners/column-detail-104.webp",
     "body_sections": [
       {
         "h2": "1. 両立の基本は「時間を先に決める」こと",
@@ -869,7 +883,8 @@
       }
     ],
     "keywords": "既婚者 アプリ 両立,利用ペース,利用時間帯,通知設定,家庭を優先",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_65.webp"
   },
   {
     "vol": 105,
@@ -878,7 +893,7 @@
     "title": "既婚女性に好まれる男性の振る舞いとは？信頼される大人の紳士的マナー | Re.en Column",
     "headline": "既婚女性に好まれる男性の振る舞いとは？信頼される大人の紳士的マナー",
     "description": "既婚女性に信頼される男性に共通するのは、聞く姿勢・約束を守る誠実さ・踏み込みすぎない節度。メッセージ、初対面、会計、別れ際まで、具体的な言い方とNG行動をまとめます。",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-105.webp",
     "body_sections": [
       {
         "h2": "1. 信頼される男性に共通する三つの土台",
@@ -923,7 +938,8 @@
       }
     ],
     "keywords": "既婚女性 好まれる男性,紳士的マナー,既婚者 男性 振る舞い,大人のマナー,信頼される男性",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 106,
@@ -932,7 +948,7 @@
     "title": "嫉妬や依存を感じたときの対処法：心のつながりと依存の境界線を見極める | Re.en Column",
     "headline": "嫉妬や依存を感じたときの対処法：心のつながりと依存の境界線を見極める",
     "description": "嫉妬や依存を感じたら、まず「気持ちを否定せず、行動を一歩遅らせる」こと。依存の見分け方、今日からできる気持ちの整え方、距離の取り直し方と相談先を例文つきで解説します。",
-    "banner_img": "images/column_67.webp",
+    "banner_img": "images/banners/column-detail-106.webp",
     "body_sections": [
       {
         "h2": "1. 嫉妬や依存を感じるのは自然なこと。まず気持ちを受け止める",
@@ -977,7 +993,8 @@
       }
     ],
     "keywords": "嫉妬 対処法,依存 境界線,既婚者 メンタルケア,心のつながり,感情 コントロール",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_67.webp"
   },
   {
     "vol": 107,
@@ -986,7 +1003,7 @@
     "title": "初対面の会計とプレゼントのマナー：奢る・割り勘の判断と、お金を求められたときの注意 | Re.en Column",
     "headline": "初対面の会計とプレゼントのマナー：奢る・割り勘の判断と、お金を求められたときの注意",
     "description": "初対面の会計は、気持ちよく払える範囲で「今日は私が」と一言添えるのが基本。割り勘との使い分け、高価な贈り物を避ける理由、金銭を求められたときの危険信号と相談先を解説します。",
-    "banner_img": "images/column_gift.webp",
+    "banner_img": "images/banners/column-detail-107.webp",
     "body_sections": [
       {
         "h2": "1. 会計の基本マナーと、場面別の判断",
@@ -1031,7 +1048,8 @@
       }
     ],
     "keywords": "初対面 会計 マナー,奢り 割り勘,プレゼント マナー,既婚者 デート 支払い,金銭要求 注意",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_gift.webp"
   },
   {
     "vol": 110,
@@ -1040,7 +1058,7 @@
     "title": "ドタキャンや連絡の途絶を防ぐ：会う前の意向確認と連絡の取り方 | Re.en Column",
     "headline": "ドタキャンや連絡の途絶を防ぐ：会う前の意向確認と連絡の取り方",
     "description": "ドタキャンを防ぐ鍵は、約束の前に「確認・調整・退路」を整えること。事前確認の例文、当日の連絡ルール、キャンセルされたときの受け止め方を具体的にまとめます。",
-    "banner_img": "images/column_manners.webp",
+    "banner_img": "images/banners/column-detail-110.webp",
     "body_sections": [
       {
         "h2": "1. なぜドタキャンや連絡の途絶が起こるのか",
@@ -1085,7 +1103,8 @@
       }
     ],
     "keywords": "ドタキャン 防ぐ,連絡 途絶える,事前確認 メッセージ,既婚者 約束,キャンセル 対処",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_manners.webp"
   },
   {
     "vol": 111,
@@ -1094,7 +1113,7 @@
     "title": "Re.en（リエン）とは？既婚者向け完全審査制コミュニティの特徴と事前登録 | Re.en Column",
     "headline": "Re.en（リエン）とは？既婚者向け完全審査制コミュニティの特徴と事前登録",
     "description": "Re.en（リエン）は既婚者向けの完全審査制コミュニティ。2026年冬リリース予定。本人確認と既婚の認証、ニックネーム・写真のぼかしなどの機能、事前登録の流れ、向いている人を解説します。",
-    "banner_img": "images/column_second_partner.webp",
+    "banner_img": "images/banners/column-detail-111.webp",
     "authored": true,
     "lead": "Re.en（リエン）は、既婚者のための完全審査制コミュニティサービスです。2026年冬のリリースに向けて、創設メンバー（先着1,000名）の事前登録を受け付けています。この記事では、サービスの考え方、備える機能、事前登録の流れ、向いている人・向いていない人を、公式サイトに書かれている範囲で整理してお伝えします。",
     "body_sections": [
@@ -1139,7 +1158,8 @@
       }
     ],
     "published_date": "2026.10.02",
-    "keywords": "Re.en,リエン,既婚者 コミュニティ,完全審査制,事前登録,創設メンバー"
+    "keywords": "Re.en,リエン,既婚者 コミュニティ,完全審査制,事前登録,創設メンバー",
+    "source_photo": "images/column_second_partner.webp"
   },
   {
     "vol": 112,
@@ -1148,7 +1168,7 @@
     "title": "完全審査制とは？既婚者向けサービスで本人確認が欠かせない3つの理由 | Re.en Column",
     "headline": "完全審査制とは？既婚者向けサービスで本人確認が欠かせない3つの理由",
     "description": "完全審査制とは、利用前に本人確認や認証を行う仕組み。既婚者向けサービスで欠かせない3つの理由、書類提出の不安への考え方、審査があっても自分でできる安全対策を解説します。",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-112.webp",
     "authored": true,
     "lead": "「審査がある」と聞くと、手間や不安を感じる方もいるでしょう。それでも、既婚者向けのサービスでは、入口の確認が安心の土台になります。この記事では、完全審査制の意味、本人確認が欠かせない3つの理由、書類提出への不安との向き合い方、審査があっても自分でできる安全対策を、順に解説します。",
     "body_sections": [
@@ -1193,7 +1213,8 @@
       }
     ],
     "published_date": "2026.10.02",
-    "keywords": "完全審査制,本人確認,既婚証明,既婚者 安全,書類提出 不安"
+    "keywords": "完全審査制,本人確認,既婚証明,既婚者 安全,書類提出 不安",
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 113,
@@ -1202,7 +1223,7 @@
     "title": "ロマンス詐欺・金銭トラブルを避ける7つのサイン｜お金の話が出たときの対処法 | Re.en Column",
     "headline": "ロマンス詐欺・金銭トラブルを避ける7つのサイン｜お金の話が出たときの対処法",
     "description": "ロマンス詐欺の典型的な流れ、見分ける7つのサイン、お金の話が出たときの断り方の例文、被害に遭ったときの相談先（警察・消費生活センター188）を具体的に解説します。",
-    "banner_img": "images/column_money.webp",
+    "banner_img": "images/banners/column-detail-113.webp",
     "authored": true,
     "lead": "優しい言葉でやり取りを重ね、気づけばお金の話になっていた。これがロマンス詐欺の典型的な流れです。既婚者は周囲に相談しにくく、被害が表に出にくいと言われます。この記事では、手口の流れ、見分ける7つのサイン、お金の話が出たときの断り方の例文、被害に遭ったときの相談先を、順にお伝えします。",
     "body_sections": [
@@ -1247,7 +1268,8 @@
       }
     ],
     "published_date": "2026.10.02",
-    "keywords": "ロマンス詐欺,金銭トラブル,詐欺 見分け方,お金 要求 断り方,被害 相談先"
+    "keywords": "ロマンス詐欺,金銭トラブル,詐欺 見分け方,お金 要求 断り方,被害 相談先",
+    "source_photo": "images/column_money.webp"
   },
   {
     "vol": 114,
@@ -1256,7 +1278,7 @@
     "title": "初めて会う前の安全チェックリスト｜場所・時間・事前連絡の決め方 | Re.en Column",
     "headline": "初めて会う前の安全チェックリスト｜場所・時間・事前連絡の決め方",
     "description": "初めて会う前に確認したいこと、待ち合わせ場所と時間の選び方、当日の振る舞い、違和感を覚えたときの断り方の例文、会った後の対応まで、安全を守る手順を順に解説します。",
-    "banner_img": "images/column_first_dinner.webp",
+    "banner_img": "images/banners/column-detail-114.webp",
     "authored": true,
     "lead": "やり取りを重ねた相手と初めて会う日。楽しみな一方で、不安を感じるのは自然なことです。この記事では、会う前に確認したいこと、待ち合わせの場所と時間の選び方、当日の振る舞い、違和感を覚えたときに使える断りの言葉、会った後にやることを、チェックリストとともにお伝えします。",
     "body_sections": [
@@ -1301,7 +1323,8 @@
       }
     ],
     "published_date": "2026.10.02",
-    "keywords": "初対面 安全,待ち合わせ 場所,初めて会う 注意,安全チェック,断り方"
+    "keywords": "初対面 安全,待ち合わせ 場所,初めて会う 注意,安全チェック,断り方",
+    "source_photo": "images/column_first_dinner.webp"
   },
   {
     "vol": 115,
@@ -1310,7 +1333,7 @@
     "title": "既婚者との連絡でやりがちなNGメッセージ10選｜好印象に変える言い換え例 | Re.en Column",
     "headline": "既婚者との連絡でやりがちなNGメッセージ10選｜好印象に変える言い換え例",
     "description": "返信の催促、重い愛情表現、家庭への不満、個人情報の質問など、やりがちなNGメッセージ10選と、好印象に変わる言い換え例、返信しやすい3文メッセージの作り方を解説します。",
-    "banner_img": "images/column_chat.webp",
+    "banner_img": "images/banners/column-detail-115.webp",
     "authored": true,
     "lead": "何気ない一通が、相手の負担になることがあります。特に既婚者同士のやり取りでは、相手の家庭の時間や立場への配慮が欠かせません。この記事では、やりがちなNGメッセージ10選と、そのまま使える言い換え例、返信しやすい3文メッセージの作り方をお伝えします。",
     "body_sections": [
@@ -1355,7 +1378,8 @@
       }
     ],
     "published_date": "2026.10.03",
-    "keywords": "NGメッセージ,メッセージ マナー,言い換え 例文,返信しやすい メッセージ,既婚者 連絡"
+    "keywords": "NGメッセージ,メッセージ マナー,言い換え 例文,返信しやすい メッセージ,既婚者 連絡",
+    "source_photo": "images/column_chat.webp"
   },
   {
     "vol": 116,
@@ -1364,7 +1388,7 @@
     "title": "聞き上手になる会話術：相手が話したくなる質問と相づちの例文集 | Re.en Column",
     "headline": "聞き上手になる会話術：相手が話したくなる質問と相づちの例文集",
     "description": "会話が続かない悩みは、話す量ではなく「聞き方」で変わります。相手が話したくなる質問の作り方、相づちの例文、沈黙への向き合い方、メッセージでの聞く姿勢を具体的に紹介します。",
-    "banner_img": "images/column_relationship.webp",
+    "banner_img": "images/banners/column-detail-116.webp",
     "authored": true,
     "lead": "会話が続かないと、「自分は話題が乏しいのでは」と不安になりますよね。結論から言うと、会話を支えるのは話の上手さより「聞き方」です。この記事では、相手が自然に話したくなる質問の作り方、そのまま使える相づちの例文、沈黙との付き合い方、文字のやり取りで気をつける点をまとめます。",
     "body_sections": [
@@ -1409,7 +1433,8 @@
       }
     ],
     "published_date": "2026.10.03",
-    "keywords": "聞き上手,会話術,質問の仕方,相づち,会話が続かない"
+    "keywords": "聞き上手,会話術,質問の仕方,相づち,会話が続かない",
+    "source_photo": "images/column_relationship.webp"
   },
   {
     "vol": 117,
@@ -1418,7 +1443,7 @@
     "title": "合わない相手への上手なお断り：角を立てずに距離を置く文例集 | Re.en Column",
     "headline": "合わない相手への上手なお断り：角を立てずに距離を置く文例集",
     "description": "やり取りを終えたいときの伝え方を、状況別の文例つきで解説。断るタイミング、返信を放置しない理由、しつこい相手への対応、ブロックや通報の判断基準まで具体的に紹介します。",
-    "banner_img": "images/column_manners.webp",
+    "banner_img": "images/banners/column-detail-117.webp",
     "authored": true,
     "lead": "「合わないかもしれない」と感じても、断り方が分からず返信を先延ばしにしてしまう。そんな経験はありませんか。結論として、お断りは短く、丁寧に、早めに伝えるのが基本です。この記事では、状況別にそのまま使える文例と、しつこい相手への対応、ブロックや通報を考える判断基準を解説します。",
     "body_sections": [
@@ -1463,7 +1488,8 @@
       }
     ],
     "published_date": "2026.10.03",
-    "keywords": "お断り,断り方,メッセージ文例,距離を置く,ブロック"
+    "keywords": "お断り,断り方,メッセージ文例,距離を置く,ブロック",
+    "source_photo": "images/column_manners.webp"
   },
   {
     "vol": 118,
@@ -1472,7 +1498,7 @@
     "title": "50代既婚者の友人づくり：子育て後・定年前に新しい居場所を見つける方法 | Re.en Column",
     "headline": "50代既婚者の友人づくり：子育て後・定年前に新しい居場所を見つける方法",
     "description": "子どもの独立後、家族以外に気軽に話せる相手がいないと感じる50代へ。友人が減る理由、出会える場所の選び方、続けるコツ、家庭との両立の考え方を具体例つきで解説します。",
-    "banner_img": "images/column_friends.webp",
+    "banner_img": "images/banners/column-detail-118.webp",
     "authored": true,
     "lead": "子どもが独立し、仕事も落ち着いてきた50代。ふと「家族以外に、気軽に話せる相手がいない」と感じる方は少なくありません。結論として、新しい友人づくりは、場所を決めて小さく通うことから始められます。この記事では、友人が減る理由、出会える場所の選び方、続けるコツ、家庭との両立の考え方を具体的に紹介します。",
     "body_sections": [
@@ -1517,7 +1543,8 @@
       }
     ],
     "published_date": "2026.10.04",
-    "keywords": "50代 友人づくり,既婚者 居場所,子育て後,定年前,大人の友達"
+    "keywords": "50代 友人づくり,既婚者 居場所,子育て後,定年前,大人の友達",
+    "source_photo": "images/column_friends.webp"
   },
   {
     "vol": 119,
@@ -1526,7 +1553,7 @@
     "title": "既婚男性の孤独：仕事と家庭の板挟みで心が疲れたときの整え方 | Re.en Column",
     "headline": "既婚男性の孤独：仕事と家庭の板挟みで心が疲れたときの整え方",
     "description": "仕事では責任、家庭では頼られる役割。話せる場所がなく孤独を感じる既婚男性へ。心の疲れのサイン、今日からできる整え方、安心できる相談先の選び方を具体的に解説します。",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-119.webp",
     "authored": true,
     "lead": "仕事では責任を求められ、家庭では「頼れる存在」であることを期待される。気づけば、自分の気持ちを話せる場所がない。そんな孤独を感じる既婚男性は少なくありません。この記事では、孤独を感じる背景、心の疲れのサイン、今日からできる整え方、相談先の選び方を順に紹介します。",
     "body_sections": [
@@ -1571,7 +1598,8 @@
       }
     ],
     "published_date": "2026.10.04",
-    "keywords": "既婚男性 孤独,心が疲れた,仕事と家庭,板挟み,話を聞いてもらう"
+    "keywords": "既婚男性 孤独,心が疲れた,仕事と家庭,板挟み,話を聞いてもらう",
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 120,
@@ -1580,7 +1608,7 @@
     "title": "自己肯定感を高める7つの習慣：40代・50代が心に余裕を取り戻す方法 | Re.en Column",
     "headline": "自己肯定感を高める7つの習慣：40代・50代が心に余裕を取り戻す方法",
     "description": "周りと比べて足りない気がする、自分の価値を見失いがち。そんな40代・50代に向け、毎日できる7つの習慣と、自分を責めすぎない考え方、声かけの言い換えを例文つきで紹介します。",
-    "banner_img": "images/column_circle.webp",
+    "banner_img": "images/banners/column-detail-120.webp",
     "authored": true,
     "lead": "「自分は何のために頑張っているのだろう」「周りに比べて足りない気がする」。そんな気持ちになることはありませんか。自己肯定感は、生まれつきではなく、日々の小さな習慣で少しずつ育てられます。この記事では、毎日続けやすい7つの習慣と、自分を責めすぎない考え方、声かけの言い換え例を紹介します。",
     "body_sections": [
@@ -1625,7 +1653,8 @@
       }
     ],
     "published_date": "2026.10.05",
-    "keywords": "自己肯定感 高める,40代 自己肯定感,50代 自己肯定感,習慣,自分を責める"
+    "keywords": "自己肯定感 高める,40代 自己肯定感,50代 自己肯定感,習慣,自分を責める",
+    "source_photo": "images/column_circle.webp"
   },
   {
     "vol": 121,
@@ -1634,7 +1663,7 @@
     "title": "フィッシング詐欺・偽サイトからアカウントを守る：メールとリンクの見分け方 | Re.en Column",
     "headline": "フィッシング詐欺・偽サイトからアカウントを守る：メールとリンクの見分け方",
     "description": "「アカウントが停止されました」などの偽メールに慌てないために。偽サイトの見分け方、リンクを押す前の確認手順、日頃の守り方、被害に遭ったかもしれないときの対処と相談先を解説します。",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-121.webp",
     "authored": true,
     "lead": "「アカウントが停止されました」「支払い情報を更新してください」。そんなメッセージが届いたら、慌ててリンクを押してしまいそうになりますよね。結論として、メールやメッセージのリンクは押さず、公式のアプリやブックマークから確認するのが最も安全です。この記事では、見分けるポイント、日頃の習慣、被害に遭ったかもしれないときの対処と相談先を紹介します。",
     "body_sections": [
@@ -1679,7 +1708,8 @@
       }
     ],
     "published_date": "2026.10.05",
-    "keywords": "フィッシング詐欺,偽サイト,偽メール 見分け方,アカウント 守る,パスワード"
+    "keywords": "フィッシング詐欺,偽サイト,偽メール 見分け方,アカウント 守る,パスワード",
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 122,
@@ -1688,7 +1718,7 @@
     "title": "「ありがとう」の伝え方：感謝と思いやりで関係を深める大人のコミュニケーション | Re.en Column",
     "headline": "「ありがとう」の伝え方：感謝と思いやりで関係を深める大人のコミュニケーション",
     "description": "感謝は伝え方で届き方が変わります。「ありがとう」を相手に届く形にする3つのコツ、場面別の例文、パートナーや友人への伝え方、やりがちなNG表現を具体的に解説します。",
-    "banner_img": "images/column_gift.webp",
+    "banner_img": "images/banners/column-detail-122.webp",
     "authored": true,
     "lead": "「ありがとう」は短い言葉ですが、人間関係を温かく、長く続けるための土台になります。ところが、慣れや照れから、伝えそびれることも多いのではないでしょうか。結論として、感謝は「具体的に」「すぐに」「相手の言葉で」伝えると届きやすくなります。この記事では、そのコツと場面別の例文、避けたい表現を紹介します。",
     "body_sections": [
@@ -1733,7 +1763,8 @@
       }
     ],
     "published_date": "2026.10.06",
-    "keywords": "ありがとう 伝え方,感謝の伝え方,思いやり,大人のコミュニケーション,例文"
+    "keywords": "ありがとう 伝え方,感謝の伝え方,思いやり,大人のコミュニケーション,例文",
+    "source_photo": "images/column_gift.webp"
   },
   {
     "vol": 1,
@@ -1806,7 +1837,7 @@
     "title": "既婚者の友達作り｜30〜50代が家庭の外に友人を持つ方法と続け方 | Re.en Column",
     "headline": "既婚者の友達作り｜30〜50代が家庭の外に友人を持つ方法と続け方",
     "description": "結婚後は友達ができにくいもの。趣味・地域・オンラインなど家庭の外で友人を作る具体的な方法、最初の声かけの例文、距離感のマナー、続けるコツを解説します。続けるための距離感のコツも紹介します。",
-    "banner_img": "images/column_friends.webp",
+    "banner_img": "images/banners/column-detail-3.webp",
     "authored": true,
     "lead": "結婚して仕事と家庭に追われるうち、気づけば「気軽に会える友人」がいなくなっていた。そう感じる30〜50代は少なくありません。この記事では、友達ができにくくなる理由を整理し、家庭の外に友人を作る具体的な方法と、最初の声かけの例文、無理なく続けるコツをお伝えします。",
     "body_sections": [
@@ -1851,7 +1882,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "既婚者 友達作り,大人 友達 できない,30代 友達 作り方,40代 友人 つくりかた,社会人 友人"
+    "keywords": "既婚者 友達作り,大人 友達 できない,30代 友達 作り方,40代 友人 つくりかた,社会人 友人",
+    "source_photo": "images/column_friends.webp"
   },
   {
     "vol": 5,
@@ -1860,7 +1892,7 @@
     "title": "既婚者向けアプリのサクラ・業者の見分け方｜詐欺を避ける7つのサイン | Re.en Column",
     "headline": "既婚者向けアプリのサクラ・業者の見分け方｜詐欺を避ける7つのサイン",
     "description": "既婚者向けアプリで気になるサクラや業者。怪しい相手の7つのサイン、サービス選びの確認点、外部アプリに誘われたときの返し方、被害時の相談先を具体例つきで解説します。",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-5.webp",
     "authored": true,
     "lead": "「このやり取り、本当に相手は個人なのだろうか」。既婚者向けのサービスでは、立場上、疑問を人に相談しにくく、一人で不安を抱えがちです。この記事では、サクラや業者が近づく目的、怪しい相手の7つのサイン、サービス選びで確認したい点、そして被害に遭ったときの相談先を、すぐ使える例文とともにお伝えします。",
     "body_sections": [
@@ -1905,7 +1937,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "既婚者 アプリ サクラ,マッチングアプリ 業者 見分け方,マッチング 詐欺,アプリ 安全 確認,外部誘導"
+    "keywords": "既婚者 アプリ サクラ,マッチングアプリ 業者 見分け方,マッチング 詐欺,アプリ 安全 確認,外部誘導",
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 7,
@@ -1914,7 +1947,7 @@
     "title": "サードプレイスとは？既婚者が家庭と職場の外に居場所を持つ方法 | Re.en Column",
     "headline": "サードプレイスとは？既婚者が家庭と職場の外に居場所を持つ方法",
     "description": "サードプレイスとは、家庭でも職場でもない第三の居場所のこと。既婚者に必要とされる理由、4つのメリット、見つけ方と選ぶ基準、家庭との両立のコツを具体的に解説します。",
-    "banner_img": "images/column_circle.webp",
+    "banner_img": "images/banners/column-detail-7.webp",
     "authored": true,
     "lead": "家庭でも職場でもない「第三の居場所」を、サードプレイスと呼びます。結論から言うと、既婚者こそ、一つ持っておくと心が安定しやすい場所です。この記事では、サードプレイスの意味、既婚者に必要とされる理由、見つけ方と選ぶ基準、家庭との両立のコツを、具体例を交えて整理します。",
     "body_sections": [
@@ -1959,7 +1992,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "サードプレイス とは,サードプレイス 既婚者,居場所 見つけ方,第三の居場所,大人 居場所"
+    "keywords": "サードプレイス とは,サードプレイス 既婚者,居場所 見つけ方,第三の居場所,大人 居場所",
+    "source_photo": "images/column_circle.webp"
   },
   {
     "vol": 11,
@@ -1968,7 +2002,7 @@
     "title": "結婚しているのに寂しい｜家庭内孤独の原因と、心を軽くする対処法 | Re.en Column",
     "headline": "結婚しているのに寂しい｜家庭内孤独の原因と、心を軽くする対処法",
     "description": "家族がいるのに孤独を感じる「家庭内孤独」。夫婦・主婦・主夫それぞれが陥りやすい原因と、今日からできる5つの対処法、相談先、家庭の外に居場所を持つ考え方を解説します。",
-    "banner_img": "images/column_relationship.webp",
+    "banner_img": "images/banners/column-detail-11.webp",
     "authored": true,
     "lead": "家族と同じ家にいるのに、なぜか寂しい。そう感じることは、決して特別なことではありません。この記事では、家庭内孤独が生まれる原因を、共働きの夫婦や、家事・育児を担う主婦・主夫の立場から整理し、今日からできる5つの対処法、つらさが続くときの相談先、家庭の外に居場所を持つ考え方をお伝えします。",
     "body_sections": [
@@ -2013,7 +2047,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "結婚 寂しい,家庭内孤独,孤独感 主婦,専業主夫 孤独,夫婦 孤独 対処"
+    "keywords": "結婚 寂しい,家庭内孤独,孤独感 主婦,専業主夫 孤独,夫婦 孤独 対処",
+    "source_photo": "images/column_relationship.webp"
   },
   {
     "vol": 12,
@@ -2022,7 +2057,7 @@
     "title": "夫婦の会話がない｜会話レスの原因と、関係を見直す判断基準 | Re.en Column",
     "headline": "夫婦の会話がない｜会話レスの原因と、関係を見直す判断基準",
     "description": "夫婦の会話がなくなる原因、会話を取り戻す5つのステップ、そのまま使える声かけの例文、修復が難しいと感じたときの整理の仕方と、判断の基準をまとめて解説します。夫婦の悩みの整理にも役立ちます。",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-12.webp",
     "authored": true,
     "lead": "気づけば、夫婦の会話が「ご飯できたよ」「わかった」だけになっている。そう感じる方は多く、悩みを人に話しにくいのもつらいところです。この記事では、会話がなくなる原因、会話を取り戻す5つのステップ、そのまま使える声かけの例文、修復が難しいと感じたときの整理の仕方と判断基準を、順を追ってお伝えします。",
     "body_sections": [
@@ -2067,7 +2102,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "夫婦 会話がない,会話レス,夫婦関係 悩み,夫婦 話し合い 方法,夫婦 すれ違い"
+    "keywords": "夫婦 会話がない,会話レス,夫婦関係 悩み,夫婦 話し合い 方法,夫婦 すれ違い",
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 15,
@@ -2076,7 +2112,7 @@
     "title": "既婚者向けサービスのプロフィールの書き方｜写真選びと自己紹介文の添削例 | Re.en Column",
     "headline": "既婚者向けサービスのプロフィールの書き方｜写真選びと自己紹介文の添削例",
     "description": "プロフィール写真の選び方と、自己紹介文の基本の型、添削前後の例文を紹介。個人情報を出しすぎずに誠実さを伝える書き方と、避けたい表現をやさしく、具体的に解説します。",
-    "banner_img": "images/column_profile_tips.webp",
+    "banner_img": "images/banners/column-detail-15.webp",
     "authored": true,
     "lead": "プロフィールは、会う前の第一印象を決める大切な場所です。けれど、何を書けばよいか、どこまで出してよいか迷う方は多いものです。この記事では、写真の選び方、自己紹介文の基本の型、添削前後の具体例、個人情報を出しすぎないための線引きを、すぐ使える形でまとめました。",
     "body_sections": [
@@ -2121,7 +2157,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "既婚者 プロフィール 書き方,自己紹介文 例文,プロフィール写真 選び方,自己紹介 添削,マッチング プロフィール"
+    "keywords": "既婚者 プロフィール 書き方,自己紹介文 例文,プロフィール写真 選び方,自己紹介 添削,マッチング プロフィール",
+    "source_photo": "images/column_profile_tips.webp"
   },
   {
     "vol": 19,
@@ -2130,7 +2167,7 @@
     "title": "既婚者向けサービスのプライバシー設定ガイド｜個人情報とアカウントを守る方法 | Re.en Column",
     "headline": "既婚者向けサービスのプライバシー設定ガイド｜個人情報とアカウントを守る方法",
     "description": "ニックネーム、写真のぼかし、電話番号ブロック、シークレットモードなどの機能の使いどころと、個人情報を出しすぎない心得、アカウントを守る基本の対策を整理して解説します。",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-19.webp",
     "authored": true,
     "lead": "既婚者向けサービスを使うとき、「自分の情報がどこまで見えるのか」は大きな関心事です。この記事では、Re.en（リエン）が備えるプライバシー機能の使いどころと、個人情報を出しすぎないための心得、アカウントを守る基本の対策を、設定の手順の考え方から整理してお伝えします。",
     "body_sections": [
@@ -2175,7 +2212,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "プライバシー設定,ニックネーム 写真ぼかし,電話番号ブロック,シークレットモード,アカウント 守り方"
+    "keywords": "プライバシー設定,ニックネーム 写真ぼかし,電話番号ブロック,シークレットモード,アカウント 守り方",
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 20,
@@ -2184,7 +2222,7 @@
     "title": "既婚者向けサービスの選び方｜比べるときに見るべき5つのポイント | Re.en Column",
     "headline": "既婚者向けサービスの選び方｜比べるときに見るべき5つのポイント",
     "description": "既婚者向けサービスを比べるときの見方を、審査・本人確認・プライバシー機能・料金の透明性・サポートの5つに整理。公式サイトで確認できる項目と、避けたい兆候を解説します。",
-    "banner_img": "images/column_second_partner.webp",
+    "banner_img": "images/banners/column-detail-20.webp",
     "authored": true,
     "lead": "既婚者向けのサービスは、名前や宣伝文句だけでは違いが分かりにくいものです。口コミの評価に頼るより、「自分で確認できる事実」で比べるほうが、後悔が少なくなります。この記事では、比べるときの5つの見方を、公式サイトで何を見ればよいか、どんな兆候に注意するかとあわせて整理します。",
     "body_sections": [
@@ -2229,7 +2267,8 @@
       }
     ],
     "rewrite_existing": true,
-    "keywords": "既婚者 アプリ 選び方,既婚者向けサービス 比較,審査 本人確認,料金 透明性,安全 確認ポイント"
+    "keywords": "既婚者 アプリ 選び方,既婚者向けサービス 比較,審査 本人確認,料金 透明性,安全 確認ポイント",
+    "source_photo": "images/column_second_partner.webp"
   },
   {
     "vol": 123,
@@ -2238,7 +2277,7 @@
     "title": "既婚者の趣味友だちの作り方：共通の話題で気軽につながる5つのステップ | Re.en Column",
     "headline": "既婚者の趣味友だちの作り方：共通の話題で気軽につながる5つのステップ",
     "description": "仕事と家庭中心の毎日で、趣味を語れる相手が欲しい既婚者へ。趣味を見つける、探す、声をかける、会話を広げる、距離感を保つ5つのステップを、例文と注意点つきで紹介します。",
-    "banner_img": "images/column_married_hobbies.webp",
+    "banner_img": "images/banners/column-detail-123.webp",
     "authored": true,
     "lead": "仕事と家庭が中心の毎日では、趣味の話ができる相手がなかなか見つからないものです。同じ趣味を持つ人との会話は、気持ちが軽くなり、日々の張り合いにもなります。結論として、趣味友だちは「趣味を決める→場所を選ぶ→声をかける→会話を広げる→距離感を保つ」の5ステップで、無理なく作れます。この記事では、各ステップの具体的な進め方と注意点を紹介します。",
     "body_sections": [
@@ -2283,7 +2322,8 @@
       }
     ],
     "published_date": "2026.10.06",
-    "keywords": "趣味友だち,既婚者 友達,趣味 仲間,声のかけ方,大人の友人"
+    "keywords": "趣味友だち,既婚者 友達,趣味 仲間,声のかけ方,大人の友人",
+    "source_photo": "images/column_married_hobbies.webp"
   },
   {
     "vol": 124,
@@ -2292,7 +2332,7 @@
     "title": "プロフィール文の書き方：好印象を与える自己紹介と例文5パターン | Re.en Column",
     "headline": "プロフィール文の書き方：好印象を与える自己紹介と例文5パターン",
     "description": "プロフィール文は相手が最初に読むあなたの顔です。書く順番、文字数の目安、30〜50代既婚者向けの例文5パターン、避けたい表現と個人情報の守り方を具体的に紹介します。",
-    "banner_img": "images/column_profile_tips.webp",
+    "banner_img": "images/banners/column-detail-124.webp",
     "authored": true,
     "lead": "プロフィール文は、相手が最初に読むあなたの「顔」です。何を書けばいいか分からない、書きすぎて重くなってしまう。そんな悩みはよく聞きます。結論として、好印象のプロフィールは「人柄・楽しみ・どんな時間を望むか」を、200〜400字で短く具体的に書くことです。この記事では、書く順番、文字数の目安、そのまま使える例文5パターン、避けたい表現と個人情報の扱いを紹介します。",
     "body_sections": [
@@ -2337,7 +2377,8 @@
       }
     ],
     "published_date": "2026.10.06",
-    "keywords": "プロフィール 書き方,自己紹介 例文,プロフィール文,好印象,既婚者"
+    "keywords": "プロフィール 書き方,自己紹介 例文,プロフィール文,好印象,既婚者",
+    "source_photo": "images/column_profile_tips.webp"
   },
   {
     "vol": 125,
@@ -2346,7 +2387,7 @@
     "title": "会う前のビデオ通話・電話で相手を確かめる方法：見ておきたい5つのポイント | Re.en Column",
     "headline": "会う前のビデオ通話・電話で相手を確かめる方法：見ておきたい5つのポイント",
     "description": "メッセージだけでは分からない相手の雰囲気を、会う前の短い通話で確認する方法。通話前の設定、確認する5つのポイント、断り方、詐欺を疑うサインまで具体的に解説します。",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-125.webp",
     "authored": true,
     "lead": "メッセージのやり取りだけでは、相手がどんな人か分からないことがあります。会う前に短い通話を挟むと、安心して次のステップに進めます。結論として、通話は10〜15分の短いビデオ通話か電話で、プロフィールとの一致と話の一貫性を確かめるのが効果的です。この記事では、通話前の設定、確認すべき5つのポイント、断り方と、注意したい危険サインを紹介します。",
     "body_sections": [
@@ -2391,7 +2432,8 @@
       }
     ],
     "published_date": "2026.10.07",
-    "keywords": "ビデオ通話,会う前 確認,相手を確かめる,安全対策,初対面 注意"
+    "keywords": "ビデオ通話,会う前 確認,相手を確かめる,安全対策,初対面 注意",
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 126,
@@ -2400,7 +2442,7 @@
     "title": "ほどよい連絡頻度の目安：相手の負担にならないやり取りのコツ | Re.en Column",
     "headline": "ほどよい連絡頻度の目安：相手の負担にならないやり取りのコツ",
     "description": "連絡が多すぎると負担に、少なすぎると関係が薄れます。既婚者同士のほどよい連絡頻度の目安、時期別の考え方、連絡ルールの決め方、負担を感じたときの伝え方を例文つきで解説します。",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-126.webp",
     "authored": true,
     "lead": "連絡が多すぎると相手の負担になり、少なすぎると関係が薄れてしまう。とくに既婚者同士は、家庭や仕事の都合があるため、ちょうどいい頻度が見えにくいものです。結論として、目安は「やり取りの初期は1日数通まで、慣れたら2〜3日に1回程度」で、いちばん大切なのは「相手の都合を尊重し、事前に話し合うこと」です。この記事では、時期別の目安と、連絡ルールの決め方、負担を感じたときの伝え方を紹介します。",
     "body_sections": [
@@ -2445,7 +2487,8 @@
       }
     ],
     "published_date": "2026.10.07",
-    "keywords": "連絡頻度,メッセージ 頻度,既婚者 距離感,連絡ルール,返信 ペース"
+    "keywords": "連絡頻度,メッセージ 頻度,既婚者 距離感,連絡ルール,返信 ペース",
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 127,
@@ -2454,7 +2497,7 @@
     "title": "休日がマンネリのときの過ごし方：既婚者が気分転換できる5つのアイデア | Re.en Column",
     "headline": "休日がマンネリのときの過ごし方：既婚者が気分転換できる5つのアイデア",
     "description": "平日は仕事と家事、休日は用事と睡眠で終わる。そんな毎日に変化をつける、近場で短時間でできる3つと、人とのつながりを増やす2つのアイデアを、家族との両立のコツと一緒に紹介します。",
-    "banner_img": "images/column_married_hobbies.webp",
+    "banner_img": "images/banners/column-detail-127.webp",
     "authored": true,
     "lead": "平日は仕事と家事、休日は家族の用事や寝て終わる。そんな毎日が続くと、気持ちが重くなりがちです。結論として、休日のマンネリは「新しい予定を大きく入れる」より、「近場で短時間の変化を一つ足す」ことで和らぎます。この記事では、無理なく気分転換できる5つのアイデアと、家族との時間を大切にしながら続けるコツを紹介します。",
     "body_sections": [
@@ -2499,7 +2542,8 @@
       }
     ],
     "published_date": "2026.10.07",
-    "keywords": "休日 マンネリ,休日の過ごし方,既婚者 気分転換,リフレッシュ,趣味"
+    "keywords": "休日 マンネリ,休日の過ごし方,既婚者 気分転換,リフレッシュ,趣味",
+    "source_photo": "images/column_married_hobbies.webp"
   },
   {
     "vol": 128,
@@ -2508,7 +2552,7 @@
     "title": "SNS・アプリのプライバシー設定の見直し方：自分の個人情報を守る5つの習慣 | Re.en Column",
     "headline": "SNS・アプリのプライバシー設定の見直し方：自分の個人情報を守る5つの習慣",
     "description": "SNSやコミュニティサービスで個人情報が広がるのを防ぐ、5つの習慣を紹介。公開範囲、本名と写真の扱い、位置情報、パスワード管理、定期点検の手順を具体的に解説します。",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-128.webp",
     "authored": true,
     "lead": "SNSやコミュニティサービスは便利な一方、個人情報が思わぬ形で広がるリスクがあります。結論として、自分の情報を守る基本は「出す情報を絞る」「公開範囲を限定する」「アカウントを堅く守る」の3つです。この記事では、既婚者が安心して利用するために見直したいプライバシー設定を、5つの習慣にまとめて紹介します。",
     "body_sections": [
@@ -2553,7 +2597,8 @@
       }
     ],
     "published_date": "2026.10.08",
-    "keywords": "プライバシー設定,個人情報 守る,SNS 公開範囲,位置情報,パスワード管理"
+    "keywords": "プライバシー設定,個人情報 守る,SNS 公開範囲,位置情報,パスワード管理",
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 129,
@@ -2562,7 +2607,7 @@
     "title": "悩みを聞いてもらうコツ：相談相手の選び方と、重くならない話し方 | Re.en Column",
     "headline": "悩みを聞いてもらうコツ：相談相手の選び方と、重くならない話し方",
     "description": "悩みを一人で抱えて重くなる前に。相談相手の選び方、聞いてもらいやすい話し方の例文、聞き役を疲れさせない配慮、専門窓口に頼るタイミングまで、具体的に紹介します。",
-    "banner_img": "images/column_friends.webp",
+    "banner_img": "images/banners/column-detail-129.webp",
     "authored": true,
     "lead": "悩みを一人で抱えていると、気持ちはどんどん重くなります。でも、誰にどう話せばいいか分からない、と悩む方も多いでしょう。結論として、悩みは「相手選び」「最初の一言」「話す量」を整えるだけで、重くならずに聞いてもらえます。この記事では、相談相手の選び方、そのまま使える話し方の例文、聞き役への配慮、専門の窓口に頼るタイミングを紹介します。",
     "body_sections": [
@@ -2607,7 +2652,8 @@
       }
     ],
     "published_date": "2026.10.08",
-    "keywords": "悩み 相談,相談相手 選び方,話し方,聞いてもらう,相談窓口"
+    "keywords": "悩み 相談,相談相手 選び方,話し方,聞いてもらう,相談窓口",
+    "source_photo": "images/column_friends.webp"
   },
   {
     "vol": 130,
@@ -2616,7 +2662,7 @@
     "title": "忙しくて心が休まらないときの休み方｜5分からできるストレスケア | Re.en Column",
     "headline": "忙しくて心が休まらないときの休み方｜5分からできるストレスケア",
     "description": "仕事や家事で心が休まらない方へ。疲れのサインの見分け方、5分でできる呼吸と書き出し、夜の整え方、つらさが続くときの相談の目安を、そのまま使える手順でまとめました。",
-    "banner_img": "images/column_thirdplace.webp",
+    "banner_img": "images/banners/column-detail-130.webp",
     "authored": true,
     "lead": "やることが多く、気づけば一日が終わっている。休んでいるはずなのに、心が休まらない。そんな毎日が続くと、疲れは静かにたまります。この記事では、疲れのサインの見分け方と、忙しい中でも5分から始められるケアの手順を、具体例つきでお伝えします。",
     "body_sections": [
@@ -2661,7 +2707,8 @@
       }
     ],
     "published_date": "2026.10.08",
-    "keywords": "ストレスケア,心を休める,忙しい 疲れ,5分 リセット,気持ちの整理"
+    "keywords": "ストレスケア,心を休める,忙しい 疲れ,5分 リセット,気持ちの整理",
+    "source_photo": "images/column_thirdplace.webp"
   },
   {
     "vol": 131,
@@ -2670,7 +2717,7 @@
     "title": "コミュニティサービスと疲れずに付き合う方法｜利用時間・通知・距離感 | Re.en Column",
     "headline": "コミュニティサービスと疲れずに付き合う方法｜利用時間・通知・距離感",
     "description": "コミュニティサービスを無理なく続けるコツを解説。一日の利用時間と通知の決め方、返信が遅いときの考え方、疲れたときの休み方、やめたくなったときの判断基準をまとめました。",
-    "banner_img": "images/column_manners.webp",
+    "banner_img": "images/banners/column-detail-131.webp",
     "authored": true,
     "lead": "使い始めは楽しかったのに、通知が気になったり、返信を急がなければと焦ったりして、だんだん疲れてしまう。そんな経験のある方は少なくありません。この記事では、利用時間と通知の決め方、人との距離感、疲れたときの休み方と、やめるかどうかの判断基準を整理します。",
     "body_sections": [
@@ -2715,7 +2762,8 @@
       }
     ],
     "published_date": "2026.10.09",
-    "keywords": "コミュニティ 疲れた,利用時間 決め方,返信 負担,休止 退会,距離感"
+    "keywords": "コミュニティ 疲れた,利用時間 決め方,返信 負担,休止 退会,距離感",
+    "source_photo": "images/column_manners.webp"
   },
   {
     "vol": 132,
@@ -2724,7 +2772,7 @@
     "title": "初めて会う人との待ち合わせ場所の選び方｜安心できるお店・時間帯・席 | Re.en Column",
     "headline": "初めて会う人との待ち合わせ場所の選び方｜安心できるお店・時間帯・席",
     "description": "友人や初めて会う相手と安心して話せる場所の選び方を解説。お店の4つの条件、昼と夜の違い、席の選び方、会計と帰り道の注意、断る言い方まで具体例つきでまとめました。",
-    "banner_img": "images/column_first_dinner.webp",
+    "banner_img": "images/banners/column-detail-132.webp",
     "authored": true,
     "lead": "初めて会う人と、どこで、何時に会うか。この選択は、緊張せずに話せるかを大きく左右します。この記事では、安心して過ごせるお店の条件、時間帯、席の選び方、会計と帰り道の注意点を、そのまま使える言い回しとあわせて整理します。",
     "body_sections": [
@@ -2769,7 +2817,8 @@
       }
     ],
     "published_date": "2026.10.09",
-    "keywords": "待ち合わせ 場所,初対面 安全,お店 選び方,昼 夜 どちら,帰り道"
+    "keywords": "待ち合わせ 場所,初対面 安全,お店 選び方,昼 夜 どちら,帰り道",
+    "source_photo": "images/column_first_dinner.webp"
   },
   {
     "vol": 134,
@@ -2778,7 +2827,7 @@
     "title": "価値観が違う人との話し合い方｜相手を否定せず伝える5つのコツ | Re.en Column",
     "headline": "価値観が違う人との話し合い方｜相手を否定せず伝える5つのコツ",
     "description": "友人やパートナーと価値観が合わないときの話し合い方を解説。聞き方、事実と気持ちの分け方、「私は」の伝え方、落としどころの探し方、距離を置く判断基準を例文つきでまとめました。",
-    "banner_img": "images/column_relationship.webp",
+    "banner_img": "images/banners/column-detail-134.webp",
     "authored": true,
     "lead": "年齢を重ねるほど、育った環境や家庭の事情、仕事の考え方が違い、価値観が合わない場面が増えます。違いそのものは悪いことではありません。伝え方を間違えると、関係がこじれてしまうだけです。この記事では、お互いを尊重して話し合う5つのコツを、言い回しの例と一緒に紹介します。",
     "body_sections": [
@@ -2823,7 +2872,8 @@
       }
     ],
     "published_date": "2026.10.09",
-    "keywords": "価値観の違い,話し合い方,伝え方,私は,距離を置く"
+    "keywords": "価値観の違い,話し合い方,伝え方,私は,距離を置く",
+    "source_photo": "images/column_relationship.webp"
   },
   {
     "vol": 135,
@@ -2832,7 +2882,7 @@
     "title": "睡眠不足でイライラが続くときの対処法｜忙しい人の夜の5つの習慣 | Re.en Column",
     "headline": "睡眠不足でイライラが続くときの対処法｜忙しい人の夜の5つの習慣",
     "description": "睡眠不足でイライラや落ち込みが続く人向けに、夜の過ごし方を見直す5つの習慣を解説。寝る前のスマホ、入浴、書き出し、部屋づくり、続けるコツと相談の目安をまとめました。",
-    "banner_img": "images/column_circle.webp",
+    "banner_img": "images/banners/column-detail-135.webp",
     "authored": true,
     "lead": "仕事、家事、育児、介護と、自分の時間が夜遅くにしか残らない。そんな毎日では睡眠が削られ、イライラや落ち込みが増えがちです。この記事では、睡眠不足が気持ちに与える影響と、忙しくても取り入れやすい夜の5つの習慣を紹介します。つらさが続くときの相談の目安もお伝えします。",
     "body_sections": [
@@ -2877,7 +2927,8 @@
       }
     ],
     "published_date": "2026.10.10",
-    "keywords": "睡眠不足 イライラ,夜の習慣,寝る前 スマホ,書き出し,眠れない"
+    "keywords": "睡眠不足 イライラ,夜の習慣,寝る前 スマホ,書き出し,眠れない",
+    "source_photo": "images/column_circle.webp"
   },
   {
     "vol": 136,
@@ -2886,7 +2937,7 @@
     "title": "初対面で自分のことをどこまで話す？ちょうどよい自己開示の目安 | Re.en Column",
     "headline": "初対面で自分のことをどこまで話す？ちょうどよい自己開示の目安",
     "description": "初めて会う相手との会話で、自分の話をどこまでするか迷う方へ。話す深さの段階、話してよい話題と避ける話題、質問の返し方、安全面の線引きを、例文つきで解説します。",
-    "banner_img": "images/column_chat.webp",
+    "banner_img": "images/banners/column-detail-136.webp",
     "authored": true,
     "lead": "初対面の会話では、自分のことを話しすぎて引かれないか、何も話さず冷たく思われないかと、迷うものです。ちょうどよい深さは、段階を踏んで広げていくと見つかります。この記事では、話す深さの目安、避けたい話題、会話を支える質問のコツ、安全面の線引きを、例文とあわせて紹介します。",
     "body_sections": [
@@ -2931,7 +2982,8 @@
       }
     ],
     "published_date": "2026.10.10",
-    "keywords": "自己開示,初対面 会話,話題 選び方,沈黙,質問 返し方"
+    "keywords": "自己開示,初対面 会話,話題 選び方,沈黙,質問 返し方",
+    "source_photo": "images/column_chat.webp"
   },
   {
     "vol": 137,
@@ -2940,7 +2992,7 @@
     "title": "住所・勤務先を聞かれたときの断り方｜角が立たない文例と対処法 | Re.en Column",
     "headline": "住所・勤務先を聞かれたときの断り方｜角が立たない文例と対処法",
     "description": "住所・勤務先・家族構成など個人情報を聞かれて困ったときの断り方を文例つきで解説。やわらかいかわし方、しつこい相手への対応、やり取りの記録と相談先をまとめました。",
-    "banner_img": "images/column_line_exchange.webp",
+    "banner_img": "images/banners/column-detail-137.webp",
     "authored": true,
     "lead": "親しくなると、住所や勤務先、家族のことなど、踏み込んだ質問をされる場面が出てきます。答えたくないのに、断ると感じが悪いかもと、つい答えてしまう方は少なくありません。この記事では、角を立てずに断る言い方、しつこい相手への対応、記録の残し方と相談先を、文例つきで紹介します。",
     "body_sections": [
@@ -2985,7 +3037,8 @@
       }
     ],
     "published_date": "2026.10.10",
-    "keywords": "個人情報 断り方,住所 聞かれた,勤務先 聞かれる,文例,しつこい 対応"
+    "keywords": "個人情報 断り方,住所 聞かれた,勤務先 聞かれる,文例,しつこい 対応",
+    "source_photo": "images/column_line_exchange.webp"
   },
   {
     "vol": 138,
@@ -2994,7 +3047,7 @@
     "title": "年上・年下の人と気持ちよく話す方法｜世代をこえる会話の5つのポイント | Re.en Column",
     "headline": "年上・年下の人と気持ちよく話す方法｜世代をこえる会話の5つのポイント",
     "description": "年上・年下の相手と話すときの5つのポイントを解説。敬意の示し方、先入観の手放し方、話題の選び方、聞く姿勢、アドバイスのタイミングを、そのまま使える言い回しとともに紹介します。",
-    "banner_img": "images/column_friends.webp",
+    "banner_img": "images/banners/column-detail-138.webp",
     "authored": true,
     "lead": "趣味の場やコミュニティでは、自分と年代の違う人と話す機会も増えます。話題が合うだろうか、失礼にならないだろうかと、構えてしまう方も多いでしょう。この記事では、世代をこえて気持ちよく話すための5つのポイントを、場面ごとの言い回しの例とともにお伝えします。",
     "body_sections": [
@@ -3039,7 +3092,8 @@
       }
     ],
     "published_date": "2026.10.11",
-    "keywords": "世代 違う 会話,年上 話し方,年下 接し方,話題,アドバイス"
+    "keywords": "世代 違う 会話,年上 話し方,年下 接し方,話題,アドバイス",
+    "source_photo": "images/column_friends.webp"
   },
   {
     "vol": 133,
@@ -3048,7 +3102,7 @@
     "title": "初めて会った後のお礼メッセージ｜好印象を残す例文と送るタイミング | Re.en Column",
     "headline": "初めて会った後のお礼メッセージ｜好印象を残す例文と送るタイミング",
     "description": "初めて会った相手へのお礼メッセージの書き方を解説。送る時間帯、入れたい3つの要素、場面別の例文、送りすぎの目安、返事がないときの考え方までをまとめました。",
-    "banner_img": "images/column_chat.webp",
+    "banner_img": "images/banners/column-detail-133.webp",
     "authored": true,
     "lead": "初めて会った後、お礼を送るべきか、どんな言葉にすればよいか迷う方は多いものです。短い一言でも、相手に安心感を残し、次につながるきっかけになります。この記事では、送るタイミング、入れたい3つの要素、そのまま使える例文、返事がないときの考え方をお伝えします。",
     "body_sections": [
@@ -3093,7 +3147,8 @@
       }
     ],
     "published_date": "2026.10.11",
-    "keywords": "お礼メッセージ,初対面 お礼,例文,送るタイミング,返事 こない"
+    "keywords": "お礼メッセージ,初対面 お礼,例文,送るタイミング,返事 こない",
+    "source_photo": "images/column_chat.webp"
   },
   {
     "vol": 139,
@@ -3102,7 +3157,7 @@
     "title": "SNSを見て落ち込むときの付き合い方｜見すぎない・比べない5つのルール | Re.en Column",
     "headline": "SNSを見て落ち込むときの付き合い方｜見すぎない・比べない5つのルール",
     "description": "SNSを見て疲れたり、他人と比べて落ち込んだりする人へ。見る時間と通知のルール、比べてしまう気持ちの扱い方、発信の注意点、休み方を、そのまま使える手順で解説します。",
-    "banner_img": "images/column_circle.webp",
+    "banner_img": "images/banners/column-detail-139.webp",
     "authored": true,
     "lead": "なんとなくSNSを開いて、気づけば長い時間が過ぎている。他の人の投稿を見て、自分と比べて落ち込んでしまう。そんな経験はありませんか。この記事では、見る時間と通知のルール、比べてしまう気持ちの整え方、発信で注意したい点、疲れたときの休み方を5つのルールで紹介します。",
     "body_sections": [
@@ -3147,7 +3202,8 @@
       }
     ],
     "published_date": "2026.10.11",
-    "keywords": "SNS 疲れた,SNS 比べてしまう,見すぎ 対策,ミュート,通知 整理"
+    "keywords": "SNS 疲れた,SNS 比べてしまう,見すぎ 対策,ミュート,通知 整理",
+    "source_photo": "images/column_circle.webp"
   },
   {
     "vol": 140,
@@ -3156,7 +3212,7 @@
     "title": "引っ越し・転職後に居場所をつくる方法｜孤独をやわらげる5つのステップ | Re.en Column",
     "headline": "引っ越し・転職後に居場所をつくる方法｜孤独をやわらげる5つのステップ",
     "description": "転居や転職で知り合いがいなくて心細い方へ。通える場所を決める、顔なじみを増やす、地域や趣味の場に参加する、オンラインの安全な使い方など、無理なく居場所をつくる方法を解説します。",
-    "banner_img": "images/column_friends.webp",
+    "banner_img": "images/banners/column-detail-140.webp",
     "authored": true,
     "lead": "引っ越しや転職のあとは、知り合いがいなくて心細く感じることがあります。新しい場所で居場所をつくるには、小さな一歩の積み重ねが大切です。この記事では、無理なく始められる5つの方法と、人見知りの方への工夫、オンラインの場を安全に使う注意点を紹介します。",
     "body_sections": [
@@ -3201,7 +3257,8 @@
       }
     ],
     "published_date": "2026.10.12",
-    "keywords": "引っ越し 孤独,転職 居場所,友達 つくる,趣味 コミュニティ,新しい環境"
+    "keywords": "引っ越し 孤独,転職 居場所,友達 つくる,趣味 コミュニティ,新しい環境",
+    "source_photo": "images/column_friends.webp"
   },
   {
     "vol": 141,
@@ -3210,7 +3267,7 @@
     "title": "気持ちを分かってもらえないときの伝え方｜誤解を減らす5つの話し方 | Re.en Column",
     "headline": "気持ちを分かってもらえないときの伝え方｜誤解を減らす5つの話し方",
     "description": "何度言っても気持ちが伝わらないもどかしさを減らす話し方を解説。伝える時間の選び方、結論からの話し方、「私は」の使い方、具体的な頼み方、伝わらないときの考え方をまとめました。",
-    "banner_img": "images/column_relationship.webp",
+    "banner_img": "images/banners/column-detail-141.webp",
     "authored": true,
     "lead": "何度言っても分かってもらえない、気持ちがうまく伝わらない。そんなもどかしさは、誰にでもあります。伝え方を少し工夫するだけで、誤解が減ることもあります。この記事では、伝わらない原因と、気持ちを伝えやすくする5つの話し方、それでも伝わらないときの考え方を、例文つきで紹介します。",
     "body_sections": [
@@ -3255,7 +3312,8 @@
       }
     ],
     "published_date": "2026.10.12",
-    "keywords": "気持ち 伝わらない,伝え方,私は 話し方,誤解 解く,分かってもらえない"
+    "keywords": "気持ち 伝わらない,伝え方,私は 話し方,誤解 解く,分かってもらえない",
+    "source_photo": "images/column_relationship.webp"
   },
   {
     "vol": 142,
@@ -3264,7 +3322,7 @@
     "title": "仕事・家庭・自分の時間のバランスの取り方｜心に余裕をつくる5つのコツ | Re.en Column",
     "headline": "仕事・家庭・自分の時間のバランスの取り方｜心に余裕をつくる5つのコツ",
     "description": "仕事と家庭に追われて自分の時間が取れない人へ。やることの書き出し、優先順位のつけ方、頼る・手放す工夫、短い自分時間のつくり方、罪悪感との向き合い方をまとめました。",
-    "banner_img": "images/column_circle.webp",
+    "banner_img": "images/banners/column-detail-142.webp",
     "authored": true,
     "lead": "仕事、家事、育児、介護と、毎日やることが山積みで、自分のための時間がまったく取れない。そんな状態が続くと、心が疲れてしまいます。この記事では、「時間がない」と感じる理由と、忙しい中でも心に余裕をつくる5つのコツを、すぐ試せる手順で紹介します。",
     "body_sections": [
@@ -3309,7 +3367,8 @@
       }
     ],
     "published_date": "2026.10.13",
-    "keywords": "仕事 家庭 バランス,自分の時間,優先順位,時間がない,心の余裕"
+    "keywords": "仕事 家庭 バランス,自分の時間,優先順位,時間がない,心の余裕",
+    "source_photo": "images/column_circle.webp"
   },
   {
     "vol": 143,
@@ -3318,7 +3377,7 @@
     "title": "人間関係の整理の仕方｜疲れる付き合いを見直す5つのステップ | Re.en Column",
     "headline": "人間関係の整理の仕方｜疲れる付き合いを見直す5つのステップ",
     "description": "会ったあとにどっと疲れる関係を、無理なく見直す5つのステップを解説。疲れる関係のサイン、気持ちの整理、距離の調整、断り方の文例、罪悪感との向き合い方をまとめました。",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-143.webp",
     "authored": true,
     "lead": "会ったあとにどっと疲れる、断れずに付き合いが負担になっている。そんな人間関係が続くと、心が消耗します。関係を急に断つ必要はありません。距離を少しずつ調整すれば、無理のない形に整えられます。この記事では、疲れる関係のサイン、5つのステップ、断り方の文例、罪悪感との向き合い方を紹介します。",
     "body_sections": [
@@ -3363,7 +3422,8 @@
       }
     ],
     "published_date": "2026.10.13",
-    "keywords": "人間関係 疲れる,人間関係 整理,距離を置く,断り方,罪悪感"
+    "keywords": "人間関係 疲れる,人間関係 整理,距離を置く,断り方,罪悪感",
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 144,
@@ -3372,7 +3432,7 @@
     "title": "趣味が続かない原因と、三日坊主を防ぐ工夫｜40代からの無理のない始め方 | Re.en Column",
     "headline": "趣味が続かない原因と、三日坊主を防ぐ工夫｜40代からの無理のない始め方",
     "description": "趣味が続かないのは意志の弱さではなく設計の問題。原因の見分け方、5分から始める手順、記録と見直しの基準、中断しても戻れる考え方を例文つきで解説します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_married_hobbies.webp",
+    "banner_img": "images/banners/column-detail-144.webp",
     "authored": true,
     "lead": "新しい趣味を始めても、数週間で気持ちが離れてしまう。そんな自分を責めていませんか。結論から言うと、続かない主な理由は意志の弱さではなく、目標の大きさや始め方の設計にあります。この記事では、原因の見分け方、続く形への直し方、やめたくなったときの判断の基準を紹介します。",
     "body_sections": [
@@ -3417,7 +3477,8 @@
       }
     ],
     "published_date": "2026.10.13",
-    "keywords": "趣味 続かない,三日坊主 防ぐ,大人の趣味,習慣化,40代 趣味"
+    "keywords": "趣味 続かない,三日坊主 防ぐ,大人の趣味,習慣化,40代 趣味",
+    "source_photo": "images/column_married_hobbies.webp"
   },
   {
     "vol": 145,
@@ -3426,7 +3487,7 @@
     "title": "新しいことに挑戦する勇気の出し方｜40代から小さく試す5つの方法 | Re.en Column",
     "headline": "新しいことに挑戦する勇気の出し方｜40代から小さく試す5つの方法",
     "description": "「今さら遅い」「失敗が怖い」で動けない40代へ。不安の正体、期間と費用を区切って試す方法、失敗の捉え直し、周囲への伝え方を具体例つきで解説します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_62.webp",
+    "banner_img": "images/banners/column-detail-145.webp",
     "authored": true,
     "lead": "やってみたいことはあるのに、「今さら遅いかも」「失敗したら恥ずかしい」と立ち止まってしまう。年齢を重ねるほど、慎重になるのは自然なことです。結論は、勇気を出すより先に「試す範囲を小さくする」こと。この記事では、不安の整理、小さく試す手順、失敗の捉え方を紹介します。",
     "body_sections": [
@@ -3471,7 +3532,8 @@
       }
     ],
     "published_date": "2026.10.14",
-    "keywords": "新しいこと 挑戦,40代 挑戦,一歩が踏み出せない,小さく始める,勇気の出し方"
+    "keywords": "新しいこと 挑戦,40代 挑戦,一歩が踏み出せない,小さく始める,勇気の出し方",
+    "source_photo": "images/column_62.webp"
   },
   {
     "vol": 146,
@@ -3480,7 +3542,7 @@
     "title": "お金の価値観の違いを話し合う｜気まずくならない切り出し方と進め方 | Re.en Column",
     "headline": "お金の価値観の違いを話し合う｜気まずくならない切り出し方と進め方",
     "description": "お金の使い方が合わないときの切り出し方を、そのまま使える例文つきで解説。責めずに伝える順番、数字と優先順位の整理、譲れる点・譲れない点の決め方まで紹介します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_money.webp",
+    "banner_img": "images/banners/column-detail-146.webp",
     "authored": true,
     "lead": "お金の使い方が合わない、でも話し出すと気まずくなりそうで言えない。身近な相手ほど、お金の話は難しいものです。結論は、「相手の使い方」ではなく「自分の不安や希望」から話し始めること。この記事では、切り出しの例文、話し合いの進め方、折り合いの付け方を具体的に紹介します。",
     "body_sections": [
@@ -3525,7 +3587,8 @@
       }
     ],
     "published_date": "2026.10.14",
-    "keywords": "お金 価値観 違い,夫婦 お金 話し合い,家計 切り出し方,金銭感覚 ずれ,お金の話"
+    "keywords": "お金 価値観 違い,夫婦 お金 話し合い,家計 切り出し方,金銭感覚 ずれ,お金の話",
+    "source_photo": "images/column_money.webp"
   },
   {
     "vol": 147,
@@ -3534,7 +3597,7 @@
     "title": "大人の学び直しを無理なく続ける｜テーマの選び方と時間・費用の工夫 | Re.en Column",
     "headline": "大人の学び直しを無理なく続ける｜テーマの選び方と時間・費用の工夫",
     "description": "30〜50代の学び直しを、テーマ選び、学び方の比較、時間と費用の工夫、学びを日常に活かす方法まで具体的に解説。資格に頼らず、楽しみながら続けるコツを紹介します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_63.webp",
+    "banner_img": "images/banners/column-detail-147.webp",
     "authored": true,
     "lead": "仕事や家庭が落ち着いてくると、「何か新しいことを学んでみたい」という気持ちが湧くことがあります。結論から言うと、大人の学び直しは「目的を軽く決める」「学び方を自分に合わせる」「時間と費用に上限を置く」の3点で、無理なく続きます。この記事で、選び方と続け方を紹介します。",
     "body_sections": [
@@ -3579,7 +3642,8 @@
       }
     ],
     "published_date": "2026.10.14",
-    "keywords": "学び直し 大人,社会人 学び直し,オンライン講座,40代 勉強,リスキリング 趣味"
+    "keywords": "学び直し 大人,社会人 学び直し,オンライン講座,40代 勉強,リスキリング 趣味",
+    "source_photo": "images/column_63.webp"
   },
   {
     "vol": 148,
@@ -3588,7 +3652,7 @@
     "title": "季節のあいさつで気持ちを伝える｜負担にならない一言メッセージと例文集 | Re.en Column",
     "headline": "季節のあいさつで気持ちを伝える｜負担にならない一言メッセージと例文集",
     "description": "新年・暑中・年末など、季節のあいさつを負担なく送るコツを解説。基本の3要素、送る時期、そのまま使える例文、送りすぎを避ける目安まで紹介します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_line_exchange.webp",
+    "banner_img": "images/banners/column-detail-148.webp",
     "authored": true,
     "lead": "季節の節目は、しばらく連絡を取っていない相手にも、気持ちを伝えやすいタイミングです。長い文章は必要ありません。結論は、「感謝」「相手への気づかい」「短い近況」の3要素を、2〜3文で送ること。この記事では、送る時期、基本の型、そのまま使える例文、送りすぎを避ける目安を紹介します。",
     "body_sections": [
@@ -3633,7 +3697,8 @@
       }
     ],
     "published_date": "2026.10.14",
-    "keywords": "季節のあいさつ,一言メッセージ 例文,年始 あいさつ 例文,暑中見舞い 文例,距離感"
+    "keywords": "季節のあいさつ,一言メッセージ 例文,年始 あいさつ 例文,暑中見舞い 文例,距離感",
+    "source_photo": "images/column_line_exchange.webp"
   },
   {
     "vol": 149,
@@ -3642,7 +3707,7 @@
     "title": "40代からの体調管理｜疲れやすさに向き合う、無理なく続くセルフケア5つ | Re.en Column",
     "headline": "40代からの体調管理｜疲れやすさに向き合う、無理なく続くセルフケア5つ",
     "description": "40代で疲れが取れにくいと感じる人へ。睡眠・食事・運動・気持ちの整え方・記録と相談まで、1つから始められるセルフケアを具体的に紹介。つらさが続くときは医師へ。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_thirdplace.webp",
+    "banner_img": "images/banners/column-detail-149.webp",
     "authored": true,
     "lead": "40代になり、疲れが取れにくい、体調の波が増えたと感じていませんか。忙しい毎日では、自分の体調は後回しになりがちです。結論は、一度に変えようとせず「1つだけ」始めること。この記事では、睡眠・食事・運動・気持ち・記録の5つの習慣を、無理なく続ける方法とあわせて紹介します。なお、つらさが続くときは医師に相談してください。",
     "body_sections": [
@@ -3687,7 +3752,8 @@
       }
     ],
     "published_date": "2026.10.15",
-    "keywords": "40代 体調管理,疲れやすい 40代,セルフケア 習慣,睡眠 整える,生活習慣"
+    "keywords": "40代 体調管理,疲れやすい 40代,セルフケア 習慣,睡眠 整える,生活習慣",
+    "source_photo": "images/column_thirdplace.webp"
   },
   {
     "vol": 150,
@@ -3696,7 +3762,7 @@
     "title": "誘いを上手に断る方法｜気まずくならない伝え方と、そのまま使える文例 | Re.en Column",
     "headline": "誘いを上手に断る方法｜気まずくならない伝え方と、そのまま使える文例",
     "description": "誘いを断りたいけれど関係が悪くなりそうで不安な人へ。断る前の整理、感謝と代案の添え方、場面別の文例、断りにくい相手への対処まで具体的に解説します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_chat.webp",
+    "banner_img": "images/banners/column-detail-150.webp",
     "authored": true,
     "lead": "誘ってもらえるのはうれしい反面、予定や気持ちに余裕がなくて断りたいときもあります。断ると関係が悪くなりそうで、つい無理をして受ける人も多いものです。結論は、「感謝」「断る意思」「代わりの提案（任意）」の順で、短く誠実に伝えること。この記事では、考え方と、場面別の文例を紹介します。",
     "body_sections": [
@@ -3741,7 +3807,8 @@
       }
     ],
     "published_date": "2026.10.15",
-    "keywords": "誘い 断り方,断り方 例文,角が立たない断り方,断れない 悩み,人付き合い 距離感"
+    "keywords": "誘い 断り方,断り方 例文,角が立たない断り方,断れない 悩み,人付き合い 距離感",
+    "source_photo": "images/column_chat.webp"
   },
   {
     "vol": 151,
@@ -3750,7 +3817,7 @@
     "title": "オンラインコミュニティで安心して話すマナー｜言葉づかいと個人情報の守り方 | Re.en Column",
     "headline": "オンラインコミュニティで安心して話すマナー｜言葉づかいと個人情報の守り方",
     "description": "顔が見えないオンラインの交流で、気持ちよく話すための5つのマナー。言葉づかい、返信のペース、個人情報の守り方、困ったときの相談先（警察・188）まで解説します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_profile_tips.webp",
+    "banner_img": "images/banners/column-detail-151.webp",
     "authored": true,
     "lead": "オンラインのコミュニティは、顔が見えない分、言葉の受け取り方に差が出やすい場所です。結論は、「送る前に読み返す」「個人情報を自分から出しすぎない」「困ったら距離を置く」の3つを習慣にすること。この記事では、気持ちよく話すための5つのマナーと、困ったときの相談先を紹介します。",
     "body_sections": [
@@ -3795,7 +3862,8 @@
       }
     ],
     "published_date": "2026.10.15",
-    "keywords": "オンラインコミュニティ マナー,ネット 交流 マナー,個人情報 守り方,返信 遅い,安心 コミュニティ"
+    "keywords": "オンラインコミュニティ マナー,ネット 交流 マナー,個人情報 守り方,返信 遅い,安心 コミュニティ",
+    "source_photo": "images/column_profile_tips.webp"
   },
   {
     "vol": 152,
@@ -3804,7 +3872,7 @@
     "title": "相手をほめる言葉の選び方｜押しつけにならない5つのコツと例文 | Re.en Column",
     "headline": "相手をほめる言葉の選び方｜押しつけにならない5つのコツと例文",
     "description": "ほめ言葉がお世辞に聞こえる、プレッシャーになる悩みへ。事実＋感想で伝えるコツ、外見や私生活に触れる際の注意、場面別の例文、ほめられたときの返し方を紹介。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_65.webp",
+    "banner_img": "images/banners/column-detail-152.webp",
     "authored": true,
     "lead": "ほめ言葉は、人間関係を温かくしてくれます。一方で、ほめ方によっては「お世辞に聞こえる」「プレッシャーになる」と受け取られることもあります。結論は、「事実」と「自分の感想」をセットで伝えること。この記事では、相手が素直に喜べるほめ方と、避けたい言い方、場面別の例文を紹介します。",
     "body_sections": [
@@ -3849,7 +3917,8 @@
       }
     ],
     "published_date": "2026.10.16",
-    "keywords": "ほめ方 コツ,褒め言葉 例文,ほめ上手,会話 マナー,大人の会話"
+    "keywords": "ほめ方 コツ,褒め言葉 例文,ほめ上手,会話 マナー,大人の会話",
+    "source_photo": "images/column_65.webp"
   },
   {
     "vol": 153,
@@ -3858,7 +3927,7 @@
     "title": "感情的になった会話を落ち着かせる方法｜その場でできる5つの工夫と言い換え | Re.en Column",
     "headline": "感情的になった会話を落ち着かせる方法｜その場でできる5つの工夫と言い換え",
     "description": "大切な人との会話で感情的になり、言いすぎて後悔する人へ。体のサイン、深呼吸、間をとる言葉の例文、あとで振り返る方法まで、その場でできる工夫を具体的に紹介します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_61.webp",
+    "banner_img": "images/banners/column-detail-153.webp",
     "authored": true,
     "lead": "大切な人との会話でも、つい感情的になり、言いすぎてしまうことがあります。あとから後悔して、気まずくなる人も多いでしょう。結論は、感情を抑え込むのではなく、「体のサインに気づく」「間をとる」「気持ちを言葉にする」の順で対処すること。この記事では、その場で使える工夫と、そのまま使える言い換えを紹介します。",
     "body_sections": [
@@ -3903,7 +3972,8 @@
       }
     ],
     "published_date": "2026.10.16",
-    "keywords": "感情的になる 対処,言いすぎ 後悔,夫婦 会話 落ち着く,怒りの抑え方,アンガーマネジメント"
+    "keywords": "感情的になる 対処,言いすぎ 後悔,夫婦 会話 落ち着く,怒りの抑え方,アンガーマネジメント",
+    "source_photo": "images/column_61.webp"
   },
   {
     "vol": 154,
@@ -3912,7 +3982,7 @@
     "title": "夜に不安で考えすぎてしまうときの対処法｜気持ちを整理する5つの習慣 | Re.en Column",
     "headline": "夜に不安で考えすぎてしまうときの対処法｜気持ちを整理する5つの習慣",
     "description": "夜になると不安が大きくなり眠れない人へ。書き出しで頭の中を整理する方法、考える時間を区切るコツ、体を整える習慣、相談の目安を紹介。つらさが続くときは医師へ。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_tokyobar.webp",
+    "banner_img": "images/banners/column-detail-154.webp",
     "authored": true,
     "lead": "夜、一人になると、つい先のことを考えて不安が大きくなる。考えるほど眠れなくなり、翌日の疲れにつながる人も多いでしょう。結論は、頭の中の不安を「書き出して、今できることとできないことに分ける」こと。この記事では、5つの習慣と、相談の目安を紹介します。つらさが長く続くときは、医師などに相談してください。",
     "body_sections": [
@@ -3957,7 +4027,8 @@
       }
     ],
     "published_date": "2026.10.16",
-    "keywords": "夜 不安 眠れない,考えすぎ 対処,不安 書き出し,気持ち 整理,夜 考えすぎる"
+    "keywords": "夜 不安 眠れない,考えすぎ 対処,不安 書き出し,気持ち 整理,夜 考えすぎる",
+    "source_photo": "images/column_tokyobar.webp"
   },
   {
     "vol": 155,
@@ -3966,7 +4037,7 @@
     "title": "遅刻やキャンセルを気まずくしない伝え方｜約束の変更マナーと文例 | Re.en Column",
     "headline": "遅刻やキャンセルを気まずくしない伝え方｜約束の変更マナーと文例",
     "description": "約束に遅れる、予定を変更したいときの連絡マナーを解説。連絡のタイミング、お詫びの順番、代案の出し方、そのまま使える文例と、繰り返してしまうときの見直し方を紹介。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_lounge_etiquette.webp",
+    "banner_img": "images/banners/column-detail-155.webp",
     "authored": true,
     "lead": "仕事や家庭の都合で、約束の時間に遅れたり、予定を変更したりすることは誰にでもあります。そんなとき、伝え方ひとつで相手の受け取り方は大きく変わります。結論は、「早く連絡し、お詫びを先に、見通しと代案を添える」こと。この記事では、信頼を守る連絡の手順と、そのまま使える文例を紹介します。",
     "body_sections": [
@@ -4011,7 +4082,8 @@
       }
     ],
     "published_date": "2026.10.17",
-    "keywords": "遅刻 連絡 マナー,キャンセル 伝え方,約束 変更 文例,ドタキャン 謝り方,連絡マナー"
+    "keywords": "遅刻 連絡 マナー,キャンセル 伝え方,約束 変更 文例,ドタキャン 謝り方,連絡マナー",
+    "source_photo": "images/column_lounge_etiquette.webp"
   },
   {
     "vol": 156,
@@ -4020,7 +4092,7 @@
     "title": "初対面の緊張をやわらげる準備｜会う前日から当日までの心がまえと安全対策 | Re.en Column",
     "headline": "初対面の緊張をやわらげる準備｜会う前日から当日までの心がまえと安全対策",
     "description": "初めて会う人の前で緊張する人へ。前日までの準備、当日の過ごし方、話題の用意、うまく話せなくても大丈夫な考え方に加え、初対面で守りたい安全対策も紹介します。公式の情報をもとに、具体的な手順と例文を紹介します。",
-    "banner_img": "images/column_first_dinner.webp",
+    "banner_img": "images/banners/column-detail-156.webp",
     "authored": true,
     "lead": "初めて会う人の前では、誰でも緊張するものです。前の晩に眠れなかったり、当日に頭が真っ白になったりすることもあります。緊張は、その時間を大切にしたい気持ちの表れでもあります。結論は、前日までに「話題・持ち物・場所」を決め、当日は「うまく話せなくて当然」と考えること。あわせて、安全対策も確認しましょう。",
     "body_sections": [
@@ -4065,7 +4137,8 @@
       }
     ],
     "published_date": "2026.10.17",
-    "keywords": "初対面 緊張,初めて会う 準備,緊張 和らげる,初対面 安全対策,会う前 心がまえ"
+    "keywords": "初対面 緊張,初めて会う 準備,緊張 和らげる,初対面 安全対策,会う前 心がまえ",
+    "source_photo": "images/column_first_dinner.webp"
   },
   {
     "vol": 157,
@@ -4074,7 +4147,7 @@
     "title": "モヤモヤを書いて整理する方法｜3分ノートの書き方と続けるコツ | Re.en Column",
     "headline": "モヤモヤを書いて整理する方法｜3分ノートの書き方と続けるコツ",
     "description": "頭の中のモヤモヤは、紙に書き出すと整理しやすくなります。3分で終わる5ステップ、何も書けない日の書き出し例、書くとつらくなったときの対処、続けるコツまで具体例つきで解説します。",
-    "banner_img": "images/column_64.webp",
+    "banner_img": "images/banners/column-detail-157.webp",
     "authored": true,
     "lead": "仕事や家庭のことを考えているうちに、何が一番の悩みなのか分からなくなる。そんな夜は、多くの大人にあります。答えは、頭の中で考え続けるより、<strong>紙に書き出して眺める</strong>ほうが見つかりやすくなります。この記事では、3分で終わる書き方、書けない日の書き出し例、続けるコツを紹介します。",
     "body_sections": [
@@ -4119,7 +4192,8 @@
       }
     ],
     "published_date": "2026.10.17",
-    "keywords": "気持ちの整理,モヤモヤ,ノート 書き方,書き出す,心の整え方"
+    "keywords": "気持ちの整理,モヤモヤ,ノート 書き方,書き出す,心の整え方",
+    "source_photo": "images/column_64.webp"
   },
   {
     "vol": 158,
@@ -4128,7 +4202,7 @@
     "title": "仕事の疲れを家に持ち込まない｜帰宅前の気持ち切り替え術5選 | Re.en Column",
     "headline": "仕事の疲れを家に持ち込まない｜帰宅前の気持ち切り替え術5選",
     "description": "仕事の緊張や疲れを引きずったまま帰宅してしまう人へ。帰り道の過ごし方、玄関前の3呼吸、家族への最初の一言の例文、帰宅後の休み方まで、今日から使える切り替え方を解説します。",
-    "banner_img": "images/column_alibi.webp",
+    "banner_img": "images/banners/column-detail-158.webp",
     "authored": true,
     "lead": "仕事で気を張ったまま帰宅し、家族につい素っ気ない態度をとってしまう。後から反省しても、翌日また同じことが起きる。そんな悩みは珍しくありません。大切なのは、気合ではなく<strong>帰宅前に小さな切り替えの儀式を持つ</strong>ことです。この記事では、帰り道、玄関前、帰宅直後の三つの場面で使える工夫を紹介します。",
     "body_sections": [
@@ -4173,7 +4247,8 @@
       }
     ],
     "published_date": "2026.10.18",
-    "keywords": "仕事 切り替え,帰宅前,気持ちの切り替え,家庭,疲れ 持ち帰らない"
+    "keywords": "仕事 切り替え,帰宅前,気持ちの切り替え,家庭,疲れ 持ち帰らない",
+    "source_photo": "images/column_alibi.webp"
   },
   {
     "vol": 159,
@@ -4182,7 +4257,7 @@
     "title": "誘いを断られたときの受け止め方｜落ち込まず次につなげる返信例と考え方 | Re.en Column",
     "headline": "誘いを断られたときの受け止め方｜落ち込まず次につなげる返信例と考え方",
     "description": "友人や知人を誘って断られると、気持ちが沈むものです。断られた理由の受け止め方、そのまま使える返信の例文、次に誘うタイミング、自分を責めないための考え方を具体的に解説します。",
-    "banner_img": "images/column_secret_date.webp",
+    "banner_img": "images/banners/column-detail-159.webp",
     "authored": true,
     "lead": "思い切って誘ったのに、「その日は難しくて」と断られる。たった一言なのに、自分が否定されたように感じて、しばらく引きずってしまう人は少なくありません。結論から言うと、断りの多くは<strong>あなたへの評価ではなく、相手の都合や余裕の問題</strong>です。この記事では、受け止め方、返信の例文、次に誘うタイミングを紹介します。",
     "body_sections": [
@@ -4227,7 +4302,8 @@
       }
     ],
     "published_date": "2026.10.18",
-    "keywords": "誘い 断られた,断られたとき 返信,誘い方,人間関係,落ち込まない"
+    "keywords": "誘い 断られた,断られたとき 返信,誘い方,人間関係,落ち込まない",
+    "source_photo": "images/column_secret_date.webp"
   },
   {
     "vol": 160,
@@ -4236,7 +4312,7 @@
     "title": "手土産・小さな贈り物の選び方｜相手の負担にならない金額と渡し方 | Re.en Column",
     "headline": "手土産・小さな贈り物の選び方｜相手の負担にならない金額と渡し方",
     "description": "友人や知人への手土産は、高価さより気軽さが大切です。金額の目安、好みの確かめ方、包み方、渡す一言の例文、お返しを求めない伝え方まで、相手の負担にならない贈り方を解説します。",
-    "banner_img": "images/column_67.webp",
+    "banner_img": "images/banners/column-detail-160.webp",
     "authored": true,
     "lead": "会う約束をしたものの、手ぶらでよいのか、何か持っていくべきか迷う。持っていくなら何がよいのか。そんな迷いは、相手を気遣う人ほど強くなります。結論から言うと、手土産は<strong>相手が気軽に受け取れる、小さなもの</strong>がちょうどよい贈り物です。この記事では、選ぶ基準、金額の目安、渡し方の一言を紹介します。",
     "body_sections": [
@@ -4281,7 +4357,8 @@
       }
     ],
     "published_date": "2026.10.18",
-    "keywords": "手土産 選び方,小さな贈り物,手土産 金額,友人 プレゼント,渡し方"
+    "keywords": "手土産 選び方,小さな贈り物,手土産 金額,友人 プレゼント,渡し方",
+    "source_photo": "images/column_67.webp"
   },
   {
     "vol": 161,
@@ -4290,7 +4367,7 @@
     "title": "秋冬に気持ちが沈むとき｜日が短い季節を穏やかに過ごす5つの習慣 | Re.en Column",
     "headline": "秋冬に気持ちが沈むとき｜日が短い季節を穏やかに過ごす5つの習慣",
     "description": "秋から冬にかけて気持ちが沈みやすい人へ。朝の光の浴び方、体の動かし方、食事と睡眠の整え方、人とのつながり、予定の立て方を具体例つきで紹介。つらさが続くときの相談の目安も解説します。",
-    "banner_img": "images/column_second_partner.webp",
+    "banner_img": "images/banners/column-detail-161.webp",
     "authored": true,
     "lead": "日が短くなり、朝は暗く、夕方はすぐ夜になる。そんな時期になると、理由もなく気持ちが重くなる人は少なくありません。結論から言うと、生活のリズムを少し整えるだけで、気分が楽になることは多くあります。この記事では、<strong>朝の光、体を動かす習慣、食事と睡眠、人とのつながり、予定の立て方</strong>の五つを、今日から試せる形で紹介します。",
     "body_sections": [
@@ -4335,7 +4412,8 @@
       }
     ],
     "published_date": "2026.10.19",
-    "keywords": "季節の変わり目 気分 落ち込む,秋冬 気分,日照時間,気持ちが沈む,過ごし方"
+    "keywords": "季節の変わり目 気分 落ち込む,秋冬 気分,日照時間,気持ちが沈む,過ごし方",
+    "source_photo": "images/column_second_partner.webp"
   },
   {
     "vol": 162,
@@ -4344,7 +4422,7 @@
     "title": "ネットで知り合った相手にお金を求められたら｜危険信号5つと断り方・相談先 | Re.en Column",
     "headline": "ネットで知り合った相手にお金を求められたら｜危険信号5つと断り方・相談先",
     "description": "ネットで知り合った相手から送金や個人情報を求められたときの対処法。危険信号5つ、そのまま使える断り方の例文、送ってしまった場合の動き方、警察相談窓口や消費生活センター188の使い方を解説します。",
-    "banner_img": "images/column_line_exchange.webp",
+    "banner_img": "images/banners/column-detail-162.webp",
     "authored": true,
     "lead": "やりとりを重ねた相手から、突然お金の話を切り出される。驚きと、「断ったら嫌われるかも」という気持ちで、返事に困る人は少なくありません。結論から言うと、<strong>会ったことのない相手や、知り合って間もない相手からの金銭の依頼には、その場で応じない</strong>のが原則です。この記事では、危険信号、断り方の例文、被害に気づいたときの動き方と相談先をまとめます。",
     "body_sections": [
@@ -4389,7 +4467,8 @@
       }
     ],
     "published_date": "2026.10.21",
-    "keywords": "お金を求められた,ネット 知り合い 送金,ロマンス詐欺 対処,消費生活センター 188,警察 相談 #9110"
+    "keywords": "お金を求められた,ネット 知り合い 送金,ロマンス詐欺 対処,消費生活センター 188,警察 相談 #9110",
+    "source_photo": "images/column_line_exchange.webp"
   },
   {
     "vol": 163,
@@ -4398,7 +4477,7 @@
     "title": "返信が遅い相手にやきもきしないために｜待ち方と催促にならない連絡のコツ | Re.en Column",
     "headline": "返信が遅い相手にやきもきしないために｜待ち方と催促にならない連絡のコツ",
     "description": "メッセージの返信が遅い相手に、やきもきしてしまう人へ。返信の速さに個人差がある理由、待つ間の過ごし方、催促にならない連絡の例文、確認してよい目安を、具体例つきで解説します。",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-163.webp",
     "authored": true,
     "lead": "送ったメッセージに、何時間たっても返事がない。何度もスマホを開いては、画面を確かめてしまう。結論から言うと、返信の遅さは<strong>気持ちの大きさとは別の話</strong>であることがほとんどです。この記事では、返信の速さに差が出る理由、待つ間の過ごし方、催促にならない連絡の例文、確認してよい目安を紹介します。",
     "body_sections": [
@@ -4443,7 +4522,8 @@
       }
     ],
     "published_date": "2026.10.21",
-    "keywords": "返信が遅い,返信 待つ,メッセージ 催促,連絡 ペース,気にしすぎ"
+    "keywords": "返信が遅い,返信 待つ,メッセージ 催促,連絡 ペース,気にしすぎ",
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 164,
@@ -4452,7 +4532,7 @@
     "title": "「ありがとう」を増やす習慣｜感謝を言葉にする5つのコツと例文 | Re.en Column",
     "headline": "「ありがとう」を増やす習慣｜感謝を言葉にする5つのコツと例文",
     "description": "感謝は、思うだけでなく言葉にすると心が温まります。毎日続けるコツ、言いにくいときの言い換え例文、家族や身近な人への伝え方、感謝日記の書き方を具体例つきで紹介します。",
-    "banner_img": "images/column_friends.webp",
+    "banner_img": "images/banners/column-detail-164.webp",
     "authored": true,
     "lead": "心の中では感謝していても、改めて口にするのは照れくさい。長く一緒にいる家族ほど、そう感じる人は多いものです。結論から言うと、感謝は<strong>短く、具体的に、小さなことから</strong>言葉にするのが続くコツです。この記事では、5つのコツと、すぐ使える例文、感謝日記の書き方を紹介します。",
     "body_sections": [
@@ -4497,7 +4577,8 @@
       }
     ],
     "published_date": "2026.10.21",
-    "keywords": "感謝 言葉にする,ありがとう 習慣,感謝日記,夫婦 感謝,伝え方"
+    "keywords": "感謝 言葉にする,ありがとう 習慣,感謝日記,夫婦 感謝,伝え方",
+    "source_photo": "images/column_friends.webp"
   },
   {
     "vol": 165,
@@ -4506,7 +4587,7 @@
     "title": "会話が続かないときの話題の見つけ方｜沈黙が怖くなくなる5つのコツ | Re.en Column",
     "headline": "会話が続かないときの話題の見つけ方｜沈黙が怖くなくなる5つのコツ",
     "description": "会話が続かず、沈黙が気まずいときの対処法。話題の引き出しの作り方、その場にあるものから話を広げる方法、沈黙との付き合い方、使える一言の例文を、5つのコツにまとめて解説します。",
-    "banner_img": "images/column_thirdplace.webp",
+    "banner_img": "images/banners/column-detail-165.webp",
     "authored": true,
     "lead": "初対面や久しぶりに会う相手との会話が、数分で途切れてしまう。沈黙が怖くて、焦って話題を探すほど空回りする。そんな経験は、多くの人にあります。結論から言うと、会話を続けるのに必要なのは、話のうまさではなく<strong>話題の引き出しと、沈黙を恐れない気持ち</strong>です。この記事では、5つのコツと使える一言の例文を紹介します。",
     "body_sections": [
@@ -4551,7 +4632,8 @@
       }
     ],
     "published_date": "2026.10.22",
-    "keywords": "会話が続かない,話題 見つけ方,沈黙 気まずい,雑談 コツ,会話 続け方"
+    "keywords": "会話が続かない,話題 見つけ方,沈黙 気まずい,雑談 コツ,会話 続け方",
+    "source_photo": "images/column_thirdplace.webp"
   },
   {
     "vol": 166,
@@ -4560,7 +4642,7 @@
     "title": "初対面で話が弾む質問と話題の選び方｜聞いてよいこと・控えたいこと | Re.en Column",
     "headline": "初対面で話が弾む質問と話題の選び方｜聞いてよいこと・控えたいこと",
     "description": "初対面で相手が話しやすくなる質問と、盛り上がる話題の選び方。最初に聞くと安心な質問例、質問の順番、控えたい質問、答えにくそうなときの受け止め方を、そのまま使える例文で解説します。",
-    "banner_img": "images/column_manners.webp",
+    "banner_img": "images/banners/column-detail-166.webp",
     "authored": true,
     "lead": "初めて会う相手に、何を聞けばよいか。聞きすぎて詮索のようになるのも、黙り込んでしまうのも避けたい。結論から言うと、初対面の質問は<strong>「答えやすく、答えなくても困らない」ことから始めて、相手の答えに沿って広げる</strong>のがコツです。この記事では、使える質問の例、話題の選び方、控えたい質問、答えにくそうなときの受け止め方を紹介します。",
     "body_sections": [
@@ -4605,7 +4687,8 @@
       }
     ],
     "published_date": "2026.10.22",
-    "keywords": "初対面 質問,初対面 話題,初対面 盛り上がる,会話 質問例,聞いてはいけない質問"
+    "keywords": "初対面 質問,初対面 話題,初対面 盛り上がる,会話 質問例,聞いてはいけない質問",
+    "source_photo": "images/column_manners.webp"
   },
   {
     "vol": 167,
@@ -4614,7 +4697,7 @@
     "title": "アカウント乗っ取りを防ぐパスワードの基本｜使い回しをやめる5つの習慣 | Re.en Column",
     "headline": "アカウント乗っ取りを防ぐパスワードの基本｜使い回しをやめる5つの習慣",
     "description": "アカウントの乗っ取りを防ぐための、パスワードと設定の基本。使い回しが危険な理由、覚えやすく強いパスワードの作り方、二段階認証、偽サイト対策、乗っ取られたときの動き方を解説します。",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-167.webp",
     "authored": true,
     "lead": "同じパスワードをいくつものサービスで使っている。覚えきれないから仕方ない、と思っていませんか。結論から言うと、乗っ取りを防ぐいちばんの近道は、<strong>パスワードを使い回さないことと、二段階認証を使うこと</strong>です。この記事では、強いパスワードの作り方、設定の手順、偽サイトへの注意、被害に気づいたときの動き方を、専門知識なしで分かるように紹介します。",
     "body_sections": [
@@ -4659,7 +4742,8 @@
       }
     ],
     "published_date": "2026.10.22",
-    "keywords": "パスワード 使い回し,アカウント 乗っ取り 防ぐ,二段階認証,パスワード 作り方,フィッシング 対策"
+    "keywords": "パスワード 使い回し,アカウント 乗っ取り 防ぐ,二段階認証,パスワード 作り方,フィッシング 対策",
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 168,
@@ -4668,7 +4752,7 @@
     "title": "聞き上手になる5つのコツ｜相手が「もっと話したい」と感じる聞き方と相づち例 | Re.en Column",
     "headline": "聞き上手になる5つのコツ｜相手が「もっと話したい」と感じる聞き方と相づち例",
     "description": "聞き上手は、話し上手より好印象を与えます。うなずきと相づち、繰り返し、質問、否定しない姿勢、沈黙の扱い方を、そのまま使える言い回しの例文つきで、5つのコツにまとめて解説します。",
-    "banner_img": "images/column_relationship.webp",
+    "banner_img": "images/banners/column-detail-168.webp",
     "authored": true,
     "lead": "話すのが得意ではなくても、人から「話しやすい」と言われる人がいます。その人たちに共通するのは、話の上手さではなく<strong>聞き方</strong>です。結論から言うと、聞き上手は、特別な才能ではなく、いくつかの小さな習慣の組み合わせです。この記事では、うなずきと相づち、繰り返し、質問、否定しない姿勢、沈黙の扱い方を、使える言い回しとともに紹介します。",
     "body_sections": [
@@ -4713,7 +4797,8 @@
       }
     ],
     "published_date": "2026.10.23",
-    "keywords": "聞き上手,聞き上手 コツ,相づち 例,傾聴,会話 聞き方"
+    "keywords": "聞き上手,聞き上手 コツ,相づち 例,傾聴,会話 聞き方",
+    "source_photo": "images/column_relationship.webp"
   },
   {
     "vol": 169,
@@ -4722,7 +4807,7 @@
     "title": "年末の忙しさで心が疲れないために｜やることを減らす優先順位と休み方 | Re.en Column",
     "headline": "年末の忙しさで心が疲れないために｜やることを減らす優先順位と休み方",
     "description": "年末は予定ややることが一気に増え、気持ちに余裕がなくなりがちです。やることの書き出しと優先順位の付け方、断り方の例文、休む時間の作り方、小さなご褒美の取り入れ方を具体的に解説します。",
-    "banner_img": "images/column_money.webp",
+    "banner_img": "images/banners/column-detail-169.webp",
     "authored": true,
     "lead": "仕事の締めくくり、大掃除、年賀状、帰省や来客の準備。年末は、やることが一気に増えて、気づけば心が疲れている。そんな人は多いはずです。結論から言うと、年末を穏やかに過ごすコツは、頑張って全部こなすことではなく、<strong>やることを減らし、休む時間を先に確保する</strong>ことです。この記事では、書き出し、優先順位、断り方、休み方、ご褒美の取り入れ方を紹介します。",
     "body_sections": [
@@ -4767,70 +4852,63 @@
       }
     ],
     "published_date": "2026.10.23",
-    "keywords": "年末 忙しい,年末 疲れ,やることが多い 優先順位,気持ちの余裕,年末 過ごし方"
+    "keywords": "年末 忙しい,年末 疲れ,やることが多い 優先順位,気持ちの余裕,年末 過ごし方",
+    "source_photo": "images/column_money.webp"
   },
   {
     "vol": 170,
     "filename": "column-detail-170.html",
     "category_name": "お悩み",
-    "title": "自分の時間がないと感じるとき｜予定の優先順位を見直す5つのステップ | Re.en Column",
-    "headline": "自分の時間がないと感じるとき｜予定の優先順位を見直す5つのステップ",
-    "description": "毎日が忙しく、自分の時間が取れないと感じるときの見直し方を解説。時間の使い方の見える化、優先順位の付け方、頼る・断る工夫を、5つのステップにまとめました。",
-    "banner_img": "images/column_gift.webp",
+    "title": "自分の時間がないと感じたら｜予定の優先順位を見直す5つのステップ | Re.en Column",
+    "headline": "自分の時間がないと感じたら｜予定の優先順位を見直す5つのステップ",
+    "description": "仕事や家事で自分の時間が取れないと感じる方へ。時間の書き出し、優先順位の付け方、頼み方と断り方の例文、10分から始める習慣まで、5つのステップで解説します。今日から始められます",
+    "banner_img": "images/banners/column-detail-170.webp",
     "authored": true,
-    "lead": "仕事や家事に追われて、自分の時間がまったく取れない。そんな状態が続くと、心が疲れてしまいます。この記事では、<strong>自分の時間を取り戻す</strong>ための5つのステップを紹介します。",
+    "lead": "仕事、家事、家族の用事。気づけば一日が終わり、自分のための時間が一分もない。そんな日が続くと、心は静かに疲れていきます。結論から言えば、時間は「増やす」より先に「見える化して、先に確保する」ことで取り戻せます。この記事では、5つのステップと、そのまま使える言い回しを紹介します。",
     "body_sections": [
       {
-        "h2": "1. 「時間がない」のは、あなたのせいではない",
-        "text": "<p>自分の時間が取れないのは、<strong>頑張りが足りないからではありません</strong>。役割や頼まれごとが多く、気づかないうちに予定が埋まっていることが多いのです。</p><p>まずは、<strong>今の使い方を知る</strong>ことから始めましょう。</p><ul><li>時間がないのは、頑張りが足りないからではない</li><li>まず、今の時間の使い方を知る</li><li>少しずつ、見直していく</li></ul>"
+        "h2": "1. 「自分の時間がない」と感じる理由を整理する",
+        "text": "<p>最初にお伝えしたいのは、時間がないのは頑張りが足りないからではない、ということです。30〜50代は、仕事の責任、家事、子どもや親のこと、地域や学校の用事と、役割が重なりやすい時期です。</p>\n<h3>1-1. 予定は「見えないところ」で埋まっている</h3>\n<p>カレンダーに書いてある予定だけが、時間を使っているわけではありません。夕食の献立を考える、家族の持ち物を確認する、返信しそびれたメッセージを気にする。こうした「頭の中の仕事」も、実は大きな時間と体力を使っています。</p>\n<p>予定表が空いているのに疲れている、と感じる方は、この見えない仕事が多い可能性があります。まずは「私は今、何を抱えているのだろう」と問い直すことから始めましょう。</p>\n<h3>1-2. 「自分の時間は後回し」が習慣になっていないか</h3>\n<p>家族のためを優先するうちに、自分の時間を後回しにするのが当たり前になることがあります。責任感のある人ほど、その傾向が強いと感じる方は少なくありません。</p>\n<p>けれども、自分の時間は、わがままではなく、毎日を続けるための休息です。車に給油が必要なのと同じで、気持ちにも補充が必要です。</p>\n<h3>1-3. 時間がない状態が続くと起きやすいこと</h3>\n<p>余裕がないと、小さなことでいらいらしたり、家族に優しくできなかったりして、あとで自分を責めてしまうことがあります。すると、さらに疲れるという悪い循環に入ります。</p>\n<p>この循環を断つ入り口は、大きな改革ではなく、小さな見直しです。次の章から、順番に進めていきましょう。</p>\n<p>ちなみに、疲れが溜まっているときほど、「やることリスト」は増えやすく、「やりたいことリスト」は空になりがちです。今の自分がどちらに偏っているかを知るだけでも、見直しの手がかりになります。</p>"
       },
       {
-        "h2": "2. ステップ1・2：一週間の時間を、書き出す",
-        "text": "<h3>ステップ1：一日の流れを、ざっくり書く</h3><p>起きてから寝るまでを、<strong>大まかに書き出して</strong>みましょう。何に時間を使っているのかが、見えてきます。</p><h3>ステップ2：「やらなくてもよいこと」を探す</h3><p>書き出した中から、<strong>習慣でやっているだけのこと</strong>を探します。減らせるものがあれば、印をつけておきましょう。</p>"
+        "h2": "2. ステップ1〜3：書き出して、分けて、先に予定へ入れる",
+        "text": "<p>ここからが具体的な手順です。紙とペンか、スマホのメモを用意してください。所要時間は、全部で20分ほどです。</p>\n<h3>2-1. ステップ1：一週間の時間を、ざっくり書き出す</h3>\n<p>起きてから寝るまでを、1時間単位で書きます。細かく正確である必要はありません。「7時 朝食と支度」「9時〜18時 仕事」「19時 夕食の準備」のようなもので十分です。</p>\n<p>書き終えたら、色ペンで「やらないと困ること」「なんとなく続けていること」「自分が楽しいこと」に印をつけます。楽しいことの印が、ほとんど無いと気づく方もいます。</p>\n<p>書くときのコツは、「理想の一日」ではなく「実際の一日」を書くことです。夜にスマホを眺めて30分過ぎた、といった事実もそのまま書きます。責めるためではなく、現状を知るための作業です。</p>\n<h3>2-2. ステップ2：三つに分けて、減らせるものを探す</h3>\n<p>書き出した項目を、次の三つに分けます。</p>\n<ul><li>自分にとって大切なこと（残す）</li><li>誰かに任せられること（頼む）</li><li>やめても大きな困りごとがないこと（手放す）</li></ul>\n<p>たとえば、毎日きっちりしている拭き掃除を週3回にする、買い物をまとめ買いにする、といった形で「手放す」ことは、手抜きではなく設計の見直しです。</p>\n<h3>2-3. ステップ3：自分の時間を、最初にカレンダーへ入れる</h3>\n<p>時間が余ったら休む、という考えだと、休む時間は永遠に来ません。順番を逆にして、先に「自分の時間」を予定として入れてしまいます。</p>\n<p>最初は、週に2回、30分で構いません。「木曜 20時 散歩」「日曜 午前 一人でカフェ」のように、名前をつけて書いておくと、守りやすくなります。</p>\n<p>なお、Re.en（リエン）のようなコミュニティの利用も、自分のための時間の一つです。その場合は、家庭を最優先にしながら無理のないペースを決めるのが基本です。ペースの考え方は、<a href=\"/column-detail-104\">既婚者向けコミュニティの利用ペースの決め方</a>も参考になります。</p>"
       },
       {
-        "h2": "3. ステップ3：優先順位をつける",
-        "text": "<p>すべてを同じ重さで考えると、苦しくなります。次の三つに分けてみましょう。</p><ul><li>自分にとって、大切なこと</li><li>誰かに任せられること</li><li>やめても困らないこと</li></ul><p>そのうえで、<strong>自分の時間を、最初に予定へ入れて</strong>おきます。</p>"
+        "h2": "3. ステップ4：頼る、断る。そのまま使える言い回し",
+        "text": "<p>時間を作るには、自分の仕事を減らす必要があります。そのとき必要なのが「頼る」と「断る」です。どちらも、言い方のコツがあります。</p>\n<h3>3-1. 頼るときは、「具体的に」「期限つきで」</h3>\n<p>「もう少し手伝ってほしい」は、相手にとって何をすればよいか分かりにくい頼み方です。次のように、内容を絞ります。</p>\n<blockquote><p>「平日の水曜だけ、夕食のあとの片づけをお願いできますか？ 私はその間、30分休みたいんです。」</p></blockquote>\n<p>理由と目的を短く添えると、責められているのではなく、お願いされていると伝わります。やってくれたあとは、「助かりました」と一言返すと、次も続きやすくなります。</p>\n<h3>3-2. 断るときは、「気持ち＋事情＋代案」</h3>\n<p>頼まれごとを断るのが苦手な方は、次の三つを順に言うと角が立ちません。</p>\n<blockquote><p>「声をかけてくれてありがとう。今月は予定が詰まっていて、お引き受けできないんです。来月なら相談に乗れます。」</p></blockquote>\n<p>代案が出せないときは、気持ちと事情だけでも十分です。断ったあとに罪悪感が残る場合は、「断ったのではなく、自分の時間を守った」と言い換えてみてください。</p>\n<p>頼むことも断ることも、慣れるまでは緊張します。最初は気心の知れた相手で試し、うまくいった言い回しを手帳にメモしておくと、次から迷いません。</p>\n<h3>3-3. 【ケーススタディ】水曜の30分を取り戻した例（想定ケースです）</h3>\n<blockquote><p>以下は、一般的な状況をもとにした想定ケースです。実在の人物ではありません。</p><p>パートと家事を両立している40代の女性（想定）は、ステップ1で書き出して、夕食後の片づけに毎日40分かけていると気づきました。そこで家族に「水曜だけ片づけを頼みたい」と具体的に伝えました。</p><p>最初は忘れられることもありましたが、貼り紙とお礼の一言を続けるうちに定着し、水曜の夜に好きな音楽を聴く30分ができた、という流れです。小さな時間でも、「自分のために使える」と分かるだけで、気持ちに余裕が出ると感じる人は多いようです。</p>\n<p>ポイントは、いきなり全部を変えず、一つの項目だけを動かした点です。変化が小さいほど、家族も受け入れやすく、続けやすくなります。</p></blockquote>"
       },
       {
-        "h2": "4. ステップ4・5：頼る、断る、短く休む",
-        "text": "<p><strong>ステップ4：家族や周りに、頼ってみる。</strong>「ここだけ、手伝ってもらえますか？」と、具体的に頼むと、伝わりやすくなります。</p><p><strong>ステップ5：短い時間でも、自分のために使う。</strong>10分の散歩や、お茶の時間でも、<strong>続けるほど心に効いてきます</strong>。</p>"
-      },
-      {
-        "h2": "5. 【ケーススタディ】10分の習慣で、気持ちが変わった例",
-        "text": "<p>毎日、時間に追われていたIさん（仮名）は、<strong>朝の10分だけ、静かにお茶を飲む時間</strong>を作ったとします。</p><p>最初は短いと感じましたが、続けるうちに、<strong>「自分のための時間がある」という安心感</strong>が生まれ、一日を落ち着いて始められるようになった、という場面です。</p>"
-      },
-      {
-        "h2": "6. 避けるべきNG行動のチェックリスト",
-        "text": "<ul><li>全部を、一人で抱え込む</li><li>「時間ができたら休む」と、先送りする</li><li>断ることに、罪悪感を持ちすぎる</li><li>他人の予定を、自分の基準で測る</li></ul>"
-      },
-      {
-        "h2": "7. 今日からできる小さな一歩",
-        "text": "<p>今日は、<strong>10分だけ、自分のための時間</strong>を予定に入れてみましょう。何をするかは、気楽に決めて構いません。</p><p>自分の時間を持つことは、わがままではありません。<strong>自分を大切にすること</strong>が、周りへの優しさにもつながります。</p>"
+        "h2": "4. ステップ5：短い時間を続ける工夫と、避けたいこと",
+        "text": "<p>最後のステップは「続けること」です。大きな時間を確保するより、短い時間を絶やさないほうが、効果を実感しやすくなります。</p>\n<h3>4-1. ステップ5：10分でいいから、毎日一つ自分のために使う</h3>\n<p>朝にお茶を一杯ゆっくり飲む、昼休みに外の空気を吸う、寝る前に好きな本を数ページ読む。10分あれば、できることは意外とあります。</p>\n<p>続けるコツは、既にある習慣にくっつけることです。「歯みがきのあとに、ストレッチ」のように、行動を連ねると忘れにくくなります。</p>\n<p>うまくいかない日があっても、翌日に戻れば問題ありません。「毎日必ず」より「だいたい続く」を目標にすると、気持ちが軽くなります。1か月続いたら、時間を15分に延ばすなど、少しずつ育てていきましょう。</p>\n<p>もう一つ、「やりたいことリスト」を手帳の端に書いておくのもおすすめです。行きたい場所、読みたい本、会いたい友人など、思いつくままで構いません。時間ができたときに迷わず動けますし、書くだけで気持ちが前向きになることもあります。</p>\n<h3>4-2. 避けるべきNG行動チェックリスト</h3>\n<ul><li>すべてを一人で抱え込み、頼まないまま我慢を続ける</li><li>「時間ができたら休む」と、休息を先送りにする</li><li>断ることに、必要以上の罪悪感を持つ</li><li>他の人の忙しさや予定と、自分を比べて落ち込む</li><li>睡眠時間を削って、自分の時間を作ろうとする</li><li>最初から完璧な計画を立て、一度崩れると全部やめてしまう</li></ul>\n<p>当てはまるものが多くても、責める必要はありません。一つだけ選んで、今週改善してみましょう。</p>\n<p>特に見落としやすいのが、睡眠を削る習慣です。夜更かしで自分の時間を作ると、翌日の疲れが増えて、結局は時間が足りなくなります。時間は、朝や昼の短い隙間から探すのが長続きします。</p>\n<h3>4-3. つらさが続くときは、一人で抱えない</h3>\n<p>いくら工夫しても気持ちの落ち込みが続く、眠れない日が長く続くといったときは、頑張りで解決しようとせず、かかりつけの医師や、自治体の相談窓口に相談してください。本記事は診断や治療を行うものではありません。</p>\n<p>話し相手がほしいときは、気持ちの整理のしかたを紹介した<a href=\"/column-detail-11\">家庭の中で孤独を感じるときの向き合い方</a>や、<a href=\"/column-detail-62\">自己肯定感の整え方</a>も読んでみてください。</p>"
       }
     ],
     "highlight_box": {
-      "title": "この記事のポイント",
+      "title": "自分の時間を取り戻す、まとめ",
       "items": [
-        "・まず、一日の時間の使い方を書き出す",
-        "・「大切・任せる・やめる」に分けて考える",
-        "・10分でも、自分の時間を先に予定へ入れる"
+        "・<strong>書き出す</strong>：一週間の使い方を見える化し、見えない仕事にも気づく",
+        "・<strong>分ける</strong>：残す・頼む・手放すの三つに整理する",
+        "・<strong>先に入れる</strong>：自分の時間を、最初に予定表へ書く",
+        "・<strong>頼む・断る</strong>：具体的に、気持ち＋事情＋代案で伝える",
+        "・<strong>短く続ける</strong>：10分でも毎日。つらさが続くときは医師などに相談"
       ]
     },
     "faqs": [
       {
-        "q": "家族に頼むのが、苦手です。",
-        "a": "「全部」ではなく、「ここだけ」と、具体的に頼んでみましょう。小さな頼みごとから始めると、伝えやすくなります。"
+        "q": "家族に頼むと、嫌な顔をされそうで言い出せないのですが、どうすればよいでしょうか？",
+        "a": "最初から大きく頼まず、「水曜の片づけだけ」のように一つに絞ると受け入れてもらいやすくなります。理由と目的を添え、やってくれたら必ずお礼を伝えましょう。うまくいかないときは、責める言い方を避けて「困っている」と気持ちを伝えるのがおすすめです。"
       },
       {
-        "q": "10分では、意味がない気がします。",
-        "a": "短くても、毎日続けることに意味があります。「自分の時間がある」という感覚が、心の余裕を支えます。"
+        "q": "仕事が忙しく、書き出す時間さえ取れない場合はどうすればよいですか？",
+        "a": "一週間分でなく、まず「昨日一日」だけを5分で書き出せば十分です。通勤中にスマホのメモへ打ち込む形でも構いません。一日分でも、減らせそうな項目は意外と見つかります。"
       },
       {
-        "q": "やめてよいことが、見つかりません。",
-        "a": "「なぜやっているのか」を、一つずつ考えてみましょう。習慣や義務感だけで続けているものが、見つかるかもしれません。"
+        "q": "自分の時間を作ると、家族に申し訳ない気持ちになるのは普通でしょうか？",
+        "a": "そう感じる人は少なくありません。責任感の表れでもあります。ただ、休息は家族と長く向き合うための準備です。短い時間から始めて、慣れていくうちに罪悪感は和らぐことが多いようです。"
       }
-    ]
+    ],
+    "keywords": "自分の時間がない,時間の使い方,優先順位,家事の分担,断り方",
+    "source_photo": "images/column_gift.webp"
   },
   {
     "vol": 171,
@@ -4838,62 +4916,54 @@
     "category_name": "出会いのコツ",
     "title": "オンラインで自然に話しかけるコツ｜最初のメッセージの書き方と例文 | Re.en Column",
     "headline": "オンラインで自然に話しかけるコツ｜最初のメッセージの書き方と例文",
-    "description": "オンラインのコミュニティで、初めて話しかけるときのコツを解説。最初のメッセージの組み立て方、避けたい書き方、返信が来たあとのやりとり、断られたときの受け止め方を、5つのコツにまとめました。",
-    "banner_img": "images/column_circle.webp",
+    "description": "オンラインのコミュニティで初めて話しかけるときの書き方を、例文つきで解説。短くあいさつ＋話題を一つ、避けたい書き方、返信が来たあとと来ないときの対応までまとめました。",
+    "banner_img": "images/banners/column-detail-171.webp",
     "authored": true,
-    "lead": "オンラインで初めてメッセージを送るとき、何を書けばよいか迷いますよね。この記事では、<strong>自然に話しかけるコツ</strong>を、例文つきで5つ紹介します。",
+    "lead": "初めてのメッセージは、何を書くか迷うものです。結論は、「あいさつ＋相手のプロフィールに触れた話題を一つ＋返信を急がない一言」を、3〜4行で。この記事では、そのまま使える例文、避けたい書き方、返信が来たあとの続け方、返事が来なかったときの気持ちの整え方を紹介します。",
     "body_sections": [
       {
-        "h2": "1. 最初のメッセージは、短く、軽く",
-        "text": "<p>初めてのメッセージで大切なのは、<strong>相手に負担をかけないこと</strong>です。長い自己紹介や、たくさんの質問は、かえって返信しにくくなります。</p><p><strong>短く、あいさつと、一つの話題</strong>だけで十分です。</p><ul><li>長文は、相手の負担になりやすい</li><li>あいさつ＋一つの話題で十分</li><li>返信を急がない言い方にする</li></ul>"
+        "h2": "1. 最初のメッセージの基本は「短く、軽く、答えやすく」",
+        "text": "<p>初対面のメッセージで一番大切なのは、相手に負担をかけないことです。長い自己紹介や質問攻めは、丁寧のつもりでも返信しにくくなります。</p>\n<h3>1-1. 3〜4行で、役割は三つだけ</h3>\n<p>最初の一通に入れるのは、次の三つです。</p>\n<ol><li>あいさつと、メッセージを送った理由</li><li>相手のプロフィールで気になった点を一つ</li><li>返信を急がないという一言</li></ol>\n<p>たとえば、次のような形です。</p>\n<blockquote><p>「はじめまして。プロフィールを拝見して、散歩がお好きとのことで、親近感を持ちました。おすすめの道があれば、ぜひ教えてください。お手すきのときにご返信いただければ嬉しいです。」</p></blockquote>\n<p>メッセージを送る時間帯にも気を配りましょう。仕事や家事が落ち着く夜の早い時間帯や、休日の昼間は読まれやすい傾向があります。深夜や早朝の通知は、相手を驚かせることがあるので避けるのが無難です。</p>\n<h3>1-2. 「答えやすい質問」を一つだけ添える</h3>\n<p>返信のきっかけになるのは、質問です。ただし、いくつも並べると面接のようになります。「はい・いいえ」で終わらず、かといって重すぎない質問を一つだけにしましょう。</p>\n<p>「最近のお気に入りの散歩道はありますか？」は答えやすい例です。「なぜ結婚されたのですか？」のような個人的な事情に踏み込む質問は、初回には向きません。</p>\n<h3>1-3. 送る前の30秒チェック</h3>\n<p>送信前に、声に出して読んでみてください。自分が受け取ったら返信しやすいか、を基準に見直します。誤字、相手の呼び名の間違い、絵文字の使いすぎがないかも確認しましょう。</p>\n<p>文章が長くなってしまったときは、「一番伝えたいこと」を一つだけ残して、あとは削ります。足りない部分は、会話が続いてから補えば十分です。短い文章は、読む側にとっても、安心して返事ができる材料になります。</p>\n<p>Re.en（リエン）では、ニックネームでの利用が前提です。相手の本名を想像して呼ぶのではなく、プロフィールにある呼び名で呼びかけるのがマナーです。</p>"
       },
       {
-        "h2": "2. コツ1・2：共通点を見つけて、一言添える",
-        "text": "<h3>コツ1：プロフィールを、よく読む</h3><p>相手のプロフィールにある、<strong>趣味や好きなもの</strong>に触れると、「読んでくれた」という印象になります。</p><h3>コツ2：例文を参考に、自分の言葉にする</h3><p>「はじめまして。プロフィールを拝見して、<strong>散歩がお好きとのこと</strong>、親近感を持ちました。おすすめの道があれば、教えてください」といった形が、基本です。</p>"
+        "h2": "2. 共通点の見つけ方と、状況別の例文",
+        "text": "<p>「何を話題にすればよいか分からない」という悩みは、プロフィールの読み方でほぼ解決します。</p>\n<h3>2-1. プロフィールから「話題の種」を拾う</h3>\n<p>見るべきは、趣味、好きな食べ物、休日の過ごし方、大切にしている価値観の四つです。その中から、自分も興味があるもの、または素直に知りたいと思うものを一つ選びます。</p>\n<p>無理に共通点を作る必要はありません。「詳しくないのですが、気になりました」と正直に書くほうが、好印象になることも多いのです。</p>\n<h3>2-2. 趣味・食べ物・仕事、それぞれの例文</h3>\n<p>趣味の場合は、「写真がご趣味とのこと、素敵ですね。普段はどんな場所で撮られるのですか？」。食べ物なら、「お蕎麦がお好きと拝見しました。おすすめのお店があれば伺いたいです。」。</p>\n<p>仕事に触れるなら、「お忙しそうなお仕事ですね。休日は、どのように息抜きをされていますか？」のように、仕事の中身より息抜きに話を向けると、答えやすくなります。</p>\n<p>どの例文も、そのまま写すのではなく、自分の言葉に置き換えてください。同じ文章を何人にも送ると、受け取った側は気づくものです。プロフィールの一文だけでも自分で拾い、そこに触れるだけで、「自分に向けたメッセージだ」と伝わります。</p>\n<h3>2-3. 【ケーススタディ】共通の話題から会話が広がった例（想定ケースです）</h3>\n<blockquote><p>以下は、一般的な状況をもとにした想定ケースです。実在の人物ではありません。</p><p>プロフィールに「コーヒーが好き」とあった方に、50代の男性（想定）が「豆はどんなものがお好みですか？」と、一つだけ質問を送ったとします。</p><p>相手からは、好みの焙煎と、よく行く喫茶店の話が返ってきました。男性は、自分の好みを少し添えて返信し、数往復で自然に会話がつながった、という流れです。男性が心がけたのは、相手の返信が遅くても急かさないこと、質問は毎回一つに絞ることの二点でした。最初のメッセージが短かったことで、相手も気負わずに返せたと考えられます。</p></blockquote>\n<p>初対面のあとで、実際に会うことを考える場合は、<a href=\"/column-detail-114\">会う前の安全チェック</a>も合わせて確認しておくと安心です。</p>"
       },
       {
-        "h2": "3. コツ3：避けたい書き方を知っておく",
-        "text": "<p>次のような書き方は、相手を戸惑わせやすいので、控えましょう。</p><ul><li>定型文を、そのまま送る</li><li>外見だけを、ほめる</li><li>初回から、個人的な事情を詳しく聞く</li><li>すぐに、連絡先の交換を求める</li></ul><p><strong>相手のペースを尊重する</strong>ことが、信頼への近道です。</p>"
+        "h2": "3. 返信が来たあと、来なかったときの対応",
+        "text": "<p>最初の一通よりも、実はその後の対応で印象が決まります。</p>\n<h3>3-1. 返信が来たら「拾う・答える・一つ返す」</h3>\n<p>相手の言葉を一つ拾い、自分の答えを短く添え、質問を一つ返す。この流れを繰り返すだけで、会話は続きます。たとえば、「焙煎が深めがお好きなのですね。私は最近、浅煎りに興味があります。深煎りのおすすめはありますか？」のような形です。</p>\n<p>返信の長さは、相手に合わせるのが基本です。相手が2行なら、こちらも2〜4行程度に収めましょう。頻度の考え方は、<a href=\"/column-detail-63\">メッセージの連絡頻度の目安</a>も参考になります。</p>\n<p>会話が盛り上がってきたときほど、返信の速さや長さを、自分のペースで保つことも大切です。相手に合わせすぎて疲れてしまうと、長く続きません。</p>\n<h3>3-2. 返信が来ないときの受け止め方</h3>\n<p>返信がないと、自分を否定されたように感じるかもしれません。しかし、忙しい、通知に気づいていない、相性の問題など、理由はさまざまで、自分の価値とは関係がないことがほとんどです。</p>\n<p>送り直すとしても、1回、一週間ほどあけてからが目安です。「先日はご連絡失礼しました。お気になさらないでください」と軽く伝えれば十分で、それでも返信がなければ、静かに区切りをつけましょう。</p>\n<p>気持ちが沈んだときは、一度画面を閉じて、散歩や好きな飲み物で気分を切り替えましょう。メッセージは、心に余裕があるときのほうが、自然な言葉が出てきます。</p>\n<h3>3-3. 不審な相手・お金や個人情報を求める相手への注意</h3>\n<p>やりとりの中で、早い段階から連絡先の交換を強く求める、金銭の話を持ち出す、投資や副業に誘う、本人確認を避けるといった相手には注意が必要です。お金や個人情報を求められたら、応じず、サービスの通報機能を使いましょう。</p>\n<p>被害に遭った、または不安なときは、警察相談専用電話「#9110」や、消費者ホットライン「188」に相談できます。詳しくは<a href=\"/column-detail-113\">ロマンス詐欺の見分け方と対処</a>で解説しています。</p>"
       },
       {
-        "h2": "4. コツ4・5：返信が来たあとと、来なかったとき",
-        "text": "<p><strong>コツ4：返信が来たら、相手の言葉を拾って返す。</strong>質問に答えつつ、一つだけ質問を返すと、自然な流れになります。</p><p><strong>コツ5：返信がなくても、落ち込みすぎない。</strong>タイミングや相性など、理由はさまざまです。<strong>送り直しは、控えめに</strong>しましょう。</p>"
-      },
-      {
-        "h2": "5. 【ケーススタディ】共通点から会話が広がった例",
-        "text": "<p>初めてのメッセージに悩んでいたJさん（仮名）が、プロフィールにあった<strong>「コーヒーが好き」</strong>という一文に触れたとします。</p><p>「おすすめの豆や、お店はありますか？」と送ったところ、相手は丁寧に答えてくれました。<strong>共通の話題が、会話の入り口</strong>になった、という場面です。</p>"
-      },
-      {
-        "h2": "6. 避けるべきNG行動のチェックリスト",
-        "text": "<ul><li>同じ文面を、大勢に送る</li><li>返信が遅いと、催促する</li><li>個人情報を、早い段階で求める</li><li>断られても、しつこく連絡する</li></ul>"
-      },
-      {
-        "h2": "7. 今日からできる小さな一歩",
-        "text": "<p>気になる相手のプロフィールから、<strong>共通点を一つ</strong>探してみましょう。それを、最初の一言にしてみてください。</p><p>丁寧で、短く、相手を思いやるメッセージは、<strong>それだけで好印象</strong>です。肩の力を抜いて、始めてみましょう。</p>"
+        "h2": "4. 避けたい書き方と、感じのよいやりとりの習慣",
+        "text": "<h3>4-1. 避けるべきNG行動チェックリスト</h3>\n<ul><li>同じ文面を、大勢にそのまま送る</li><li>外見だけをほめる</li><li>初回から、家庭や仕事の事情を詳しく尋ねる</li><li>すぐに連絡先の交換や、会う約束を求める</li><li>返信が遅いと、催促や不満を書く</li><li>断られたり、返信がなくなったりしても、何度も連絡する</li><li>夜中や早朝に、続けてメッセージを送る</li></ul>\n<p>相手のペースを尊重する、が全体に通じる原則です。</p>\n<p>チェックリストの項目は、どれも相手を不快にさせようとして行うものではなく、気持ちが焦ったときに、つい出てしまうものです。送信ボタンを押す前に、ひと呼吸おくだけで防げる場合がほとんどです。</p>\n<h3>4-2. 感じのよい人が自然にやっていること</h3>\n<p>丁寧な言葉づかいを保ち、相手の話を否定せず、まず受け止める。小さなことですが、これだけで安心感が生まれます。「ありがとうございます」「なるほど」をこまめに使う人は、文字だけでも温かい印象になります。</p>\n<p>また、質問ばかりでなく、自分のことも少しずつ話すと、対等なやりとりになります。聞かれたことに答えるだけでなく、「私は〜です」と一言添えると、相手も返しやすくなります。</p>\n<p>最後に、うまく書けなかった日があっても気にしないでください。メッセージは練習で上達します。数通書くうちに、自分らしい言い回しや、返信をもらいやすい型が見えてきます。</p>\n<h3>4-3. 家庭を大切にしたうえで、関係を育てる</h3>\n<p>既婚者向けのコミュニティであっても、土台は家庭を最優先にし、お互いの立場を尊重することです。感情的に頼りすぎたり、相手に過度な期待をしたりしない距離感が、長い目で見て心地よい関係を保ちます。</p>\n<p>メッセージの内容に悩んだときは、<a href=\"/column-detail-115\">避けたいNGメッセージの例</a>を見直すと、気づきが得られます。</p>"
       }
     ],
     "highlight_box": {
-      "title": "この記事のポイント",
+      "title": "自然に話しかけるための、まとめ",
       "items": [
-        "・最初のメッセージは、短く、軽く",
-        "・プロフィールの共通点を一つ拾う",
-        "・返信がなくても、落ち込みすぎず、しつこくしない"
+        "・<strong>3〜4行</strong>で、あいさつ＋話題を一つ＋返信を急がない一言",
+        "・<strong>プロフィールを読み</strong>、素直に気になった点に触れる",
+        "・返信後は<strong>拾う・答える・一つ返す</strong>を繰り返す",
+        "・返信がなくても自分の価値とは関係ない。<strong>追撃は控える</strong>",
+        "・お金や個人情報を求められたら応じず、<strong>通報と相談（#9110・188）</strong>を"
       ]
     },
     "faqs": [
       {
-        "q": "定型文を使ってもよいですか？",
-        "a": "形を参考にするのは構いませんが、相手に合わせた一言を必ず足しましょう。使い回しの文面は、気づかれやすいものです。"
+        "q": "最初のメッセージに、自己紹介はどのくらい書くべきでしょうか？",
+        "a": "1行ほどで十分です。「40代の会社員です」のように、年代と簡単な立場を添える程度にし、詳しい事情は相手が関心を示してから伝えれば間に合います。相手のプロフィールに触れる内容を、中心にしましょう。"
       },
       {
-        "q": "返信が来なかったら、どうすればよいですか？",
-        "a": "気持ちを切り替えて、次に進みましょう。送り直す場合も、一度だけ、軽い内容にとどめてください。"
+        "q": "共通点がまったく見つからないときは、どうすればよいですか？",
+        "a": "無理に合わせず、「詳しくないのですが、気になりました」と素直に伝える方法があります。知りたいという姿勢は、共通点より好印象になることが多いです。相手が説明しやすい質問を一つだけ選びましょう。"
       },
       {
-        "q": "最初のメッセージは、どのくらいの長さが目安ですか？",
-        "a": "3〜5行ほどが読みやすい長さです。あいさつと、共通点への一言、軽い質問が一つあれば十分です。"
+        "q": "返信が来たのに、会話が続かなくなったときはどうしますか？",
+        "a": "話題を無理につなごうとせず、相手の最後の言葉に一言感想を添えて、静かに区切るのも一つの方法です。数日あけて、新しい話題で軽く声をかけることもできます。反応が薄い場合は、深追いしないのがマナーです。"
       }
-    ]
+    ],
+    "keywords": "最初のメッセージ,話しかけ方,例文,オンライン,コミュニケーション",
+    "source_photo": "images/column_circle.webp"
   },
   {
     "vol": 172,
@@ -4901,188 +4971,164 @@
     "category_name": "つながり・距離感",
     "title": "雑談を楽しむコツ｜季節・食べ物・日常から広がる5つの話題 | Re.en Column",
     "headline": "雑談を楽しむコツ｜季節・食べ物・日常から広がる5つの話題",
-    "description": "雑談が苦手な人に向けて、気軽に話せる話題の探し方を解説。季節、食べ物、日常、最近の出来事、小さな発見の5つの話題と、広げ方のコツをまとめました。",
-    "banner_img": "images/column_first_dinner.webp",
+    "description": "雑談が苦手な方へ。季節、食べ物、日常の小さな発見、最近の変化、前に聞いた話の5つの話題と、会話を広げる相づちや質問のコツを、例文つきで解説します。例文つきで紹介します",
+    "banner_img": "images/banners/column-detail-172.webp",
     "authored": true,
-    "lead": "雑談は、<strong>意味のある話をしなくてもよい会話</strong>です。この記事では、肩の力を抜いて楽しめる、5つの話題と広げ方を紹介します。",
+    "lead": "雑談が苦手と感じる方は、「面白い話をしなければ」と構えすぎていることが多いものです。結論は、雑談の目的は中身ではなく気持ちのやりとりだということ。この記事では、季節、食べ物、日常、近況、相手の話の5つの話題と、会話を広げる相づち・質問の例文を紹介します。",
     "body_sections": [
       {
-        "h2": "1. 雑談は、中身より「気持ちのやりとり」",
-        "text": "<p>雑談が苦手と感じる人は、「面白い話をしなければ」と、構えてしまいがちです。けれども、雑談の役割は、<strong>お互いの気持ちを、軽くやりとりすること</strong>です。</p><p><strong>結論のない会話</strong>でも、十分に価値があります。</p><ul><li>雑談に、オチは必要ない</li><li>気持ちのやりとりが目的</li><li>短い会話でも、関係が温まる</li></ul>"
+        "h2": "1. 雑談は「オチのない会話」でいい",
+        "text": "<p>雑談が苦手な人の多くは、話に結論や面白さが必要だと思い込んでいます。けれども、雑談の役割は、情報を伝えることではなく、お互いの気持ちを軽くやりとりすることです。</p>\n<h3>1-1. 雑談の目的は「安心感」をつくること</h3>\n<p>「今日は暖かいですね」と言われて、「そうですね」と返す。これだけで、お互いに「あなたの存在に気づいています」と伝え合っています。中身がなくても、安心感が生まれる、これが雑談の価値です。</p>\n<p>仕事の打ち合わせや相談ごとは、結論が必要です。しかし雑談は、その逆で、結論が出ないことが許される時間と考えると、気が楽になります。</p>\n<p>初対面や久しぶりに会う人との雑談は、特に緊張しやすいものです。その緊張は、相手によく思われたいという気持ちの表れであり、悪いことではありません。力を抜くことだけを意識してみてください。</p>\n<h3>1-2. 苦手意識がある人に多い三つの思い込み</h3>\n<ul><li>面白いことを言わなければならない</li><li>沈黙はいけないことだ</li><li>相手より多く話さなければ失礼になる</li></ul>\n<p>どれも、実際には必須ではありません。沈黙が少しあっても、お茶を一口飲む時間と思えば自然です。聞き役に回るのも、立派な会話への参加です。</p>\n<p>思い込みに気づいたら、「そうでなくても大丈夫」と自分に言い聞かせてみましょう。考え方が少し変わるだけで、会話の場に立つときの気持ちが、驚くほど楽になることがあります。</p>\n<h3>1-3. 短い会話の積み重ねが関係を温める</h3>\n<p>長い時間話さなくても、短いやりとりを重ねることで、相手との距離は少しずつ近づきます。1回1分の会話を10回するほうが、1回10分の会話より、親しみが育つこともあります。</p>"
       },
       {
-        "h2": "2. 話題1・2：季節と、食べ物",
-        "text": "<h3>話題1：季節の話</h3><p>「朝晩、だいぶ冷えてきましたね」など、<strong>誰もが感じていること</strong>は、共感を得やすい話題です。</p><h3>話題2：食べ物の話</h3><p>「最近、おいしかったものはありますか？」は、<strong>答えやすく、広がりやすい</strong>質問です。好みも見えてきます。</p>"
+        "h2": "2. すぐ使える5つの話題と、一言目の例文",
+        "text": "<p>ここでは、準備なしでも使える5つの話題を紹介します。覚えておくと、会話の入り口に困りません。</p>\n<h3>2-1. 話題1・2：季節と食べ物</h3>\n<p>季節の話は、誰もが同じ体験をしているので、共感を得やすい定番です。「朝晩、だいぶ冷えてきましたね」「金木犀の香りがしてきましたね」など、感じたことを一言添えるだけで十分です。</p>\n<p>食べ物の話は、答えやすく広がりやすい話題です。「最近、おいしかったものはありますか？」「この季節は、何が食べたくなりますか？」と聞くと、好みや暮らしぶりが自然に見えてきます。</p>\n<p>季節の話は、天気だけでなく、旬の食材、行事、服装の変化など、広げられる要素がたくさんあります。「そろそろ衣替えの時期ですね」といった一言も、自然な入り口になります。</p>\n<h3>2-2. 話題3・4：日常の小さな発見と、最近の変化</h3>\n<p>通勤や散歩で見かけたものも、立派な話題です。「駅前の街路樹が、色づいていましたよ」のような小さな発見は、相手も思い出して「そういえば」と話しやすくなります。</p>\n<p>最近の変化は、「新しく始めたこと」「買ってよかったもの」など、軽い近況です。「最近、朝に歩き始めたんです」と自分から話すと、相手も同じように話しやすくなります。</p>\n<p>話題を選ぶ基準は、「相手が答えやすいか」です。自分が話したいことより、相手が気軽に答えられるかどうかを考えると、外れにくくなります。迷ったときは、天気か食べ物に戻ればよいのです。</p>\n<h3>2-3. 話題5：前に聞いた話を覚えておく</h3>\n<p>前回の会話で聞いた話題を、「そういえば、あのお店には行かれましたか？」と振り返ると、相手は自分の話を覚えてもらえた嬉しさを感じます。会話のあとに、簡単なメモを残しておくと、次の会話に役立ちます。</p>\n<p>ただし、相手が話していないこと、つまり家庭の事情や職場の細かい内容などを、推測して持ち出さないよう注意しましょう。</p>"
       },
       {
-        "h2": "3. 話題3・4：日常の小さな出来事",
-        "text": "<p><strong>話題3：通勤や散歩で見かけたもの。</strong>「桜の葉が、色づいていました」など、小さな発見は、会話の種になります。</p><p><strong>話題4：最近の、ちょっとした変化。</strong>新しく始めたこと、買ったものなど、<strong>軽い近況</strong>を話題にしましょう。</p><ul><li>見かけた風景</li><li>最近始めたこと</li><li>最近、気に入っているもの</li></ul>"
+        "h2": "3. 会話を広げる相づち・質問と、距離感の保ち方",
+        "text": "<p>話題を出せても、続かなければ意味がないと感じるかもしれません。そんなときは、次の二つの技術が助けになります。</p>\n<h3>3-1. 相づちは「繰り返し＋ひとこと感想」</h3>\n<p>相手が「最近、蕎麦にはまっているんです」と言ったとき、「蕎麦ですか。いいですね」と返す。これは、言葉を繰り返し、感想を添えただけです。単純ですが、聞いてくれていると伝わります。</p>\n<p>「へえ」「なるほど」だけでなく、「それは知りませんでした」「楽しそうですね」といった、気持ちの入った相づちを混ぜるのがコツです。</p>\n<p>相づちが単調になりやすい人は、感情を表す言葉を一つ増やしてみましょう。「それは嬉しいですね」「大変でしたね」など、相手の気持ちに寄り添う言葉は、どんな話題でも使えます。</p>\n<h3>3-2. 質問は「具体的に、答えやすく」</h3>\n<p>「趣味は何ですか？」は範囲が広く、答えにくい質問です。「休みの日は、外に出ることが多いですか、家で過ごすことが多いですか？」のように、選べる形にすると、答えやすくなります。</p>\n<p>また、「どうして？」と理由を問い詰めるより、「どんなところが好きなんですか？」と聞くほうが、相手は話しやすいものです。</p>\n<p>質問したあとは、答えを急かさずに待ちましょう。相手が考えている数秒の間も、会話の一部です。待つことができると、相手は安心して、自分の言葉で話し始めます。</p>\n<p>反対に、相手の話が長くなりすぎたときは、「それは大変でしたね」と区切りの言葉を添えて、やんわり別の話題へ移ることもできます。聞くことと、自分の時間を守ることの、両方を意識してみましょう。</p>\n<h3>3-3. 【ケーススタディ】天気の話から広がった例（想定ケースです）</h3>\n<blockquote><p>以下は、一般的な状況をもとにした想定ケースです。実在の人物ではありません。</p><p>雑談が苦手な40代の男性（想定）が、「急に寒くなりましたね」と声をかけたところ、相手が「ようやく温かい飲み物がおいしい季節ですね」と返してくれました。</p><p>そこで男性は、「どんな飲み物がお好きですか？」と一つだけ質問し、紅茶の話に広がりました。話題を広げようとせず、相手の言葉を拾って質問を一つだけ返す。それだけで、5分ほど心地よい会話が続いた、という流れです。</p></blockquote>\n<p>オンラインのやりとりでも同じです。最初の一通の書き方は<a href=\"/column-detail-42\">最初のメッセージの書き方</a>で、会話のペースは<a href=\"/column-detail-77\">心地よい距離感のつくり方</a>で詳しく紹介しています。</p>"
       },
       {
-        "h2": "4. 話題5：相手の話を、一つ覚えておく",
-        "text": "<p>前に聞いた話を、<strong>「そういえば、あのお店には行きましたか？」</strong>と振り返ると、相手は自分を覚えてもらえた嬉しさを感じます。</p><p>小さなメモを残しておくのも、一つの方法です。</p>"
-      },
-      {
-        "h2": "5. 【ケーススタディ】天気の話から広がった例",
-        "text": "<p>雑談が苦手なKさん（仮名）が、「急に寒くなりましたね」と声をかけたとします。</p><p>相手が「ようやく、温かい飲み物がおいしい季節ですね」と返し、<strong>そこから好きな飲み物の話に広がった</strong>、という場面です。小さな一言が、会話の入り口になりました。</p>"
-      },
-      {
-        "h2": "6. 避けるべきNG行動のチェックリスト",
-        "text": "<ul><li>政治や宗教など、意見が割れやすい話題を出す</li><li>愚痴や悪口を、中心にする</li><li>自分の話ばかりを続ける</li><li>沈黙を、すぐ埋めようと焦る</li></ul>"
-      },
-      {
-        "h2": "7. 今日からできる小さな一歩",
-        "text": "<p>今日は、会った人に、<strong>天気か食べ物の話を一言</strong>してみましょう。短くて構いません。</p><p>雑談は、練習するほど、楽になります。<strong>気軽な一言の積み重ね</strong>が、心地よい関係を育てます。</p>"
+        "h2": "4. 避けたい話題と、雑談が上手になる習慣",
+        "text": "<h3>4-1. 避けるべきNG行動チェックリスト</h3>\n<ul><li>政治、宗教など、意見が分かれやすい話題を持ち出す</li><li>愚痴や他人の悪口を、会話の中心にする</li><li>自分の話ばかりを、長く続ける</li><li>沈黙をすぐに埋めようと焦り、早口になる</li><li>相手のプライベートな事情を、根掘り葉掘り聞く</li><li>自慢話や、お金・年収の話を持ち出す</li><li>相手の話を遮って、自分の意見を押しつける</li></ul>\n<p>特に、プライベートな質問は、相手との信頼関係ができてから、少しずつにしましょう。</p>\n<p>自分が話しすぎたと感じたときは、「私ばかり話してしまいましたね。〇〇さんは、最近どうですか？」と相手に話を渡しましょう。気づいたところで直せれば、それで十分です。</p>\n<h3>4-2. 今日からできる「雑談の練習」</h3>\n<p>練習の場は、日常にたくさんあります。レジの店員さん、近所の方、同僚に、天気か食べ物の話を一言だけ声にしてみましょう。成功体験を積むことが、一番の上達法です。</p>\n<p>うまくいかなかった日も、「声をかけられた」ことが成果です。反応が薄くても、自分の価値とは関係ありません。</p>\n<p>練習を続けるなら、一日の終わりに「今日の雑談」を一行だけ書く習慣もおすすめです。「宅配の方と天気の話をした」だけで構いません。小さな成功が目に見えて増えていくと、苦手意識が和らいでいきます。</p>\n<p>雑談の上手な人に共通するのは、相手に興味を持つ姿勢です。話題の豊富さではありません。興味を持って聞いていれば、自然と質問が浮かび、会話は続いていきます。</p>\n<h3>4-3. 雑談を、心を整える時間にする</h3>\n<p>家庭や仕事で忙しいと、誰かと気楽に話す機会が減りがちです。「話す相手がいない」と感じる孤独感は、多くの人が経験します。家庭内で気持ちを分かち合えないと感じるときは、<a href=\"/column-detail-12\">夫婦の会話が減ったときの見直し方</a>も参考にしてください。</p>\n<p>気持ちの落ち込みが長く続くときは、無理に話そうとせず、医師や専門の窓口に相談しましょう。</p>"
       }
     ],
     "highlight_box": {
-      "title": "この記事のポイント",
+      "title": "雑談を楽しむための、まとめ",
       "items": [
-        "・雑談は、気持ちのやりとりが目的",
-        "・季節・食べ物・日常から話題を探す",
-        "・相手の話を一つ覚えておく"
+        "・雑談の目的は<strong>気持ちのやりとり</strong>。オチは不要",
+        "・話題は<strong>季節・食べ物・日常・近況・前の話</strong>の5つ",
+        "・相づちは<strong>繰り返し＋ひとこと感想</strong>、質問は答えやすく",
+        "・政治・愚痴・自慢・根掘り葉掘りは<strong>避ける</strong>",
+        "・毎日<strong>一言だけ</strong>声をかける練習から"
       ]
     },
     "faqs": [
       {
-        "q": "雑談が、続きません。",
-        "a": "続けようとせず、一言のやりとりを楽しむ気持ちで十分です。相手の返事を拾って、短く返してみましょう。"
+        "q": "雑談中に沈黙になってしまったら、どうすればよいですか？",
+        "a": "沈黙は悪いことではありません。お茶を飲む、周りを見渡すなどして自然に間をとり、「そういえば」と別の話題を出せば大丈夫です。無理に埋めようと焦るより、穏やかな間として楽しむほうが、相手も安心します。"
       },
       {
-        "q": "避けたほうがよい話題は？",
-        "a": "意見が分かれやすい話題や、愚痴・悪口は控えましょう。相手のプライバシーに踏み込む話題も、避けるのが無難です。"
+        "q": "相手の話にうまく反応できないとき、どうすればよいでしょうか？",
+        "a": "知らない話題なら、「詳しくないので、教えてください」と素直に伝えましょう。教える側は嬉しいものです。分かったふりをするより、興味を示すほうが、会話は自然に続きます。"
       },
       {
-        "q": "話題のストックは、必要ですか？",
-        "a": "二、三個、思い浮かぶ話題があると安心です。ただし、相手の様子を見ながら、柔軟に選んでください。"
+        "q": "自分から話しかけるのが苦手なときは、どこから始めればよいですか？",
+        "a": "返事が必要ない一言から始めると気が楽です。「いい天気ですね」のように、感想だけを伝えるイメージです。続けるうちに、返事がもらえたときの嬉しさで、少しずつ自信がついていきます。"
       }
-    ]
+    ],
+    "keywords": "雑談 コツ,会話 話題,雑談が苦手,会話を広げる,大人の会話",
+    "source_photo": "images/column_first_dinner.webp"
   },
   {
     "vol": 173,
     "filename": "column-detail-173.html",
     "category_name": "安心・安全",
-    "title": "困ったときの相談先ガイド｜トラブルに気づいたときに頼れる窓口 | Re.en Column",
-    "headline": "困ったときの相談先ガイド｜トラブルに気づいたときに頼れる窓口",
-    "description": "オンラインで困ったことが起きたときに頼れる相談先を整理。消費者ホットライン、警察相談専用電話、サービス運営への連絡、相談前の準備、相談のコツを解説します。",
-    "banner_img": "images/column_profile_tips.webp",
+    "title": "オンラインで困ったときの相談先ガイド｜188・#9110・サービス運営の使い分け | Re.en Column",
+    "headline": "オンラインで困ったときの相談先ガイド｜188・#9110・サービス運営の使い分け",
+    "description": "オンラインのトラブルで誰に相談すべきかを整理。消費者ホットライン188、警察相談専用電話#9110、緊急の110、サービス運営への通報の使い分けと、相談前の準備を解説します。",
+    "banner_img": "images/banners/column-detail-173.webp",
     "authored": true,
-    "lead": "トラブルに巻き込まれたとき、「誰に相談すればよいか分からない」と、一人で悩んでしまう方は少なくありません。この記事では、<strong>頼れる相談先と、相談前の準備</strong>をまとめます。",
+    "lead": "トラブルに気づいたとき、「恥ずかしい」「誰に言えばいいか分からない」と、一人で抱え込む方は少なくありません。結論は、早く相談するほど取れる対策が増えるということ。お金の問題は188、犯罪や不安なつきまといは#9110、身の危険があるときは110、サービス上の問題は運営の通報窓口です。使い分けと準備を整理します。",
     "body_sections": [
       {
-        "h2": "1. 一人で抱え込まないことが、第一歩",
-        "text": "<p>トラブルが起きたとき、恥ずかしさや不安から、<strong>誰にも言えずに抱え込んでしまう</strong>ことがあります。けれども、早く相談するほど、取れる対策が増えます。</p><p>相談は、弱さではなく、<strong>自分を守るための行動</strong>です。</p><ul><li>早い相談ほど、対策の選択肢が多い</li><li>相談は、自分を守る行動</li><li>相談先は、状況によって使い分ける</li></ul>"
+        "h2": "1. 相談は「自分を守る行動」。一人で抱えない",
+        "text": "<p>オンラインで困りごとが起きたとき、多くの人が最初に感じるのは、恥ずかしさや不安です。「自分が悪いのでは」と思い、誰にも言えなくなることもあります。</p>\n<h3>1-1. 早い相談ほど、選べる対策が多い</h3>\n<p>お金を送ってしまった、個人情報を教えてしまった、といった場合、時間が経つほど回復や防止が難しくなります。気づいた時点で動くことが、被害を小さくする一番の方法です。</p>\n<p>「こんなことで相談していいのか」と迷うときこそ、相談の対象です。相談窓口は、小さな疑問や不安を受け止めるためにあります。</p>\n<p>トラブルの種類は、金銭の要求、しつこい連絡、画像の悪用、アカウントの乗っ取りなど、さまざまです。どれも、早い段階で気づくことが重要で、「何か変だ」という違和感は大切なサインです。</p>\n<h3>1-2. 相談をためらう気持ちとの付き合い方</h3>\n<p>特に既婚者向けのサービスでは、「周りに知られたくない」という気持ちから、相談を遠ざけてしまうことがあります。公的な相談窓口は、相談内容を慎重に扱うのが通常です。気になる場合は、最初に「個人的な内容なのですが」と伝え、取り扱いを確認してみましょう。</p>\n<p>話しにくい部分は、「事実の部分だけ」から始めても構いません。いつ、何を、いくら、といった客観的な内容を伝えるだけで、相談員は次の手順を示してくれます。</p>\n<p>気持ちに余裕がないときは、深呼吸をして、水を一杯飲んでから動き出してください。冷静さを取り戻すことも、立派な最初の対応です。</p>\n<h3>1-3. 最初にやるべき「止める」三つの行動</h3>\n<ul><li>相手への送金や、情報の提供を、いったん止める</li><li>やりとりの画面や記録を、消さずに保存する</li><li>慌てて返信せず、相談先を決める</li></ul>\n<p>焦って相手に反論したり、アカウントを削除したりすると、証拠が失われることがあります。まず止めて、保存する、が原則です。</p>"
       },
       {
-        "h2": "2. 主な相談先と、使い分け",
-        "text": "<h3>消費者ホットライン「188」</h3><p>お金や契約、料金の請求などに関するトラブルは、<strong>消費者ホットライン「188」</strong>から、最寄りの消費生活相談窓口につながります。</p><h3>警察相談専用電話「#9110」</h3><p>緊急ではないが、<strong>犯罪被害や不安なつきまといなど</strong>について相談したいときは、警察相談専用電話「#9110」が利用できます。身の危険を感じる緊急時は、迷わず「110」番に連絡しましょう。</p><h3>サービスの運営への連絡</h3><p>利用しているサービスの<strong>問い合わせ窓口や、通報機能</strong>も活用しましょう。迷惑な相手や、不審なアカウントの報告に役立ちます。</p>"
+        "h2": "2. 主な相談先と、状況別の使い分け",
+        "text": "<p>相談先は一つではありません。困りごとの種類で、窓口を選ぶと話が早く進みます。</p>\n<h3>2-1. お金・契約・請求のトラブルは「188」</h3>\n<p>消費者ホットライン「188（いやや）」は、局番なしで、最寄りの消費生活相談窓口につながります。身に覚えのない請求、解約できない契約、投資や副業への勧誘、お金を貸してほしいと言われた、といった相談に向いています。</p>\n<p>電話がつながったら、「オンラインで知り合った相手から、お金の話を持ちかけられた」のように、一言で状況を伝えましょう。</p>\n<p>窓口ごとに、できることは異なります。188は相談やあっせんの案内、警察は事件性の判断や捜査の相談、運営はアカウントへの対応が中心です。複数に相談してもかまいません。</p>\n<h3>2-2. 犯罪被害や不安なつきまといは「#9110」と「110」</h3>\n<p>警察相談専用電話「#9110」は、緊急ではないが、犯罪被害にあったかもしれない、つきまといや脅しが不安、といった場合に相談できます。身の危険が差し迫っているときは、迷わず「110」番に連絡してください。</p>\n<p>お金を振り込んでしまったときは、警察への相談と合わせて、利用した金融機関にも早めに連絡することが大切です。</p>\n<p>電話が苦手な方は、相談窓口によってはウェブや来所での相談を受け付けている場合もあります。お住まいの自治体のサイトで、受付方法を確認してみてください。</p>\n<h3>2-3. サービス上の問題は「運営の通報窓口」</h3>\n<p>迷惑な相手、不審なアカウント、規約に反するやりとりは、サービス運営の問い合わせ窓口や通報機能から報告できます。Re.en（リエン）でも、ブロックなど、自分を守る機能の活用が重要です。電話番号ブロックの考え方は<a href=\"/column-detail-19\">プライバシー設定の使い方</a>で紹介しています。</p>\n<p>通報は相手を責める行為ではなく、ほかの会員の安全を守る行動です。気になる点は、ためらわず運営に伝えましょう。</p>"
       },
       {
-        "h2": "3. 相談する前に、準備しておくこと",
-        "text": "<p>相談するときは、次のものを手元に用意しておくと、話がスムーズに進みます。</p><ul><li>やりとりの画面（スクリーンショット）</li><li>日時、金額、相手の名前（アカウント名）</li><li>送金した場合は、振込の記録</li><li>起きた出来事を、時系列でメモしたもの</li></ul><p>証拠になるものは、<strong>消さずに残して</strong>おきましょう。</p>"
+        "h2": "3. 相談前の準備と、相談のコツ",
+        "text": "<p>準備ができていると、相談員も状況を把握しやすく、その後の対応が早くなります。</p>\n<h3>3-1. 手元にそろえておくもの</h3>\n<ul><li>やりとりの画面（スクリーンショット）、相手のアカウント名やURL</li><li>日時、金額、振込先の情報（送金した場合は、振込明細や記録）</li><li>起きたことを時系列に並べた簡単なメモ</li><li>相手から送られた請求書やメッセージ</li></ul>\n<p>証拠になるものは、消さずに残してください。個人情報が写っている画像を保存する際は、端末の保護にも気を配りましょう。</p>\n<p>相談の最初に、「何をしてほしいか」を一言添えると、話が進みます。「今後どうすればよいか知りたい」「警察に届けるべきか判断したい」など、目的を伝えましょう。</p>\n<h3>3-2. 事実を「順番に」伝える</h3>\n<p>相談では、感情が高ぶっても構いません。ただ、日時や金額などの事実のメモがあると、落ち着いて伝えられます。話す順番は、「いつ」「どこで知り合い」「何を求められ」「何をしたか」の順が分かりやすいです。</p>\n<p>相談員は、話しにくい内容にも慣れています。自分を責める言葉ではなく、事実を話せば十分です。</p>\n<p>メモは、手書きでもスマホでも構いません。細かな時刻が分からなければ、「夜9時ごろ」といった大まかな情報で十分です。完璧な資料より、今ある情報で早く相談することを優先してください。</p>\n<h3>3-3. 【ケーススタディ】早めの相談で落ち着けた例（想定ケースです）</h3>\n<blockquote><p>以下は、一般的な状況をもとにした想定ケースです。実在の人物ではありません。</p><p>オンラインで知り合った相手から、「急な出費で困っている、少し貸してほしい」と言われた40代の女性（想定）は、返事をせずに画面を保存し、消費生活相談の窓口に電話しました。</p><p>相談員から、お金を送らないこと、これ以降の連絡の仕方、必要なら警察にも相談できることを教えてもらい、落ち着きを取り戻せたという流れです。一人で悩み続けるより、状況を第三者に整理してもらうことが、安心につながります。</p></blockquote>\n<p>金銭を求められたときの具体的な断り方は、<a href=\"/column-detail-162\">お金を求められたときの対応</a>を、詐欺の典型パターンは<a href=\"/column-detail-113\">ロマンス詐欺の見分け方</a>を参照してください。</p>"
       },
       {
-        "h2": "4. 相談するときのコツ",
-        "text": "<p>相談では、<strong>事実を、順番に、落ち着いて</strong>話すことが大切です。感情的になってしまっても構いませんが、日時や金額など、事実のメモがあると助けになります。</p><p>話しにくい内容でも、窓口の人は、<strong>解決のために聞いています</strong>。遠慮せず、伝えましょう。</p>"
-      },
-      {
-        "h2": "5. 【ケーススタディ】早めの相談で、落ち着けた例",
-        "text": "<p>不審な連絡を受けて悩んでいたLさん（仮名）が、<strong>画面を保存して、消費生活相談の窓口に電話した</strong>とします。</p><p>相談員から、これからの対応を落ち着いて教えてもらい、<strong>「一人で悩まず、話してよかった」</strong>と感じた、という場面です。</p>"
-      },
-      {
-        "h2": "6. 避けるべきNG行動のチェックリスト",
-        "text": "<ul><li>恥ずかしさから、誰にも相談しない</li><li>やりとりの記録を、消してしまう</li><li>相手の言うままに、追加で送金する</li><li>自分で何とかしようと、相手と直接やりとりを続ける</li></ul>"
-      },
-      {
-        "h2": "7. 今日からできる小さな一歩",
-        "text": "<p>まずは、<strong>「188」と「#9110」を、スマホにメモ</strong>しておきましょう。いざというとき、すぐに使えます。</p><p>備えておくことが、<strong>安心して過ごせる毎日</strong>につながります。困ったときは、迷わず、頼ってください。</p>"
+        "h2": "4. 避けたい行動と、再発を防ぐ習慣",
+        "text": "<h3>4-1. 避けるべきNG行動チェックリスト</h3>\n<ul><li>恥ずかしさから、誰にも言わずに時間が過ぎてしまう</li><li>相手に言われるまま、追加の送金や情報提供をする</li><li>証拠になるやりとりを、慌てて消してしまう</li><li>「取り戻せる」とうたう、見知らぬ業者に連絡する</li><li>相手を問い詰めて、感情的にやりとりを続ける</li><li>同じ相手に、住所・勤務先・家族の情報を教える</li></ul>\n<p>特に、被害の回復をうたう業者は、二次被害のおそれがあります。必ず公的な窓口を経由しましょう。</p>\n<p>もし被害に遭ってしまっても、それはあなただけの責任ではありません。巧妙な手口は、誰でも引っかかる可能性があります。責めるより、次に生かす姿勢が大切です。</p>\n<h3>4-2. 会う前・やりとり中の「予防」</h3>\n<p>被害を未然に防ぐには、会う前の確認や、個人情報を渡さない習慣が役立ちます。待ち合わせ前のチェック項目は<a href=\"/column-detail-114\">会う前の安全チェック</a>に、個人情報を聞かれたときの対処は<a href=\"/column-detail-137\">個人情報を聞かれたときの対応</a>にまとめています。</p>\n<p>パスワードの使い回しをやめる、見覚えのないリンクを開かない、二要素認証を設定する、といった基本的な対策も有効です。二要素認証の設定方法は<a href=\"/column-detail-41\">二要素認証の設定</a>で紹介しています。</p>\n<p>日ごろから、相談先の番号をスマホのメモに控えておくと、いざというときに慌てずに済みます。188と#9110は、覚えやすい番号です。家族や親しい人に、窓口の存在を共有しておくのも安心につながります。</p>\n<h3>4-3. 気持ちが落ち着かないときは</h3>\n<p>被害に遭ったあとは、眠れない、食欲がない、自分を責めてしまう、といった状態が続くことがあります。つらさが続くときは、医師や、自治体の相談窓口に相談してください。診断や治療の判断は、必ず専門家が行います。</p>\n<p>家族に相談することが難しいと感じる場合も、公的な窓口は、第三者として話を聞いてくれます。</p>"
       }
     ],
     "highlight_box": {
-      "title": "この記事のポイント",
+      "title": "相談先ガイドのまとめ",
       "items": [
-        "・困ったら、一人で抱え込まず、早めに相談する",
-        "・188（消費生活）と#9110（警察の相談）を覚えておく",
-        "・やりとりの記録は、消さずに残す"
+        "・お金・契約・勧誘は<strong>消費者ホットライン188</strong>",
+        "・犯罪被害や不安は<strong>警察相談専用電話#9110</strong>、身の危険は<strong>110</strong>",
+        "・サービス上の問題は<strong>運営の通報窓口</strong>",
+        "・まず<strong>止める・保存する</strong>。画面と記録は消さない",
+        "・つらさが続くときは医師や自治体の窓口に相談を"
       ]
     },
     "faqs": [
       {
-        "q": "どこに相談すればよいか、分かりません。",
-        "a": "お金や契約のことは188、犯罪や不安なことは#9110が目安です。迷ったら、まず188に相談してみてください。"
+        "q": "188に電話すると、どこにつながるのでしょうか？",
+        "a": "消費者ホットライン「188」は、最寄りの消費生活センターや相談窓口につながる全国共通の番号です。お住まいの地域の窓口が案内されます。受付時間は窓口により異なるため、つながらないときは時間をあらためて試してください。"
       },
       {
-        "q": "相談したら、大ごとになりませんか？",
-        "a": "相談は、状況を整理して、次の対応を考えるためのものです。相談したからといって、自動的に大ごとになるわけではありません。"
+        "q": "#9110と110は、どう違うのですか？",
+        "a": "110は事件や事故など、緊急の通報用です。#9110は、緊急ではないものの、犯罪被害やつきまとい、詐欺の不安などを相談する窓口です。身の危険を感じたら迷わず110に連絡してください。"
       },
       {
-        "q": "証拠が、残っていません。",
-        "a": "覚えている範囲で、日時や内容をメモしておきましょう。それでも、相談はできます。"
+        "q": "家族に知られたくない場合でも、公的な窓口に相談できますか？",
+        "a": "相談は可能です。一般に、相談内容は慎重に扱われます。気になるときは、最初に取り扱いを窓口へ確認してください。話しにくい部分は事実だけを伝えても構いません。ただ、状況によっては、家族と共有したほうがよい場面もあるため、相談員と一緒に考えるのが安心です。"
       }
-    ]
+    ],
+    "keywords": "相談先,消費者ホットライン188,警察相談専用電話,#9110,オンライン トラブル",
+    "source_photo": "images/column_profile_tips.webp"
   },
   {
     "vol": 174,
     "filename": "column-detail-174.html",
     "category_name": "心の整え方",
-    "title": "完璧主義をゆるめる5つの習慣｜「ちゃんとしなきゃ」から、少し自由になる | Re.en Column",
-    "headline": "完璧主義をゆるめる5つの習慣｜「ちゃんとしなきゃ」から、少し自由になる",
-    "description": "「完璧にやらなきゃ」と、気持ちが疲れてしまう人へ。完璧主義との付き合い方、60点で進める考え方、失敗の受け止め方、自分への声かけを、5つの習慣にまとめました。",
-    "banner_img": "images/column_lounge_etiquette.webp",
+    "title": "完璧主義をゆるめる5つの習慣｜「ちゃんとしなきゃ」から少し自由になる | Re.en Column",
+    "headline": "完璧主義をゆるめる5つの習慣｜「ちゃんとしなきゃ」から少し自由になる",
+    "description": "「ちゃんとしなきゃ」で心が疲れる方へ。60点で出す、力の入れどころを選ぶ、失敗の受け止め方、自分への声かけ、人に頼る習慣の5つを、例文つきで解説します。例文つきで紹介します",
+    "banner_img": "images/banners/column-detail-174.webp",
     "authored": true,
-    "lead": "「ちゃんとしなければ」と、自分に厳しくしすぎていませんか。完璧を目指す気持ちは、頑張りの証ですが、続くと心が疲れてしまいます。この記事では、<strong>完璧主義をゆるめる5つの習慣</strong>を紹介します。",
+    "lead": "仕事も家事も、人づきあいも「ちゃんとしなければ」。その真面目さは、あなたの強みです。ただ、続くと心が先に疲れてしまいます。結論は、完璧主義はなくすものではなく、ゆるめるもの。この記事では、60点で出す、力の入れどころを選ぶなど、今日から試せる5つの習慣を、言い回しの例つきで紹介します。",
     "body_sections": [
       {
-        "h2": "1. 完璧を目指す気持ちは、悪いものではない",
-        "text": "<p>完璧を求める姿勢は、<strong>責任感の強さや、丁寧さの表れ</strong>でもあります。大切なのは、その気持ちを手放すことではなく、<strong>少しゆるめる</strong>ことです。</p><p>力の入れどころを選べるようになると、<strong>毎日が楽になります</strong>。</p><ul><li>完璧を目指すのは、頑張りの証</li><li>なくすのではなく、少しゆるめる</li><li>力を入れる場所を、選ぶ</li></ul>"
+        "h2": "1. 完璧を目指す気持ちと、疲れの関係",
+        "text": "<p>完璧にやりたいという気持ちは、責任感や丁寧さの表れです。悪いものではありません。問題は、その基準を、すべてのことに同じ強さで当てはめてしまうことです。</p>\n<h3>1-1. 完璧主義の人がよく感じていること</h3>\n<ul><li>小さなミスを、何日も思い返してしまう</li><li>人に頼むより、自分でやったほうが安心だと感じる</li><li>うまくできる自信がないと、始められない</li><li>休んでいても、やり残しが頭から離れない</li></ul>\n<p>いくつか当てはまる方は少なくありません。それは性格の欠点ではなく、頑張り続けてきた証でもあります。</p>\n<p>完璧主義という言葉を、自分を否定する意味で使う必要はありません。「質を大切にする人」と言い換えてみると、同じ性格でも見え方が変わります。大切なのは、その性質を自分で操作できる感覚を持つことです。</p>\n<h3>1-2. 「ゆるめる」と「手を抜く」は違う</h3>\n<p>ゆるめるとは、大切なところの質は保ったまま、そうでないところの力を抜くことです。全部を雑にするのではなく、力の入れ方に濃淡をつけると考えてください。</p>\n<p>たとえば、家族の誕生日の食事は丁寧に、毎日の洗濯物のたたみ方は簡単に。こうして、力の使いどころを選ぶと、疲れが減っても満足感は保てます。</p>\n<p>たとえば、帰宅後も仕事のことが頭を離れない、家族の用事の抜けが気になって休めない、といった状態が続くときは、心が緊張したままになっている可能性があります。ゆるめる習慣は、その緊張を少しずつ解く手段です。</p>\n<h3>1-3. 疲れがたまりやすい人の共通点</h3>\n<p>人に頼ることが苦手で、「自分がやらなければ」と思う人ほど、疲れが溜まりやすい傾向があります。気持ちの面でも、自分に厳しい言葉をかけ続けていると、心が休まりません。</p>\n<p>こうした自己批判のくせについては、<a href=\"/column-detail-62\">自己肯定感を整える方法</a>でも詳しく触れています。</p>"
       },
       {
-        "h2": "2. 習慣1・2：「60点で、まず出す」",
-        "text": "<h3>習慣1：最初から、100点を目指さない</h3><p>最初は<strong>60点でよい</strong>と決めて、まず形にしてみましょう。直しながら整えるほうが、結果的に早く、質も上がります。</p><h3>習慣2：重要度で、力の入れ方を変える</h3><p>すべてに全力を使うと、疲れてしまいます。<strong>大切なことには丁寧に、そうでないことは手早く</strong>、メリハリをつけましょう。</p>"
+        "h2": "2. 習慣1・2：「60点で出す」と「力の入れどころを選ぶ」",
+        "text": "<h3>2-1. 習慣1：最初から100点を目指さず、60点で形にする</h3>\n<p>最初は60点でよい、と決めて形にし、そこから直していくほうが、結果として早く、質も上がります。頭の中で完璧に整えてから動こうとすると、始めるまでに時間がかかり、疲れてしまいます。</p>\n<p>たとえば、メールの返信は、書き終えたらすぐ送らず、1回だけ読み返して送る。それ以上は見直さない、と決めておきます。</p>\n<p>メールの文面を例にすると、取引先への大事な連絡は丁寧に、社内の簡単な連絡は短く、と分けるだけで、毎日の負担が大きく変わります。家事でも、来客前のリビングは念入りに、普段の寝室は軽くで十分です。</p>\n<p>力の入れどころを選ぶ練習は、まず一日の中で「手早く済ませてよいこと」を一つ見つけるところから始めましょう。見つかったら、その分の余力を、自分の休息にまわします。</p>\n<h3>2-2. 習慣2：重要度で、力の入れ方を三段階に分ける</h3>\n<p>やることを、次の三つに分けてみましょう。</p>\n<ol><li>丁寧に行う（人の安全や、大切な約束に関わること）</li><li>ふつうに行う（日常的な家事や仕事）</li><li>手早く済ませる（やらなくても困らないこと）</li></ol>\n<p>全部を1番にしていると、疲れ切ってしまいます。3番に入れられるものを、増やしていきましょう。</p>\n<p>終わりの基準は、時間でも、範囲でも、回数でも構いません。「読み返しは1回」「選択肢は3つまで」など、数字を決めると迷いが減ります。決めたことを守れた日は、それだけで成功と考えてよいのです。</p>\n<h3>2-3. 「終わりの基準」を先に決める</h3>\n<p>完璧主義の人は、終わりが見えないことが苦しさの原因になりがちです。「この資料は30分で」「掃除は玄関とリビングだけ」と、始める前に終わりの基準を決めておきましょう。</p>\n<p>時間がきたら、出来栄えに関わらず終わりにします。この練習を重ねると、「これで十分」と思える感覚が育ちます。</p>"
       },
       {
-        "h2": "3. 習慣3：失敗を、学びとして受け止める",
-        "text": "<p>うまくいかなかったとき、<strong>「次はどうしようか」</strong>と考えられると、気持ちが前に向きます。失敗は、避けるものではなく、<strong>次の工夫を見つけるきっかけ</strong>です。</p><ul><li>うまくいかなかった点を、一つだけ書く</li><li>次に試すことを、一つだけ決める</li><li>できた点にも、目を向ける</li></ul>"
+        "h2": "3. 習慣3〜5：失敗の受け止め方、自分への声かけ、人に頼る",
+        "text": "<p>失敗を振り返るのは、うまくいかなかった直後でなく、一晩置いてからが効果的です。気持ちが落ち着いてからのほうが、冷静に次の工夫を考えられます。</p>\n<h3>3-1. 習慣3：失敗を「次の工夫の材料」にする</h3>\n<p>うまくいかなかったときは、「なぜ自分はだめなのか」ではなく、「次はどうするか」に目を向けます。うまくいかなかった点を一つだけ書き、次に試すことを一つだけ決めます。これで十分です。</p>\n<p>あわせて、「できた点」も一つ書いておきましょう。失敗の記録だけが増えると、自信が下がってしまうためです。</p>\n<p>声かけの練習としては、寝る前に「今日できたこと」を3つ思い浮かべるのも効果的です。「朝起きられた」「ご飯を作った」など、小さなことで構いません。できなかったことより、できたことに目を向ける時間を、毎日少しだけ持ちましょう。</p>\n<h3>3-2. 習慣4：友人にかける言葉を、自分にもかける</h3>\n<p>失敗したのが親しい友人なら、「大丈夫、よくやったよ」と声をかけるでしょう。同じ言葉を、自分にもかけてみてください。心の中の言葉づかいを変えるだけで、気持ちの重さは変わります。</p>\n<p>たとえば、「どうしてできないの」ではなく、「今日はここまで頑張った」と言い換えます。最初は照れくさくても、続けると自然になります。</p>\n<p>頼むときのひと言の例を挙げます。「ここだけ確認してもらえますか。完璧でなくて大丈夫です」。この一言を添えるだけで、相手も気軽に引き受けやすく、自分も「任せる」ことに慣れていきます。</p>\n<h3>3-3. 習慣5：人に頼る。そして【ケーススタディ】</h3>\n<p>頼ることは迷惑ではなく、信頼の表れです。「ここを見てもらえますか」「この部分だけお願いできますか」と、範囲を絞って頼むと、相手も引き受けやすくなります。</p>\n<blockquote><p>以下は、一般的な状況をもとにした想定ケースです。実在の人物ではありません。</p><p>資料作りに時間をかけすぎていた30代の会社員（想定）は、「まず60点で見せる」と決めて、途中の段階で同僚に見てもらいました。</p><p>早い段階で助言をもらえたため、大きな修正が減り、最終的には時間が短くなり、仕上がりも整ったという流れです。完璧に仕上げてから見せるより、途中で相談するほうが結果的に楽になる場面は多いと感じる人もいます。</p></blockquote>\n<p>誰かに話を聞いてもらいたいときは、<a href=\"/column-detail-14\">相談相手の見つけ方</a>が参考になります。</p>"
       },
       {
-        "h2": "4. 習慣4・5：自分への声かけと、人に頼ること",
-        "text": "<p><strong>習慣4：自分に、優しい言葉をかける。</strong>友人にかけるような言葉を、自分にも向けてみましょう。「よくやったね」の一言が、気持ちを支えます。</p><p><strong>習慣5：一人で完結させず、人に頼る。</strong>頼ることは、迷惑ではなく、<strong>信頼の表れ</strong>でもあります。</p>"
-      },
-      {
-        "h2": "5. 【ケーススタディ】60点で出して、うまくいった例",
-        "text": "<p>資料作りで、いつも時間をかけすぎていたMさん（仮名）が、<strong>「まず60点で見せる」</strong>と決めたとします。</p><p>早めに見せたことで、周りから的確な助言をもらえ、<strong>最終的には、時間も短く、仕上がりもよくなった</strong>、という場面です。</p>"
-      },
-      {
-        "h2": "6. 避けるべきNG行動のチェックリスト",
-        "text": "<ul><li>小さなミスを、何日も引きずる</li><li>人と、自分を厳しく比べる</li><li>完璧にできるまで、手をつけない</li><li>助けを求めることを、恥ずかしいと思う</li></ul>"
-      },
-      {
-        "h2": "7. 今日からできる小さな一歩",
-        "text": "<p>今日は、一つのことを、<strong>「これで十分」</strong>と思えるところで、終わらせてみましょう。</p><p>完璧でなくても、あなたの価値は変わりません。<strong>ゆるめることは、手を抜くことではなく、長く続けるための工夫</strong>です。</p>"
+        "h2": "4. 避けたい考え方と、続けるためのヒント",
+        "text": "<h3>4-1. 避けるべきNG行動チェックリスト</h3>\n<ul><li>小さなミスを、何日も引きずって自分を責める</li><li>他人と自分を比べて、厳しい評価をする</li><li>完璧にできるまで、手をつけずに先延ばしする</li><li>休むことに、罪悪感を持ち続ける</li><li>頼れる場面でも、一人で抱え込む</li><li>習慣を一度に5つ始めて、全部続かなくなる</li></ul>\n<p>5つの習慣は、全部を同時に始める必要はありません。まず一つだけ選んでください。</p>\n<p>習慣を続けるために、小さな「ごほうび」を用意するのもよい方法です。60点で出せた日は、好きな飲み物を一杯。ごほうびがあると、ゆるめることを「楽しい経験」として覚えられます。</p>\n<h3>4-2. 続かなかった日を責めない</h3>\n<p>習慣は、何度か中断するのが当たり前です。続かなかった日があったら、「また今日から」と戻ればよいのです。完璧に続けようとすること自体が、完璧主義の罠です。</p>\n<p>1週間のうち、4日できたら合格、くらいの基準にしておくと、気持ちが軽くなります。</p>\n<p>また、周りの人に自分の頑張りを話すことも、気持ちの整理になります。完璧でない自分を見せても、信頼が損なわれることは少なく、むしろ親しみを持たれることもあります。まず身近な安心できる相手から、試してみてください。</p>\n<h3>4-3. 心の疲れが長く続くときは</h3>\n<p>気分の落ち込み、眠れない、何をしても楽しめない状態が続くときは、習慣の工夫だけで解決しようとせず、医師や自治体の相談窓口に相談してください。本記事は診断や治療を行うものではありません。</p>\n<p>家庭の中で気持ちを分かち合う相手がいないと感じる方は、<a href=\"/column-detail-11\">家庭内で孤独を感じるとき</a>も読んでみてください。</p>"
       }
     ],
     "highlight_box": {
-      "title": "この記事のポイント",
+      "title": "完璧主義をゆるめる、まとめ",
       "items": [
-        "・まず60点で形にして、直しながら整える",
-        "・大切なことにだけ、力を入れる",
-        "・自分にも、優しい言葉をかける"
+        "・完璧を目指す気持ちは<strong>強み</strong>。なくさず、ゆるめる",
+        "・<strong>60点で形に</strong>して、直しながら整える",
+        "・やることを<strong>三段階</strong>に分け、力の入れどころを選ぶ",
+        "・失敗は<strong>次の工夫の材料</strong>。友人にかける言葉を自分にも",
+        "・<strong>範囲を絞って頼る</strong>。つらさが続くときは医師などに相談"
       ]
     },
     "faqs": [
       {
-        "q": "完璧にしないと、不安です。",
-        "a": "不安なときは、「何が起きたら困るか」を書き出してみましょう。実際には、そこまでの水準が必要ないことも多いものです。"
+        "q": "60点で出すと、手を抜いていると思われないでしょうか？",
+        "a": "60点で形にするとは、「途中の段階で見せる」ことを指し、最終的な品質を下げるという意味ではありません。「まず叩き台です」と一言添えれば、意図は伝わります。最終的な仕上げには、助言も反映できます。"
       },
       {
-        "q": "手を抜いているようで、罪悪感があります。",
-        "a": "手を抜くのではなく、力の配分を考えているのだと捉えましょう。大切な場面に力を残すための工夫です。"
+        "q": "頭では分かっていても、ミスを引きずってしまうときはどうすればよいですか？",
+        "a": "引きずること自体は、真面目な人によくあります。気持ちを書き出して「次に試すこと」を一つ決め、その後は意識的に別のことに切り替えましょう。それでも苦しさが続くときは、医師や相談窓口を頼ってください。"
       },
       {
-        "q": "ミスを引きずってしまいます。",
-        "a": "ミスから学べたことを一つだけ書き、「次はこうする」と決めて、気持ちを区切りましょう。"
+        "q": "人に頼るのが苦手で、頼み方が分からないのですが、どうしたらよいでしょうか？",
+        "a": "範囲を絞って、具体的に頼むのがコツです。「この部分だけ見てもらえますか」のように、期限と内容を添えます。引き受けてもらえたら、必ず「助かりました」とお礼を伝えると、次も頼みやすくなります。"
       }
-    ]
+    ],
+    "keywords": "完璧主義 ゆるめる,ちゃんとしなきゃ,60点,自分に優しく,心の整え方",
+    "source_photo": "images/column_lounge_etiquette.webp"
   },
   {
     "vol": 175,
@@ -5090,67 +5136,59 @@
     "category_name": "お悩み",
     "title": "朝の習慣で一日を整える｜気持ちが軽くなる5つの小さな工夫 | Re.en Column",
     "headline": "朝の習慣で一日を整える｜気持ちが軽くなる5つの小さな工夫",
-    "description": "朝の過ごし方を整えて、一日を穏やかに始めるための工夫を解説。起きてすぐの習慣、光と飲み物、軽い運動、予定の確認、ゆとりの作り方を、5つの工夫にまとめました。",
-    "banner_img": "images/column_married_hobbies.webp",
+    "description": "慌ただしい朝を整えたい方へ。光を浴びる、温かい飲み物、軽い運動、予定の確認、10分の余白という5つの小さな工夫を、続けるコツとNG例とともに解説します。続けるコツも紹介します",
+    "banner_img": "images/banners/column-detail-175.webp",
     "authored": true,
-    "lead": "朝の気分は、一日の流れに影響すると言われます。慌ただしい朝を、少しだけ整えることで、<strong>一日を穏やかに</strong>過ごしやすくなります。この記事では、無理なく続く5つの工夫を紹介します。",
+    "lead": "朝が慌ただしいと、その急かされた気持ちのまま一日が進んでしまうことがあります。結論は、朝のほんの数分を自分のために使うだけで、気持ちの余裕は変わりやすいということ。この記事では、光、飲み物、軽い運動、予定の確認、10分の余白という5つの小さな工夫と、続けるコツを紹介します。",
     "body_sections": [
       {
-        "h2": "1. 朝の過ごし方が、一日の土台になる",
-        "text": "<p>朝、慌ただしく始まると、そのまま気持ちが急かされたまま一日が進んでしまうことがあります。<strong>朝の数分でも、自分のために使う</strong>と、気持ちに余裕が生まれます。</p><p>大きな変化は必要ありません。<strong>小さな習慣を、一つだけ</strong>足してみましょう。</p><ul><li>朝の気分は、一日の流れに影響しやすい</li><li>小さな習慣を、一つだけ足す</li><li>完璧を目指さず、続けやすい形にする</li></ul>"
+        "h2": "1. 朝の数分が、一日の気持ちの土台になる",
+        "text": "<p>朝の過ごし方は、その日の気分に影響しやすいと感じる人は少なくありません。目覚ましを止めてから家を出るまで、ずっと追われているような状態だと、心が休む間がないのです。</p>\n<h3>1-1. 慌ただしい朝に起きやすいこと</h3>\n<p>起きてすぐスマホでニュースやメッセージを確認する、家族の支度に追われる、自分の準備は後回しになる。こうした朝が続くと、出かける前にすでに疲れてしまうことがあります。</p>\n<p>朝にゆとりがない原因は、多くの場合、意志の弱さではなく、時間の設計です。支度に必要な時間と、起きる時刻を見直すだけで変わることがあります。</p>\n<p>朝の時間は、家族がいる場合、自分一人でコントロールできないこともあります。その場合は、家族全員の流れを見直して、前の晩の準備を共有するなど、小さな工夫を一緒に考えてみましょう。</p>\n<p>小さな習慣の選び方のヒントは、「3分以内で終わる」「道具がいらない」「気持ちよさがある」の三つです。この条件に合うものを選ぶと、失敗しにくくなります。</p>\n<h3>1-2. 大きな変化より、小さな習慣を一つ</h3>\n<p>朝の習慣を整えようとして、一度に何個も始めると、続きません。最初に選ぶのは、一つだけです。たとえば、「起きたらカーテンを開ける」だけで構いません。</p>\n<p>小さな習慣は、成功体験を作りやすく、続けるうちに自然と次の習慣が足されていきます。</p>\n<p>睡眠の質は、寝る前の過ごし方にも左右されます。就寝前の1時間は、強い光や刺激的な情報を控え、照明を少し落とすと、眠りにつきやすくなる人もいます。体調に不安があるときは、医師に相談しましょう。</p>\n<h3>1-3. 睡眠を削らないことが前提</h3>\n<p>朝を整えるために、睡眠を削るのは本末転倒です。早起きが目的ではなく、朝の気持ちに余裕を持つことが目的です。睡眠が足りていないと感じるときは、まず就寝時刻を15分早めることから始めましょう。</p>\n<p>夜の過ごし方は、朝に影響します。スマホの使用時間を見直す視点は<a href=\"/column-detail-26\">スマホの通知設定の見直し</a>でも触れています。</p>"
       },
       {
-        "h2": "2. 工夫1・2：光を浴びて、温かい飲み物をとる",
-        "text": "<h3>工夫1：起きたら、カーテンを開ける</h3><p>朝の光を浴びると、<strong>体のリズムが整いやすく</strong>なります。窓際で、数分過ごすだけでも構いません。</p><h3>工夫2：温かい飲み物を、ゆっくり飲む</h3><p>白湯やお茶を、<strong>座って、ゆっくり味わう</strong>時間を持ちましょう。慌ただしい気持ちが、落ち着きます。</p>"
+        "h2": "2. 工夫1〜3：光・飲み物・軽い運動",
+        "text": "<h3>2-1. 工夫1：起きたら、カーテンを開けて光を浴びる</h3>\n<p>朝の光を浴びると、体のリズムが整いやすくなると言われます。窓際で数分過ごす、ベランダに出る、といった程度で十分です。曇りの日でも、屋外の明るさは室内より強いものです。</p>\n<p>難しく考えず、「起きたらまずカーテンを開ける」と決めてしまうのが、続けるコツです。</p>\n<p>飲み物を用意する時間さえ惜しいときは、前の晩にポットやカップを出しておくと手間が減ります。お気に入りのカップを使うなど、小さな楽しみを加えると、続けやすくなります。</p>\n<h3>2-2. 工夫2：温かい飲み物を、座ってゆっくり飲む</h3>\n<p>白湯、お茶、コーヒーなど、好きなものを用意します。大切なのは、立ったまま飲まず、座って味わうことです。1〜2分でも、気持ちが切り替わる合図になります。</p>\n<p>カフェインに敏感な方や、体調に不安のある方は、無理のない飲み物を選びましょう。</p>\n<p>動かす時間帯は、起きてすぐでも、支度の合間でも構いません。ストレッチは、呼吸を止めずに、気持ちよく感じる範囲で行いましょう。無理に回数や時間を決めず、体の声を聞きながら調整してください。</p>\n<p>朝の工夫は、どれも「気持ちよさ」を基準に選ぶのが長続きの秘訣です。義務感でやると続かないので、少しでも「心地よい」と感じるものだけを残していきましょう。</p>\n<h3>2-3. 工夫3：5分だけ、軽く体を動かす</h3>\n<p>布団の中で伸びをする、肩や首をゆっくり回す、玄関先で深呼吸をする。これらは、朝の体を目覚めさせる、やさしい動きです。きつい運動は必要ありません。</p>\n<p>痛みや体調不良があるときは、無理をせず休みましょう。気になる症状が続く場合は、医師に相談してください。</p>"
       },
       {
-        "h2": "3. 工夫3：軽く体を動かす",
-        "text": "<p>ストレッチや、短い散歩など、<strong>5分ほどの軽い運動</strong>で、体が目覚めます。</p><ul><li>布団の中で、ゆっくり伸びをする</li><li>肩や首を、ゆっくり回す</li><li>ベランダや玄関先で、深呼吸をする</li></ul><p>きつい運動は必要ありません。<strong>気持ちよく動かせる範囲</strong>で十分です。</p>"
+        "h2": "3. 工夫4・5：予定の確認と、10分の余白",
+        "text": "<p>夜のうちに「明日の最優先」を決めておくのも、朝の迷いを減らす方法です。決まっていると、朝に頭を使う量が減り、動き出しがぐっと楽になります。</p>\n<h3>3-1. 工夫4：今日の予定を一度だけ見渡す</h3>\n<p>一日の予定が頭に入っていると、不安が減ります。朝のうちに、手帳やスマホで確認し、今日いちばん大切なことを一つだけ決めておきましょう。「今日はこれができれば十分」と決めると、気持ちが軽くなります。</p>\n<p>予定を確認するのは一度だけにして、何度も見直さないのがコツです。</p>\n<p>余白の時間は、必ずしも何かをする時間でなくて構いません。ぼんやり窓の外を眺める、好きな音楽を一曲聴く、など、何もしないこと自体が、気持ちの余裕を生みます。</p>\n<h3>3-2. 工夫5：10分早く起きて、余白を作る</h3>\n<p>10分の余白があると、予定外の出来事にも落ち着いて対応できます。時間に余裕があると、家族への声かけも穏やかになり、一日の雰囲気が変わることがあります。</p>\n<p>10分早く起きるのが難しい場合は、前の晩に準備を済ませる方法が有効です。服、持ち物、朝食の下ごしらえなどを、夜のうちに整えておきましょう。</p>\n<p>予定を確認するときは、移動時間や準備にかかる時間も一緒に思い浮かべておくと、焦りが減ります。余裕を持った見積もりをすることが、朝の安心感につながります。</p>\n<h3>3-3. 【ケーススタディ】朝の10分で、気持ちが変わった例（想定ケースです）</h3>\n<blockquote><p>以下は、一般的な状況をもとにした想定ケースです。実在の人物ではありません。</p><p>朝が苦手だった40代の会社員（想定）は、起きてすぐカーテンを開けて、温かいお茶を座って飲む習慣を始めました。</p><p>数週間続けるうち、朝の慌ただしさが少しずつ減り、出かける前の気持ちが穏やかになったと感じるようになりました。続いた理由は、習慣が「お茶を飲む」だけと簡単だったからです。難しい目標を立てなかったことが、続けるうえでの要点でした。</p></blockquote>\n<p>自分の時間を作る工夫は、<a href=\"/column-detail-104\">利用ペースの考え方</a>も、自分の時間を整えるうえで参考になるかもしれません。</p>"
       },
       {
-        "h2": "4. 工夫4・5：今日の予定を確認して、余白を作る",
-        "text": "<p><strong>工夫4：今日の予定を、一度だけ見渡す。</strong>やることが分かっていると、気持ちが落ち着きます。大切なことを一つだけ、頭に置いておきましょう。</p><p><strong>工夫5：10分早く起きて、余白を作る。</strong>時間に余裕があるだけで、<strong>焦りがぐっと減ります</strong>。前の晩に準備しておくのも、おすすめです。</p>"
-      },
-      {
-        "h2": "5. 【ケーススタディ】朝の10分で、気持ちが変わった例",
-        "text": "<p>朝が苦手だったNさん（仮名）が、<strong>起きてすぐ、カーテンを開けて温かいお茶を飲む</strong>習慣を始めたとします。</p><p>数週間たつと、<strong>朝の慌ただしさが減り</strong>、出かける前の気持ちが、穏やかになったと感じるようになった、という場面です。</p>"
-      },
-      {
-        "h2": "6. 避けるべきNG行動のチェックリスト",
-        "text": "<ul><li>起きてすぐ、スマホを長時間見る</li><li>朝の習慣を、いきなり増やしすぎる</li><li>続かなかった日を、責める</li><li>睡眠時間を削って、早起きする</li></ul>"
-      },
-      {
-        "h2": "7. 今日からできる小さな一歩",
-        "text": "<p>明日の朝は、起きたら<strong>カーテンを開けて、深呼吸を3回</strong>してみましょう。</p><p>朝の小さな習慣が、<strong>一日を穏やかに過ごす力</strong>になります。続けられない日があっても、気にせず、また始めれば大丈夫です。</p>"
+        "h2": "4. 続けるコツと、避けたいこと",
+        "text": "<p>朝の習慣は、季節や体調で変わって当然です。冬は光を浴びにくい、夏は早く目が覚める、など、時期に合わせて調整しましょう。</p>\n<h3>4-1. 避けるべきNG行動チェックリスト</h3>\n<ul><li>起きてすぐ、スマホを長い時間見てしまう</li><li>習慣を一度に増やしすぎて、続かなくなる</li><li>続かなかった日を責めて、やる気をなくす</li><li>睡眠時間を削ってまで、早起きしようとする</li><li>家族にも同じ習慣を、無理に押しつける</li><li>朝に完璧な時間割を作り、少し崩れると全部やめる</li></ul>\n<p>当てはまるものがあっても、気にしすぎないでください。直せる一つから、始めましょう。</p>\n<p>一週間続いたら、振り返りの時間を取りましょう。気持ちの変化、続けやすかった点、難しかった点を、一言ずつ書き出すだけで構いません。合わない習慣は手放し、合うものを残していくと、自分だけの朝の型ができあがります。</p>\n<p>家族と暮らしている方は、自分の習慣を静かに続けるだけで十分です。無理に勧めなくても、穏やかな朝の雰囲気は、家族にも自然と伝わっていきます。</p>\n<h3>4-2. 続けるための「くっつけ技」</h3>\n<p>新しい習慣は、すでにある習慣にくっつけると続きます。「歯みがきのあとに、白湯を飲む」「着替えたあとに、深呼吸を3回する」のように、流れの中に入れましょう。</p>\n<p>カレンダーに印をつけると、続いた日数が見えて、励みになります。休んだ日は空白のままで構いません。</p>\n<p>習慣づくりは、他の誰かと比べるものではありません。早起きの人が偉いわけでも、朝に何かをしている人が正しいわけでもありません。あなたの生活に合う形を、ゆっくり見つけていきましょう。</p>\n<h3>4-3. 朝がつらいと感じ続けるときは</h3>\n<p>工夫を試しても、朝に強い疲れや気分の落ち込みが長く続く、眠れない日が続くといったときは、一人で抱えず、医師や自治体の相談窓口に相談してください。本記事は診断や治療を行うものではありません。</p>\n<p>また、家庭の中で気持ちを話せる相手がいないと感じる方は、<a href=\"/column-detail-11\">家庭内の孤独との向き合い方</a>も読んでみてください。</p>"
       }
     ],
     "highlight_box": {
-      "title": "この記事のポイント",
+      "title": "朝の習慣で一日を整える、まとめ",
       "items": [
-        "・朝の光を浴びて、温かい飲み物をゆっくり飲む",
-        "・5分ほど、軽く体を動かす",
-        "・10分の余白を作って、焦りを減らす"
+        "・朝の数分が、<strong>一日の気持ちの土台</strong>になる",
+        "・まず<strong>習慣を一つだけ</strong>。カーテンを開けるだけでもよい",
+        "・光・温かい飲み物・軽い運動で<strong>体と気持ちを目覚めさせる</strong>",
+        "・予定は一度だけ確認し、<strong>10分の余白</strong>を作る",
+        "・睡眠は削らない。つらさが続くときは<strong>医師などに相談</strong>"
       ]
     },
     "faqs": [
       {
-        "q": "朝が苦手で、起きられません。",
-        "a": "まずは、寝る時間を少しずつ早めることから始めましょう。起きたらすぐ、カーテンを開けて光を浴びるのもおすすめです。"
+        "q": "朝が極端に苦手でも、習慣は身につくのでしょうか？",
+        "a": "朝が苦手な方こそ、小さな習慣が向いています。最初は「カーテンを開ける」だけにし、慣れたら次を足します。睡眠不足が原因のこともあるため、まず就寝時刻を少し早めることも検討しましょう。"
       },
       {
-        "q": "習慣が、三日坊主になります。",
-        "a": "一つだけ、簡単なことから始めましょう。続かなかった日があっても、気にせず再開すれば大丈夫です。"
+        "q": "家族の支度で忙しく、自分のための10分が取れないときはどうしますか？",
+        "a": "家族の準備を前の晩に済ませる、一部を分担するなど、時間を作る方法を相談してみましょう。それが難しければ、トイレや通勤中の1分深呼吸など、短い時間から始めても効果は期待できます。"
       },
       {
-        "q": "朝に時間がありません。",
-        "a": "前の晩に、服や持ち物を準備しておくと、朝の余裕が生まれます。5分でも、自分のための時間を作ってみましょう。"
+        "q": "習慣が三日坊主で終わってしまうのですが、どうすれば続けられますか？",
+        "a": "続かないのは意志の弱さではなく、習慣が大きすぎることが多いです。歯みがきのあとなど、既存の行動にくっつけ、1分でもできる形に縮めてみてください。休んだ日は責めず、翌日に戻れば大丈夫です。"
       }
-    ]
+    ],
+    "keywords": "朝の習慣,朝 気持ち 整える,朝の過ごし方,早起き,ゆとり",
+    "source_photo": "images/column_married_hobbies.webp"
   },
   {
     "vol": 8,
     "filename": "column-detail-8.html",
-    "banner_img": "images/column_chat.webp",
+    "banner_img": "images/banners/column-detail-8.webp",
     "headline": "既婚者同士のメッセージを自然に続ける、最初の挨拶と会う約束のコツ",
     "title": "既婚者同士のメッセージを自然に続ける、最初の挨拶と会う約束のコツ | Re.en Column",
     "description": "最初の一通は短く、相手の書いたことに触れ、質問は一つだけ。やり取りが続いたら、日時を絞った短時間の約束へ。例文とNG行動、想定ケース付きで解説します。",
@@ -5194,12 +5232,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "既婚者 メッセージ,最初の挨拶,やり取りのコツ,会う約束,既婚者 マナー",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_chat.webp"
   },
   {
     "vol": 9,
     "filename": "column-detail-9.html",
-    "banner_img": "images/column_circle.webp",
+    "banner_img": "images/banners/column-detail-9.webp",
     "headline": "40代既婚者の友達の作り方。サークル・習い事・コミュニティの選び方",
     "title": "40代既婚者の友達の作り方。サークル・習い事・コミュニティの選び方 | Re.en Column",
     "description": "40代で友達が減ったと感じる既婚者へ。サークル、習い事、地域活動、オンラインの場の特徴と、自分に合う選び方、続けるコツを一般論として整理します。",
@@ -5243,12 +5282,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "40代 友達作り,既婚者 友達,大人 サークル,習い事,既婚者 コミュニティ",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_circle.webp"
   },
   {
     "vol": 10,
     "filename": "column-detail-10.html",
-    "banner_img": "images/column_tokyobar.webp",
+    "banner_img": "images/banners/column-detail-10.webp",
     "headline": "大人の会食に向く店の選び方。静かで落ち着くバーやレストランの基準",
     "title": "大人の会食に向く店の選び方。静かで落ち着くバーやレストランの基準 | Re.en Column",
     "description": "大人同士の食事やお酒を楽しむ店の選び方を解説。静けさ、席の配置、予約と時間帯、会計マナーまで、落ち着いて過ごせる基準と避けたい行動をまとめます。",
@@ -5292,12 +5332,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "大人 会食,バー 選び方,落ち着いた店,食事 マナー,既婚者 デート 店選び",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_tokyobar.webp"
   },
   {
     "vol": 14,
     "filename": "column-detail-14.html",
-    "banner_img": "images/column_chat.webp",
+    "banner_img": "images/banners/column-detail-14.webp",
     "headline": "誰にも相談できない既婚者へ。安心して話せる相談相手の見つけ方",
     "title": "誰にも相談できない既婚者へ。安心して話せる相談相手の見つけ方 | Re.en Column",
     "description": "家族にも友人にも話せない悩みを抱える既婚者へ。相談先の種類、相手を選ぶ基準、話し方、依存や情報漏れを避ける注意点を、想定ケースを交えて解説します。",
@@ -5341,12 +5382,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "既婚者 相談相手,誰にも相談できない,孤独感,悩み 相談先,安心して話せる",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_chat.webp"
   },
   {
     "vol": 17,
     "filename": "column-detail-17.html",
-    "banner_img": "images/column_second_partner.webp",
+    "banner_img": "images/banners/column-detail-17.webp",
     "headline": "セカンドパートナーとは？意味・考え方と、向き合う前に知るべき注意点",
     "title": "セカンドパートナーとは？意味・考え方と、向き合う前に知るべき注意点 | Re.en Column",
     "description": "セカンドパートナーとは何か、言葉の意味や広がる背景、感じ方の違い、家庭との向き合い方を整理。法的な位置づけや依存のリスクなど、知っておきたい注意点も解説します。",
@@ -5390,12 +5432,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "セカンドパートナー とは,セカンドパートナー 意味,既婚者 心の拠り所,セカンドパートナー 注意点",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_second_partner.webp"
   },
   {
     "vol": 18,
     "filename": "column-detail-18.html",
-    "banner_img": "images/column_relationship.webp",
+    "banner_img": "images/banners/column-detail-18.webp",
     "headline": "セカンドパートナーと不倫の違いは？法的リスクと守るべき境界線",
     "title": "セカンドパートナーと不倫の違いは？法的リスクと守るべき境界線 | Re.en Column",
     "description": "セカンドパートナーと不倫の違いを、法律上の考え方、配偶者との信頼、依存のリスクから整理。呼び名で責任は変わらないこと、守るべき境界線と相談先を解説します。",
@@ -5439,12 +5482,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "セカンドパートナー 不倫 違い,不貞行為,既婚者 境界線,法的リスク,慰謝料",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_relationship.webp"
   },
   {
     "vol": 24,
     "filename": "column-detail-24.html",
-    "banner_img": "images/column_thirdplace.webp",
+    "banner_img": "images/banners/column-detail-24.webp",
     "headline": "既婚者のセックスレス、原因と向き合い方。心のつながりを取り戻す会話術",
     "title": "既婚者のセックスレス、原因と向き合い方。心のつながりを取り戻す会話術 | Re.en Column",
     "description": "セックスレスで悩む既婚者へ。原因の整理、切り出し方の例文、スキンシップの再開、専門家に相談する目安まで、心のつながりを大切にする向き合い方を解説します。",
@@ -5488,12 +5532,13 @@
     ],
     "category_name": "お悩み",
     "keywords": "セックスレス 既婚者,セックスレス 原因,夫婦 会話,スキンシップ,心のつながり",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_thirdplace.webp"
   },
   {
     "vol": 25,
     "filename": "column-detail-25.html",
-    "banner_img": "images/column_alibi.webp",
+    "banner_img": "images/banners/column-detail-25.webp",
     "headline": "離婚か、続けるか迷うとき。結論を急がず関係を見直す選択肢と整理の手順",
     "title": "離婚か、続けるか迷うとき。結論を急がず関係を見直す選択肢と整理の手順 | Re.en Column",
     "description": "離婚か結婚生活の継続か迷う既婚者へ。決断前に整理すること、対話・別居・専門家への相談など離婚以外の選択肢、お金と生活の確認項目を、断定せずに解説します。",
@@ -5537,12 +5582,13 @@
     ],
     "category_name": "お悩み",
     "keywords": "離婚 迷う,離婚しない 選択,夫婦関係 見直し,離婚 考え方,結婚生活 継続",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_alibi.webp"
   },
   {
     "vol": 26,
     "filename": "column-detail-26.html",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-26.webp",
     "headline": "スマホの通知・履歴・位置情報の設定。個人情報とアカウントを守る見直しの手順",
     "title": "スマホの通知・履歴・位置情報の設定。個人情報とアカウントを守る見直しの手順 | Re.en Column",
     "description": "ロック画面の通知、閲覧履歴、位置情報、アプリの権限など、スマホで見直したい設定を手順で解説。自分の個人情報とアカウントを第三者から守るための基本をまとめます。",
@@ -5586,12 +5632,13 @@
     ],
     "category_name": "プライバシー対策",
     "keywords": "スマホ 通知 設定,位置情報 設定,個人情報 保護,アカウント 保護,プライバシー設定",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 27,
     "filename": "column-detail-27.html",
-    "banner_img": "images/column_first_dinner.webp",
+    "banner_img": "images/banners/column-detail-27.webp",
     "headline": "既婚者同士の2回目のデートの誘い方。自然に距離を縮める会話とプランの選び方",
     "title": "既婚者同士の2回目のデートの誘い方。自然に距離を縮める会話とプランの選び方 | Re.en Column",
     "description": "初回の後、2回目に誘うタイミングと例文、断られにくいプランの選び方、避けたい行動を解説。既婚者同士ならではの配慮と、安全面の注意点もまとめます。",
@@ -5635,12 +5682,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "2回目 デート 誘い方,既婚者 デート,お礼メッセージ,デートプラン,距離の縮め方",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_first_dinner.webp"
   },
   {
     "vol": 28,
     "filename": "column-detail-28.html",
-    "banner_img": "images/column_lounge_etiquette.webp",
+    "banner_img": "images/banners/column-detail-28.webp",
     "headline": "平日の昼に会う既婚者のマナーと場所選び｜ランチで失敗しない時間帯と店の選び方",
     "title": "平日の昼に会う既婚者のマナーと場所選び｜ランチで失敗しない時間帯と店の選び方 | Re.en Column",
     "description": "平日の昼に会うなら、11時半〜13時台・60〜90分・個室ではなく人目のある静かな店が基本です。時間帯の考え方、店選び、当日のマナー、安全面の注意を具体例つきで整理します。",
@@ -5688,12 +5736,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "既婚者 平日 昼 会う,ランチ マナー,場所選び,初対面 安全,既婚者 ランチデート",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_lounge_etiquette.webp"
   },
   {
     "vol": 29,
     "filename": "column-detail-29.html",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-29.webp",
     "headline": "既婚者同士の関係を円満に終わらせる方法｜別れ話の切り出し方と引き際のマナー",
     "title": "既婚者同士の関係を円満に終わらせる方法｜別れ話の切り出し方と引き際のマナー | Re.en Column",
     "description": "関係を終えると決めたら、感情が高ぶる前に伝え、連絡を断つ範囲をはっきりさせるのが基本です。別れ話の言い回し、やってはいけない行動、終えた後の気持ちの整え方を解説します。",
@@ -5741,12 +5790,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "既婚者 関係 終わらせる,別れ方 マナー,別れ話 切り出し方,引き際,連絡 断つ",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 30,
     "filename": "column-detail-30.html",
-    "banner_img": "images/column_profile_tips.webp",
+    "banner_img": "images/banners/column-detail-30.webp",
     "headline": "マッチしないときの見直しポイント｜写真・プロフィール・最初のメッセージの直し方",
     "title": "マッチしないときの見直しポイント｜写真・プロフィール・最初のメッセージの直し方 | Re.en Column",
     "description": "マッチしない原因は、写真の印象、プロフィールの具体性、最初のメッセージの3つに分けて見直せます。個人情報を守りながら好印象を与える直し方を、例文つきで解説します。",
@@ -5794,12 +5844,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "マッチしない,既婚者 プロフィール 写真,最初のメッセージ,マッチング 改善,ニックネーム",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_profile_tips.webp"
   },
   {
     "vol": 31,
     "filename": "column-detail-31.html",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-31.webp",
     "headline": "夫へのイライラと体調不良が続くとき｜「夫源病」と言われる状態の整理とセルフケア",
     "title": "夫へのイライラと体調不良が続くとき｜「夫源病」と言われる状態の整理とセルフケア | Re.en Column",
     "description": "夫への強いストレスで不調を感じるとき、まず睡眠・食事・距離の取り方を整えましょう。夫源病という呼び名の意味、セルフケアの手順、受診を考える目安を解説します。診断ではありません。",
@@ -5847,12 +5898,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "夫源病,夫 イライラ 体調不良,ストレス セルフケア,夫婦 距離の取り方,頭痛 眠れない",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 32,
     "filename": "column-detail-32.html",
-    "banner_img": "images/column_secret_date.webp",
+    "banner_img": "images/banners/column-detail-32.webp",
     "headline": "夫から女性として見られないつらさ｜セックスレスの寂しさとの向き合い方と話し合いのコツ",
     "title": "夫から女性として見られないつらさ｜セックスレスの寂しさとの向き合い方と話し合いのコツ | Re.en Column",
     "description": "夫に触れられない寂しさは、自分の価値の問題ではありません。つらさの受け止め方、夫に気持ちを伝える言い方、第三者に相談する目安、気持ちの整え方を、女性の立場に寄り添って整理します。",
@@ -5900,12 +5952,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "セックスレス 女性 寂しい,夫 女として見られない,夫婦 スキンシップ,話し合い 切り出し方,自己肯定感",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_secret_date.webp"
   },
   {
     "vol": 33,
     "filename": "column-detail-33.html",
-    "banner_img": "images/column_chat.webp",
+    "banner_img": "images/banners/column-detail-33.webp",
     "headline": "ワンオペ育児で孤独なとき｜家庭の外に「大人として話せる居場所」をつくる方法",
     "title": "ワンオペ育児で孤独なとき｜家庭の外に「大人として話せる居場所」をつくる方法 | Re.en Column",
     "description": "ワンオペ育児の孤独は、頼れる先を小さく増やすことで軽くなります。自治体の支援、気軽な交流の場、オンラインの居場所の選び方と、安全面の注意を具体的に解説します。",
@@ -5953,12 +6006,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "ワンオペ育児 孤独,ママ 居場所,育児 息抜き,家庭内孤独,大人の交流",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_chat.webp"
   },
   {
     "vol": 34,
     "filename": "column-detail-34.html",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-34.webp",
     "headline": "夫に愛されていないと感じる寂しさ｜心が満たされないときの考え方と自分を支える習慣",
     "title": "夫に愛されていないと感じる寂しさ｜心が満たされないときの考え方と自分を支える習慣 | Re.en Column",
     "description": "愛情表現が減ると、寂しさや虚しさが強まります。その気持ちの整理の仕方、夫に伝える言葉、自分で心を満たす習慣、相談先を、女性の気持ちに寄り添って丁寧に解説します。",
@@ -6006,12 +6060,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "夫 愛されていない,寂しい 既婚女性,愛情表現,心が満たされない,夫婦 感謝",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 35,
     "filename": "column-detail-35.html",
-    "banner_img": "images/column_gift.webp",
+    "banner_img": "images/banners/column-detail-35.webp",
     "headline": "家事と育児に追われる主婦が「自分の時間」を取り戻す方法｜1日30分のつくり方",
     "title": "家事と育児に追われる主婦が「自分の時間」を取り戻す方法｜1日30分のつくり方 | Re.en Column",
     "description": "自分の時間は、1日30分から取り戻せます。家事の手放し方、家族への頼み方、すきま時間の使い方、罪悪感との付き合い方を、主婦の気持ちに寄り添って具体的に解説します。",
@@ -6059,12 +6114,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "主婦 自分の時間,家事 育児 忙しい,時間の作り方,家事 手放す,罪悪感",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_gift.webp"
   },
   {
     "vol": 36,
     "filename": "column-detail-36.html",
-    "banner_img": "images/column_married_hobbies.webp",
+    "banner_img": "images/banners/column-detail-36.webp",
     "headline": "子育てが一段落した後の虚無感｜空の巣症候群と呼ばれる気持ちの整え方と新しい居場所",
     "title": "子育てが一段落した後の虚無感｜空の巣症候群と呼ばれる気持ちの整え方と新しい居場所 | Re.en Column",
     "description": "子どもが巣立った後の寂しさは、多くの親が経験します。空の巣症候群と呼ばれる状態の捉え方、夫婦関係の見直し、趣味や人間関係の広げ方を、女性の気持ちに寄り添って解説します。",
@@ -6112,12 +6168,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "空の巣症候群,子育て 終わった 寂しい,子離れ,セカンドライフ,夫婦 二人の生活",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_married_hobbies.webp"
   },
   {
     "vol": 39,
     "filename": "column-detail-39.html",
-    "banner_img": "images/column_distance.webp",
+    "banner_img": "images/banners/column-detail-39.webp",
     "headline": "夫の言動にイライラしたときの対処法｜夫婦関係を保つ「心の境界線」の引き方",
     "title": "夫の言動にイライラしたときの対処法｜夫婦関係を保つ「心の境界線」の引き方 | Re.en Column",
     "description": "夫へのイライラは、境界線の引き方で和らぎます。感情が高ぶったときの対処、伝え方の例文、自分の時間と空間の守り方を、そのまま使える言い回しつきで解説します。",
@@ -6165,12 +6222,13 @@
     ],
     "category_name": "プライバシー対策",
     "keywords": "夫 イライラ 対処,夫婦 境界線,感情コントロール,夫婦関係 距離感,アンガーマネジメント",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_distance.webp"
   },
   {
     "vol": 41,
     "filename": "column-detail-41.html",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-41.webp",
     "headline": "既婚者マッチングの二要素認証とパスコード設定。アカウントを守る基本と手順",
     "title": "既婚者マッチングの二要素認証とパスコード設定。アカウントを守る基本と手順 | Re.en Column",
     "description": "二要素認証は、パスワードに加えてもう1つの確認を求める守り方です。仕組み、選び方、スマホの画面ロックやパスコードの決め方、紛失時の備えを手順で解説します。設定の手順も紹介します。",
@@ -6214,12 +6272,13 @@
     ],
     "category_name": "プライバシー対策",
     "keywords": "二要素認証,パスコード,アカウント保護,既婚者マッチング,スマホ 画面ロック,不正ログイン",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 42,
     "filename": "column-detail-42.html",
-    "banner_img": "images/column_chat.webp",
+    "banner_img": "images/banners/column-detail-42.webp",
     "headline": "既婚者同士の最初のメッセージ。好印象の書き方と返信が続く例文集",
     "title": "既婚者同士の最初のメッセージ。好印象の書き方と返信が続く例文集 | Re.en Column",
     "description": "最初のメッセージは短く、相手のプロフィールに触れ、答えやすい質問を1つ添えるのが基本です。そのまま使える例文、避けたい書き方、返信が来ないときの考え方を紹介します。",
@@ -6263,12 +6322,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "最初のメッセージ,既婚者,例文,自己紹介,返信が来ない,会話の続け方",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_chat.webp"
   },
   {
     "vol": 44,
     "filename": "column-detail-44.html",
-    "banner_img": "images/column_security.webp",
+    "banner_img": "images/banners/column-detail-44.webp",
     "headline": "ブラウザのシークレットモードと履歴の基本。共有パソコンで個人情報を守る方法",
     "title": "ブラウザのシークレットモードと履歴の基本。共有パソコンで個人情報を守る方法 | Re.en Column",
     "description": "シークレットモードは履歴を端末に残さない機能で、通信を匿名にするものではありません。仕組みの限界、共有パソコンでのログアウトや履歴の消し方、安全な使い方を解説します。",
@@ -6312,12 +6372,13 @@
     ],
     "category_name": "プライバシー対策",
     "keywords": "シークレットモード,履歴削除,共有パソコン,ログアウト,個人情報保護,ブラウザ",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_security.webp"
   },
   {
     "vol": 45,
     "filename": "column-detail-45.html",
-    "banner_img": "images/column_first_dinner.webp",
+    "banner_img": "images/banners/column-detail-45.webp",
     "headline": "既婚者のカフェデート。静かで落ち着いて話せるカフェの選び方と安全の心得",
     "title": "既婚者のカフェデート。静かで落ち着いて話せるカフェの選び方と安全の心得 | Re.en Column",
     "description": "初めて会う場所は、明るい時間帯の公共の場が基本です。静かで話しやすいカフェを選ぶ条件、席の取り方、会計や帰り方のマナー、安全面の注意をチェックリストで紹介します。",
@@ -6361,12 +6422,13 @@
     ],
     "category_name": "出会いのコツ",
     "keywords": "カフェデート,既婚者,静かなカフェ,初対面,場所の選び方,マナー",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_first_dinner.webp"
   },
   {
     "vol": 46,
     "filename": "column-detail-46.html",
-    "banner_img": "images/column_profile_tips.webp",
+    "banner_img": "images/banners/column-detail-46.webp",
     "headline": "既婚者マッチングのプロフィール写真の選び方。撮り方・加工と個人情報の出し方",
     "title": "既婚者マッチングのプロフィール写真の選び方。撮り方・加工と個人情報の出し方 | Re.en Column",
     "description": "プロフィール写真は、印象と安全の両方を考えて選びます。撮り方や加工の範囲、背景や位置情報の注意、写真のぼかしの活用、載せてよい個人情報の目安をまとめて解説します。",
@@ -6410,12 +6472,13 @@
     ],
     "category_name": "プライバシー対策",
     "keywords": "プロフィール写真,撮り方,加工,個人情報,写真のぼかし,既婚者マッチング",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_profile_tips.webp"
   },
   {
     "vol": 47,
     "filename": "column-detail-47.html",
-    "banner_img": "images/column_friends.webp",
+    "banner_img": "images/banners/column-detail-47.webp",
     "headline": "プラトニックな関係とは。精神的なつながりを大切にするセカンドパートナーのルール",
     "title": "プラトニックな関係とは。精神的なつながりを大切にするセカンドパートナーのルール | Re.en Column",
     "description": "プラトニックな関係は、体の関係を前提とせず、会話や共感を支えにするつながりです。価値と限界、守りたいルール、感情が深まりすぎたときの考え方を、家庭を第一に解説します。",
@@ -6459,12 +6522,13 @@
     ],
     "category_name": "セカンドパートナー",
     "keywords": "プラトニック,セカンドパートナー,精神的なつながり,既婚者,ルール,距離感",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_friends.webp"
   },
   {
     "vol": 49,
     "filename": "column-detail-49.html",
-    "banner_img": "images/column_relationship.webp",
+    "banner_img": "images/banners/column-detail-49.webp",
     "headline": "仮面夫婦のストレスと限界。子どものために続ける日々の心の整え方",
     "title": "仮面夫婦のストレスと限界。子どものために続ける日々の心の整え方 | Re.en Column",
     "description": "仮面夫婦のつらさは、感情を抑え続けることから生まれます。ストレスのサイン、日常で心を整える方法、限界を感じたときの考え方と相談先を、具体的な手順で説明します。設定の手順も紹介します。",
@@ -6508,12 +6572,13 @@
     ],
     "category_name": "お悩み",
     "keywords": "仮面夫婦,ストレス,限界,子どものため,心の整え方,夫婦関係",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_relationship.webp"
   },
   {
     "vol": 51,
     "filename": "column-detail-51.html",
-    "banner_img": "images/column_tokyobar.webp",
+    "banner_img": "images/banners/column-detail-51.webp",
     "headline": "「このままでいいのか」と感じる30代・40代へ。中年期の揺らぎの乗り越え方",
     "title": "「このままでいいのか」と感じる30代・40代へ。中年期の揺らぎの乗り越え方 | Re.en Column",
     "description": "仕事も家庭も安定しているのに、むなしさや焦りを感じる。いわゆる中年期の揺らぎの背景と、心を整える具体的な手順、大きな決断を急がない考え方、相談先を解説します。設定の手順も紹介します。",
@@ -6557,6 +6622,7 @@
     ],
     "category_name": "お悩み",
     "keywords": "ミッドライフクライシス,中年の危機,このままでいいのか,30代 40代,既婚者,心の整え方",
-    "authored": true
+    "authored": true,
+    "source_photo": "images/column_tokyobar.webp"
   }
 ]

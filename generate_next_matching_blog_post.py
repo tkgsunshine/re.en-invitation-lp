@@ -5,7 +5,7 @@ import datetime
 
 WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 CALENDAR_PATH = os.path.join(WORKSPACE_DIR, "editorial_calendar_matching.json")
-TEMPLATE_PATH = os.path.join(WORKSPACE_DIR, "column-detail-52.html")
+TEMPLATE_PATH = os.path.join(WORKSPACE_DIR, "templates", "column-template.html")
 
 def get_num(name):
     if name == "column-detail.html":

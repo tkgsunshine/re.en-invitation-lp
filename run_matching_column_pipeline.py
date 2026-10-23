@@ -49,6 +49,10 @@ def main():
             print("[Guard Active] Pipeline finished cleanly with 0 changes.")
             sys.exit(0)
     
+    # 0. Build unique banner images for every calendar entry (no more reused photos)
+    print("\n--- Step 0: Generating unique column banners ---")
+    subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "scripts", "generate_column_banners.py")], check=True)
+
     # 1. Run generate_next_matching_blog_post.py
     print("\n--- Step 1: Generating next scheduled blog post template ---")
     subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "generate_next_matching_blog_post.py")], check=True)
