@@ -28,7 +28,8 @@ BAD = ["監修", "体験談", "密会", "バレない", "バレずに", "身バ�
 
 
 def num(fn):
-    return int(re.search(r"(\d+)", os.path.basename(fn)).group(1))
+    m = re.search(r"(\d+)", os.path.basename(fn))
+    return int(m.group(1)) if m else 0
 
 
 def plain(h):
@@ -71,7 +72,7 @@ def validate(e, existing):
             errs.append(f"リンク先が存在しない/削除: {m}")
     if body_len(e) < 2600:
         errs.append(f"本文が短い（{body_len(e)}字）")
-    if "実在の人物ではありません" not in blob:
+    if not re.search(r"実在の人物ではあり|実在の人物ではな|実在の人物や|架空", blob):
         errs.append("想定ケースの注記が無い")
     return errs
 

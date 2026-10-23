@@ -73,6 +73,10 @@ def main():
     print("\n--- Step 6: Applying complete SEO optimizations (OGP, Twitter Cards, JSON-LD) ---")
     subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "apply_complete_seo_fix.py")], check=True)
     
+    # 6b. Normalize <head> (OGP/canonical/JSON-LD), related articles and sidebar
+    print("\n--- Step 6b: Normalizing column page head and related articles ---")
+    subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "scripts", "normalize_column_head.py")], check=True)
+
     # 7. Git Commit & Push to GitHub (with pull --rebase)
     print("\n--- Step 7: Committing & Pushing to GitHub ---")
     try:
