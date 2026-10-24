@@ -33,9 +33,15 @@
   <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
   <script defer src="/_vercel/insights/script.js"></script>
   <style>
-    .about{max-width:760px;margin:0 auto;padding:120px 20px 80px}
-    .about__title{font-family:'Noto Serif JP',serif;font-size:1.9rem;text-align:center;margin:0 0 12px}
-    .about__lead{text-align:center;color:var(--color-primary);letter-spacing:.12em;margin:0 0 48px}
+    .about-hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 20px 100px;background:linear-gradient(180deg,rgba(11,11,12,.45) 0%,rgba(11,11,12,.55) 55%,#0B0B0C 100%),url('images/column_thirdplace.webp') center/cover no-repeat}
+    .about-hero__inner{max-width:720px}
+    .about-hero__label{display:inline-block;color:var(--color-primary);letter-spacing:.3em;font-size:.8rem;border:1px solid rgba(191,169,120,.5);border-radius:999px;padding:6px 18px;margin:0 0 28px;background:rgba(11,11,12,.35)}
+    .about-hero__title{font-family:'Noto Serif JP',serif;font-size:clamp(1.9rem,6vw,3.2rem);line-height:1.5;margin:0 0 24px;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+    .about-hero__title em{font-style:normal;color:var(--color-primary)}
+    .about-hero__copy{line-height:2;margin:0 0 36px;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+    .about-hero__badges{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:0;margin:0 0 36px}
+    .about-hero__badges li{font-size:.85rem;padding:6px 14px;border-radius:999px;background:rgba(11,11,12,.55);border:1px solid rgba(191,169,120,.35)}
+    .about{max-width:760px;margin:0 auto;padding:40px 20px 80px}
     .about__sec{margin:0 0 56px}
     .about__sec h2{font-family:'Noto Serif JP',serif;font-size:1.35rem;margin:0 0 20px;padding-left:14px;border-left:3px solid var(--color-primary)}
     .about__sec p{line-height:2;margin:0 0 1.2em}
@@ -96,14 +102,17 @@
     </div>
   </nav>
 
-    <main class="about">
-    <h1 class="about__title">Re.enに込めた想い</h1>
-    <p class="about__lead">Re.en（リエン）運営より</p>
+    <section class="about-hero">
+    <div class="about-hero__inner">
+      <span class="about-hero__label">OUR STORY</span>
+      <h1 class="about-hero__title">既婚者が、<br>心から安心できる<br><em>もうひとつの居場所</em>を。</h1>
+      <p class="about-hero__copy">運営が込めた想いと、<br>大切にしている約束をお伝えします。</p>
+      <ul class="about-hero__badges"><li>完全審査制</li><li>強固なセキュリティ</li><li>写真ぼかし標準対応</li></ul>
+      <a href="preregister.html#entry-form" class="btn btn--primary">事前登録はこちら</a>
+    </div>
+  </section>
 
-    <figure class="about__img">
-      <img src="images/column_thirdplace.webp" alt="夕暮れの東京を望む、落ち着いたテラスラウンジ" width="1024" height="1024">
-    </figure>
-
+  <main class="about">
     <section class="about__sec">
       <h2>なぜ、Re.enをつくるのか</h2>
       <p>【仮文案】家庭や仕事で多くの役割を担う毎日の中で、「誰にも言えない孤独」を抱えている方は、決して少なくありません。配偶者への感謝や責任を大切にしながらも、ふと一人の人間としての自分に戻れる時間や、安心して話せる相手を求めている。そんな本音に、私たちは真剣に向き合いたいと考えました。</p>
