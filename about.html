@@ -26,19 +26,23 @@
     <!-- Google Fonts Preconnect and Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet"></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&family=Oswald:wght@500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700&family=Oswald:wght@500;700&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="index.css?v=1.90">
   <link rel="canonical" href="https://re-en.jp/about">
   <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
   <script defer src="/_vercel/insights/script.js"></script>
   <style>
-    .about-hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:140px 20px 100px;background:linear-gradient(180deg,rgba(11,11,12,.45) 0%,rgba(11,11,12,.55) 55%,#0B0B0C 100%),url('images/column_thirdplace.webp') center/cover no-repeat}
+    .about-hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:130px 20px 110px;background:linear-gradient(180deg,rgba(11,11,12,.45) 0%,rgba(11,11,12,.6) 50%,#0B0B0C 100%),url('images/column_thirdplace.webp') center/cover no-repeat}
+    .about-hero__msg,.about{font-family:'Shippori Mincho','Noto Serif JP',serif}
+    .about__sec h2,.about__promise strong{font-family:'Shippori Mincho','Noto Serif JP',serif;font-weight:700}
     .about-hero__inner{max-width:720px}
     .about-hero__label{display:inline-block;color:var(--color-primary);letter-spacing:.3em;font-size:.8rem;border:1px solid rgba(191,169,120,.5);border-radius:999px;padding:6px 18px;margin:0 0 28px;background:rgba(11,11,12,.35)}
-    .about-hero__title{font-family:'Noto Serif JP',serif;font-size:clamp(1.9rem,6vw,3.2rem);line-height:1.5;margin:0 0 24px;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+    .about-hero__title{font-family:'Shippori Mincho','Noto Serif JP',serif;font-weight:700;letter-spacing:.04em;font-size:clamp(1.9rem,6vw,3.2rem);line-height:1.5;margin:0 0 24px;text-shadow:0 2px 20px rgba(0,0,0,.5)}
     .about-hero__title em{font-style:normal;color:var(--color-primary)}
-    .about-hero__copy{text-wrap:balance;line-height:2.1;font-size:1.05rem;margin:0;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+    .about-hero__msg{max-width:640px;margin:0 auto;text-align:left}
+    .about-hero__msg p{line-height:2.1;font-size:1.02rem;margin:0 0 1.1em;text-shadow:0 1px 12px rgba(0,0,0,.7)}
+    .about-hero__msg p:last-child{margin-bottom:0}
     .about-hero__badges{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:0;margin:0 0 36px}
     .about-hero__badges li{font-size:.85rem;padding:6px 14px;border-radius:999px;background:rgba(11,11,12,.55);border:1px solid rgba(191,169,120,.35)}
     .about{max-width:760px;margin:0 auto;padding:40px 20px 80px}
@@ -106,22 +110,17 @@
     <div class="about-hero__inner">
       <span class="about-hero__label">OUR STORY</span>
       <h1 class="about-hero__title">日常の少し外側に、<br><em>上質な居場所</em>を。</h1>
-      <p class="about-hero__copy">【仮文案】家庭や仕事で多くの役割を担う毎日の中で、ふと一人の人間に戻れる時間と、安心して心を開ける場所を。私たちは、その想いに真剣に向き合います。</p>
+      <div class="about-hero__msg">
+        <p>朝から晩まで、誰かのために動き続けてきた。家族のため、仕事のため、気づけば「自分」はいつも後回し。</p>
+        <p>それでも、不満があるわけじゃない。大切な人への感謝も、守りたいものへの責任も、ちゃんと胸にある。だからこそ、胸の奥にしまい込んだ寂しさを、誰にも言えずにいる。</p>
+        <p>そんなあなたに、肩書きも役割もそっと置いて、ただ一人の人間として呼吸できる場所を届けたい。それが、Re.enを作った私たちの、いちばんの願いです。</p>
+        <p>だから私たちは、数を追いません。一人ひとりを丁寧に迎え入れ、あなたの大切なものを、全力で守ります。</p>
+        <p>ここが、明日をもう少しやさしい気持ちで迎えるための、静かな居場所になりますように。</p>
+      </div>
     </div>
   </section>
 
   <main class="about">
-    <section class="about__sec">
-      <h2>なぜ、Re.enをつくるのか</h2>
-      <p>【仮文案】家庭や仕事で多くの役割を担う毎日の中で、「誰にも言えない孤独」を抱えている方は、決して少なくありません。配偶者への感謝や責任を大切にしながらも、ふと一人の人間としての自分に戻れる時間や、安心して話せる相手を求めている。そんな本音に、私たちは真剣に向き合いたいと考えました。</p>
-      <p>既婚者だからこそ感じる気がかりや不安に、きちんと配慮されたサービスが必要だと感じたことが、Re.en（リエン）の出発点です。</p>
-    </section>
-
-    <section class="about__sec">
-      <h2>Re.enが目指すもの</h2>
-      <p>【仮文案】Re.enは、完全審査制のもとで、誠実で落ち着いた大人同士が出会える場所を目指しています。数を競うのではなく、一人ひとりが安心して過ごせる質を何より大切にします。</p>
-    </section>
-
     <section class="about__sec">
       <h2>私たちの約束</h2>
       <ul class="about__promise">
@@ -134,7 +133,7 @@
 
     <section class="about__sec">
       <h2>これから出会うあなたへ</h2>
-      <p>【仮文案】Re.enが、日常の少し外側にある、穏やかで心地よい「もうひとつの居場所」になれたら嬉しく思います。創設メンバーとして、私たちと一緒にこの場所を育てていただけませんか。</p>
+      <p>Re.enが、日常の少し外側にある、穏やかで心地よい「もうひとつの居場所」になれたら嬉しく思います。創設メンバーとして、私たちと一緒にこの場所を育てていただけませんか。</p>
       <figure class="about__img about__img--side">
         <img src="images/column_distance.webp" alt="夕景の高層階から街を眺める女性" width="1024" height="1024" loading="lazy">
       </figure>
