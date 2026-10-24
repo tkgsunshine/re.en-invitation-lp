@@ -49,6 +49,10 @@ def main():
             print("[Guard Active] Pipeline finished cleanly with 0 changes.")
             sys.exit(0)
     
+    # 0. Build unique banner images for every calendar entry (no more reused photos)
+    print("\n--- Step 0: Generating unique column banners ---")
+    subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "scripts", "generate_column_banners.py")], check=True)
+
     # 1. Run generate_next_matching_blog_post.py
     print("\n--- Step 1: Generating next scheduled blog post template ---")
     subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "generate_next_matching_blog_post.py")], check=True)
@@ -73,6 +77,10 @@ def main():
     print("\n--- Step 6: Applying complete SEO optimizations (OGP, Twitter Cards, JSON-LD) ---")
     subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "apply_complete_seo_fix.py")], check=True)
     
+    # 6b. Normalize <head> (OGP/canonical/JSON-LD), related articles and sidebar
+    print("\n--- Step 6b: Normalizing column page head and related articles ---")
+    subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "scripts", "normalize_column_head.py")], check=True)
+
     # 7. Git Commit & Push to GitHub (with pull --rebase)
     print("\n--- Step 7: Committing & Pushing to GitHub ---")
     try:

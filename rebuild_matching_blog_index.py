@@ -254,7 +254,8 @@ def main():
         ("https://re-en.jp/privacy", "0.5", "monthly", None),
         ("https://re-en.jp/term", "0.5", "monthly", None),
         ("https://re-en.jp/tokushoho", "0.5", "monthly", None),
-        ("https://re-en.jp/company", "0.5", "monthly", None)
+        ("https://re-en.jp/company", "0.5", "monthly", None),
+        ("https://re-en.jp/about", "0.5", "monthly", None)
     ]
 
     for meta in detail_meta_list:
