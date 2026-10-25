@@ -36,6 +36,19 @@ def check_double_publish_guard(max_interval_seconds=14400):
         print(f"[Guard Notice] Double-post check warning: {e}")
     return False
 
+def ensure_banner_dependencies():
+    """GitHub Actions の実行環境には Pillow と日本語フォントが入っていないため、足りなければ入れる。
+    失敗しても例外は出さない（バナー生成だけを飛ばし、公開は続ける）。"""
+    try:
+        import PIL  # noqa: F401
+    except ImportError:
+        print("[Banner Setup] Installing Pillow...")
+        subprocess.run([sys.executable, "-m", "pip", "install", "--quiet", "pillow"], check=False)
+    fonts = ["/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf", "/usr/share/fonts/truetype/fonts-japanese-gothic.ttf"]
+    if not any(os.path.exists(f) for f in fonts):
+        print("[Banner Setup] Installing Japanese font (fonts-ipafont-gothic)...")
+        subprocess.run("sudo apt-get install -y -qq fonts-ipafont-gothic", shell=True, check=False)
+
 def main():
     parser = argparse.ArgumentParser(description="Married Matching LP Column Automation Pipeline")
     parser.add_argument("--force", action="store_true", help="Bypass the double-publish guard")
@@ -51,7 +64,12 @@ def main():
     
     # 0. Build unique banner images for every calendar entry (no more reused photos)
     print("\n--- Step 0: Generating unique column banners ---")
-    subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "scripts", "generate_column_banners.py")], check=True)
+    ensure_banner_dependencies()
+    try:
+        subprocess.run(["python3", os.path.join(WORKSPACE_DIR, "scripts", "generate_column_banners.py")], check=True)
+    except Exception as e:
+        # 画像が作れなくても、記事の公開は止めない（記事はカレンダーの banner_img を使う）
+        print(f"[Banner Notice] Banner generation skipped: {e}")
 
     # 1. Run generate_next_matching_blog_post.py
     print("\n--- Step 1: Generating next scheduled blog post template ---")
