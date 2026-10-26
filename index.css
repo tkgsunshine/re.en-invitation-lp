@@ -3955,7 +3955,12 @@ button {
     gap: 24px;
   }
   .column-card__thumb {
-    height: 200px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+  .article-hero-thumb {
+    height: auto;
+    aspect-ratio: 16 / 9;
   }
   .article-header__title {
     font-size: 1.6rem;
