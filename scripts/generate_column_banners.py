@@ -110,6 +110,9 @@ def make(n, headline, category, src_photo):
 
 def main():
     force = "--force" in sys.argv
+    if not any(os.path.exists(f) for f in FONTS):
+        print("日本語フォントが無いため、バナー生成を飛ばします（文字化けした画像を作らない）。")
+        return
     cp = os.path.join(ROOT, "editorial_calendar_matching.json")
     cal = json.load(open(cp, encoding="utf-8"))
     made = 0
