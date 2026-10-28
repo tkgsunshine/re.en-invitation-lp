@@ -23,6 +23,8 @@ module.exports = async function handler(req, res) {
     const data = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
     const logEntry = {
       timestamp: new Date().toISOString(),
+      nickname: String(data.nickname || data['ニックネーム'] || '').slice(0, 30),
+      occupation: data.occupation || data['職業'] || '',
       gender: data.gender || data['性別'] || '',
       age: data.age || data['年代'] || '',
       income: data.income || data['年収'] || '',
