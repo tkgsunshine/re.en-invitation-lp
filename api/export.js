@@ -1,6 +1,6 @@
 // 事前登録の一覧（Vercel Blob）を、集計JSONまたはCSVで返す管理用API。
 // 合言葉は環境変数 ADMIN_EXPORT_KEY。ヘッダ x-export-key か ?key= で渡す。未設定のときは常に503を返す。
-// GET /api/export            → 集計JSON（件数・性別・年代・年収・日別）
+// GET /api/export            → 集計JSON（件数・性別・職業・年代・年収・日別）
 // GET /api/export?view=1     → 合言葉を入れて集計とCSVを見る管理画面（HTML）
 // GET /api/export?format=csv → 登録者一覧のCSV（Excel向けにBOM付きUTF-8）
 const crypto = require('crypto');
@@ -24,7 +24,7 @@ rows.forEach(function(r){var d=document.createElement('div');d.className='r';var
 var t=document.createElement('span');t.className='t';var f=document.createElement('span');f.className='f';f.style.width=Math.round(r[1]/m*100)+'%';t.appendChild(f);
 var n=document.createElement('span');n.className='n';n.textContent=r[1];d.appendChild(a);d.appendChild(t);d.appendChild(n);body.appendChild(d)})}
 document.getElementById('go').onclick=function(){st.textContent='読み込み中…';call().then(function(d){body.textContent='';
-document.getElementById('tot').textContent='　'+d.total+'件（メール '+d.uniqueEmails+'件）';bars('性別',d.gender);bars('年代',d.age);bars('年収',d.income);bars('日別の件数',d.byDay);
+document.getElementById('tot').textContent='　'+d.total+'件（メール '+d.uniqueEmails+'件）';bars('性別',d.gender);bars('職業',d.occupation);bars('年代',d.age);bars('年収',d.income);bars('日別の件数',d.byDay);
 document.getElementById('csv').hidden=false;st.textContent='更新しました'},function(e){if(e)st.textContent=e.message})};
 document.getElementById('csv').onclick=function(){call('csv').then(function(b){var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='reen-registrations.csv';document.body.appendChild(a);a.click();a.remove()},function(e){if(e)st.textContent=e.message})};
 </script></body></html>`;
@@ -97,11 +97,11 @@ module.exports = async function handler(req, res) {
     const rows = await readAll();
 
     if (req.query && req.query.format === 'csv') {
-      const header = ['登録日時(JST)', '性別', '年代', '年収', 'メールアドレス', 'ご要望・ご期待'];
+      const header = ['登録日時(JST)', 'ニックネーム', '職業', '性別', '年代', '年収', 'メールアドレス', 'ご要望・ご期待'];
       const lines = [header.map(csvCell).join(',')];
       for (const r of rows) {
         const jst = new Date(new Date(r.timestamp).getTime() + 9 * 3600 * 1000).toISOString().replace('T', ' ').slice(0, 19);
-        lines.push([jst, r.gender, r.age, r.income, r.email, r.feedback].map(csvCell).join(','));
+        lines.push([jst, r.nickname, r.occupation, r.gender, r.age, r.income, r.email, r.feedback].map(csvCell).join(','));
       }
       res.setHeader('Content-Type', 'text/csv; charset=utf-8');
       res.setHeader('Content-Disposition', 'attachment; filename="reen-registrations.csv"');
@@ -116,6 +116,7 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({
       total: rows.length,
       uniqueEmails: new Set(rows.map((r) => String(r.email || '').toLowerCase()).filter(Boolean)).size,
+      occupation: tally(rows, 'occupation'),
       gender: tally(rows, 'gender'),
       age: tally(rows, 'age'),
       income: tally(rows, 'income'),

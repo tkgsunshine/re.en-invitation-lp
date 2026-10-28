@@ -102,6 +102,65 @@
           <p style="margin: 10px 0 0; padding: 12px 14px; background: rgba(191, 169, 120, 0.08); border: 1px solid rgba(191, 169, 120, 0.35); border-radius: 8px; font-size: clamp(0.72rem, 3.2vw, 0.8rem); color: var(--color-text-white); line-height: 1.7;">ご登録内容は、法令に基づく場合を除き第三者に公開・提供しません。</p>
         </div>
 
+        <div>
+          <label for="reg-nickname" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">ニックネーム <span style="color: var(--color-primary);">*</span></label>
+          <input type="text" id="reg-nickname" required maxlength="30" autocomplete="nickname" placeholder="例：さくら" style="width: 100%; padding: 12px 14px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 0.88rem; outline: none; box-sizing: border-box;">
+        </div>
+
+        <div>
+          <label for="reg-occupation" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">職業 <span style="color: var(--color-primary);">*</span></label>
+          <select id="reg-occupation" required style="width: 100%; padding: 12px 14px; background: rgba(30,30,35,0.95); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 0.88rem; outline: none; box-sizing: border-box;">
+              <option value="">選択して下さい</option>
+              <option value="専業主婦・主夫">専業主婦・主夫</option>
+              <option value="パート・アルバイト">パート・アルバイト</option>
+              <option value="経営者・役員">経営者・役員</option>
+              <option value="大手日系企業">大手日系企業</option>
+              <option value="大手外資企業">大手外資企業</option>
+              <option value="総合商社">総合商社</option>
+              <option value="専門商社">専門商社</option>
+              <option value="日系金融">日系金融</option>
+              <option value="外資金融">外資金融</option>
+              <option value="医師">医師</option>
+              <option value="歯科医師">歯科医師</option>
+              <option value="弁護士・司法書士">弁護士・司法書士</option>
+              <option value="公認会計士">公認会計士</option>
+              <option value="税理士">税理士</option>
+              <option value="パイロット">パイロット</option>
+              <option value="客室乗務員">客室乗務員</option>
+              <option value="フリーランス">フリーランス</option>
+              <option value="公務員">公務員</option>
+              <option value="不動産">不動産</option>
+              <option value="建設・建築">建設・建築</option>
+              <option value="商社・流通">商社・流通</option>
+              <option value="コンサル">コンサル</option>
+              <option value="IT関連">IT関連</option>
+              <option value="広告・マスコミ">広告・マスコミ</option>
+              <option value="芸能・モデル">芸能・モデル</option>
+              <option value="看護師">看護師</option>
+              <option value="介護・福祉">介護・福祉</option>
+              <option value="薬剤師">薬剤師</option>
+              <option value="調理師・栄養士">調理師・栄養士</option>
+              <option value="保育士">保育士</option>
+              <option value="歯科衛生士・助手">歯科衛生士・助手</option>
+              <option value="農業・畜産">農業・畜産</option>
+              <option value="食品関連">食品関連</option>
+              <option value="流通・卸">流通・卸</option>
+              <option value="製造・工場">製造・工場</option>
+              <option value="旅行関連">旅行関連</option>
+              <option value="製薬">製薬</option>
+              <option value="教育関連">教育関連</option>
+              <option value="事務・受付">事務・受付</option>
+              <option value="秘書">秘書</option>
+              <option value="アパレル・ショップ">アパレル・ショップ</option>
+              <option value="美容関連">美容関連</option>
+              <option value="飲食・サービス業">飲食・サービス業</option>
+              <option value="店舗・小売">店舗・小売</option>
+              <option value="清掃業">清掃業</option>
+              <option value="学生">学生</option>
+              <option value="その他">その他</option>
+          </select>
+        </div>
+
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
           <div>
             <label for="reg-gender" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">性別 <span style="color: var(--color-primary);">*</span></label>
@@ -138,6 +197,11 @@
             <option value="5,000万円〜1億円">5,000万円〜1億円</option>
             <option value="1億円以上">1億円以上</option>
           </select>
+        </div>
+
+        <div>
+          <label for="reg-feedback" style="display: block; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--color-text-white);">ご要望・ご意見 <span style="font-size: 0.72rem; padding: 2px 6px; background: rgba(255,255,255,0.08); color: var(--color-text-muted); border-radius: 2px; margin-left: 6px; font-weight: 400;">任意</span></label>
+          <textarea id="reg-feedback" rows="3" maxlength="1000" placeholder="サービスへのご要望やご意見があればご自由にご記入ください" style="width: 100%; padding: 12px 14px; background: rgba(255,255,255,0.05); border: 1px solid var(--color-border-light); border-radius: 8px; color: #fff; font-size: 0.88rem; font-family: inherit; outline: none; box-sizing: border-box; resize: vertical;"></textarea>
         </div>
 
         <!-- Privacy Policy Agreement Checkbox -->
@@ -213,6 +277,9 @@
     e.preventDefault();
 
     const emailVal = document.getElementById('reg-email') ? document.getElementById('reg-email').value.trim() : '';
+    const nicknameVal = document.getElementById('reg-nickname') ? document.getElementById('reg-nickname').value.trim() : '';
+    const occupationVal = document.getElementById('reg-occupation') ? document.getElementById('reg-occupation').value : '';
+    const feedbackVal = document.getElementById('reg-feedback') ? document.getElementById('reg-feedback').value.trim() : '';
     const genderVal = document.getElementById('reg-gender') ? document.getElementById('reg-gender').value : '';
     const ageVal = document.getElementById('reg-age') ? document.getElementById('reg-age').value : '';
     const incomeVal = document.getElementById('reg-income') ? document.getElementById('reg-income').value : '';
@@ -240,9 +307,12 @@
       hiddenForm.target = 'ssgform-target-iframe';
 
       const fields = {
+        'ニックネーム': nicknameVal,
+        '職業': occupationVal,
         '性別': genderVal,
         '年代': ageVal,
         '年収': incomeVal,
+        'ご要望・ご期待': feedbackVal,
         'メールアドレス': emailVal
       };
 
@@ -264,9 +334,12 @@
     // 2. Vercel Server & LocalStorage データ記録
     try {
       const entry = {
+        nickname: nicknameVal,
+        occupation: occupationVal,
         gender: genderVal,
         age: ageVal,
         income: incomeVal,
+        feedback: feedbackVal,
         email: emailVal,
         timestamp: new Date().toISOString()
       };

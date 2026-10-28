@@ -354,6 +354,69 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
               </div>
 
+              <!-- Nickname & Occupation -->
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label class="form-group__label" style="margin-bottom: 8px;">
+                  ニックネーム <span class="form-group__required" style="border-radius: 2px;">必須</span>
+                </label>
+                <input type="text" id="prereg-nickname" class="form-group__input" maxlength="30" autocomplete="nickname" placeholder="例：さくら" style="font-size: 0.95rem; padding: 12px 14px; border-radius: 6px;">
+              </div>
+              <div class="form-group" style="margin-bottom: 18px;">
+                <label class="form-group__label" style="margin-bottom: 8px;">
+                  職業 <span class="form-group__required" style="border-radius: 2px;">必須</span>
+                </label>
+                <select id="prereg-occupation" class="form-group__input" style="background: var(--color-bg-alt); color: var(--color-text-white); cursor: pointer; padding: 12px 20px 12px 8px; border-radius: 6px; font-size: 0.88rem;">
+                    <option value="" selected disabled>選択して下さい</option>
+                    <option value="専業主婦・主夫">専業主婦・主夫</option>
+                    <option value="パート・アルバイト">パート・アルバイト</option>
+                    <option value="経営者・役員">経営者・役員</option>
+                    <option value="大手日系企業">大手日系企業</option>
+                    <option value="大手外資企業">大手外資企業</option>
+                    <option value="総合商社">総合商社</option>
+                    <option value="専門商社">専門商社</option>
+                    <option value="日系金融">日系金融</option>
+                    <option value="外資金融">外資金融</option>
+                    <option value="医師">医師</option>
+                    <option value="歯科医師">歯科医師</option>
+                    <option value="弁護士・司法書士">弁護士・司法書士</option>
+                    <option value="公認会計士">公認会計士</option>
+                    <option value="税理士">税理士</option>
+                    <option value="パイロット">パイロット</option>
+                    <option value="客室乗務員">客室乗務員</option>
+                    <option value="フリーランス">フリーランス</option>
+                    <option value="公務員">公務員</option>
+                    <option value="不動産">不動産</option>
+                    <option value="建設・建築">建設・建築</option>
+                    <option value="商社・流通">商社・流通</option>
+                    <option value="コンサル">コンサル</option>
+                    <option value="IT関連">IT関連</option>
+                    <option value="広告・マスコミ">広告・マスコミ</option>
+                    <option value="芸能・モデル">芸能・モデル</option>
+                    <option value="看護師">看護師</option>
+                    <option value="介護・福祉">介護・福祉</option>
+                    <option value="薬剤師">薬剤師</option>
+                    <option value="調理師・栄養士">調理師・栄養士</option>
+                    <option value="保育士">保育士</option>
+                    <option value="歯科衛生士・助手">歯科衛生士・助手</option>
+                    <option value="農業・畜産">農業・畜産</option>
+                    <option value="食品関連">食品関連</option>
+                    <option value="流通・卸">流通・卸</option>
+                    <option value="製造・工場">製造・工場</option>
+                    <option value="旅行関連">旅行関連</option>
+                    <option value="製薬">製薬</option>
+                    <option value="教育関連">教育関連</option>
+                    <option value="事務・受付">事務・受付</option>
+                    <option value="秘書">秘書</option>
+                    <option value="アパレル・ショップ">アパレル・ショップ</option>
+                    <option value="美容関連">美容関連</option>
+                    <option value="飲食・サービス業">飲食・サービス業</option>
+                    <option value="店舗・小売">店舗・小売</option>
+                    <option value="清掃業">清掃業</option>
+                    <option value="学生">学生</option>
+                    <option value="その他">その他</option>
+                </select>
+              </div>
+
               <!-- Age & Income -->
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px;">
                 <div class="form-group" style="margin-bottom: 0;">
@@ -525,9 +588,27 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+      const nicknameVal = document.getElementById('prereg-nickname') ? document.getElementById('prereg-nickname').value.trim() : '';
+      const occupationVal = document.getElementById('prereg-occupation') ? document.getElementById('prereg-occupation').value : '';
       const ageVal = document.getElementById('prereg-age') ? document.getElementById('prereg-age').value : '';
       const incomeVal = document.getElementById('prereg-income') ? document.getElementById('prereg-income').value : '';
       const feedbackVal = document.getElementById('prereg-feedback') ? document.getElementById('prereg-feedback').value.trim() : '';
+
+      if (!nicknameVal) {
+        if (emailError) {
+          emailError.textContent = 'ニックネームを入力してください。';
+          emailError.style.display = 'block';
+        }
+        return;
+      }
+
+      if (!occupationVal) {
+        if (emailError) {
+          emailError.textContent = '職業を選択してください。';
+          emailError.style.display = 'block';
+        }
+        return;
+      }
 
       if (!ageVal) {
         if (emailError) {
@@ -579,6 +660,8 @@ document.addEventListener('DOMContentLoaded', () => {
         hiddenForm.target = 'ssgform-target-iframe';
 
         const fields = {
+          'ニックネーム': nicknameVal,
+          '職業': occupationVal,
           '性別': selectedGender,
           '年代': ageVal,
           '年収': incomeVal,
@@ -604,6 +687,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // Save submission data to localStorage backup & API log
       try {
         const entry = {
+          nickname: nicknameVal,
+          occupation: occupationVal,
           gender: selectedGender,
           age: ageVal,
           income: incomeVal,
