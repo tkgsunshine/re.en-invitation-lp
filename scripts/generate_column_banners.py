@@ -88,9 +88,11 @@ def make(n, headline, category, src_photo):
     d = ImageDraw.Draw(img)
     # カテゴリのチップ
     cf = font(30)
-    tw = d.textlength(category, font=cf)
-    d.rounded_rectangle((70, 74, 70 + tw + 44, 74 + 52), radius=6, fill=GOLD)
-    d.text((92, 80), category, font=cf, fill=(20, 20, 22))
+    # 文字の実際の描画範囲（インク）の中心を、チップの中心に合わせる（上下左右とも中央）
+    l, t, r, b = d.textbbox((0, 0), category, font=cf)
+    cx0, cy0, cw_, ch_ = 70, 74, (r - l) + 44, 52
+    d.rounded_rectangle((cx0, cy0, cx0 + cw_, cy0 + ch_), radius=6, fill=GOLD)
+    d.text((cx0 + (cw_ - (r - l)) / 2 - l, cy0 + (ch_ - (b - t)) / 2 - t), category, font=cf, fill=(20, 20, 22))
     # キャッチコピー
     lines = wrap(catch_copy(headline))
     f = font(68 if len(max(lines, key=len)) <= 12 else 60)
