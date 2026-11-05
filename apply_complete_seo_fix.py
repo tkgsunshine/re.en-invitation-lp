@@ -54,6 +54,9 @@ def fix_page_meta_and_schema(filepath):
             pass
     if os.path.exists(_og_abs):
         og_image = f"https://re-en.jp/{_og_rel}"
+    # コラム詳細以外（トップ・料金・事前登録など）は、ロゴ・キャッチコピー・特典入りの共通OGP画像を使う
+    if not vol_num and os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "images", "og", "top_ogp.jpg")):
+        og_image = "https://re-en.jp/images/og/top_ogp.jpg"
 
     safe_title = title.replace('"', '')
     safe_desc = description.replace('"', '')
