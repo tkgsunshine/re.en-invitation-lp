@@ -21,7 +21,12 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "images", "banners")
 OG = os.path.join(ROOT, "images", "og")
-FONTS = ["/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf", "/usr/share/fonts/truetype/fonts-japanese-gothic.ttf"]
+# 先頭は、記事一覧のタイトルと同じ明朝体（Noto Serif JP Bold、リポジトリに同梱）。無いときだけゴシックを使う
+FONTS = [
+    os.path.join(ROOT, "scripts", "fonts", "NotoSerifJP-Bold.ttf"),
+    "/usr/share/fonts/opentype/ipafont-gothic/ipag.ttf",
+    "/usr/share/fonts/truetype/fonts-japanese-gothic.ttf",
+]
 W, H = 1200, 630
 GOLD = (212, 175, 105)
 SPLIT = re.compile(r"[｜|。？！：]")
@@ -98,7 +103,7 @@ def make(n, headline, category, src_photo):
     f = font(68 if len(max(lines, key=len)) <= 12 else 60)
     y = 170
     for line in lines:
-        d.text((70, y), line, font=f, fill=(255, 255, 255), stroke_width=1, stroke_fill=(255, 255, 255))
+        d.text((70, y), line, font=f, fill=(255, 255, 255))
         y += int(f.size * 1.35)
     # 区切り線とブランド
     d.rectangle((70, H - 118, 190, H - 114), fill=GOLD)
