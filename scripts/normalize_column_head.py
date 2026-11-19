@@ -44,7 +44,7 @@ def load_pages():
             "h1": htmllib.unescape(g(r'<h1 class="article-header__title">([^<]*)</h1>')),
             "cat": g(r'<span class="article-header__category">([^<]+)</span>'),
             "date": g(r'<span class="article-header__date">([^<]+)</span>'),
-            "img": g(r'<div class="article-hero-thumb"[^>]*><img src="([^"]+)"'),
+            "img": g(r'<div class="article-hero-thumb"[^>]*>\s*<img src="([^"]+)"'),
             "words": set(re.findall(r"[一-龠ァ-ヶー]{2,}", re.sub(r"<[^>]+>", "", g(r'<h1 class="article-header__title">([^<]*)</h1>') + " " + "".join(re.findall(r"<h[23][^>]*>(.*?)</h[23]>", body))))),
         }
     return pages
