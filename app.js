@@ -512,6 +512,11 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     </div>`;
     document.body.insertAdjacentHTML('beforeend', modalHTML);
+    if (!window.__emailSuggestInit) {
+      const es = document.createElement('script');
+      es.src = '/email-suggest.js?v=1';
+      document.body.appendChild(es);
+    }
   }
 
   const registerModal = document.getElementById('register-modal');
